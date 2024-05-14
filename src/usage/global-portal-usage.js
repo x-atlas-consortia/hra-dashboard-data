@@ -40,14 +40,14 @@ for await (const item of athenaQuery.query(query)) {
 }
 
 const results = Object.entries(countryRequests)
-  .map(([country, results]) => {
+  .map(([country, requests]) => {
     const countryMeta = countries.byCountry(country) ?? 'Unknown';
     return {
       country,
       countryId: countryMeta.isoNo,
-      results,
+      requests,
     };
   })
-  .sort((a, b) => b.results - a.results);
+  .sort((a, b) => b.requests - a.requests);
 
 writeFileSync(OUTPUT, Papa.unparse(results, { header: true }));

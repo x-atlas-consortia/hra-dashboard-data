@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Digital Object Usage",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/usage/user-requests.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "requests",
+      "type": "quantitative",
+      "scale": { "type": "log" }
+    },
+    "color": {
+      "field": "user",
+      "type": "nominal"
+    }
+  }
+}

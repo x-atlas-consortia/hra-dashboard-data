@@ -43,43 +43,15 @@ items:
       - type: VegaContainer
         title: Digital Object Usage
         tooltip: I'm a tooltip
-        spec:
-          data:
-            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-requests.csv
+        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
       - type: VegaContainer
         title: HRA Products Usage
         tooltip: I'm a tooltip
-        spec: {
-          "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-          "description": "HRA Products Usage",
-          "data": {
-            "url": "https://cdn.humanatlas.io/hra-dashboard-data/usage/user-requests.csv"
-          },
-          "width": "container",
-          "height": "container",
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "date",
-              "type": "temporal"
-            },
-            "y": {
-              "field": "requests",
-              "type": "quantitative",
-              "scale": {"type": "log"}
-            },
-            "color": {
-              "field": "user",
-              "type": "nominal"
-            }
-          }
-        }
+        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
       - type: VegaContainer
         title: Global HRA Portal Usage
         tooltip: I'm a tooltip
-        spec:
-          data:
-            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.csv
+        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
       - type: VegaContainer
         title: Top-10 Users of HRA Products
         tooltip: I'm a tooltip
