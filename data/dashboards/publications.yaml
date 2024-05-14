@@ -1,6 +1,13 @@
 type: Dashboard
-title: Publication Evidence
-description: Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Basic statistics of the size and coverage of the HRA literature KG and visualizations of the number of papers with experimental datasets and experts over time plus static figures from a recent publication are featured here.
+title: Publications
+description: >-
+  Every month, more than 20,000 papers are published in PubMed.
+  Many of these papers report data and results that can be used
+  to construct and properly use the HRA. Basic statistics of the
+  size and coverage of the HRA literature KG and visualizations
+  of the number of papers with experimental datasets and experts
+  over time plus static figures from a recent publication are
+  featured here.
 link: 
   type: Link
   url': https://www.biorxiv.org/content/10.1101/2023.10.21.563417v1
@@ -17,6 +24,7 @@ items:
             count: -1
           - label: size of HRAlit
             count: -1
+            unit: MB
       - title: HRA Publications
         tooltip: I'm a tooltip
         items:

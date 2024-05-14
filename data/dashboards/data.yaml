@@ -1,6 +1,12 @@
 type: Dashboard
 title: Data
-description: The HRA Knowledge Graph interlinks the 10 different data types in the Human Reference Atlas. Key counts are provided plus the number of anatomical structure and cell type terms added to existing ontologies. Visualizations show the growth of the HRA since the first release, its 3D spatial coverage, and the number of data type instances per anatomical structure.
+description: >-
+  The HRA Knowledge Graph interlinks the 10 different data types in the
+  Human Reference Atlas. Key counts are provided plus the number of
+  anatomical structure and cell type terms added to existing ontologies.
+  Visualizations show the growth of the HRA since the first release, its
+  3D spatial coverage, and the number of data type instances per
+  anatomical structure.
 link:
   type: Link
   url': https://www.nature.com/articles/s41556-021-00788-6
@@ -8,7 +14,7 @@ link:
 items:
   - type: CountsContainer
     items:
-      - title: Size of HRA
+      - title: Size of the HRA
         tooltip: I'm a tooltip
         items:
           - label: Nodes in the HRA Knowledge Graph
@@ -17,6 +23,7 @@ items:
             count: 1163379
           - label: Size of the HRA Knowledge Graph
             count: 36631
+            unit: MB
       - title: Digital Objects
         tooltip: I'm a tooltip
         items:
@@ -29,9 +36,9 @@ items:
           - label: 3D Organ Models
             count: 65
           - label: Blood Vessel Segments
-            count: -1
+            count: 1
           - label: SOPs
-            count: -1
+            count: 20
       - title: Ontologies Extended
         tooltip: I'm a tooltip
         items:

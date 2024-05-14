@@ -1,6 +1,10 @@
 type: Dashboard
 title: Diversity and Inclusion
-description: The HRA effort aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of paper authors overlaid on a world map.
+description: >-
+  The HRA effort aims to be inclusive and representative of human diversity.
+  Counts and visualizations show the diversity of HRA tissue donors, authors,
+  reviewers, and users using population pyramids, bar graphs, and a
+  choropleth map showing the number of paper authors overlaid on a world map.
 link: 
   type: Link
   url': https://www.biorxiv.org/content/10.1101/2023.10.21.563417v1
@@ -30,16 +34,16 @@ items:
             count: -1
   - type: ImageContainer
     title: Visualization 1
-    tooltip: I'm a tooltip
+    tooltip: Comparison of HRA, publication, and experimental to world population data
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/population-pyramids.png
   - type: GridContainer
     columns: 2
     items:
       - type: ImageContainer
-        title: Visualization 2
-        tooltip: I'm a tooltip
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/ethnic-composition.png
-      - type: ImageContainer
         title: Visualization 3
-        tooltip: I'm a tooltip
+        tooltip: Comparison of HRA, publication, and experimental to world population data
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/experts-world-map.png
+      - type: ImageContainer
+        title: Visualization 2
+        tooltip: Comparison of HRA, publication, and experimental to world population data
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/ethnic-composition.png

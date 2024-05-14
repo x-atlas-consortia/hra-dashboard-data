@@ -1,7 +1,10 @@
 
 type: Dashboard
 title: Usage
-description: HRA data is accessed via the HRA Portal, other data portals, the HRA KG, and APIs. Key counts plus visualizations of data usage over time, geospatial space, and by source are shown.
+description: >-
+  HRA data is accessed via the HRA Portal, other data portals, the
+  HRA KG, and APIs. Key counts plus visualizations of data usage
+  over time, geospatial space, and by source are shown.
 link: 
   type: Link
   url': https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1

@@ -1,6 +1,6 @@
 type: Dashboard
 title: Experimental Data
-description: >
+description: >-
   The HRA is constructed from experimental data and links back to the original sources.
   Shown are basic statistics; bar graphs that detail how many datasets have been mapped
   to the HRA by what methods; and a Sankey diagram with seven vertical bars showing from
@@ -50,6 +50,6 @@ items:
     tooltip: I'm a tooltip
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
   - type: IFrameContainer
-    title: HRApop data sankey diagram
+    title: HRApop Cell Type Populations Properties
     tooltip: I'm a tooltip
     iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey.html
