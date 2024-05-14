@@ -30,8 +30,9 @@ items:
             count: -1
           - label: experimental data authors
             count: -1
-          - label: humans on Earth on June 15th, 2024
-            count: -1
+          - label: humans on Earth on May 14th, 2024
+            count: 8109527824
+            source: https://www.worldometers.info/world-population/
   - type: ImageContainer
     title: Visualization 1
     tooltip: Comparison of HRA, publication, and experimental to world population data

@@ -43,11 +43,11 @@ items:
         tooltip: I'm a tooltip
         items:
           - label: Terms added to Uberon
-            count: -1
+            count: 85
           - label: Terms added to CL
-            count: -1
+            count: 129
           - label: Terms added to PCL
-            count: -1
+            count: 468
   - type: GridContainer
     columns: 2
     items:
