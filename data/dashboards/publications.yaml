@@ -46,24 +46,24 @@ items:
       - type: ImageContainer
         title: Figure 3
         tooltip: Geospatial layout of the co-author network
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.png
       - type: ImageContainer
         title: Figure 4
         tooltip: Number of organs experts work on (top) and number of papers per organ (bottom)
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.png
       - type: ImageContainer
         title: Figure 5
         tooltip: Bimodal network of 33 organs and top 50 funding agencies most often listed
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.png
       - type: ImageContainer
         title: Figure 6
         tooltip: The number of papers that funded by top 5 funding agencies from 2018 to 2021
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.png
       - type: ImageContainer
         title: Figure 7
         tooltip: Bimodal network between authors and organs
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.png
       - type: ImageContainer
         title: Figure 8
         tooltip: authors per country per organ
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.png
