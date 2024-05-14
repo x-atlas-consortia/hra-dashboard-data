@@ -1,32 +1,55 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Global HRA Portal Usage",
   "width": "container",
   "height": "container",
-  "data": {
-    "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
-    "format": {
-      "type": "topojson",
-      "feature": "countries"
-    }
-  },
-  "transform": [
+  "layer": [
     {
-      "lookup": "id",
-      "from": {
-        "data": {
-          "url": "https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.csv"
-        },
-        "key": "countryId",
-        "fields": ["requests"]
+      "name": "world-outlines",
+      "mark": {
+        "type": "geoshape",
+        "fill": "white",
+        "stroke": "#bebebe",
+        "strokeWidth": 0.85
+      },
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [{ "filter": "datum.id != 10" }]
+    },
+    {
+      "name": "requests",
+      "mark": "geoshape",
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.csv"
+            },
+            "key": "countryId",
+            "fields": ["requests"]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "requests",
+          "type": "quantitative",
+          "scale": { "type": "log" }
+        }
       }
     }
-  ],
-  "mark": "geoshape",
-  "encoding": {
-    "color": {
-      "field": "requests",
-      "type": "quantitative",
-      "scale": { "type": "log" }
-    }
-  }
+  ]
 }
