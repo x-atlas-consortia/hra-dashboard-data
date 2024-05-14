@@ -25,7 +25,8 @@
   "encoding": {
     "color": {
       "field": "requests",
-      "type": "quantitative"
+      "type": "quantitative",
+      "scale": { "type": "log" }
     }
   }
 }
