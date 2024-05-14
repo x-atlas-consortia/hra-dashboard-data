@@ -1,0 +1,69 @@
+type: Dashboard
+title: Publication Evidence
+description: Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Basic statistics of the size and coverage of the HRA literature KG and visualizations of the number of papers with experimental datasets and experts over time plus static figures from a recent publication are featured here.
+link: 
+  type: Link
+  url': https://www.biorxiv.org/content/10.1101/2023.10.21.563417v1
+  label: Read Paper
+items:
+  - type: CountsContainer
+    items:
+      - title: Size of HRAlit
+        tooltip: I'm a tooltip
+        items:
+          - label: nodes
+            count: -1
+          - label: edges
+            count: -1
+          - label: size of HRAlit
+            count: -1
+      - title: HRA Publications
+        tooltip: I'm a tooltip
+        items:
+          - label: papers
+            count: -1
+          - label: authors
+            count: -1
+          - label: author institutions
+            count: -1
+          - label: funded projects
+            count: -1
+          - label: funders
+            count: -1
+          - label: experimental datasets
+            count: -1
+  - type: GridContainer
+    columns: 2
+    items:
+      - type: ImageContainer
+        title: HRAlit Papers with Experimental Data
+        tooltip: I'm a tooltip
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/papers-with-experimental-data.png
+      - type: ImageContainer
+        title: Experts Over Time
+        tooltip: I'm a tooltip
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+      - type: ImageContainer
+        title: Figure 3
+        tooltip: Geospatial layout of the co-author network
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.svg
+      - type: ImageContainer
+        title: Figure 4
+        tooltip: Number of organs experts work on (top) and number of papers per organ (bottom)
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.svg
+      - type: ImageContainer
+        title: Figure 5
+        tooltip: Bimodal network of 33 organs and top 50 funding agencies most often listed
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.svg
+      - type: ImageContainer
+        title: Figure 6
+        tooltip: The number of papers that funded by top 5 funding agencies from 2018 to 2021
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.svg
+      - type: ImageContainer
+        title: Figure 7
+        tooltip: Bimodal network between authors and organs
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.svg
+      - type: ImageContainer
+        title: Figure 8
+        tooltip: authors per country per organ
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.svg

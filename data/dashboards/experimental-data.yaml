@@ -1,0 +1,55 @@
+type: Dashboard
+title: Experimental Data
+description: >
+  The HRA is constructed from experimental data and links back to the original sources.
+  Shown are basic statistics; bar graphs that detail how many datasets have been mapped
+  to the HRA by what methods; and a Sankey diagram with seven vertical bars showing from
+  left to right: all datasets, their sex, age (group), ethnicity, data type, atlas-level
+  quality, and mapped to atlas or not properties.
+link:
+  type: Link
+  url': https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
+  label: Read Paper
+items:
+  - type: CountsContainer
+    items:
+      - title: Size of HRA
+        tooltip: I'm a tooltip
+        items:
+          - label: nodes
+            count: -1
+          - label: edges
+            count: -1
+          - label: size in TB
+            count: -1
+            unit: TB
+      - title: Data Provenance
+        tooltip: I'm a tooltip
+        items:
+          - label: HuBMAP datasets
+            count: -1
+          - label: SenNet datasets
+            count: -1
+          - label: tissue donors
+            count: -1
+          - label: organs
+            count: -1
+          - label: anatomical structures
+            count: -1
+          - label: cells
+            count: -1
+      - title: GitHub
+        tooltip: I'm a tooltip
+        items:
+          - label: repositories
+            count: -1
+          - label: commits
+            count: -1
+  - type: ImageContainer
+    title: HRApop data mapped to the HRA
+    tooltip: I'm a tooltip
+    imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+  - type: IFrameContainer
+    title: HRApop data sankey diagram
+    tooltip: I'm a tooltip
+    iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey.html

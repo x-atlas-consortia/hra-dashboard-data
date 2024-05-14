@@ -1,0 +1,63 @@
+
+type: Dashboard
+title: Usage
+description: HRA data is accessed via the HRA Portal, other data portals, the HRA KG, and APIs. Key counts plus visualizations of data usage over time, geospatial space, and by source are shown.
+link: 
+  type: Link
+  url': https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
+  label: Read Paper
+items:
+  - type: CountsContainer
+    items:
+      - title: HRA Resources
+        tooltip: I'm a tooltip
+        items:
+          - label: HRA papers
+            count: -1
+          - label: HRA paper citations
+            count: -1
+          - label: SOP downloads
+            count: -1
+          - label: VHMOOC students
+            count: -1
+      - title: HRA Requests
+        tooltip: I'm a tooltip
+        itemsUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
+      - title: Ontology Requests
+        tooltip: I'm a tooltip
+        items:
+          - label: OLS requests
+            count: -1
+          - label: BioPortal requests
+            count: -1
+          - label: Ontobee Requests
+            count: -1
+          - label: NIH3D requests
+            count: -1
+  - type: GridContainer
+    columns: 2
+    items:
+      - type: VegaContainer
+        title: Digital Object Usage
+        tooltip: I'm a tooltip
+        spec:
+          data:
+            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-requests.csv
+      - type: VegaContainer
+        title: HRA Products Usage
+        tooltip: I'm a tooltip
+        spec:
+          data:
+            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-requests.csv
+      - type: VegaContainer
+        title: Global HRA Portal Usage
+        tooltip: I'm a tooltip
+        spec:
+          data:
+            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.csv
+      - type: VegaContainer
+        title: Top-10 Users of HRA Products
+        tooltip: I'm a tooltip
+        spec:
+          data:
+            url: https://cdn.humanatlas.io/hra-dashboard-data/usage/top-referrers.csv

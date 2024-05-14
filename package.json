@@ -1,0 +1,21 @@
+{
+  "name": "hra-dashboard-data-processor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-athena": "^3.574.0",
+    "@classmethod/athena-query": "^1.4.0",
+    "aircodes": "^1.3.16",
+    "country-code-lookup": "^0.1.3",
+    "geoip-lite": "^1.4.10",
+    "papaparse": "^5.4.1",
+    "world-atlas": "^2.0.2"
+  }
+}

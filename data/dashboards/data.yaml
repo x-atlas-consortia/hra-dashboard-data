@@ -1,0 +1,58 @@
+type: Dashboard
+title: Data
+description: The HRA Knowledge Graph interlinks the 10 different data types in the Human Reference Atlas. Key counts are provided plus the number of anatomical structure and cell type terms added to existing ontologies. Visualizations show the growth of the HRA since the first release, its 3D spatial coverage, and the number of data type instances per anatomical structure.
+link:
+  type: Link
+  url': https://www.nature.com/articles/s41556-021-00788-6
+  label: Read Paper
+items:
+  - type: CountsContainer
+    items:
+      - title: Size of HRA
+        tooltip: I'm a tooltip
+        items:
+          - label: Nodes in the HRA Knowledge Graph
+            count: 1940490
+          - label: Edges in the HRA Knowledge Graph
+            count: 1163379
+          - label: Size of the HRA Knowledge Graph
+            count: 36631
+      - title: Digital Objects
+        tooltip: I'm a tooltip
+        items:
+          - label: ASCT+B Tables
+            count: 36
+          - label: OMAP Tables
+            count: 13
+          - label: FTU Illustrations
+            count: 22
+          - label: 3D Organ Models
+            count: 65
+          - label: Blood Vessel Segments
+            count: -1
+          - label: SOPs
+            count: -1
+      - title: Ontologies Extended
+        tooltip: I'm a tooltip
+        items:
+          - label: Terms added to Uberon
+            count: -1
+          - label: Terms added to CL
+            count: -1
+          - label: Terms added to PCL
+            count: -1
+  - type: GridContainer
+    columns: 2
+    items:
+      - type: ImageContainer
+        title: HRA Growth Per Release
+        tooltip: I'm a tooltip
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+      - type: ImageContainer
+        title: Digital Objects Per Organ
+        tooltip: I'm a tooltip
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+  - type: ImageContainer
+    title: Anatomical Structures in 3D
+    tooltip: I'm a tooltip
+    imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
