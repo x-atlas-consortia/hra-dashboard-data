@@ -6,7 +6,7 @@
   },
   "width": "container",
   "height": "container",
-  "mark": "line",
+  "mark": {"type": "line", "tooltip": true},
   "encoding": {
     "x": {
       "field": "date",

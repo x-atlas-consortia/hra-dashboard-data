@@ -8,7 +8,11 @@
   "height": "container",
   "encoding": {
     "y": { "field": "host", "type": "nominal" },
-    "x": { "field": "requests", "type": "quantitative" }
+    "x": { "field": "requests", "type": "quantitative" },
+    "tooltip": [
+      { "field": "host", "type": "nominal" },
+      { "field": "requests", "type": "quantitative" }
+    ]
   },
   "layer": [
     {

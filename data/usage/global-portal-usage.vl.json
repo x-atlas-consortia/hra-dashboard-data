@@ -39,7 +39,7 @@
               "url": "https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.csv"
             },
             "key": "countryId",
-            "fields": ["requests"]
+            "fields": ["requests", "country"]
           }
         }
       ],
@@ -48,7 +48,11 @@
           "field": "requests",
           "type": "quantitative",
           "scale": { "type": "log" }
-        }
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal" },
+          { "field": "requests", "type": "quantitative" }
+        ]
       }
     }
   ]
