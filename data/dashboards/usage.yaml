@@ -21,7 +21,8 @@ items:
           - label: HRA paper citations
             count: -1
           - label: SOP downloads
-            count: -1
+            count: 4677
+            source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: -1
       - title: HRA Requests
