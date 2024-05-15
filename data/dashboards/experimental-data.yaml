@@ -17,34 +17,40 @@ items:
         tooltip: I'm a tooltip
         items:
           - label: nodes
-            count: -1
+            count: 2212274
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/high-level-stats.csv
           - label: edges
-            count: -1
+            count: 11410953
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/high-level-stats.csv
           - label: size in TB
-            count: -1
+            count: 6.69
             unit: TB
+            source: du -s -BM hra-workflows-runner/raw-data/{0.10.1,data-repo,models,tmp} hra-pop/raw-data/v0.10.2
+            sourceMBs: 438 + 1749184 + 27518 + 4887790 + 29318 
       - title: Data Provenance
         tooltip: I'm a tooltip
+        source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
-            count: -1
+            count: 2472
           - label: SenNet datasets
-            count: -1
+            count: 236
           - label: tissue donors
-            count: -1
+            count: 5633
           - label: organs
-            count: -1
+            count: 13
           - label: anatomical structures
-            count: -1
+            count: 40
           - label: cells
-            count: -1
+            count: 18180772
       - title: GitHub
         tooltip: I'm a tooltip
         items:
           - label: repositories
-            count: -1
+            count: 4
+            repos: hra-pop, hra-workflows-runner, hra-workflows, hra-cell-type-populations-supporting-information
           - label: commits
-            count: -1
+            count: 1140
   - type: ImageContainer
     title: HRApop data mapped to the HRA
     tooltip: I'm a tooltip

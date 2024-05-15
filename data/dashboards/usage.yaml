@@ -25,7 +25,12 @@ items:
             count: -1
       - title: HRA Requests
         tooltip: I'm a tooltip
-        itemsUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
+        sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
+        items:
+          - label: HRA-API requests
+            count: 260066
+          - label: HRA Portal requests
+            count: 646954
       - title: Ontology Requests
         tooltip: I'm a tooltip
         items:

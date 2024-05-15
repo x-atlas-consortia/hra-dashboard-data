@@ -16,6 +16,7 @@ items:
     items:
       - title: Size of the HRA
         tooltip: I'm a tooltip
+        source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes in the HRA Knowledge Graph
             count: 1940490
