@@ -19,10 +19,12 @@ items:
         tooltip: I'm a tooltip
         items:
           - label: nodes
-            count: 8694233
-            source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
+            count: 8696762
+            source: Kiki
+            source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
           - label: edges
-            count: 35800736
+            count: 13170651
+            source: Kiki
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
             source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
           - label: size of HRAlit
