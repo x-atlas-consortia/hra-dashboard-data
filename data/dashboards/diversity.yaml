@@ -18,7 +18,7 @@ items:
           - label: registered experts
             count: -1
           - label: experts on mailing list
-            count: -1
+            count: 336
           - label: digital object authors
             count: -1
           - label: digital object reviewers

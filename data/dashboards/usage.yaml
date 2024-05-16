@@ -19,7 +19,8 @@ items:
             count: 1057
             source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
           - label: HRA paper citations
-            count: -1
+            count: 59527
+            source: Kiki / HRAlit v0.5
           - label: SOP downloads
             count: 4677
             source: src/usage/sop-downloads.js
