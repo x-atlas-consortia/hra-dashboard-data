@@ -41,7 +41,8 @@ items:
           - label: OLS requests
             count: -1
           - label: BioPortal requests
-            count: -1
+            count: 1444
+            source: https://bioportal.bioontology.org/ontologies/CCF
           - label: Ontobee Requests
             count: -1
           - label: NIH3D requests
