@@ -20,16 +20,16 @@ items:
           - label: experts on mailing list
             count: 336
           - label: digital object authors
-            count: -1
+            count: 101
           - label: digital object reviewers
-            count: -1
+            count: 99
       - title: Title
         tooltip: I'm a tooltip
         items:
           - label: publication authors
-            count: -1
+            count: 66803
           - label: experimental data authors
-            count: -1
+            count: 347
           - label: humans on Earth on May 14th, 2024
             count: 8109527824
             source: https://www.worldometers.info/world-population/

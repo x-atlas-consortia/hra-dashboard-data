@@ -57,7 +57,7 @@ items:
       - type: ImageContainer
         title: Experts Over Time
         tooltip: I'm a tooltip
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/experts-over-time.png
       - type: ImageContainer
         title: Figure 3
         tooltip: Geospatial layout of the co-author network
