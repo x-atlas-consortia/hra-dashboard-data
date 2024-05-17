@@ -25,7 +25,8 @@ items:
             count: 4677
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
-            count: -1
+            count: 310
+            source: Michael Ginda
       - title: HRA Requests
         tooltip: I'm a tooltip
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
