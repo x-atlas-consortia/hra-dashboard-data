@@ -25,8 +25,8 @@ items:
             count: 4677
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
-            count: 310
-            source: Michael Ginda
+            count: 266
+            source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)
       - title: HRA Requests
         tooltip: I'm a tooltip
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
