@@ -1,0 +1,84 @@
+#+ summary: Digital objects counts in the latest HRA release
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT ?organ ?type (COUNT(*) as ?count)
+FROM HRA:
+WHERE {
+  # 2D FTU
+  {
+    ?digitalObject a ccf:FtuIllustration ;
+    ccf:ccf_located_in ?organIri .
+    ?organIri ccf:ccf_pref_label ?organLabel .
+  }
+  UNION
+  # 3D Reference Organs
+  {
+    ?digitalObject a ccf:SpatialEntity ;
+      ccf:has_reference_organ ?digitalObject ;
+      ccf:representation_of ?organIri .
+    ?organIri ccf:ccf_pref_label ?organLabel .
+  }
+  UNION
+  # OMAPs
+  {
+    ?digitalObject a ccf:MultiplexedAntibodyBasedImagingExperiment ;
+      ccf:sample_organ ?organIri .
+
+    ?organIri ccf:ccf_pref_label ?organLabel .
+  }
+  UNION
+  # ASCT+B Tables
+  {
+    HRA: prov:hadMember ?digitalObject .
+    BIND(REPLACE(REPLACE(REPLACE(REPLACE(STRBEFORE(
+      REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/asct-b/', ''), '/'), '-', ' '),
+      'allen ', ''), ' full term', ''),
+      'prostate', 'prostate gland') as ?organLabel)
+    FILTER(STRSTARTS(STR(?digitalObject), 'https://purl.humanatlas.io/asct-b/'))
+
+    # OPTIONAL {
+    #   ?organIri ccf:ccf_pref_label ?organLabel .
+    #   FILTER(LCASE(STR(?organLabel)) = ?asctb_table)
+    # }
+  }
+  FILTER(!CONTAINS(STR(?digitalObject), 'crosswalk'))
+
+  BIND(STRBEFORE(REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/', ''), '/') as ?type)
+
+
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
+      REPLACE(LCASE(?organLabel), 'left ', ''), 'right ', ''),
+      'skin of body', 'skin'),
+      'male reproductive system', 'prostate gland'),
+      'extrapulmonary bronchus', 'main bronchus'),
+      'mesenteric lymph node', 'lymph node'),
+      'retina', 'eye'),
+      'thoracic thymus', 'thymus'),
+      'respiratory system', 'lung') as ?organ)
+}
+GROUP BY ?organ ?type
+ORDER BY ?organ ?type
+
+
+  # BIND(REPLACE(STR(?digitalObject), 'purl', 'lod') as ?do)
+  # BIND(STRBEFORE(REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/', ''), '/') as ?type)
+
+  # BIND(IRI(REPLACE(STR(?digitalObject), 'purl', 'lod')) as ?purl)
+
+  # GRAPH <https://lod.humanatlas.io> {
+  #   ?purl a dcat:Dataset ;
+  # 		# schema:name ?name ;
+  # 		# schema:additionalType ?type ;
+  #     # schema:version ?version ;
+  #     # schema:dateCreated ?published ;
+  #     # rdfs:seeAlso ?do ;
+  #   .
+  # }
