@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": { "url": "https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.csv" },
+  "width": 640,
+  "height": 480,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
+  "params": [
+    {
+      "name": "group_by",
+      "value": "Organ",
+      "select": { "type": "point", "fields": ["group"] },
+      "bind": { "input": "select", "options": ["Portal", "Organ", "Sex", "Age", "Ethnicity"], "name": "Group By" }
+    }
+  ],
+  "mark": { "type": "bar", "tooltip": true },
+  "transform": [
+    {
+      "filter": { "param": "group_by" }
+    }
+  ],
+  "encoding": {
+    "x": { "aggregate": "sum", "field": "count", "title": "# Datasets" },
+    "y": { "field": "measure", "title": "HRA Mapping" },
+    "color": { "field": "group_value", "title": "Grouped Value" }
+  }
+}

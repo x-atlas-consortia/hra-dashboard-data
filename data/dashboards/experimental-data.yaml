@@ -51,10 +51,10 @@ items:
             repos: hra-pop, hra-workflows-runner, hra-workflows, hra-cell-type-populations-supporting-information
           - label: commits
             count: 1140
-  - type: ImageContainer
+  - type: VegaContainer
     title: HRApop data mapped to the HRA
     tooltip: I'm a tooltip
-    imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.vl.json
   - type: IFrameContainer
     title: HRApop Cell Type Populations Properties
     tooltip: I'm a tooltip
