@@ -56,10 +56,10 @@ items:
         title: HRA Growth Per Release
         tooltip: I'm a tooltip
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
-      - type: ImageContainer
+      - type: VegaContainer
         title: Digital Objects Per Organ
         tooltip: I'm a tooltip
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
   - type: ImageContainer
     title: HRA v2.1 has 65 organs with 1,218 AS modeled in 3D. Left female kidney has 31 AS.
     tooltip: I'm a tooltip
