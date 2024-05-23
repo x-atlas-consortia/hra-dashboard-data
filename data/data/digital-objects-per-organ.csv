@@ -1,82 +1,82 @@
 organ,type,count
-anatomical systems,asct-b,1
-blood pelvis,asct-b,1
-blood vasculature,asct-b,1
-blood vasculature,ref-organ,2
-bone marrow,asct-b,1
-bonemarrow pelvis,asct-b,1
-brain,asct-b,1
-brain,ref-organ,2
-eye,asct-b,1
-eye,omap,1
-eye,ref-organ,4
-fallopian tube,asct-b,1
-fallopian tube,ref-organ,2
-heart,asct-b,1
-heart,ref-organ,2
-kidney,asct-b,1
-kidney,2d-ftu,8
-kidney,omap,2
-kidney,ref-organ,4
-knee,asct-b,1
-knee,ref-organ,4
-large intestine,asct-b,1
-large intestine,2d-ftu,1
-large intestine,ref-organ,2
-liver,asct-b,1
-liver,2d-ftu,1
-liver,omap,1
-liver,ref-organ,2
-lung,asct-b,1
-lung,2d-ftu,2
-lung,omap,1
-lung,ref-organ,2
-lymph node,asct-b,1
-lymph node,omap,1
-lymph node,ref-organ,2
-lymph vasculature,asct-b,1
-main bronchus,asct-b,1
-main bronchus,ref-organ,4
-muscular system,asct-b,1
-ovary,asct-b,1
-ovary,ref-organ,2
-palatine tonsil,asct-b,1
-palatine tonsil,omap,1
-pancreas,asct-b,1
-pancreas,2d-ftu,3
-pancreas,omap,2
-pancreas,ref-organ,2
-pelvis,ref-organ,2
-peripheral nervous system,asct-b,1
-placenta,asct-b,1
-placenta,omap,1
-placenta,ref-organ,1
-prostate gland,asct-b,1
-prostate gland,2d-ftu,1
-prostate gland,ref-organ,1
-skeleton,asct-b,1
-skin,asct-b,1
-skin,2d-ftu,4
-skin,omap,2
-skin,ref-organ,4
-small intestine,asct-b,1
-small intestine,2d-ftu,2
-small intestine,ref-organ,4
-spinal cord,asct-b,1
-spinal cord,ref-organ,2
-spleen,asct-b,1
-spleen,2d-ftu,2
-spleen,omap,1
-spleen,ref-organ,2
-thymus,asct-b,1
-thymus,2d-ftu,2
-thymus,ref-organ,4
-trachea,asct-b,1
-trachea,ref-organ,2
-ureter,asct-b,1
-ureter,ref-organ,4
-urinary bladder,asct-b,1
-urinary bladder,ref-organ,2
-uterus,asct-b,1
-uterus,ref-organ,2
-vascular system,ref-organ,2
+anatomical systems,ASCT+B Table,1
+blood pelvis,ASCT+B Table,1
+blood vasculature,ASCT+B Table,1
+blood vasculature,3D Reference Organ,2
+bone marrow,ASCT+B Table,1
+bonemarrow pelvis,ASCT+B Table,1
+brain,ASCT+B Table,1
+brain,3D Reference Organ,2
+eye,ASCT+B Table,1
+eye,3D Reference Organ,4
+eye,OMAP,1
+fallopian tube,ASCT+B Table,1
+fallopian tube,3D Reference Organ,2
+heart,ASCT+B Table,1
+heart,3D Reference Organ,2
+kidney,ASCT+B Table,1
+kidney,2D FTU Illustration,8
+kidney,3D Reference Organ,4
+kidney,OMAP,2
+knee,ASCT+B Table,1
+knee,3D Reference Organ,4
+large intestine,ASCT+B Table,1
+large intestine,2D FTU Illustration,1
+large intestine,3D Reference Organ,2
+liver,ASCT+B Table,1
+liver,2D FTU Illustration,1
+liver,3D Reference Organ,2
+liver,OMAP,1
+lung,ASCT+B Table,1
+lung,2D FTU Illustration,2
+lung,3D Reference Organ,2
+lung,OMAP,1
+lymph node,ASCT+B Table,1
+lymph node,3D Reference Organ,2
+lymph node,OMAP,1
+lymph vasculature,ASCT+B Table,1
+main bronchus,ASCT+B Table,1
+main bronchus,3D Reference Organ,4
+muscular system,ASCT+B Table,1
+ovary,ASCT+B Table,1
+ovary,3D Reference Organ,2
+palatine tonsil,ASCT+B Table,1
+palatine tonsil,OMAP,1
+pancreas,ASCT+B Table,1
+pancreas,2D FTU Illustration,3
+pancreas,3D Reference Organ,2
+pancreas,OMAP,2
+pelvis,3D Reference Organ,2
+peripheral nervous system,ASCT+B Table,1
+placenta,ASCT+B Table,1
+placenta,3D Reference Organ,1
+placenta,OMAP,1
+prostate gland,ASCT+B Table,1
+prostate gland,2D FTU Illustration,1
+prostate gland,3D Reference Organ,1
+skeleton,ASCT+B Table,1
+skin,ASCT+B Table,1
+skin,2D FTU Illustration,4
+skin,3D Reference Organ,4
+skin,OMAP,2
+small intestine,ASCT+B Table,1
+small intestine,2D FTU Illustration,2
+small intestine,3D Reference Organ,4
+spinal cord,ASCT+B Table,1
+spinal cord,3D Reference Organ,2
+spleen,ASCT+B Table,1
+spleen,2D FTU Illustration,2
+spleen,3D Reference Organ,2
+spleen,OMAP,1
+thymus,ASCT+B Table,1
+thymus,2D FTU Illustration,2
+thymus,3D Reference Organ,4
+trachea,ASCT+B Table,1
+trachea,3D Reference Organ,2
+ureter,ASCT+B Table,1
+ureter,3D Reference Organ,4
+urinary bladder,ASCT+B Table,1
+urinary bladder,3D Reference Organ,2
+uterus,ASCT+B Table,1
+uterus,3D Reference Organ,2
+vascular system,3D Reference Organ,2

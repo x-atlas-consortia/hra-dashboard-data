@@ -17,6 +17,7 @@ WHERE {
     ?digitalObject a ccf:FtuIllustration ;
     ccf:ccf_located_in ?organIri .
     ?organIri ccf:ccf_pref_label ?organLabel .
+    BIND("2D FTU Illustration" as ?type)
   }
   UNION
   # 3D Reference Organs
@@ -25,6 +26,7 @@ WHERE {
       ccf:has_reference_organ ?digitalObject ;
       ccf:representation_of ?organIri .
     ?organIri ccf:ccf_pref_label ?organLabel .
+    BIND("3D Reference Organ" as ?type)
   }
   UNION
   # OMAPs
@@ -33,6 +35,7 @@ WHERE {
       ccf:sample_organ ?organIri .
 
     ?organIri ccf:ccf_pref_label ?organLabel .
+    BIND("OMAP" as ?type)
   }
   UNION
   # ASCT+B Tables
@@ -44,15 +47,9 @@ WHERE {
       'prostate', 'prostate gland') as ?organLabel)
     FILTER(STRSTARTS(STR(?digitalObject), 'https://purl.humanatlas.io/asct-b/'))
 
-    # OPTIONAL {
-    #   ?organIri ccf:ccf_pref_label ?organLabel .
-    #   FILTER(LCASE(STR(?organLabel)) = ?asctb_table)
-    # }
+    BIND("ASCT+B Table" as ?type)
   }
   FILTER(!CONTAINS(STR(?digitalObject), 'crosswalk'))
-
-  BIND(STRBEFORE(REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/', ''), '/') as ?type)
-
 
   BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
       REPLACE(LCASE(?organLabel), 'left ', ''), 'right ', ''),
@@ -66,19 +63,3 @@ WHERE {
 }
 GROUP BY ?organ ?type
 ORDER BY ?organ ?type
-
-
-  # BIND(REPLACE(STR(?digitalObject), 'purl', 'lod') as ?do)
-  # BIND(STRBEFORE(REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/', ''), '/') as ?type)
-
-  # BIND(IRI(REPLACE(STR(?digitalObject), 'purl', 'lod')) as ?purl)
-
-  # GRAPH <https://lod.humanatlas.io> {
-  #   ?purl a dcat:Dataset ;
-  # 		# schema:name ?name ;
-  # 		# schema:additionalType ?type ;
-  #     # schema:version ?version ;
-  #     # schema:dateCreated ?published ;
-  #     # rdfs:seeAlso ?do ;
-  #   .
-  # }
