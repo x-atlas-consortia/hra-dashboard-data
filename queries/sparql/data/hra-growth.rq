@@ -14,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?group ?group_value ?date ?count ?order
 WHERE {
 
-  # Tissue Providers
+  # tissue providers
   {
     SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (1 as ?order)
     WHERE {
@@ -35,6 +35,30 @@ WHERE {
         ), xsd:date) as ?date)
     }
     GROUP BY ?tissue_provider
+  }
+  UNION
+  # experts
+  {
+    SELECT DISTINCT ("experts" as ?group) (?orcid as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (2 as ?order)
+    WHERE {
+      GRAPH <https://lod.humanatlas.io> {
+        ?purl a dcat:Dataset ;
+              prov:wasDerivedFrom ?rawData .
+        ?rawData schema:dateCreated ?creation_date .
+        { ?rawData ccf:project_lead ?orcid . }
+        UNION
+        { ?rawData dcterms:creator ?orcid . }
+        UNION
+        { ?rawData schema:reviewedBy ?orcid . }
+
+        BIND(STRDT(
+          IF(CONTAINS(?creation_date, '/'),
+            CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+            STR(?creation_date)
+          ), xsd:date) as ?date)
+      }
+    }
+    GROUP BY ?orcid
   }
   UNION
   # OMAPs
@@ -63,7 +87,7 @@ WHERE {
   UNION
   # 2D FTU Illustrations
   {
-    SELECT DISTINCT ("2D FTU Illustrations" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (9 as ?order)
+    SELECT DISTINCT ("2D FTU illustrations" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (9 as ?order)
     WHERE {
       GRAPH <https://lod.humanatlas.io> {
         ?purl a dcat:Dataset ;
