@@ -11,12 +11,12 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?group ?group_value ?date ?count
+SELECT ?group ?group_value ?date ?count ?order
 WHERE {
 
   # Tissue Providers
   {
-    SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count)
+    SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (1 as ?order)
     WHERE {
       ?donor a ccf:Donor ;
           ccf:tissue_provider_name ?tissue_provider .
@@ -37,9 +37,9 @@ WHERE {
     GROUP BY ?tissue_provider
   }
   UNION
-  # Digital Objects
+  # OMAPs
   {
-    SELECT DISTINCT ("digital objects" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count)
+    SELECT DISTINCT ("OMAPs" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (8 as ?order)
     WHERE {
       GRAPH <https://lod.humanatlas.io> {
         ?purl a dcat:Dataset ;
@@ -48,8 +48,32 @@ WHERE {
               prov:wasDerivedFrom [
                 schema:dateCreated ?creation_date ;
               ] .
-              
+
+        FILTER(?type = 'omap')
+        BIND(STRDT(
+          IF(CONTAINS(?creation_date, '/'),
+            CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+            STR(?creation_date)
+          ), xsd:date) as ?date)
+        BIND(CONCAT(?type, '/', ?name) as ?do_name)
+      }
+    }
+    GROUP BY ?do_name
+  }
+  UNION
+  # 2D FTU Illustrations
+  {
+    SELECT DISTINCT ("2D FTU Illustrations" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (9 as ?order)
+    WHERE {
+      GRAPH <https://lod.humanatlas.io> {
+        ?purl a dcat:Dataset ;
+              schema:name ?name ;
+              schema:additionalType ?type ;
+              prov:wasDerivedFrom [
+                schema:dateCreated ?creation_date ;
+              ] .
         
+        FILTER(?type = '2d-ftu')
         BIND(STRDT(
           IF(CONTAINS(?creation_date, '/'),
             CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
@@ -61,6 +85,5 @@ WHERE {
     GROUP BY ?do_name
   }
 
-
 }
-ORDER BY ?group ?date
+ORDER BY ?order ?date
