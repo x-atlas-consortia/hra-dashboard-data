@@ -36,5 +36,31 @@ WHERE {
     }
     GROUP BY ?tissue_provider
   }
+  UNION
+  # Digital Objects
+  {
+    SELECT DISTINCT ("digital objects" as ?group) (?do_name as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count)
+    WHERE {
+      GRAPH <https://lod.humanatlas.io> {
+        ?purl a dcat:Dataset ;
+              schema:name ?name ;
+              schema:additionalType ?type ;
+              prov:wasDerivedFrom [
+                schema:dateCreated ?creation_date ;
+              ] .
+              
+        
+        BIND(STRDT(
+          IF(CONTAINS(?creation_date, '/'),
+            CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+            STR(?creation_date)
+          ), xsd:date) as ?date)
+        BIND(CONCAT(?type, '/', ?name) as ?do_name)
+      }
+    }
+    GROUP BY ?do_name
+  }
+
+
 }
-ORDER BY ?date
+ORDER BY ?group ?date
