@@ -1,0 +1,40 @@
+#+ summary: HRA Growth Over Time
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?group ?group_value ?date ?count
+WHERE {
+
+  # Tissue Providers
+  {
+    SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count)
+    WHERE {
+      ?donor a ccf:Donor ;
+          ccf:tissue_provider_name ?tissue_provider .
+
+      ?block a ccf:Sample ;
+        ccf:comes_from ?donor ;
+        ccf:has_registration_location ?rui_location .
+
+      ?rui_location a ccf:SpatialEntity ;
+        dcterms:created ?creation_date .
+
+      BIND(STRDT(
+        IF(CONTAINS(?creation_date, '/'),
+          CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+          STR(?creation_date)
+        ), xsd:date) as ?date)
+    }
+    GROUP BY ?tissue_provider
+  }
+}
+ORDER BY ?date
