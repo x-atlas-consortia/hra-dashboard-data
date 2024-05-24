@@ -10,6 +10,7 @@
     {
       "window": [{ "op": "sum", "field": "count", "as": "cumulative_count" }],
       "frame": [null, 0],
+      "groupby": ["group"],
       "sort": [{ "field": "date" }]
     }
   ],
