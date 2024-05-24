@@ -12,7 +12,7 @@ link:
   url': https://www.nature.com/articles/s41556-021-00788-6
   label: Read Paper
 items:
-  - type: CountsContainer
+  - type: MetricsContainer
     items:
       - title: Size of the HRA
         tooltip: I'm a tooltip

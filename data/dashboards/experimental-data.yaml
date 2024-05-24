@@ -11,7 +11,7 @@ link:
   url': https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
   label: Read Paper
 items:
-  - type: CountsContainer
+  - type: MetricsContainer
     items:
       - title: Size of HRA
         tooltip: I'm a tooltip
