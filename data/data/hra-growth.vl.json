@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "mark": { "type": "line", "point": false, "tooltip": true },
+  "transform": [
+    {
+      "window": [{ "op": "sum", "field": "count", "as": "cumulative_count" }],
+      "frame": [null, 0],
+      "sort": [{ "field": "date" }]
+    }
+  ],
+  "encoding": {
+    "x": { "timeUnit": "yearmonth", "field": "date", "title": "Date" },
+    "y": {
+      "field": "cumulative_count",
+      "type": "quantitative",
+      "title": "Cumulative Count"
+    },
+    "color": { "field": "group", "type": "nominal", "title": "Measure" }
+  }
+}

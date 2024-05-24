@@ -55,7 +55,7 @@ items:
       - type: ImageContainer
         title: HRA Growth Per Release
         tooltip: I'm a tooltip
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/placeholder.svg
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
       - type: VegaContainer
         title: Digital Objects Per Organ
         tooltip: I'm a tooltip
