@@ -19,7 +19,8 @@
     "y": {
       "field": "cumulative_count",
       "type": "quantitative",
-      "title": "Cumulative Count"
+      "title": "Cumulative Count",
+      "scale": { "type": "log" }
     },
     "color": { "field": "group", "type": "nominal", "title": "Measure" }
   }
