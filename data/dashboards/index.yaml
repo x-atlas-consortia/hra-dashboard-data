@@ -5,7 +5,7 @@ items:
   - title: Usage
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/usage.yaml
   - title: Diversity & Inclusion
-    url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity.yaml
+    url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
   - title: Publications
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/publications.yaml
   - title: Experimental Data

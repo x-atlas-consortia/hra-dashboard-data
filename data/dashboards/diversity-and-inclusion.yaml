@@ -36,15 +36,15 @@ items:
   - type: ImageContainer
     title: Visualization 1
     tooltip: Comparison of HRA, publication, and experimental to world population data
-    imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/population-pyramids.png
+    imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
   - type: GridContainer
     columns: 2
     items:
       - type: ImageContainer
         title: Visualization 3
         tooltip: Comparison of HRA, publication, and experimental to world population data
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/experts-world-map.png
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/experts-world-map.png
       - type: ImageContainer
         title: Visualization 2
         tooltip: Comparison of HRA, publication, and experimental to world population data
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity/ethnic-composition.png
+        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/ethnic-composition.png

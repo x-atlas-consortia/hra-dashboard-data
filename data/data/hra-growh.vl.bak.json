@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "transform": [
+    {
+      "window": [{ "op": "sum", "field": "count", "as": "cumulative_count" }],
+      "frame": [null, 0],
+      "groupby": ["group"],
+      "sort": [{ "field": "date" }]
+    }
+  ],
+  "encoding": {
+    "x": { "timeUnit": "yearmonth", "field": "date", "title": "Date" },
+    "y": {
+      "field": "cumulative_count",
+      "type": "quantitative",
+      "title": "Cumulative Count",
+      "scale": { "type": "log" }
+    },
+    "color": { "field": "group", "type": "nominal", "title": "Measure", "legend": null }
+  },
+  "layer": [
+    { "mark": { "type": "line", "point": false, "tooltip": true } },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3
+      },
+      "encoding": {
+        "x": { "aggregate": "max", "field": "date", "scale": { "padding": 100 } },
+        "y": { "aggregate": { "argmax": "date" }, "field": "cumulative_count" },
+        "text": { "aggregate": { "argmax": "date" }, "field": "group" }
+      }
+    }
+  ]
+}
