@@ -1,12 +1,17 @@
 type: DashboardIndex
 items:
   - title: Data
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/data.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/data.yaml
   - title: Usage
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/usage.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/usage.yaml
   - title: Diversity & Inclusion
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
   - title: Publications
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/publications.yaml
   - title: Experimental Data
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/experimental-data.yaml
