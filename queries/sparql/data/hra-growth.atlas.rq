@@ -1,0 +1,103 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?group ?date ?count ?order
+WHERE {
+  GRAPH <https://lod.humanatlas.io> {
+    ?purl a dcat:Dataset ;
+          schema:name ?name ;
+          schema:additionalType ?type ;
+          prov:wasDerivedFrom [
+            schema:dateCreated ?creation_date ;
+          ] .
+
+    FILTER(?type = 'collection' && ?name = 'hra')
+    BIND(STRDT(
+      IF(CONTAINS(?creation_date, '/'),
+        CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+        STR(?creation_date)
+      ), xsd:date) as ?date)
+  }
+
+  # Organs
+  {
+    SELECT ?purl ("organs" as ?group) ?date (COUNT(DISTINCT(?refOrgan)) as ?count) (4 as ?order)
+    WHERE {
+      GRAPH ?purl {
+        ?refOrgan a ccf:SpatialEntity ;
+          ccf:has_reference_organ ?refOrgan .
+      }
+    }
+    GROUP BY ?purl ?date
+  }
+  UNION
+  # Anatomical Structures
+  {
+    SELECT ?purl ("anatomical structures" as ?group) ?date (COUNT(DISTINCT(?term)) as ?count) (5 as ?order)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+      }
+    }
+    GROUP BY ?purl ?date
+  }
+  UNION
+  # Cell Types
+  {
+    SELECT ?purl ("cell types" as ?group) ?date (COUNT(DISTINCT(?term)) as ?count) (6 as ?order)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT')
+      }
+    }
+    GROUP BY ?purl ?date
+  }
+  UNION
+  # Biomarkers
+  {
+    SELECT ?purl ("biomarkers" as ?group) ?date (COUNT(DISTINCT(?term)) as ?count) (7 as ?order)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'BM')
+      }
+    }
+    GROUP BY ?purl ?date
+  }
+  UNION
+  # OMAPs
+  {
+    SELECT ?purl ("OMAPs" as ?group) (COUNT(DISTINCT(?memberString)) as ?count) (8 as ?order)
+    WHERE {
+      GRAPH <https://lod.humanatlas.io> {
+        ?purl prov:hadMember ?memberString .
+        FILTER(CONTAINS(?memberString, '/omap/'))
+      }
+    }
+    GROUP BY ?purl
+  }
+  # 2D FTU illustrations
+  UNION
+  {
+    SELECT ?purl ("2D FTU illustrations" as ?group) (COUNT(DISTINCT(?memberString)) as ?count) (9 as ?order)
+    WHERE {
+      GRAPH <https://lod.humanatlas.io> {
+        ?purl prov:hadMember ?memberString .
+        FILTER(CONTAINS(?memberString, '/2d-ftu/'))
+      }
+    }
+    GROUP BY ?purl
+  }
+}
+ORDER BY ?order ?date
