@@ -76,7 +76,7 @@ function parseAtlas() {
 
 function parseHraLit() {
   const entries = readCsv(HRAlit)
-    .filter((row) => row.pubyear && row.pubyear > 2019)
+    .filter((row) => row.pubyear && row.pubyear >= 2019)
     .map((row) => [`${row.pubyear || '0000'}-01-01`, 1]);
   return accumulate('publications', 3, entries);
 }
