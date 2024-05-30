@@ -7,7 +7,7 @@ description: >-
   choropleth map showing the number of paper authors overlaid on a world map.
 link: 
   type: Link
-  url': https://www.biorxiv.org/content/10.1101/2023.10.21.563417v1
+  url: https://www.biorxiv.org/content/10.1101/2023.10.21.563417v1
   label: Read Paper
 items:
   - type: MetricsContainer
