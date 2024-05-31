@@ -8,7 +8,7 @@ description: >-
   quality, and mapped to atlas or not properties.
 link:
   type: Link
-  url': https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
+  url: https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
   label: Read Paper
 items:
   - type: MetricsContainer
