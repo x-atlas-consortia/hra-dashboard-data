@@ -63,5 +63,6 @@ items:
   - type: ImageContainer
     title: HRA v2.1 has 65 organs with 1,218 AS modeled in 3D. Left female kidney has 31 AS.
     tooltip: I'm a tooltip
+    aspectRatio: 3 / 1,
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/as-in-3d.png
     source: https://docs.google.com/presentation/d/1NhNw2k5pIxRDdcN39Kir6-g6VYh-jjV2KHn_A4-Izgg/edit#slide=id.g2ae959ca31e_0_300
