@@ -52,10 +52,10 @@ items:
   - type: GridContainer
     columns: 2
     items:
-      - type: ImageContainer
+      - type: VegaContainer
         title: HRA Growth Per Release
         tooltip: I'm a tooltip
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
+        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
       - type: VegaContainer
         title: Digital Objects Per Organ
         tooltip: I'm a tooltip
