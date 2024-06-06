@@ -41,7 +41,7 @@ WHERE {
     FILTER(?svgMediaType = 'image/svg+xml')
   }
 
-  {
+  OPTIONAL {
     ?purl a dcat:Dataset ;
         prov:wasDerivedFrom [
           dcat:distribution [
@@ -63,8 +63,8 @@ WHERE {
           ] ;
         ] .
 
-    BIND(REPLACE(STR(?pngDownload), '.ai', '.png') as ?png)
-    FILTER(?pngMediaType = 'application/postscript')
+    BIND(REPLACE(STR(?pngDownload), '.svg', '.png') as ?png)
+    FILTER(?pngMediaType = 'image/svg+xml')
     #FILTER(?pngMediaType = 'image/png')
   }
 

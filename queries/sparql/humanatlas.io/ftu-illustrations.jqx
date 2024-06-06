@@ -14,6 +14,6 @@ group_by(.version) | sort_by(first.version) | reverse |
         svg: .svg,
         ai: .ai,
         png: .png
-      }) | sort_by(.name)
+      }) | del(..|nulls) | sort_by(.name)
     })
   })

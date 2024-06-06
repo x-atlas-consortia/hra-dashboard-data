@@ -608,3 +608,89 @@
           svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.1/assets/2d-ftu-thymus-thymus-lobule.svg
           ai: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.1/assets/2d-ftu-thymus-thymus-lobule.ai
           png: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.1/assets/2d-ftu-thymus-thymus-lobule.png
+- version: '1.2'
+  organData:
+    - name: Kidney
+      image: assets/images/kidney.svg
+      alt: Kidney icon
+      tissueData:
+        - name: Nephron
+          alt: Image of Nephron
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-nephron/v1.0/assets/nephron_kidney.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-nephron/v1.0/assets/nephron_kidney.svg
+          url: https://purl.humanatlas.io/2d-ftu/kidney-nephron/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-nephron/v1.0/assets/nephron_kidney.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-nephron/v1.0/assets/nephron_kidney.png
+        - name: Renal Corpuscle
+          alt: Image of Renal Corpuscle
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-renal-corpuscle/v1.0/assets/renal_corpuscle_kidney.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-renal-corpuscle/v1.0/assets/renal_corpuscle_kidney.svg
+          url: https://purl.humanatlas.io/2d-ftu/kidney-renal-corpuscle/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-renal-corpuscle/v1.0/assets/renal_corpuscle_kidney.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/kidney-renal-corpuscle/v1.0/assets/renal_corpuscle_kidney.png
+    - name: Large Intestine
+      image: assets/images/large_intestine.svg
+      alt: Large Intestine icon
+      tissueData:
+        - name: Crypt of Lieberkuhn
+          alt: Image of Crypt of Lieberkuhn
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/large-intestine-crypt-lieberkuhn/v1.0/assets/crypt_lieberkuhn_large_intestine.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/large-intestine-crypt-lieberkuhn/v1.0/assets/crypt_lieberkuhn_large_intestine.svg
+          url: https://purl.humanatlas.io/2d-ftu/large-intestine-crypt-lieberkuhn/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/large-intestine-crypt-lieberkuhn/v1.0/assets/crypt_lieberkuhn_large_intestine.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/large-intestine-crypt-lieberkuhn/v1.0/assets/crypt_lieberkuhn_large_intestine.png
+    - name: Liver
+      image: assets/images/liver.svg
+      alt: Liver icon
+      tissueData:
+        - name: Liver Lobule
+          alt: Image of Liver Lobule
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/liver-liver-lobule/v1.0/assets/liver_lobule_liver.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/liver-liver-lobule/v1.0/assets/liver_lobule_liver.svg
+          url: https://purl.humanatlas.io/2d-ftu/liver-liver-lobule/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/liver-liver-lobule/v1.0/assets/liver_lobule_liver.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/liver-liver-lobule/v1.0/assets/liver_lobule_liver.png
+    - name: Lung
+      image: assets/images/lung.svg
+      alt: Lung icon
+      tissueData:
+        - name: Pulmonary Alveolus
+          alt: Image of Pulmonary Alveolus
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/lung-pulmonary-alveolus/v1.0/assets/pulmonary_alveolus_lung.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/lung-pulmonary-alveolus/v1.0/assets/pulmonary_alveolus_lung.svg
+          url: https://purl.humanatlas.io/2d-ftu/lung-pulmonary-alveolus/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/lung-pulmonary-alveolus/v1.0/assets/pulmonary_alveolus_lung.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/lung-pulmonary-alveolus/v1.0/assets/pulmonary_alveolus_lung.png
+    - name: Pancreas
+      image: assets/images/pancreas.svg
+      alt: Pancreas icon
+      tissueData:
+        - name: Islets of Langerhans
+          alt: Image of Islets of Langerhans
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/pancreas-islets-langerhans/v1.0/assets/islets_langerhans_pancreas.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/pancreas-islets-langerhans/v1.0/assets/islets_langerhans_pancreas.svg
+          url: https://purl.humanatlas.io/2d-ftu/pancreas-islets-langerhans/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/pancreas-islets-langerhans/v1.0/assets/islets_langerhans_pancreas.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/pancreas-islets-langerhans/v1.0/assets/islets_langerhans_pancreas.png
+    - name: Prostate
+      image: assets/images/prostate.svg
+      alt: Prostate icon
+      tissueData:
+        - name: Prostate Glandular Acinus
+          alt: Image of Prostate Glandular Acinus
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/prostate-prostate-glandular-acinus/v1.0/assets/prostate_glandular_acinus_prostate.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/prostate-prostate-glandular-acinus/v1.0/assets/prostate_glandular_acinus_prostate.svg
+          url: https://purl.humanatlas.io/2d-ftu/prostate-prostate-glandular-acinus/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/prostate-prostate-glandular-acinus/v1.0/assets/prostate_glandular_acinus_prostate.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/prostate-prostate-glandular-acinus/v1.0/assets/prostate_glandular_acinus_prostate.png
+    - name: Thymus
+      image: assets/images/thymus.svg
+      alt: Thymus icon
+      tissueData:
+        - name: Thymus Lobule
+          alt: Image of Thymus Lobule
+          image: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.0/assets/thymus_lobule_thymus.png
+          expandedImage: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.0/assets/thymus_lobule_thymus.svg
+          url: https://purl.humanatlas.io/2d-ftu/thymus-thymus-lobule/v1.0
+          svg: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.0/assets/thymus_lobule_thymus.svg
+          png: https://cdn.humanatlas.io/digital-objects/2d-ftu/thymus-thymus-lobule/v1.0/assets/thymus_lobule_thymus.png
