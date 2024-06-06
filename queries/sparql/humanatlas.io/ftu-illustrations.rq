@@ -1,0 +1,123 @@
+#+ summary: Digital objects counts in the latest HRA release
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT DISTINCT ?version (?organ as ?nameOrgan) ?image (CONCAT(?organ, ' icon') as ?imageAlt) ?name (CONCAT('Image of ',?name) as ?alt) (?purl as ?url) ?svg ?ai ?png
+FROM <https://lod.humanatlas.io>
+WHERE {
+  {
+    ?purl a dcat:Dataset ;
+        schema:name ?doName ;
+        schema:additionalType ?type ;
+        prov:wasDerivedFrom [
+          schema:dateCreated ?creation_date ;
+          dcterms:title ?title ;
+        ] .
+
+    BIND(STRAFTER(STRBEFORE(REPLACE(REPLACE(STR(?title), "Functional Tissue Unit \\(FTU\\) ", ""), " FTU", ""), " for "), "2D ") as ?name)
+    BIND(STRAFTER(STR(?title), " for ") as ?organ)
+
+    FILTER(?type = '2d-ftu' && ?doName != 'asct-b-2d-models-crosswalk')
+  }
+
+  {
+    ?purl a dcat:Dataset ;
+        prov:wasDerivedFrom [
+          dcat:distribution [
+            dcat:downloadURL ?svgDownload ;
+            dcat:mediaType ?svgMediaType ;
+          ] ;
+        ] .
+
+    BIND(?svgDownload as ?svg)
+    FILTER(?svgMediaType = 'image/svg+xml')
+  }
+
+  {
+    ?purl a dcat:Dataset ;
+        prov:wasDerivedFrom [
+          dcat:distribution [
+            dcat:downloadURL ?aiDownload ;
+            dcat:mediaType ?aiMediaType ;
+          ] ;
+        ] .
+
+    BIND(?aiDownload as ?ai)
+    FILTER(?aiMediaType = 'application/postscript')
+  }
+
+  {
+    ?purl a dcat:Dataset ;
+        prov:wasDerivedFrom [
+          dcat:distribution [
+            dcat:downloadURL ?pngDownload ;
+            dcat:mediaType ?pngMediaType ;
+          ] ;
+        ] .
+
+    BIND(REPLACE(STR(?pngDownload), '.ai', '.png') as ?png)
+    FILTER(?pngMediaType = 'application/postscript')
+    #FILTER(?pngMediaType = 'image/png')
+  }
+
+  {
+    SELECT ?release ?version ?purl
+    WHERE {
+      ?release a dcat:Dataset ;
+        schema:name ?releaseName ;
+        schema:additionalType ?releaseType ;
+        schema:version ?versionStr ;
+        prov:hadMember ?purlStr ;
+      .
+
+      BIND(REPLACE(?versionStr, 'v', '') as ?version)
+      BIND(URI(STR(?purlStr)) as ?purl)
+      # FILTER(?releaseType = 'collection' && ?releaseName = 'hra' && ?versionStr = 'v2.0')
+    }
+  }
+
+  OPTIONAL {
+    VALUES (?organ ?image) {
+      ("Blood Vasculature" "assets/images/blood_vasculature.svg")
+      ("Brain" "assets/images/brain.svg")
+      ("Mammary Gland" "assets/images/mammary_gland.svg")
+      ("Eye" "assets/images/eye.svg")
+      ("Fallopian Tube" "assets/images/fallopian_tube.svg")
+      ("Heart" "assets/images/heart.svg")
+      ("Kidney" "assets/images/kidney.svg")
+      ("Knee" "assets/images/knee.svg")
+      ("Large Intestine" "assets/images/large_intestine.svg")
+      ("Intestine" "assets/images/large_intestine.svg")
+      ("Larynx" "assets/images/larynx.svg")
+      ("Liver" "assets/images/liver.svg")
+      ("Lung" "assets/images/lung.svg")
+      ("Lymph Node" "assets/images/lymph_node.svg")
+      ("Main Bronchus" "assets/images/extrapulmonaryBronchus.svg")
+      ("Ovary" "assets/images/ovary.svg")
+      ("Palatine Tonsil" "assets/images/palatineTonsil.svg")
+      ("Pancreas" "assets/images/pancreas.svg")
+      ("Pelvis" "assets/images/bone_marrow.svg")
+      ("Placenta" "assets/images/placenta.svg")
+      ("Prostate" "assets/images/prostate.svg")
+      ("Skin" "assets/images/skin.svg")
+      ("Small Intestine" "assets/images/small_intestine.svg")
+      ("Spinal Cord" "assets/images/spinal_cord.svg")
+      ("Spleen" "assets/images/spleen.svg")
+      ("Thymus" "assets/images/thymus.svg")
+      ("Trachea" "assets/images/trachea.svg")
+      ("All Organs" "assets/images/all_organs.svg")
+      ("Ureter" "assets/images/ureter.svg")
+      ("Urinary Bladder" "assets/images/urinary_bladder.svg")
+      ("Uterus" "assets/images/uterus.svg")
+    }
+  }
+}
+ORDER BY ?version ?organ ?name

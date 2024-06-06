@@ -1,0 +1,19 @@
+group_by(.version) | sort_by(first.version) | reverse | 
+  map({
+    version:first.version,
+    organData: group_by(.nameOrgan) | sort_by(first.nameOrgan) | map({
+      name: first.nameOrgan,
+      image: first.image,
+      alt: first.imageAlt,
+      tissueData: map({
+        name: .name,
+        alt: .alt,
+        image: .png,
+        expandedImage: .svg,
+        url: .url,
+        svg: .svg,
+        ai: .ai,
+        png: .png
+      }) | sort_by(.name)
+    })
+  })
