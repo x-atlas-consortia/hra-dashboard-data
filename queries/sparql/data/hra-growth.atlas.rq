@@ -94,7 +94,7 @@ WHERE {
     WHERE {
       GRAPH <https://lod.humanatlas.io> {
         ?purl prov:hadMember ?memberString .
-        FILTER(CONTAINS(?memberString, '/2d-ftu/'))
+        FILTER(CONTAINS(?memberString, '/2d-ftu/') && !CONTAINS(?memberString, 'crosswalk'))
       }
     }
     GROUP BY ?purl
