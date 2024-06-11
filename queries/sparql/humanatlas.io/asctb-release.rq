@@ -11,9 +11,46 @@ PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
 
-SELECT ?Organ ?csv ?table_version ?AS ?CT ?B_Total ?BG ?BP ?BM ?BF ?BL
-  ?ASWithNoLink ?CTWithNoLink ?BWithNoLink ?ASWithNoCT ?CTWithNoB ?AS_AS ?AS_CT ?CT_BM
+SELECT ?Organ ?csv ?table_version
+  (COALESCE(?AS, 0) as ?AS)
+  (COALESCE(?CT, 0) as ?CT)
+  (COALESCE(?B_Total, 0) as ?B_Total)
+  (COALESCE(?BG, 0) as ?BG)
+  (COALESCE(?BP, 0) as ?BP)
+  (COALESCE(?BM, 0) as ?BM)
+  (COALESCE(?BF, 0) as ?BF)
+  (COALESCE(?BL, 0) as ?BL)
+  (COALESCE(?ASWithNoLink, 0) as ?ASWithNoLink)
+  (COALESCE(?CTWithNoLink, 0) as ?CTWithNoLink)
+  (COALESCE(?BWithNoLink, 0) as ?BWithNoLink)
+  (COALESCE(?ASWithNoCT, 0) as ?ASWithNoCT)
+  (COALESCE(?CTWithNoB, 0) as ?CTWithNoB)
+  (COALESCE(?AS_AS, 0) as ?AS_AS)
+  (COALESCE(?AS_CT, 0) as ?AS_CT)
+  (COALESCE(?CT_BM, 0) as ?CT_BM)
   (?graphAndVersion as ?url)
+
+WITH {
+  SELECT DISTINCT ?purl ?term ?biomarker
+  WHERE {    
+    GRAPH ?purl {
+      ?graph a owl:Ontology .
+      FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+      ?term rdfs:subClassOf [
+          owl:onProperty has_characterizing_biomarker_set: ;
+          owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
+      ?bn3 (rdf:rest)*/rdf:first [
+        owl:onProperty ccf:has_marker_component ;
+        owl:someValuesFrom ?biomarker
+      ] .
+
+      hint:Group hint:optimizer "Runtime".
+    }
+    hint:Query hint:analytic "true" .
+  }
+} AS %ct_bm
+
 WHERE {
   hint:Query hint:analytic "true" .
 
@@ -44,10 +81,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?AS)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'AS')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -56,10 +95,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?CT)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'CT')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -68,10 +109,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?B_Total)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'BM')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -80,11 +123,13 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BG)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type ;
         ccf:ccf_biomarker_type ?bm_type .
         FILTER(?asctb_type = 'BM' && ?bm_type = 'gene')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -93,11 +138,13 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BP)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type ;
         ccf:ccf_biomarker_type ?bm_type .
         FILTER(?asctb_type = 'BM' && ?bm_type = 'protein')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -106,11 +153,13 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BM)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type ;
         ccf:ccf_biomarker_type ?bm_type .
         FILTER(?asctb_type = 'BM' && ?bm_type = 'metabolites')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -119,11 +168,13 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BF)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type ;
         ccf:ccf_biomarker_type ?bm_type .
         FILTER(?asctb_type = 'BM' && ?bm_type = 'proteoforms')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -132,11 +183,13 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BL)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type ;
         ccf:ccf_biomarker_type ?bm_type .
         FILTER(?asctb_type = 'BM' && ?bm_type = 'lipids')
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -145,10 +198,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoLink)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'AS' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -157,10 +212,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoLink)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'CT' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -169,10 +226,12 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?BWithNoLink)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'BM' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -181,6 +240,9 @@ WHERE {
     SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoCT)
     WHERE {
       GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
         ?term ccf:ccf_asctb_type ?asctb_type .
         FILTER(?asctb_type = 'AS')
 
@@ -197,42 +259,43 @@ WHERE {
           HAVING(?links = 0)
         }
       }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoB)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT')
+
+        FILTER NOT EXISTS {
+          INCLUDE %ct_bm
+        }
+      }
       FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
 
-  # OPTIONAL {
-  #   SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoB)
-  #   WHERE {
-  #     GRAPH ?purl {
-  #       ?term ccf:ccf_asctb_type ?asctb_type .
-  #       FILTER(?asctb_type = 'CT')
-
-  #       FILTER NOT EXISTS {
-  #         {
-  #           ?term rdfs:subClassOf [
-  #             owl:onProperty has_characterizing_biomarker_set: ;
-  #             owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
-  #           ?bn3 rdf:rest*/rdf:first [
-  #             owl:onProperty ccf:has_marker_component ;
-  #             owl:someValuesFrom ?biomarker
-  #           ] .
-  #         }
-  #       }
-  #     }
-  #     FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
-  #   }
-  #   GROUP BY ?purl
-  # }
-
   OPTIONAL {
     SELECT ?purl (COUNT(*) as ?AS_AS)
     WHERE {
-      GRAPH ?purl {
-        [] ccf:ccf_part_of [] .
+      {
+        SELECT DISTINCT ?purl ?as1 ?as2
+        WHERE {
+          GRAPH ?purl {
+            ?graph a owl:Ontology .
+            FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+            ?as1 ccf:ccf_part_of ?as2 .
+          }
+        }
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
@@ -240,34 +303,27 @@ WHERE {
   OPTIONAL {
     SELECT ?purl (COUNT(*) as ?AS_CT)
     WHERE {
-      GRAPH ?purl {
-        [] ccf:ccf_located_in [] .
+      {
+        SELECT DISTINCT ?purl ?as ?ct
+        WHERE {
+          GRAPH ?purl {
+            ?graph a owl:Ontology .
+            FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+            ?ct ccf:ccf_located_in ?as .
+          }
+        }
       }
-      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
     }
     GROUP BY ?purl
   }
 
-  # OPTIONAL {
-  #   SELECT ?purl (COUNT(*) as ?CT_BM)
-  #   WHERE {
-  #     GRAPH ?purl {
-  #       ?term ccf:ccf_asctb_type ?asctb_type .
-  #       FILTER(?asctb_type = 'CT')
-
-  #       ?biomarker ccf:ccf_asctb_type ?biomarker_type .
-  #       FILTER(?biomarker_type = 'BM')
-
-  #       ?term rdfs:subClassOf [
-  #         owl:onProperty has_characterizing_biomarker_set: ;
-  #         owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
-  #       ?bn3 rdf:rest*/rdf:first [
-  #         owl:onProperty ccf:has_marker_component ;
-  #         owl:someValuesFrom ?biomarker
-  #       ] .
-  #     }
-  #     FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
-  #   }
-  #   GROUP BY ?purl
-  # }
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?CT_BM)
+    WHERE {
+      INCLUDE %ct_bm
+    }
+    GROUP BY ?purl
+  }
 }
+ORDER BY ?purl
