@@ -1,0 +1,273 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+
+SELECT ?Organ ?csv ?table_version ?AS ?CT ?B_Total ?BG ?BP ?BM ?BF ?BL
+  ?ASWithNoLink ?CTWithNoLink ?BWithNoLink ?ASWithNoCT ?CTWithNoB ?AS_AS ?AS_CT ?CT_BM
+  (?graphAndVersion as ?url)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRA: {
+    HRA: prov:hadMember ?graphAndVersion .
+  }
+  GRAPH <https://lod.humanatlas.io> {
+    ?graphAndVersion a dcat:Dataset ;
+      schema:name ?name ;
+      schema:additionalType ?type ;
+      schema:version ?table_version ;
+    .
+    FILTER(?type = 'asct-b' && !CONTAINS(?name, '-crosswalk'))
+    BIND(IRI(CONCAT('https://purl.humanatlas.io/asct-b/', ?name)) as ?purl)
+    BIND(IRI(CONCAT(STR(?graphAndVersion), '#raw-data')) as ?rawData)
+    BIND(REPLACE(?name, '-', ' ') as ?Organ)
+
+    ?graphAndVersion prov:wasDerivedFrom [
+      dcat:distribution [
+        dcat:downloadURL ?csv ;
+        dcat:mediaType ?mediaType ;
+      ]
+    ] .
+    FILTER(?mediaType = 'text/csv')
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?AS)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CT)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?B_Total)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'BM')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BG)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'gene')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BP)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'protein')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BM)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'metabolites')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BF)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'proteoforms')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BL)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'lipids')
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'BM' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoCT)
+    WHERE {
+      GRAPH ?purl {
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+
+        GRAPH ?purl {
+          SELECT ?term (COUNT(DISTINCT(?ct)) as ?links)
+          WHERE {
+            ?term ccf:ccf_asctb_type ?asctb_type .
+            FILTER(?asctb_type = 'AS')
+            OPTIONAL {
+              ?ct ccf:ccf_located_in ?term .
+            }
+          }
+          GROUP BY ?term
+          HAVING(?links = 0)
+        }
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  # OPTIONAL {
+  #   SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoB)
+  #   WHERE {
+  #     GRAPH ?purl {
+  #       ?term ccf:ccf_asctb_type ?asctb_type .
+  #       FILTER(?asctb_type = 'CT')
+
+  #       FILTER NOT EXISTS {
+  #         {
+  #           ?term rdfs:subClassOf [
+  #             owl:onProperty has_characterizing_biomarker_set: ;
+  #             owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
+  #           ?bn3 rdf:rest*/rdf:first [
+  #             owl:onProperty ccf:has_marker_component ;
+  #             owl:someValuesFrom ?biomarker
+  #           ] .
+  #         }
+  #       }
+  #     }
+  #     FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+  #   }
+  #   GROUP BY ?purl
+  # }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?AS_AS)
+    WHERE {
+      GRAPH ?purl {
+        [] ccf:ccf_part_of [] .
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?AS_CT)
+    WHERE {
+      GRAPH ?purl {
+        [] ccf:ccf_located_in [] .
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  # OPTIONAL {
+  #   SELECT ?purl (COUNT(*) as ?CT_BM)
+  #   WHERE {
+  #     GRAPH ?purl {
+  #       ?term ccf:ccf_asctb_type ?asctb_type .
+  #       FILTER(?asctb_type = 'CT')
+
+  #       ?biomarker ccf:ccf_asctb_type ?biomarker_type .
+  #       FILTER(?biomarker_type = 'BM')
+
+  #       ?term rdfs:subClassOf [
+  #         owl:onProperty has_characterizing_biomarker_set: ;
+  #         owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
+  #       ?bn3 rdf:rest*/rdf:first [
+  #         owl:onProperty ccf:has_marker_component ;
+  #         owl:someValuesFrom ?biomarker
+  #       ] .
+  #     }
+  #     FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+  #   }
+  #   GROUP BY ?purl
+  # }
+}

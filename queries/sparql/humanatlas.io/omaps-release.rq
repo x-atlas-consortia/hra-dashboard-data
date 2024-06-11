@@ -1,0 +1,106 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX body: <http://purl.obolibrary.org/obo/UBERON_0013702>
+
+SELECT ?omapId (?graphAndVersion as ?url)
+  ?organ ?tissuePreservationMethod ?imagingMethod
+  ?csv ?xlsx ('TODO: Ellen fills in' as ?representativeDataset)
+  ?as ?ct ?bp
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRA: {
+    HRA: prov:hadMember ?graphAndVersion .
+  }
+  GRAPH <https://lod.humanatlas.io> {
+    ?graphAndVersion a dcat:Dataset ;
+      schema:name ?name ;
+      schema:additionalType ?type ;
+      schema:version ?table_version ;
+    .
+    FILTER(?type = 'omap' && !CONTAINS(?name, '-crosswalk'))
+    BIND(IRI(CONCAT('https://purl.humanatlas.io/omap/', ?name)) as ?purl)
+    BIND(IRI(CONCAT(STR(?graphAndVersion), '#raw-data')) as ?rawData)
+    BIND(REPLACE(?name, '-', ' ') as ?Organ)
+    BIND(CONCAT('OMAP-', STRBEFORE(?name, '-')) as ?omapId)
+    BIND(xsd:integer(STRBEFORE(?name, '-')) as ?omapOrder)
+
+    ?graphAndVersion prov:wasDerivedFrom [
+      dcat:distribution [
+        dcat:downloadURL ?csv ;
+        dcat:mediaType ?mediaType ;
+      ]
+    ] .
+    FILTER(?mediaType = 'text/csv')
+
+    ?graphAndVersion prov:wasDerivedFrom [
+      dcat:distribution [
+        dcat:downloadURL ?xlsx ;
+        dcat:mediaType ?xlsxMediaType ;
+      ]
+    ] .
+    FILTER(?xlsxMediaType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+  }
+
+  GRAPH ?purl {
+    [] a ccf:MultiplexedAntibodyBasedImagingExperiment ;
+      ccf:sample_organ [ rdfs:label ?organ ] ;
+      ccf:tissue_preservation ?tissuePreservationMethod ;
+      ccf:method ?imagingMethod ;
+    .
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?bp)
+    WHERE {
+      GRAPH ?purl {
+        [] ccf:detects ?term .
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  # AS and CT are provided by SMEs at this time.
+  # OPTIONAL {
+  #   SELECT ?purl (COUNT(DISTINCT(?as_)) as ?as) (COUNT(DISTINCT(?term)) as ?ct)
+  #   WHERE {
+  #     GRAPH ?purl {
+  #       [] ccf:detects ?biomarker .
+
+  #       [] a ccf:MultiplexedAntibodyBasedImagingExperiment ;
+  #         ccf:sample_organ [ rdfs:label ?organ ] ;
+  #     }
+  #     GRAPH ?purl2 {
+  #       ?term ccf:ccf_asctb_type ?asctb_type ;
+  #         ccf:ccf_biomarker_type ?bm_type .
+  #       FILTER(?asctb_type = 'BM' && ?bm_type = 'protein')
+
+  #       ?term rdfs:subClassOf [
+  #         owl:onProperty has_characterizing_biomarker_set: ;
+  #         owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
+  #       ?bn3 rdf:rest*/rdf:first [
+  #         owl:onProperty ccf:has_marker_component ;
+  #         owl:someValuesFrom ?biomarker
+  #       ] .
+
+  #       ?term ccf:ccf_located_in ?as_ .
+  #       ?as_ ccf:ccf_part_of ?organ .
+
+  #       hint:SubQuery hint:runOnce true;
+  #     }
+  #     FILTER(CONTAINS(STR(?purl2), '/asct-b/'))
+  #   }
+  #   GROUP BY ?purl
+  # }
+}
+ORDER BY ?omapOrder
