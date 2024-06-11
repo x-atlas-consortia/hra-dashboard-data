@@ -3,6 +3,7 @@ anatomical systems,ASCT+B Table,1
 blood pelvis,ASCT+B Table,1
 blood vasculature,ASCT+B Table,1
 blood vasculature,3D Reference Organ,2
+body proper,3D Reference Organ,2
 bone marrow,ASCT+B Table,1
 bonemarrow pelvis,ASCT+B Table,1
 brain,ASCT+B Table,1
@@ -15,25 +16,21 @@ fallopian tube,3D Reference Organ,2
 heart,ASCT+B Table,1
 heart,3D Reference Organ,2
 kidney,ASCT+B Table,1
-kidney,2D FTU Illustration,8
 kidney,3D Reference Organ,4
-kidney,OMAP,2
+kidney,OMAP,4
 knee,ASCT+B Table,1
 knee,3D Reference Organ,4
 large intestine,ASCT+B Table,1
-large intestine,2D FTU Illustration,1
 large intestine,3D Reference Organ,2
 liver,ASCT+B Table,1
-liver,2D FTU Illustration,1
 liver,3D Reference Organ,2
 liver,OMAP,1
 lung,ASCT+B Table,1
-lung,2D FTU Illustration,2
 lung,3D Reference Organ,2
-lung,OMAP,1
+lung,OMAP,2
 lymph node,ASCT+B Table,1
 lymph node,3D Reference Organ,2
-lymph node,OMAP,1
+lymph node,OMAP,2
 lymph vasculature,ASCT+B Table,1
 main bronchus,ASCT+B Table,1
 main bronchus,3D Reference Organ,4
@@ -41,9 +38,8 @@ muscular system,ASCT+B Table,1
 ovary,ASCT+B Table,1
 ovary,3D Reference Organ,2
 palatine tonsil,ASCT+B Table,1
-palatine tonsil,OMAP,1
+palatine tonsil,OMAP,3
 pancreas,ASCT+B Table,1
-pancreas,2D FTU Illustration,3
 pancreas,3D Reference Organ,2
 pancreas,OMAP,2
 pelvis,3D Reference Organ,2
@@ -52,24 +48,19 @@ placenta,ASCT+B Table,1
 placenta,3D Reference Organ,1
 placenta,OMAP,1
 prostate gland,ASCT+B Table,1
-prostate gland,2D FTU Illustration,1
 prostate gland,3D Reference Organ,1
 skeleton,ASCT+B Table,1
 skin,ASCT+B Table,1
-skin,2D FTU Illustration,4
 skin,3D Reference Organ,4
 skin,OMAP,2
 small intestine,ASCT+B Table,1
-small intestine,2D FTU Illustration,2
 small intestine,3D Reference Organ,4
 spinal cord,ASCT+B Table,1
 spinal cord,3D Reference Organ,2
 spleen,ASCT+B Table,1
-spleen,2D FTU Illustration,2
 spleen,3D Reference Organ,2
 spleen,OMAP,1
 thymus,ASCT+B Table,1
-thymus,2D FTU Illustration,2
 thymus,3D Reference Organ,4
 trachea,ASCT+B Table,1
 trachea,3D Reference Organ,2

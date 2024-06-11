@@ -3,6 +3,8 @@ shopt -s extglob
 set -ev
 
 ENDPOINT=https://lod.humanatlas.io/sparql
+# ENDPOINT=http://localhost:8080/blazegraph/namespace/kb/sparql
+
 HRALIT_PUBS=https://api.figshare.com/v2/file/download/44343890
 SOPs="https://zenodo.org/api/communities/ef4a7af8-55bb-4304-9ea4-80c5186236c9/records?q=&sort=newest&page=1&size=50"
 

@@ -1,35 +1,542 @@
-Organ,csv,table_version,AS,CT,B_Total,BG,BP,BM,BF,BL,ASWithNoLink,CTWithNoLink,BWithNoLink,ASWithNoCT,CTWithNoB,AS_AS,AS_CT,CT_BM,url
-allen brain,https://cdn.humanatlas.io/digital-objects/asct-b/allen-brain/v1.6/assets/asct-b-allen-brain.csv,v1.6,194,623,773,773,0,0,0,0,18,1,133,175,40,194,2463,1664,https://purl.humanatlas.io/asct-b/allen-brain/v1.6
-anatomical systems,https://cdn.humanatlas.io/digital-objects/asct-b/anatomical-systems/v1.0/assets/asct-b-vh-anatomical-systems.csv,v1.0,86,2,1,1,0,0,0,0,0,0,0,44,2,89,0,0,https://purl.humanatlas.io/asct-b/anatomical-systems/v1.0
-blood pelvis,https://cdn.humanatlas.io/digital-objects/asct-b/blood-pelvis/v1.4/assets/asct-b-vh-blood-pelvis.csv,v1.4,6,31,140,106,34,0,0,0,0,0,0,5,8,3,29,304,https://purl.humanatlas.io/asct-b/blood-pelvis/v1.4
-blood vasculature,https://cdn.humanatlas.io/digital-objects/asct-b/blood-vasculature/v1.6/assets/asct-b-vh-blood-vasculature.csv,v1.6,1059,12,11,11,0,0,0,0,224,0,0,4,8,1082,3673,11,https://purl.humanatlas.io/asct-b/blood-vasculature/v1.6
-bone marrow,https://cdn.humanatlas.io/digital-objects/asct-b/bone-marrow/v1.5/assets/asct-b-vh-bone-marrow.csv,v1.5,5,49,231,179,52,0,0,0,0,0,0,4,7,1,47,558,https://purl.humanatlas.io/asct-b/bone-marrow/v1.5
-bonemarrow pelvis,https://cdn.humanatlas.io/digital-objects/asct-b/bonemarrow-pelvis/v1.3/assets/asct-b-vh-bonemarrow-pelvis.csv,v1.3,6,49,231,179,52,0,0,0,0,4,1,5,7,3,47,558,https://purl.humanatlas.io/asct-b/bonemarrow-pelvis/v1.3
-eye,https://cdn.humanatlas.io/digital-objects/asct-b/eye/v1.3/assets/asct-b-vh-eye.csv,v1.3,45,57,152,59,78,2,5,8,3,8,37,15,14,42,171,169,https://purl.humanatlas.io/asct-b/eye/v1.3
-fallopian tube,https://cdn.humanatlas.io/digital-objects/asct-b/fallopian-tube/v1.3/assets/asct-b-fallopian-tube.csv,v1.3,78,21,27,14,13,0,0,0,63,1,0,48,4,78,216,27,https://purl.humanatlas.io/asct-b/fallopian-tube/v1.3
-heart,https://cdn.humanatlas.io/digital-objects/asct-b/heart/v1.4/assets/asct-b-vh-heart.csv,v1.4,56,30,46,46,0,0,0,0,1,0,1,4,8,66,313,77,https://purl.humanatlas.io/asct-b/heart/v1.4
-kidney,https://cdn.humanatlas.io/digital-objects/asct-b/kidney/v1.5/assets/asct-b-vh-kidney.csv,v1.5,67,72,187,186,1,0,0,0,2,3,0,6,4,76,260,330,https://purl.humanatlas.io/asct-b/kidney/v1.5
-knee,https://cdn.humanatlas.io/digital-objects/asct-b/knee/v1.3/assets/asct-b-vh-knee.csv,v1.3,12,13,29,29,0,0,0,0,0,9,0,6,3,9,66,30,https://purl.humanatlas.io/asct-b/knee/v1.3
-large intestine,https://cdn.humanatlas.io/digital-objects/asct-b/large-intestine/v1.3/assets/asct-b-vh-large-intestine.csv,v1.3,58,60,93,91,2,0,0,0,0,3,8,4,2,159,864,188,https://purl.humanatlas.io/asct-b/large-intestine/v1.3
-liver,https://cdn.humanatlas.io/digital-objects/asct-b/liver/v1.3/assets/asct-b-vh-liver.csv,v1.3,21,32,70,27,43,0,0,0,1,2,1,5,4,17,98,99,https://purl.humanatlas.io/asct-b/liver/v1.3
-lung,https://cdn.humanatlas.io/digital-objects/asct-b/lung/v1.5/assets/asct-b-vh-lung.csv,v1.5,58,76,259,223,36,0,0,0,0,0,0,6,2,73,544,677,https://purl.humanatlas.io/asct-b/lung/v1.5
-lymph node,https://cdn.humanatlas.io/digital-objects/asct-b/lymph-node/v1.4/assets/asct-b-vh-lymph-node.csv,v1.4,39,47,163,91,72,0,0,0,0,0,0,4,2,44,228,405,https://purl.humanatlas.io/asct-b/lymph-node/v1.4
-lymph vasculature,https://cdn.humanatlas.io/digital-objects/asct-b/lymph-vasculature/v1.5/assets/asct-b-vh-lymph-vasculature.csv,v1.5,122,3,2,2,0,0,0,0,72,0,0,4,2,122,118,1,https://purl.humanatlas.io/asct-b/lymph-vasculature/v1.5
-main bronchus,https://cdn.humanatlas.io/digital-objects/asct-b/main-bronchus/v1.2/assets/asct-b-vh-main-bronchus.csv,v1.2,19,21,91,75,16,0,0,0,0,0,0,5,2,15,46,187,https://purl.humanatlas.io/asct-b/main-bronchus/v1.2
-muscular system,https://cdn.humanatlas.io/digital-objects/asct-b/muscular-system/v1.2/assets/asct-b-vh-muscular-system.csv,v1.2,386,3,1,1,0,0,0,0,76,0,0,4,3,388,382,0,https://purl.humanatlas.io/asct-b/muscular-system/v1.2
-ovary,https://cdn.humanatlas.io/digital-objects/asct-b/ovary/v1.3/assets/asct-b-vh-ovary.csv,v1.3,81,18,16,1,14,0,0,1,42,11,4,23,15,166,420,15,https://purl.humanatlas.io/asct-b/ovary/v1.3
-palatine tonsil,https://cdn.humanatlas.io/digital-objects/asct-b/palatine-tonsil/v1.1/assets/asct-b-vh-palatine-tonsil.csv,v1.1,25,19,45,11,34,0,0,0,7,4,0,9,2,21,82,89,https://purl.humanatlas.io/asct-b/palatine-tonsil/v1.1
-pancreas,https://cdn.humanatlas.io/digital-objects/asct-b/pancreas/v1.3/assets/asct-b-vh-pancreas.csv,v1.3,33,32,56,55,1,0,0,0,0,2,0,10,10,36,253,73,https://purl.humanatlas.io/asct-b/pancreas/v1.3
-peripheral nervous system,https://cdn.humanatlas.io/digital-objects/asct-b/peripheral-nervous-system/v1.2/assets/asct-b-vh-peripheral-nervous-system.csv,v1.2,1009,128,33,5,28,0,0,0,0,120,7,194,5,1020,724,127,https://purl.humanatlas.io/asct-b/peripheral-nervous-system/v1.2
-placenta,https://cdn.humanatlas.io/digital-objects/asct-b/placenta/v1.2/assets/asct-b-vh-placenta.csv,v1.2,38,25,45,45,0,0,0,0,4,0,0,4,2,52,213,76,https://purl.humanatlas.io/asct-b/placenta/v1.2
-prostate,https://cdn.humanatlas.io/digital-objects/asct-b/prostate/v1.1/assets/asct-b-vh-prostate.csv,v1.1,17,22,40,40,0,0,0,0,0,2,0,4,6,14,56,48,https://purl.humanatlas.io/asct-b/prostate/v1.1
-skeleton,https://cdn.humanatlas.io/digital-objects/asct-b/skeleton/v1.2/assets/asct-b-vh-skeleton.csv,v1.2,1076,3,1,1,0,0,0,0,390,0,0,4,3,1072,1072,0,https://purl.humanatlas.io/asct-b/skeleton/v1.2
-skin,https://cdn.humanatlas.io/digital-objects/asct-b/skin/v1.3/assets/asct-b-vh-skin.csv,v1.3,19,37,69,1,68,0,0,0,0,0,0,4,2,17,104,96,https://purl.humanatlas.io/asct-b/skin/v1.3
-small intestine,https://cdn.humanatlas.io/digital-objects/asct-b/small-intestine/v1.1/assets/asct-b-vh-small-intestine.csv,v1.1,47,37,85,44,41,0,0,0,15,10,82,19,4,67,329,109,https://purl.humanatlas.io/asct-b/small-intestine/v1.1
-spinal cord,https://cdn.humanatlas.io/digital-objects/asct-b/spinal-cord/v1.0/assets/asct-b-vh-spinal-cord.csv,v1.0,90,10,68,68,0,0,0,0,0,0,0,82,2,101,44,67,https://purl.humanatlas.io/asct-b/spinal-cord/v1.0
-spleen,https://cdn.humanatlas.io/digital-objects/asct-b/spleen/v1.3/assets/asct-b-vh-spleen.csv,v1.3,40,63,155,73,82,0,0,0,12,15,3,4,2,48,364,352,https://purl.humanatlas.io/asct-b/spleen/v1.3
-thymus,https://cdn.humanatlas.io/digital-objects/asct-b/thymus/v1.4/assets/asct-b-vh-thymus.csv,v1.4,22,52,366,311,55,0,0,0,0,0,0,5,2,30,243,576,https://purl.humanatlas.io/asct-b/thymus/v1.4
-trachea,https://cdn.humanatlas.io/digital-objects/asct-b/trachea/v1.0/assets/asct-b-vh-trachea.csv,v1.0,24,19,81,68,13,0,0,0,0,0,0,6,2,20,50,161,https://purl.humanatlas.io/asct-b/trachea/v1.0
-ureter,https://cdn.humanatlas.io/digital-objects/asct-b/ureter/v1.0/assets/ASCT-B_VH_Ureter.csv,v1.0,13,16,31,31,0,0,0,0,1,11,0,7,5,9,42,33,https://purl.humanatlas.io/asct-b/ureter/v1.0
-urinary bladder,https://cdn.humanatlas.io/digital-objects/asct-b/urinary-bladder/v1.0/assets/ASCT-B_VH_Urinary_Bladder.csv,v1.0,20,17,31,31,0,0,0,0,0,11,0,11,6,16,57,33,https://purl.humanatlas.io/asct-b/urinary-bladder/v1.0
-uterus,https://cdn.humanatlas.io/digital-objects/asct-b/uterus/v1.1/assets/ASCT-B_VH_Uterus.csv,v1.1,65,20,46,40,6,0,0,0,34,18,45,25,3,129,420,65,https://purl.humanatlas.io/asct-b/uterus/v1.1
+SPARQL-QUERY: queryStr=PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+
+SELECT ?Organ ?csv ?table_version
+  (COALESCE(?AS, 0) as ?AS)
+  (COALESCE(?CT, 0) as ?CT)
+  (COALESCE(?B_Total, 0) as ?B_Total)
+  (COALESCE(?BG, 0) as ?BG)
+  (COALESCE(?BP, 0) as ?BP)
+  (COALESCE(?BM, 0) as ?BM)
+  (COALESCE(?BF, 0) as ?BF)
+  (COALESCE(?BL, 0) as ?BL)
+  (COALESCE(?ASWithNoLink, 0) as ?ASWithNoLink)
+  (COALESCE(?CTWithNoLink, 0) as ?CTWithNoLink)
+  (COALESCE(?BWithNoLink, 0) as ?BWithNoLink)
+  (COALESCE(?ASWithNoCT, 0) as ?ASWithNoCT)
+  (COALESCE(?CTWithNoB, 0) as ?CTWithNoB)
+  (COALESCE(?AS_AS, 0) as ?AS_AS)
+  (COALESCE(?AS_CT, 0) as ?AS_CT)
+  (COALESCE(?CT_BM, 0) as ?CT_BM)
+  (?graphAndVersion as ?url)
+
+WITH {
+  SELECT DISTINCT ?purl ?term ?biomarker
+  WHERE {    
+    GRAPH ?purl {
+      ?graph a owl:Ontology .
+      FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+      ?term rdfs:subClassOf [
+          owl:onProperty has_characterizing_biomarker_set: ;
+          owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
+      ?bn3 (rdf:rest)*/rdf:first [
+        owl:onProperty ccf:has_marker_component ;
+        owl:someValuesFrom ?biomarker
+      ] .
+
+"      hint:Group hint:optimizer ""Runtime""."
+    }
+"    hint:Query hint:analytic ""true"" ."
+  }
+} AS %ct_bm
+
+WHERE {
+"  hint:Query hint:analytic ""true"" ."
+
+  GRAPH HRA: {
+    HRA: prov:hadMember ?graphAndVersion .
+  }
+  GRAPH <https://lod.humanatlas.io> {
+    ?graphAndVersion a dcat:Dataset ;
+      schema:name ?name ;
+      schema:additionalType ?type ;
+      schema:version ?table_version ;
+    .
+    FILTER(?type = 'asct-b' && !CONTAINS(?name, '-crosswalk'))
+    BIND(IRI(CONCAT('https://purl.humanatlas.io/asct-b/', ?name)) as ?purl)
+    BIND(IRI(CONCAT(STR(?graphAndVersion), '#raw-data')) as ?rawData)
+    BIND(REPLACE(?name, '-', ' ') as ?Organ)
+
+    ?graphAndVersion prov:wasDerivedFrom [
+      dcat:distribution [
+        dcat:downloadURL ?csv ;
+        dcat:mediaType ?mediaType ;
+      ]
+    ] .
+    FILTER(?mediaType = 'text/csv')
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?AS)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CT)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?B_Total)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'BM')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BG)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'gene')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BP)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'protein')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BM)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'metabolites')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BF)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'proteoforms')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BL)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type ;
+        ccf:ccf_biomarker_type ?bm_type .
+        FILTER(?asctb_type = 'BM' && ?bm_type = 'lipids')
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?BWithNoLink)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'BM' && STRSTARTS(STR(?term), STR(ASCTB-TEMP:)))
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?ASWithNoCT)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+
+        GRAPH ?purl {
+          SELECT ?term (COUNT(DISTINCT(?ct)) as ?links)
+          WHERE {
+            ?term ccf:ccf_asctb_type ?asctb_type .
+            FILTER(?asctb_type = 'AS')
+            OPTIONAL {
+              ?ct ccf:ccf_located_in ?term .
+            }
+          }
+          GROUP BY ?term
+          HAVING(?links = 0)
+        }
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?CTWithNoB)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'CT')
+
+        FILTER NOT EXISTS {
+          INCLUDE %ct_bm
+        }
+      }
+      FILTER(CONTAINS(STR(?purl), '/asct-b/') && !CONTAINS(STR(?purl), '-crosswalk'))
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?AS_AS)
+    WHERE {
+      {
+        SELECT DISTINCT ?purl ?as1 ?as2
+        WHERE {
+          GRAPH ?purl {
+            ?graph a owl:Ontology .
+            FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+            ?as1 ccf:ccf_part_of ?as2 .
+          }
+        }
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?AS_CT)
+    WHERE {
+      {
+        SELECT DISTINCT ?purl ?as ?ct
+        WHERE {
+          GRAPH ?purl {
+            ?graph a owl:Ontology .
+            FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+            ?ct ccf:ccf_located_in ?as .
+          }
+        }
+      }
+    }
+    GROUP BY ?purl
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(*) as ?CT_BM)
+    WHERE {
+      INCLUDE %ct_bm
+    }
+    GROUP BY ?purl
+  }
+}
+ORDER BY ?purl
+
+java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: org.openrdf.query.QueryEvaluationException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at com.bigdata.rdf.sail.webapp.BigdataServlet.submitApiTask(BigdataServlet.java:292)
+	at com.bigdata.rdf.sail.webapp.QueryServlet.doSparqlQuery(QueryServlet.java:678)
+	at com.bigdata.rdf.sail.webapp.QueryServlet.doPost(QueryServlet.java:275)
+	at com.bigdata.rdf.sail.webapp.RESTServlet.doPost(RESTServlet.java:269)
+	at com.bigdata.rdf.sail.webapp.MultiTenancyServlet.doPost(MultiTenancyServlet.java:195)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:248)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:211)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:503)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: org.openrdf.query.QueryEvaluationException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.rdf.sail.webapp.QueryServlet$SparqlQueryTask.call(QueryServlet.java:889)
+	at com.bigdata.rdf.sail.webapp.QueryServlet$SparqlQueryTask.call(QueryServlet.java:695)
+	at com.bigdata.rdf.task.ApiTaskForIndexManager.call(ApiTaskForIndexManager.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.openrdf.query.QueryEvaluationException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at com.bigdata.rdf.sail.Bigdata2Sesame2BindingSetIterator.hasNext(Bigdata2Sesame2BindingSetIterator.java:188)
+	at info.aduna.iteration.IterationWrapper.hasNext(IterationWrapper.java:68)
+	at org.openrdf.query.QueryResults.report(QueryResults.java:155)
+	at org.openrdf.repository.sail.SailTupleQuery.evaluate(SailTupleQuery.java:76)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$TupleQueryTask.doQuery(BigdataRDFContext.java:1713)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.innerCall(BigdataRDFContext.java:1569)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.call(BigdataRDFContext.java:1534)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.call(BigdataRDFContext.java:747)
+	... 4 more
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at com.bigdata.rdf.sail.RunningQueryCloseableIterator.checkFuture(RunningQueryCloseableIterator.java:59)
+	at com.bigdata.rdf.sail.RunningQueryCloseableIterator.close(RunningQueryCloseableIterator.java:73)
+	at com.bigdata.rdf.sail.RunningQueryCloseableIterator.hasNext(RunningQueryCloseableIterator.java:82)
+	at com.bigdata.striterator.ChunkedWrappedIterator.hasNext(ChunkedWrappedIterator.java:197)
+	at com.bigdata.rdf.sail.Bigdata2Sesame2BindingSetIterator.hasNext(Bigdata2Sesame2BindingSetIterator.java:134)
+	... 11 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at com.bigdata.util.concurrent.Haltable.get(Haltable.java:273)
+	at com.bigdata.bop.engine.AbstractRunningQuery.get(AbstractRunningQuery.java:1516)
+	at com.bigdata.bop.engine.AbstractRunningQuery.get(AbstractRunningQuery.java:104)
+	at com.bigdata.rdf.sail.RunningQueryCloseableIterator.checkFuture(RunningQueryCloseableIterator.java:46)
+	... 15 more
+Caused by: java.lang.Exception: task=ChunkTask{query=7b3c0eb8-ba82-4cf1-b8ad-752ced3d0f8d,bopId=27,partitionId=-1,sinkId=31,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1367)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTaskWrapper.run(ChunkedRunningQuery.java:926)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.concurrent.FutureTaskMon.run(FutureTaskMon.java:63)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkFutureTask.run(ChunkedRunningQuery.java:821)
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1347)
+	... 8 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.bop.joinGraph.rto.JGraph.expand(JGraph.java:1238)
+	at com.bigdata.bop.joinGraph.rto.JGraph.runtimeOptimizer(JGraph.java:565)
+	at com.bigdata.bop.joinGraph.rto.JoinGraph$JoinGraphTask.call(JoinGraph.java:471)
+	at com.bigdata.bop.joinGraph.rto.JoinGraph$JoinGraphTask.call(JoinGraph.java:432)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1346)
+	... 8 more
+Caused by: java.lang.RuntimeException: cause=java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+pred=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, AST2BOpBase.quads=true, AST2BOpBase.scope=NAMED_CONTEXTS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]]
+constraints=[com.bigdata.rdf.internal.constraints.SPARQLConstraint(com.bigdata.rdf.internal.constraints.StrstartsBOp(com.bigdata.rdf.internal.constraints.StrBOp(graph)[ IVValueExpression.namespace=kb.lex, IVValueExpression.timestamp=1718120055785],TermId(0L)[https://purl.humanatlas.io/asct-b/]))]
+query=com.bigdata.bop.join.PipelineJoin[1]()[ BOp.bopId=1, JoinAnnotations.constraints=null, AST2BOpBase.simpleJoin=true, BOp.evaluationContext=CONTROLLER, AccessPathJoinAnnotations.predicate=com.bigdata.rdf.spo.SPOPredicate[22](-anon-22=null, Vocab(54)[http://www.w3.org/2002/07/owl#intersectionOf], bn3=null, purl=null)[ IPredicate.relationName=[kb.spo], IPredicate.timestamp=1718120055785, BOp.bopId=22, AST2BOpBase.estimatedCardinality=33241, AST2BOpBase.originalIndex=POCS, IPredicate.flags=[KEYS,VALS,READONLY,PARALLEL]], PipelineOp.reorderSolutions=false, PipelineOp.maxParallel=1, PipelineJoin.maxParallelChunks=0, PipelineJoin.coalesceDuplicateAccessPaths=false, PipelineJoin.reorderAccessPaths=false, JoinAnnotations.limit=300, PipelineOp.sharedState=true]
+	at com.bigdata.rdf.sparql.ast.eval.AST2BOpRTO.cutoffJoin(AST2BOpRTO.java:759)
+	at com.bigdata.bop.joinGraph.rto.Path.addEdge(Path.java:688)
+	at com.bigdata.bop.joinGraph.rto.JGraph$ExpandPathTask.call(JGraph.java:1370)
+	at com.bigdata.bop.joinGraph.rto.JGraph$ExpandPathTask.call(JGraph.java:1273)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	... 3 more
+Caused by: java.lang.RuntimeException: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at com.bigdata.rdf.sparql.ast.eval.AST2BOpRTO.runSimpleJoin(AST2BOpRTO.java:1099)
+	at com.bigdata.rdf.sparql.ast.eval.AST2BOpRTO.cutoffJoin(AST2BOpRTO.java:736)
+	... 7 more
+Caused by: java.lang.Exception: task=ChunkTask{query=c1160695-42b0-406c-af6a-0e8ff8ed3be1,bopId=1,partitionId=-1,sinkId=null,altSinkId=null}, cause=java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1367)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTaskWrapper.run(ChunkedRunningQuery.java:926)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.concurrent.FutureTaskMon.run(FutureTaskMon.java:63)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkFutureTask.run(ChunkedRunningQuery.java:821)
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1347)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at com.bigdata.bop.join.PipelineJoin$JoinTask.call(PipelineJoin.java:682)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask.call(PipelineJoin.java:382)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.concurrent.FutureTaskMon.run(FutureTaskMon.java:63)
+	at com.bigdata.bop.engine.ChunkedRunningQuery$ChunkTask.call(ChunkedRunningQuery.java:1346)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at com.bigdata.bop.join.PipelineJoin$JoinTask$BindingSetConsumerTask.call(PipelineJoin.java:1027)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask.consumeSource(PipelineJoin.java:739)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask.call(PipelineJoin.java:623)
+	... 12 more
+Caused by: java.lang.RuntimeException: addr=-2567628 : cause=java.lang.OutOfMemoryError: Direct buffer memory
+	at com.bigdata.rwstore.RWStore.getData(RWStore.java:2097)
+	at com.bigdata.journal.RWStrategy.readFromLocalStore(RWStrategy.java:732)
+	at com.bigdata.journal.RWStrategy.read(RWStrategy.java:155)
+	at com.bigdata.journal.AbstractJournal.read(AbstractJournal.java:4307)
+	at com.bigdata.btree.AbstractBTree.readNodeOrLeaf(AbstractBTree.java:4533)
+	at com.bigdata.btree.Node._getChild(Node.java:2746)
+	at com.bigdata.btree.AbstractBTree$1.compute(AbstractBTree.java:377)
+	at com.bigdata.btree.AbstractBTree$1.compute(AbstractBTree.java:360)
+	at com.bigdata.util.concurrent.Memoizer$1.call(Memoizer.java:77)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.util.concurrent.Memoizer.compute(Memoizer.java:92)
+	at com.bigdata.btree.AbstractBTree.loadChild(AbstractBTree.java:546)
+	at com.bigdata.btree.Node.getChild(Node.java:2644)
+	at com.bigdata.btree.Node.indexOf(Node.java:971)
+	at com.bigdata.btree.Node.indexOf(Node.java:988)
+	at com.bigdata.btree.AbstractBTree.rangeCount(AbstractBTree.java:2710)
+	at com.bigdata.relation.accesspath.AccessPath.historicalRangeCount(AccessPath.java:1419)
+	at com.bigdata.relation.accesspath.AccessPath.rangeCount(AccessPath.java:1387)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask$AccessPathTask.call(PipelineJoin.java:1658)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask$BindingSetConsumerTask.executeTasks(PipelineJoin.java:1392)
+	at com.bigdata.bop.join.PipelineJoin$JoinTask$BindingSetConsumerTask.call(PipelineJoin.java:1016)
+	... 14 more
+Caused by: java.lang.OutOfMemoryError: Direct buffer memory
+	at java.nio.Bits.reserveMemory(Bits.java:695)
+	at java.nio.DirectByteBuffer.<init>(DirectByteBuffer.java:123)
+	at java.nio.ByteBuffer.allocateDirect(ByteBuffer.java:311)
+	at sun.nio.ch.Util.getTemporaryDirectBuffer(Util.java:241)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:195)
+	at sun.nio.ch.FileChannelImpl.readInternal(FileChannelImpl.java:735)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:721)
+	at com.bigdata.io.FileChannelUtility.readAll(FileChannelUtility.java:192)
+	at com.bigdata.rwstore.RWStore.readRaw(RWStore.java:6740)
+	at com.bigdata.io.writecache.WriteCacheService._readFromLocalDiskIntoNewHeapByteBuffer(WriteCacheService.java:3774)
+	at com.bigdata.io.writecache.WriteCacheService._getRecord(WriteCacheService.java:3598)
+	at com.bigdata.io.writecache.WriteCacheService.access$2500(WriteCacheService.java:200)
+	at com.bigdata.io.writecache.WriteCacheService$1.compute(WriteCacheService.java:3435)
+	at com.bigdata.io.writecache.WriteCacheService$1.compute(WriteCacheService.java:3419)
+	at com.bigdata.util.concurrent.Memoizer$1.call(Memoizer.java:77)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.bigdata.util.concurrent.Memoizer.compute(Memoizer.java:92)
+	at com.bigdata.io.writecache.WriteCacheService.loadRecord(WriteCacheService.java:3540)
+	at com.bigdata.io.writecache.WriteCacheService.read(WriteCacheService.java:3259)
+	at com.bigdata.rwstore.RWStore.getData(RWStore.java:2088)
+	... 34 more
