@@ -23,7 +23,7 @@ items:
             count: 101
           - label: digital object reviewers
             count: 99
-      - title: Title
+      - title: Authors
         tooltip: Statistics covering HRA authors and publication authors.
         items:
           - label: publication authors
@@ -34,7 +34,7 @@ items:
             count:  8115367038
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
-    title: Visualization 1
+    title: Population Comparison
     tooltip: This graph shows a comparison of HRA, publication, and experimental to world population data.
     aspectRatio: 3 / 1
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
