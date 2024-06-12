@@ -15,7 +15,7 @@ items:
   - type: MetricsContainer
     items:
       - title: Size of the HRA
-        tooltip: I'm a tooltip
+        tooltip: High-level statistics for the HRA Knowledge Graph. 
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes in the HRA Knowledge Graph
@@ -26,7 +26,7 @@ items:
             count: 38041
             unit: MB
       - title: Digital Objects
-        tooltip: I'm a tooltip
+        tooltip: High-level statistics about the number of digital objects in the HRA.
         items:
           - label: ASCT+B Tables
             count: 36
@@ -41,7 +41,7 @@ items:
           - label: SOPs
             count: 20
       - title: Ontologies Extended
-        tooltip: I'm a tooltip
+        tooltip: Statistics covering what terms were added to other biomedical ontologies during the course of HRA development.
         items:
           - label: Terms added to Uberon
             count: 85
@@ -51,18 +51,18 @@ items:
             count: 468
   - type: GridContainer
     columns: 2
-    items:
+    items:  
       - type: VegaContainer
         title: HRA Growth Per Release
-        tooltip: I'm a tooltip
+        tooltip: The graph shows the number of digital objects by type that were added over time.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
       - type: VegaContainer
         title: Digital Objects Per Organ
-        tooltip: I'm a tooltip
+        tooltip: The graph shows the number of digital objects by tope for each supported organ.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
   - type: ImageContainer
-    title: HRA v2.1 has 65 organs with 1,218 AS modeled in 3D. Left female kidney has 31 AS.
-    tooltip: I'm a tooltip
+    title: HRA v2.1 has 65 organs with 1,289 AS modeled in 3D. Left female kidney has 31 AS.
+    tooltip: The image shows the female left kidney reference organ and 3d structures nested inside.
     aspectRatio: 3 / 1,
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/as-in-3d.png
     source: https://docs.google.com/presentation/d/1NhNw2k5pIxRDdcN39Kir6-g6VYh-jjV2KHn_A4-Izgg/edit#slide=id.g2ae959ca31e_0_300
