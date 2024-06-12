@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": { "url": "https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.csv" },
-  "width": 640,
-  "height": 480,
+  "width": 1296,
+  "height": 488,
   "autosize": {
     "type": "fit",
     "contains": "padding",
