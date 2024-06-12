@@ -35,7 +35,7 @@ items:
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
     title: Visualization 1
-    tooltip: This graph shows a comparison of HRA, publication, and experimental to world population data
+    tooltip: This graph shows a comparison of HRA, publication, and experimental to world population data.
     aspectRatio: 3 / 1
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
   - type: GridContainer

@@ -60,25 +60,25 @@ items:
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/experts-over-time.png
       - type: ImageContainer
         title: Co-Author Network
-        tooltip: This graph shows a geospatial layout of the co-author network
+        tooltip: This graph shows a geospatial layout of the co-author network.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.png
       - type: ImageContainer
         title: Authors and Papers by Organ
-        tooltip: This graph shows the number of organs experts work on (top) and number of papers per organ (bottom)
+        tooltip: This graph shows the number of organs experts work on (top) and number of papers per organ (bottom).
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.png
       - type: ImageContainer
         title: Bimodal Organ-Funding Network
-        tooltip: This graph shows a bimodal network of 33 organs and top 50 funding agencies most often listed
+        tooltip: This graph shows a bimodal network of 33 organs and top 50 funding agencies most often listed.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.png
       - type: ImageContainer
         title: Funded Papers from Top 5 Funders Over Time
-        tooltip: This graph shows the number of papers that funded by top 5 funding agencies from 2018 to 2021
+        tooltip: This graph shows the number of papers that funded by top 5 funding agencies from 2018 to 2021.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.png
       - type: ImageContainer
         title: Bimodal Organ-Author Network
-        tooltip: This graph shows a bimodal network between authors and organs
+        tooltip: This graph shows a bimodal network between authors and organs.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.png
       - type: ImageContainer
         title: Authors by Organ and Country
-        tooltip: This graph shows authors per country per organ
+        tooltip: This graph shows authors per country per organ.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.png
