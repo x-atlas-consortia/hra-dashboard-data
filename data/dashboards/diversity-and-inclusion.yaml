@@ -15,8 +15,8 @@ items:
       - title: HRA Working Group
         tooltip: Statistics covering authors, experts, and reviewers in the HRA Working Group. 
         items:
-          - label: registered experts
-            count: -1
+          # - label: registered experts
+          #   count: -1
           - label: experts on mailing list
             count: 336
           - label: digital object authors
