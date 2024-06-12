@@ -13,8 +13,8 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: Size of HRA
-        tooltip: I'm a tooltip
+      - title: Size of HRApop v0.10.2
+        tooltip: High-level statistics for HRApop v0.10.2. 
         items:
           - label: nodes
             count: 2212274
@@ -28,7 +28,7 @@ items:
             source: du -s -BM hra-workflows-runner/raw-data/{0.10.1,data-repo,models,tmp} hra-pop/raw-data/v0.10.2
             sourceMBs: 438 + 1749184 + 27518 + 4887790 + 29318 
       - title: Data Provenance
-        tooltip: I'm a tooltip
+        tooltip: Statistics covering counts of datasets and related entities in HRApop.
         source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
@@ -44,7 +44,7 @@ items:
           - label: cells
             count: 18180772
       - title: GitHub
-        tooltip: I'm a tooltip
+        tooltip: Statistics about HRApop GitHub repositories.
         items:
           - label: repositories
             count: 4
@@ -53,11 +53,11 @@ items:
             count: 1140
   - type: VegaContainer
     title: HRApop data mapped to the HRA
-    tooltip: I'm a tooltip
+    tooltip: This graph shows datasets mapped to the HRA grouped by Portal, Organ, Sex, Age, or Ethnicity.
     aspectRatio: 3 / 1
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.vl.json
   - type: IFrameContainer
     title: HRApop Cell Type Populations Properties
-    tooltip: I'm a tooltip
+    tooltip: This graph shows a sankey diagram of a breakdown of datasets by metadata.
     aspectRatio: 3 / 1
     iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey_atlas.html

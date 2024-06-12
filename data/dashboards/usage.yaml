@@ -13,7 +13,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: I'm a tooltip
+        tooltip: Statitistics covering data usage from HRA resources
         items:
           - label: HRA papers
             count: 1057
@@ -22,13 +22,13 @@ items:
             count: 59527
             source: Kiki / HRAlit v0.5
           - label: SOP downloads
-            count: 4677
+            count: 4850
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 266
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
       - title: HRA Requests
-        tooltip: I'm a tooltip
+        tooltip: Statistics for number of web requests for HRA-API and the HRA portal
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
@@ -36,7 +36,7 @@ items:
           - label: HRA Portal requests
             count: 710960
       - title: Ontology Requests
-        tooltip: I'm a tooltip
+        tooltip: Statistics for number of web requests to various external resources.
         items:
           - label: OLS requests
             count: -1
@@ -52,17 +52,17 @@ items:
     items:
       - type: VegaContainer
         title: Digital Object Usage
-        tooltip: I'm a tooltip
+        tooltip: The graph shows digital object requests from various organizations over time.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
       - type: VegaContainer
         title: HRA Products Usage
-        tooltip: I'm a tooltip
+        tooltip: The graph shows web requests to various HRA resources over time.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
       - type: VegaContainer
         title: Global HRA Portal Usage
-        tooltip: I'm a tooltip
+        tooltip: The graph shows web requests since June 2023 to various HRA resources from countries around the world.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
       - type: VegaContainer
         title: Top-10 Users of HRA Products
-        tooltip: I'm a tooltip
+        tooltip: The graph shows web requests since June 2023 from the top 10 website referrers.
         specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/top-referrers.vl.json
