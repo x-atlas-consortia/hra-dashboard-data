@@ -19,11 +19,11 @@ items:
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes in the HRA Knowledge Graph
-            count: 5891706
+            count: 5987317
           - label: Edges in the HRA Knowledge Graph
-            count: 53998692
+            count: 54524172
           - label: Size of the HRA Knowledge Graph
-            count: 38041
+            count: 39478
             unit: MB
       - title: Digital Objects
         tooltip: High-level statistics about the number of digital objects in the HRA.
