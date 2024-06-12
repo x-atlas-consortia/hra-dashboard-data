@@ -31,7 +31,7 @@ items:
           - label: ASCT+B Tables
             count: 36
           - label: OMAP Tables
-            count: 13
+            count: 21
           - label: FTU Illustrations
             count: 22
           - label: 3D Organ Models
