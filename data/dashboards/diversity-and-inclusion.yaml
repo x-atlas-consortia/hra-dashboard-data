@@ -36,6 +36,7 @@ items:
   - type: ImageContainer
     title: Visualization 1
     tooltip: Comparison of HRA, publication, and experimental to world population data
+    aspectRatio: 3 / 1
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
   - type: GridContainer
     columns: 2
