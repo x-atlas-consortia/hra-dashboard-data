@@ -32,16 +32,16 @@ items:
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 260066
+            count: 282660
           - label: HRA Portal requests
-            count: 646954
+            count: 710960
       - title: Ontology Requests
         tooltip: I'm a tooltip
         items:
           - label: OLS requests
             count: -1
           - label: BioPortal requests
-            count: 1444
+            count: 1481
             source: https://bioportal.bioontology.org/ontologies/CCF
           - label: Ontobee Requests
             count: -1
