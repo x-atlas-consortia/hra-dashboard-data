@@ -1,20 +1,21 @@
 type: Dashboard
 title: Experimental Data
 description: >-
-  The HRA is constructed from experimental data and links back to the original sources.
-  Shown are basic statistics; bar graphs that detail how many datasets have been mapped
-  to the HRA by what methods; and a Sankey diagram with seven vertical bars showing from
-  left to right: all datasets, their sex, age (group), ethnicity, data type, atlas-level
-  quality, and mapped to atlas or not properties.
+  The HRA is constructed from experimental data and links back to the original sources. 
+  High-quality datasets are used to compute HRA Cell Typoe Populations (HRApop) for anatomical structures. 
+  Shown are basic statistics for the datasets that make up HRApop: bar graphs that detail how many datasets have been mapped
+  to the HRA by what methods, and a Sankey diagram with seven vertical bars showing from
+  left to right, for all datasets: source/portal, donor sex, donor age, donor race/ethnicity, donor BMI, organ, 
+  single-cell (sc) transcriptomics vs sc-proteomics, whether the dataset is RUI-registered into a HRA 3D Digital Object (organ), and whether it is part of the atlas.
 link:
   type: Link
-  url: https://www.biorxiv.org/content/10.1101/2024.03.27.587041v1
+  url: https://www.biorxiv.org/content/10.1101/2024.03.27.587041
   label: Read Paper
 items:
   - type: MetricsContainer
     items:
       - title: Size of HRApop v0.10.2
-        tooltip: High-level statistics for HRApop v0.10.2. 
+        tooltip: High-level statistics for HRApop v0.10.2.
         items:
           - label: nodes
             count: 2212274
@@ -26,7 +27,7 @@ items:
             count: 6.69
             unit: TB
             source: du -s -BM hra-workflows-runner/raw-data/{0.10.1,data-repo,models,tmp} hra-pop/raw-data/v0.10.2
-            sourceMBs: 438 + 1749184 + 27518 + 4887790 + 29318 
+            sourceMBs: 438 + 1749184 + 27518 + 4887790 + 29318
       - title: Data Provenance
         tooltip: Statistics covering counts of datasets and related entities in HRApop.
         source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/data-provenance.csv
@@ -58,6 +59,6 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.vl.json
   - type: IFrameContainer
     title: HRApop Cell Type Populations Properties
-    tooltip: This graph shows a sankey diagram of a breakdown of datasets by metadata.
+    tooltip: This Sankey diagram breaks down HRApop datasets by metadata.
     aspectRatio: 3 / 1
     iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey_atlas.html
