@@ -38,15 +38,16 @@ items:
       - title: Ontology Requests
         tooltip: Statistics for number of web requests to various external resources.
         items:
-          - label: OLS requests
-            count: -1
+          # - label: OLS requests
+          #   count: -1
           - label: BioPortal requests
             count: 1481
             source: https://bioportal.bioontology.org/ontologies/CCF
-          - label: Ontobee Requests
-            count: -1
+          # - label: Ontobee Requests
+          #   count: -1
           - label: NIH3D requests
-            count: -1
+            count: 3065
+            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/nih3d-downloads.HRA_1.csv
   - type: GridContainer
     columns: 2
     items:
