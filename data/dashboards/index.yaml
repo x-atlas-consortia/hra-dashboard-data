@@ -13,10 +13,6 @@ items:
     route: usage
     background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/usage.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/usage.yaml
-  - title: Diversity & Inclusion
-    route: diversity-and-inclusion
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.svg
-    url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
   - title: Publications
     route: publications
     background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.svg
@@ -25,3 +21,7 @@ items:
     route: experimental-data
     background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/experimental-data.yaml
+  - title: Diversity & Inclusion
+    route: diversity-and-inclusion
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.svg
+    url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
