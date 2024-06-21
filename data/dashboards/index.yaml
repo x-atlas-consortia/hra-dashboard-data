@@ -15,11 +15,11 @@ items:
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/usage.yaml
   - title: Publications
     route: publications
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/publications.yaml
   - title: Experimental Data
     route: experimental-data
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.svg
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/experimental-data.yaml
   - title: Diversity & Inclusion
     route: diversity-and-inclusion
