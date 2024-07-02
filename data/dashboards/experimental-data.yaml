@@ -2,7 +2,7 @@ type: Dashboard
 title: Experimental Data
 description: >-
   The HRA is constructed from experimental data and links back to the original sources. 
-  High-quality datasets are used to compute HRA Cell Typoe Populations (HRApop) for anatomical structures. 
+  High-quality datasets are used to compute HRA Cell Type Populations (HRApop) for anatomical structures. 
   Shown are basic statistics for the datasets that make up HRApop: bar graphs that detail how many datasets have been mapped
   to the HRA by what methods, and a Sankey diagram with seven vertical bars showing from
   left to right, for all datasets: source/portal, donor sex, donor age, donor race/ethnicity, donor BMI, organ, 
