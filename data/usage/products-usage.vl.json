@@ -6,16 +6,29 @@
   },
   "width": "container",
   "height": "container",
-  "mark": {"type": "line", "tooltip": true},
+  "mark": { "type": "line", "tooltip": true },
+  "transform": [
+    {
+      "window": [
+        {
+          "field": "requests",
+          "op": "mean",
+          "as": "rolling_requests"
+        }
+      ],
+      "frame": [-7, 7]
+    }
+  ],
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal"
     },
     "y": {
-      "field": "requests",
+      "field": "rolling_requests",
       "type": "quantitative",
-      "scale": { "type": "log" }
+      "scale": { "type": "log" },
+      "title": "requests"
     },
     "color": {
       "field": "site",
