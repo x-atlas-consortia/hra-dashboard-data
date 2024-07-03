@@ -13,7 +13,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statitistics covering data usage from HRA resources
+        tooltip: Statistics covering data usage from HRA resources
         items:
           - label: HRA papers
             count: 1057
