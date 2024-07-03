@@ -44,11 +44,11 @@ items:
         tooltip: Statistics covering what terms were added to other biomedical ontologies during the course of HRA development.
         items:
           - label: Terms added to Uberon
-            count: 85
+            count: 111
           - label: Terms added to CL
-            count: 129
+            count: 117
           - label: Terms added to PCL
-            count: 468
+            count: 461
   - type: GridContainer
     columns: 2
     items:  
