@@ -16,6 +16,7 @@
           "as": "rolling_requests"
         }
       ],
+      "groupby": ["user"],
       "frame": [-7, 7]
     }
   ],

@@ -16,6 +16,7 @@
           "as": "rolling_requests"
         }
       ],
+      "groupby": ["site"],
       "frame": [-7, 7]
     }
   ],
