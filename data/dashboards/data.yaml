@@ -14,17 +14,6 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: Size of the HRA
-        tooltip: High-level statistics for the HRA Knowledge Graph. 
-        source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
-        items:
-          - label: Nodes in the HRA Knowledge Graph
-            count: 6202523
-          - label: Edges in the HRA Knowledge Graph
-            count: 56554395
-          - label: Size of the HRA Knowledge Graph
-            count: 40847
-            unit: MB
       - title: Digital Objects
         tooltip: High-level statistics about the number of digital objects in the HRA.
         items:
@@ -40,6 +29,18 @@ items:
             count: 1
           - label: SOPs
             count: 20
+      - title: Size of the HRA
+        tooltip: High-level statistics for the HRA Knowledge Graph. 
+        source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
+        items:
+          - label: Nodes in the HRA Knowledge Graph
+            count: 6202523
+          - label: Edges in the HRA Knowledge Graph
+            count: 56554395
+          - label: Size of the HRA Knowledge Graph
+            count: 40847
+            unit: MB
+      
       - title: Ontologies Extended
         tooltip: Statistics covering what terms were added to other biomedical ontologies during the course of HRA development.
         items:
