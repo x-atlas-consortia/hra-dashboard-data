@@ -15,22 +15,6 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: Size of HRAlit
-        tooltip: High-level statistics for the HRAlit v0.5. 
-        items:
-          - label: nodes
-            count: 8696762
-            source: Kiki / HRAlit v0.5
-            source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
-          - label: edges
-            count: 13170651
-            source: Kiki / HRAlit v0.5
-            source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
-            source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
-          - label: size of HRAlit
-            count: 1166
-            unit: MB
-            source: https://figshare.com/articles/dataset/Human_Reference_Atlas_Literature_HRAlit_Database/24580669
       - title: HRA Publications
         tooltip: Statistics covering papers, authors, datasets, and funders in HRAlit v0.5.
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
@@ -47,6 +31,22 @@ items:
             count: 6427
           - label: experimental datasets
             count: 1816
+      - title: Size of HRAlit
+        tooltip: High-level statistics for the HRAlit v0.5. 
+        items:
+          - label: nodes
+            count: 8696762
+            source: Kiki / HRAlit v0.5
+            source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
+          - label: edges
+            count: 13170651
+            source: Kiki / HRAlit v0.5
+            source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
+            source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
+          - label: size of HRAlit
+            count: 1166
+            unit: MB
+            source: https://figshare.com/articles/dataset/Human_Reference_Atlas_Literature_HRAlit_Database/24580669
   - type: GridContainer
     columns: 2
     items:
