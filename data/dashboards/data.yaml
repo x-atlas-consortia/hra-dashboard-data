@@ -29,15 +29,15 @@ items:
             count: 1
           - label: SOPs
             count: 20
-      - title: Size of the HRA
+      - title: Size of the HRA Knowledge Graph
         tooltip: High-level statistics for the HRA Knowledge Graph. 
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
-          - label: Nodes in the HRA Knowledge Graph
+          - label: Nodes
             count: 6202523
-          - label: Edges in the HRA Knowledge Graph
+          - label: Edges
             count: 56554395
-          - label: Size of the HRA Knowledge Graph
+          - label: Size
             count: 40847
             unit: MB
       
