@@ -9,7 +9,7 @@ description: >-
   anatomical structure.
 link:
   type: Link
-  url: https://www.nature.com/articles/s41556-021-00788-6
+  url: https://doi.org/10.1038/s41556-021-00788-6
   label: Read Paper
 items:
   - type: MetricsContainer
