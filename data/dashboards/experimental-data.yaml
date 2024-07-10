@@ -22,24 +22,24 @@ items:
             count: 2472
           - label: SenNet datasets
             count: 236
-          - label: tissue donors
+          - label: Tissue donors
             count: 5633
-          - label: organs
+          - label: Organs
             count: 13
-          - label: anatomical structures
+          - label: Anatomical structures
             count: 40
-          - label: cells
+          - label: Cells
             count: 18180772
       - title: Size of HRApop v0.10.2
         tooltip: High-level statistics for HRApop v0.10.2.
         items:
-          - label: nodes
+          - label: Nodes
             count: 2212274
             source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/high-level-stats.csv
-          - label: edges
+          - label: Edges
             count: 11410953
             source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/high-level-stats.csv
-          - label: size in TB
+          - label: Size
             count: 6.69
             unit: TB
             source: du -s -BM hra-workflows-runner/raw-data/{0.10.1,data-repo,models,tmp} hra-pop/raw-data/v0.10.2
@@ -47,10 +47,10 @@ items:
       - title: GitHub
         tooltip: Statistics about HRApop GitHub repositories.
         items:
-          - label: repositories
+          - label: Repositories
             count: 4
             repos: hra-pop, hra-workflows-runner, hra-workflows, hra-cell-type-populations-supporting-information
-          - label: commits
+          - label: Commits
             count: 1140
   - type: VegaContainer
     title: HRApop data mapped to the HRA
