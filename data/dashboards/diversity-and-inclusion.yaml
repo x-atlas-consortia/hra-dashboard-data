@@ -12,25 +12,25 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: HRA Working Group
+      - title: HRA Experts
         tooltip: Statistics covering authors, experts, and reviewers in the HRA Working Group. 
         items:
           # - label: registered experts
           #   count: -1
-          - label: experts on mailing list
+          - label: Experts on mailing list
             count: 336
-          - label: digital object authors
+          - label: Digital object authors
             count: 101
-          - label: digital object reviewers
+          - label: Digital object reviewers
             count: 99
       - title: Authors
         tooltip: Statistics covering HRA authors and publication authors.
         items:
-          - label: publication authors
+          - label: Publication authors
             count: 66803
-          - label: experimental data authors
+          - label: Experimental data authors
             count: 347
-          - label: humans on Earth on June 12th, 2024
+          - label: Humans on Earth on June 12th, 2024
             count:  8115367038
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
