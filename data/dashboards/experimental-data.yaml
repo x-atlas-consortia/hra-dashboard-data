@@ -9,7 +9,7 @@ description: >-
   single-cell (sc) transcriptomics vs sc-proteomics, whether the dataset is RUI-registered into a HRA 3D Digital Object (organ), and whether it is part of the atlas.
 link:
   type: Link
-  url: https://www.biorxiv.org/content/10.1101/2024.03.27.587041
+  url: https://doi.org/10.1101/2024.03.27.587041
   label: Read Paper
 items:
   - type: MetricsContainer
