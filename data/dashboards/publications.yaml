@@ -19,31 +19,31 @@ items:
         tooltip: Statistics covering papers, authors, datasets, and funders in HRAlit v0.5.
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
         items:
-          - label: papers
+          - label: Papers
             count: 7103180
-          - label: authors
+          - label: Authors
             count: 583117
-          - label: author institutions
+          - label: Author institutions
             count: 26235
-          - label: funded projects
+          - label: Funded projects
             count: 896680
-          - label: funders
+          - label: Funders
             count: 6427
-          - label: experimental datasets
+          - label: Experimental datasets
             count: 1816
       - title: Size of HRAlit
         tooltip: High-level statistics for the HRAlit v0.5. 
         items:
-          - label: nodes
+          - label: Nodes
             count: 8696762
             source: Kiki / HRAlit v0.5
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
-          - label: edges
+          - label: Edges
             count: 13170651
             source: Kiki / HRAlit v0.5
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
             source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
-          - label: size of HRAlit
+          - label: Size
             count: 1166
             unit: MB
             source: https://figshare.com/articles/dataset/Human_Reference_Atlas_Literature_HRAlit_Database/24580669
