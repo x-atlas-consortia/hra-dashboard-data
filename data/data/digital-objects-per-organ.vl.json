@@ -12,8 +12,7 @@
       "titleLineHeight": 21,
       "labelLineHeight": 18,
       "titleColor": "#201E3D",
-      "labelColor": "#4B4B5E",
-      "labelAngle": 45
+      "labelColor": "#4B4B5E"
     },
     "legend": {
       "labelFont": "Metropolis",
