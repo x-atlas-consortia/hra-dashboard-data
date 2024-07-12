@@ -37,12 +37,22 @@
     }
   ],
   "encoding": {
-    "x": { "timeUnit": "yearmonth", "field": "date", "title": "Date" },
+    "x": {
+      "timeUnit": "yearmonth",
+      "field": "date",
+      "title": "Date",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
     "y": {
       "field": "cumulative_count",
       "type": "quantitative",
       "title": "Cumulative Count",
-      "scale": { "type": "log" }
+      "scale": { "type": "log" },
+      "axis": {
+        "labelAngle": -45
+      }
     },
     "color": { "field": "group", "type": "nominal", "title": "Measure" }
   }

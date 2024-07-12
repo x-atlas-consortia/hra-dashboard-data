@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": { "url": "https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.csv" },
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.csv"
+  },
   "width": "container",
   "height": "container",
   "config": {
@@ -27,8 +29,22 @@
   },
   "mark": { "type": "point", "tooltip": true, "filled": true },
   "encoding": {
-    "x": { "field": "organ", "type": "nominal", "title": "Organ" },
-    "y": { "field": "type", "type": "nominal", "title": "Digital Object (DO) Type" },
+    "x": {
+      "field": "organ",
+      "type": "nominal",
+      "title": "Organ",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "type",
+      "type": "nominal",
+      "title": "Digital Object (DO) Type",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
     "size": {
       "field": "count",
       "type": "quantitative",
