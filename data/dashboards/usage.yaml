@@ -49,7 +49,7 @@ items:
             count: 3065
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/nih3d-downloads.HRA_1.csv
   - type: GridContainer
-    columns: 2
+    columns: 1
     items:
       - type: VegaContainer
         title: Digital Object Usage
