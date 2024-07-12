@@ -7,6 +7,7 @@
   "width": "container",
   "height": "container",
   "config": {
+    "font": "Metropolis",
     "axis": {
       "labelFontSize": 12,
       "titleFontSize": 14,
@@ -18,10 +19,13 @@
       "labelColor": "#4B4B5E"
     },
     "legend": {
-      "labelFont": "Metropolis",
       "labelFontSize": 14,
-      "labelFontWeight": 500,
-      "labelColor": "#201E3D"
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
     }
   },
   "encoding": {
@@ -29,7 +33,7 @@
     "x": { "field": "requests", "type": "quantitative" },
     "tooltip": [
       { "field": "host", "type": "nominal" },
-      { "field": "requests", "type": "quantitative" }
+      { "field": "requests", "type": "quantitative", "format": "," }
     ]
   },
   "layer": [

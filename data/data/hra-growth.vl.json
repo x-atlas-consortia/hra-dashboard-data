@@ -6,6 +6,7 @@
   "width": "container",
   "height": "container",
   "config": {
+    "font": "Metropolis",
     "axis": {
       "labelFontSize": 12,
       "titleFontSize": 14,
@@ -17,10 +18,13 @@
       "labelColor": "#4B4B5E"
     },
     "legend": {
-      "labelFont": "Metropolis",
       "labelFontSize": 14,
-      "labelFontWeight": 500,
-      "labelColor": "#201E3D"
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
     }
   },
   "mark": { "type": "line", "point": false, "tooltip": true },
@@ -33,7 +37,14 @@
     }
   ],
   "encoding": {
-    "x": { "timeUnit": "yearmonth", "field": "date", "title": "Date" },
+    "x": {
+      "timeUnit": "yearmonth",
+      "field": "date",
+      "title": "Date",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
     "y": {
       "field": "cumulative_count",
       "type": "quantitative",
