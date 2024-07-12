@@ -50,17 +50,14 @@ items:
             count: 117
           - label: Terms added to PCL
             count: 461
-  - type: GridContainer
-    columns: 1
-    items:  
-      - type: VegaContainer
-        title: HRA Growth Per Release
-        tooltip: This graph shows the number of digital objects by type that were added over time.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
-      - type: VegaContainer
-        title: Digital Objects Per Organ
-        tooltip: This graph shows the number of digital objects by tope for each supported organ.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
+  - type: VegaContainer
+    title: HRA Growth Per Release
+    tooltip: This graph shows the number of digital objects by type that were added over time.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
+  - type: VegaContainer
+    title: Digital Objects Per Organ
+    tooltip: This graph shows the number of digital objects by tope for each supported organ.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
   - type: ImageContainer
     title: HRA v2.1 has 65 organs with 1,289 AS modeled in 3D. Left female kidney has 31 AS.
     tooltip: The image shows the female left kidney reference organ and 3d structures nested inside.

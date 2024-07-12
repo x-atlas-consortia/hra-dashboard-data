@@ -48,22 +48,19 @@ items:
           - label: NIH3D requests
             count: 3065
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/nih3d-downloads.HRA_1.csv
-  - type: GridContainer
-    columns: 1
-    items:
-      - type: VegaContainer
-        title: Digital Object Usage
-        tooltip: This graph shows digital object requests from various organizations over time.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
-      - type: VegaContainer
-        title: HRA Products Usage
-        tooltip: This graph shows web requests to various HRA resources over time.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
-      - type: VegaContainer
-        title: Global HRA Portal Usage
-        tooltip: This graph shows web requests since June 2023 to various HRA resources from countries around the world.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
-      - type: VegaContainer
-        title: Top-10 Users of HRA Products
-        tooltip: This graph shows web requests since June 2023 from the top 10 website referrers.
-        specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/top-referrers.vl.json
+  - type: VegaContainer
+    title: Digital Object Usage
+    tooltip: This graph shows digital object requests from various organizations over time.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
+  - type: VegaContainer
+    title: HRA Products Usage
+    tooltip: This graph shows web requests to various HRA resources over time.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
+  - type: VegaContainer
+    title: Global HRA Portal Usage
+    tooltip: This graph shows web requests since June 2023 to various HRA resources from countries around the world.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
+  - type: VegaContainer
+    title: Top-10 Users of HRA Products
+    tooltip: This graph shows web requests since June 2023 from the top 10 website referrers.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/top-referrers.vl.json

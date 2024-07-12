@@ -33,7 +33,7 @@
     "x": { "field": "requests", "type": "quantitative" },
     "tooltip": [
       { "field": "host", "type": "nominal" },
-      { "field": "requests", "type": "quantitative" }
+      { "field": "requests", "type": "quantitative", "format": "," }
     ]
   },
   "layer": [
