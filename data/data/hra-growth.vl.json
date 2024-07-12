@@ -49,10 +49,7 @@
       "field": "cumulative_count",
       "type": "quantitative",
       "title": "Cumulative Count",
-      "scale": { "type": "log" },
-      "axis": {
-        "labelAngle": -45
-      }
+      "scale": { "type": "log" }
     },
     "color": { "field": "group", "type": "nominal", "title": "Measure" }
   }
