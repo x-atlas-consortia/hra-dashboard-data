@@ -48,6 +48,7 @@
     "x": {
       "field": "date",
       "type": "temporal",
+      "title": "Date",
       "axis": {
         "labelAngle": -45
       }
@@ -56,14 +57,17 @@
       "field": "rolling_requests",
       "type": "quantitative",
       "scale": { "type": "log" },
-      "title": "requests",
+      "title": "Requests",
       "axis": {
         "labelAngle": -45
       }
     },
     "color": {
       "field": "site",
-      "type": "nominal"
+      "type": "nominal",
+      "legend": {
+        "title": "User"
+      }
     }
   }
 }

@@ -56,6 +56,13 @@
         "labelAngle": -45
       }
     },
-    "color": { "field": "group", "type": "nominal", "title": "Measure" }
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "title": "Measure",
+      "legend": {
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
+      }
+    }
   }
 }

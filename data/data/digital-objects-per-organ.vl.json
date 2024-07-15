@@ -36,7 +36,8 @@
       "type": "nominal",
       "title": "Organ",
       "axis": {
-        "labelAngle": -45
+        "labelAngle": -45,
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
       }
     },
     "y": {

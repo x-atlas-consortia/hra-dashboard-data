@@ -30,10 +30,11 @@
     }
   },
   "encoding": {
-    "y": { "field": "host", "type": "nominal" },
+    "y": { "field": "host", "type": "nominal", "title": "Host" },
     "x": {
       "field": "requests",
       "type": "quantitative",
+      "title": "Requests",
       "axis": {
         "labelAngle": -45
       }

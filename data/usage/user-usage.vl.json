@@ -47,17 +47,21 @@
   "encoding": {
     "x": {
       "field": "date",
-      "type": "temporal"
+      "type": "temporal",
+      "title": "Date"
     },
     "y": {
       "field": "rolling_requests",
       "type": "quantitative",
       "scale": { "type": "log" },
-      "title": "requests"
+      "title": "Requests"
     },
     "color": {
       "field": "user",
-      "type": "nominal"
+      "type": "nominal",
+      "legend": {
+        "title": "User"
+      }
     }
   }
 }

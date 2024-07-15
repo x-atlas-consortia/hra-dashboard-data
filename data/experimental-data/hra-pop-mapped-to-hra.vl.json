@@ -57,7 +57,7 @@
     "x": {
       "aggregate": "sum",
       "field": "count",
-      "title": "# Datasets",
+      "title": "Datasets",
       "axis": {
         "labelAngle": -45
       }
@@ -69,6 +69,12 @@
         "labelAngle": -45
       }
     },
-    "color": { "field": "group_value", "title": "Grouped Value" }
+    "color": {
+      "field": "group_value",
+      "title": "Grouped Value",
+      "legend": {
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
+      }
+    }
   }
 }
