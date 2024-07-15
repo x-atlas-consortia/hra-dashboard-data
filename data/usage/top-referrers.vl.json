@@ -9,14 +9,15 @@
   "config": {
     "font": "Metropolis",
     "axis": {
-      "labelFontSize": 12,
+      "labelFontSize": 14,
       "titleFontSize": 14,
       "titleFontWeight": 500,
       "labelFontWeight": 500,
       "titleLineHeight": 21,
-      "labelLineHeight": 18,
+      "labelLineHeight": 21,
       "titleColor": "#201E3D",
-      "labelColor": "#4B4B5E"
+      "labelColor": "#4B4B5E",
+      "titlePadding": 50
     },
     "legend": {
       "labelFontSize": 14,
@@ -30,11 +31,18 @@
   },
   "encoding": {
     "y": { "field": "host", "type": "nominal" },
-    "x": { "field": "requests", "type": "quantitative" },
+    "x": {
+      "field": "requests",
+      "type": "quantitative",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
     "tooltip": [
       { "field": "host", "type": "nominal" },
       { "field": "requests", "type": "quantitative", "format": "," }
-    ]
+    ],
+    "text": { "format": "," }
   },
   "layer": [
     {

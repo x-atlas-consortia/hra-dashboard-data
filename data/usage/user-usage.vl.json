@@ -6,17 +6,19 @@
   },
   "width": "container",
   "height": "container",
+  "padding": { "right": 20 },
   "config": {
     "font": "Metropolis",
     "axis": {
-      "labelFontSize": 12,
+      "labelFontSize": 14,
       "titleFontSize": 14,
       "titleFontWeight": 500,
       "labelFontWeight": 500,
       "titleLineHeight": 21,
-      "labelLineHeight": 18,
+      "labelLineHeight": 21,
       "titleColor": "#201E3D",
-      "labelColor": "#4B4B5E"
+      "labelColor": "#4B4B5E",
+      "titlePadding": 10
     },
     "legend": {
       "labelFontSize": 14,
