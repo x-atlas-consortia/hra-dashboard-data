@@ -5,17 +5,19 @@
   },
   "width": "container",
   "height": "container",
+  "padding": { "right": 35, "left": 5 },
   "config": {
     "font": "Metropolis",
     "axis": {
-      "labelFontSize": 12,
+      "labelFontSize": 14,
       "titleFontSize": 14,
       "titleFontWeight": 500,
       "labelFontWeight": 500,
       "titleLineHeight": 21,
-      "labelLineHeight": 18,
+      "labelLineHeight": 21,
       "titleColor": "#201E3D",
-      "labelColor": "#4B4B5E"
+      "labelColor": "#4B4B5E",
+      "titlePadding": 20
     },
     "legend": {
       "labelFontSize": 14,
@@ -49,8 +51,18 @@
       "field": "cumulative_count",
       "type": "quantitative",
       "title": "Cumulative Count",
-      "scale": { "type": "log" }
+      "scale": { "type": "log" },
+      "axis": {
+        "labelAngle": -45
+      }
     },
-    "color": { "field": "group", "type": "nominal", "title": "Measure" }
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "title": "Measure",
+      "legend": {
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
+      }
+    }
   }
 }
