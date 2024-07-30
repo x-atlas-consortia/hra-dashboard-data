@@ -7,15 +7,33 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 
 SELECT ?organ ?type (COUNT(*) as ?count)
 FROM HRA:
 WHERE {
+  # CTAnn Crosswalks
+  {
+    {
+      SELECT DISTINCT ?organIri ?digitalObject
+      WHERE {
+        GRAPH <https://purl.humanatlas.io/graph/ctann-crosswalks> {
+          [] a ccf:AnnotationItem ;
+              ccf:organ_id ?organIri ;
+              ccf:tool ?digitalObject .
+        }
+      }
+    }
+    ?organIri ccf:ccf_pref_label ?organLabel .
+    BIND("CTAnn Crosswalks" as ?type)
+  }
+  UNION
   # 2D FTU
   {
     ?digitalObject a ccf:FtuIllustration ;
-    ccf:ccf_located_in ?organIri .
+    ccf:ccf_located_in ?organId .
+    BIND(IRI(REPLACE(?organId, 'UBERON:', STR(UBERON:))) as ?organIri)
     ?organIri ccf:ccf_pref_label ?organLabel .
     BIND("2D FTU Illustration" as ?type)
   }
@@ -51,7 +69,7 @@ WHERE {
   }
   FILTER(!CONTAINS(STR(?digitalObject), 'crosswalk'))
 
-  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
       REPLACE(LCASE(?organLabel), 'left ', ''), 'right ', ''),
       'skin of body', 'skin'),
       'male reproductive system', 'prostate gland'),
@@ -59,6 +77,7 @@ WHERE {
       'mesenteric lymph node', 'lymph node'),
       'retina', 'eye'),
       'thoracic thymus', 'thymus'),
+      'hippocampal gyrus (formation)', 'brain'),
       'respiratory system', 'lung') as ?organ)
 }
 GROUP BY ?organ ?type
