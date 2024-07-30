@@ -15,18 +15,18 @@ FROM HRA:
 WHERE {
   # CTAnn Crosswalks
   {
-    {
-      SELECT DISTINCT ?organIri ?digitalObject
-      WHERE {
-        GRAPH <https://purl.humanatlas.io/graph/ctann-crosswalks> {
-          [] a ccf:AnnotationItem ;
-              ccf:organ_id ?organIri ;
-              ccf:tool ?digitalObject .
-        }
+    SELECT DISTINCT ?organLabel ?digitalObject ?type
+    WHERE {
+      GRAPH <https://purl.humanatlas.io/graph/ctann-crosswalks> {
+        [] a ccf:AnnotationItem ;
+            ccf:organ_id ?organIri ;
+            ccf:tool ?digitalObject .
       }
+
+      ?organIri ccf:ccf_pref_label ?organPrefLabel .
+      BIND(LCASE(STR(?organPrefLabel)) as ?organLabel)
+      BIND("CTAnn Crosswalks" as ?type)
     }
-    ?organIri ccf:ccf_pref_label ?organLabel .
-    BIND("CTAnn Crosswalks" as ?type)
   }
   UNION
   # 2D FTU
