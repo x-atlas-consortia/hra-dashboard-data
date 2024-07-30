@@ -38,8 +38,9 @@ items:
       - title: Ontology Requests
         tooltip: Statistics for number of web requests to various external resources.
         items:
-          # - label: OLS requests
-          #   count: -1
+          - label: EBI OLS requests
+            count: 11531
+            source: email
           - label: BioPortal requests
             count: 1605
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
