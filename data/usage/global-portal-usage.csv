@@ -1,141 +1,141 @@
 country,countryId,requests
-United States,840,483013
-Germany,276,36591
-Hong Kong,344,34110
-Gabon,266,21810
-Comoros,174,18343
-Senegal,686,17727
-France,250,16923
-Russia,643,14737
-Japan,392,12148
-Canada,124,10806
-Austria,040,9363
-India,356,8191
-Kiribati,296,6071
-Poland,616,5682
-Ecuador,218,5379
-Netherlands,528,5352
-Seychelles,690,4415
-El Salvador,222,4300
-Italy,380,4048
-Brazil,076,4004
-China,156,3672
-Iran,364,2755
-Taiwan,158,2542
-Ireland,372,2445
-Finland,246,2281
-Mexico,484,2049
-Turkey,792,1969
-Pakistan,586,1603
-Israel,376,1471
-Denmark,208,1466
-Vietnam,704,1452
-Belgium,056,1444
-Chile,152,1253
-Thailand,764,1132
-Argentina,032,1091
-Indonesia,360,1085
-Egypt,818,1025
-Malaysia,458,984
+United States,840,530612
+Germany,276,39314
+Hong Kong,344,35209
+Gabon,266,23450
+Senegal,686,19945
+Comoros,174,19497
+France,250,18098
+Russia,643,16448
+Japan,392,12934
+Canada,124,11155
+Austria,040,10131
+India,356,8428
+Kiribati,296,7010
+Italy,380,6868
+Poland,616,5802
+Netherlands,528,5762
+Ecuador,218,5444
+Seychelles,690,4710
+El Salvador,222,4660
+Brazil,076,4456
+China,156,3861
+Iran,364,2797
+Ireland,372,2739
+Taiwan,158,2700
+Mexico,484,2594
+Finland,246,2305
+Turkey,792,2145
+Pakistan,586,1918
+Denmark,208,1691
+Vietnam,704,1632
+Israel,376,1518
+Belgium,056,1450
+Chile,152,1327
+Argentina,032,1320
+Thailand,764,1237
+Indonesia,360,1198
+Egypt,818,1059
+Malaysia,458,1036
 United Arab Emirates,784,962
-New Zealand,554,867
-Romania,642,788
-Greece,300,724
-Puerto Rico,630,695
-Czechia,203,642
-Portugal,620,630
-Philippines,608,626
-Norway,578,613
-Bangladesh,050,578
-Hungary,348,504
-Colombia,170,487
-Ukraine,804,350
-Saudi Arabia,682,340
-Peru,604,298
-Luxembourg,442,295
-Tonga,776,290
+New Zealand,554,944
+Puerto Rico,630,827
+Romania,642,804
+Greece,300,768
+Czechia,203,731
+Philippines,608,709
+Bangladesh,050,682
+Norway,578,680
+Portugal,620,640
+Hungary,348,535
+Luxembourg,442,527
+Colombia,170,525
+Tonga,776,492
+Ukraine,804,395
+Saudi Arabia,682,390
+Algeria,012,345
+Zambia,894,337
+Peru,604,299
+Venezuela,862,285
+Cambodia,116,282
 Croatia,191,281
-Zambia,894,263
-Venezuela,862,251
-Madagascar,450,244
-Bermuda,060,232
-Cambodia,116,220
-Kenya,404,213
-Algeria,012,183
+Madagascar,450,245
+Kenya,404,237
+Bermuda,060,237
+Ethiopia,231,162
+Lesotho,426,155
 Kazakhstan,398,154
+Niger,562,153
+Georgia,268,150
 Slovenia,705,149
-Georgia,268,149
-Ethiopia,231,146
-Lesotho,426,144
 Malta,470,137
 Federated States of Micronesia,583,137
 Monaco,492,136
-Cameroon,120,127
+Cameroon,120,129
 Bahrain,048,117
-Iraq,368,109
+Iraq,368,114
+Qatar,634,113
+Jordan,400,110
 Belarus,112,106
-Niger,562,105
-Qatar,634,104
-Estonia,233,100
+Estonia,233,103
 Jamaica,388,100
-Kuwait,414,94
-Jordan,400,91
+Slovakia,703,99
+Kuwait,414,98
 Morocco,504,87
-Cyprus,196,85
+Cyprus,196,86
 Grenada,308,82
 Reunion,638,77
-Latvia,428,68
+Latvia,428,70
 Montenegro,499,66
-Paraguay,600,62
-Armenia,051,60
-Dominica,212,60
+Dominica,212,64
+Paraguay,600,63
+Armenia,051,61
+Ghana,288,57
 North Macedonia,807,52
 Oman,512,51
+Uruguay,858,51
 Nepal,524,51
 Rwanda,646,50
-Slovakia,703,50
-Ghana,288,49
-Uruguay,858,47
 Guyana,328,44
+Guatemala,320,43
+Moldova,498,43
 French Guiana,254,39
-Guatemala,320,39
-Moldova,498,38
 Honduras,340,37
+Sri Lanka,144,37
 Singapore,702,34
-Sri Lanka,144,33
+Burundi,108,33
 Sudan,729,31
-Albania,008,22
-Angola,024,20
-Azerbaijan,031,17
-Mozambique,508,16
+Albania,008,26
+Angola,024,24
+Azerbaijan,031,22
+Mozambique,508,20
+Uganda,800,16
 Uzbekistan,860,15
 Lebanon,422,14
 Belize,084,13
-Uganda,800,12
-Tanzania,834,12
 Svalbard,744,12
+Tanzania,834,12
 Cuba,192,11
-Burundi,108,9
 Cook Islands,184,8
 Saint Kitts and Nevis,659,8
-Zimbabwe,716,8
+Timor-Leste,626,8
 The Gambia,270,8
 Republic of Kosovo,,8
+Zimbabwe,716,8
 The Bahamas,044,7
 Libya,434,6
-Liberia,430,5
+Liberia,430,6
+Myanmar (Burma),104,5
 Laos,418,5
 Switzerland,756,5
+Costa Rica,188,5
+Namibia,516,5
 Chad,148,4
-Timor-Leste,626,4
-Barbados,052,4
 Djibouti,262,4
+Barbados,052,4
 Syria,760,4
 British Virgin Islands,092,2
-Kyrgyzstan,417,1
 Tajikistan,762,1
+Kyrgyzstan,417,1
 Palau,585,1
-Namibia,516,1
-Costa Rica,188,1
-Myanmar (Burma),104,1
 Yemen,887,1
