@@ -1,10 +1,7 @@
 type: Dashboard
 title: Diversity and Inclusion
 description: >-
-  The HRA effort aims to be inclusive and representative of human diversity.
-  Counts and visualizations show the diversity of HRA tissue donors, authors,
-  reviewers, and users using population pyramids, bar graphs, and a
-  choropleth map showing the number of paper authors overlaid on a world map.
+  The HRA effort aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of HRAlit paper authors overlaid on a world map.
 link: 
   type: Link
   url: https://doi.org/10.1038/s41597-024-03416-8
@@ -12,8 +9,8 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: HRA Experts
-        tooltip: Statistics covering authors, experts, and reviewers in the HRA Working Group. 
+      - title: HRA Working Group
+        tooltip: Statistics covering authors, experts, and reviewers in the HRA Working Group.
         items:
           # - label: registered experts
           #   count: -1
@@ -35,7 +32,7 @@ items:
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
     title: Population Comparison
-    tooltip: This graph shows a comparison of HRA, publication, and experimental to world population data.
+    tooltip: These graphs show a breakdown of HRA survey participants, donors, and world population by biological age and HRA experts and authors by career age for both sexes.
     aspectRatio: 3 / 1
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
   - type: GridContainer
@@ -43,7 +40,7 @@ items:
     items:
       - type: ImageContainer
         title: Experts Around the Globe
-        tooltip: This graph shows number of authors color coded on a world map.
+        tooltip: This graph shows the number of authors in HRA relevant publications (HRAlit) by country overlaid on a world map.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/experts-world-map.png
       - type: ImageContainer
         title: Ethnic Diversity Breakdown
