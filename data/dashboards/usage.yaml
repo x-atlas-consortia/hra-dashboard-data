@@ -13,7 +13,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources
+        tooltip: Statistics covering data usage from HRA resources up to June 15, 2024.
         items:
           - label: HRA papers
             count: 1057
@@ -28,7 +28,7 @@ items:
             count: 266
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
       - title: HRA Requests
-        tooltip: Statistics for number of web requests for HRA-API and the HRA portal
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 15, 2024.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
@@ -36,7 +36,7 @@ items:
           - label: HRA Portal requests
             count: 841649
       - title: Ontology Requests
-        tooltip: Statistics for number of web requests to various external resources.
+        tooltip: Number of web requests to HRA data via external data providers up to June 15, 2024.
         items:
           - label: EBI OLS requests
             count: 11531
@@ -51,7 +51,7 @@ items:
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/nih3d-downloads.HRA_1.csv
   - type: VegaContainer
     title: Digital Object Usage
-    tooltip: This graph shows digital object requests from various organizations over time.
+    tooltip: This graph shows HRA digital object requests from various websites since June 2023.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
   - type: VegaContainer
     title: HRA Products Usage
@@ -59,9 +59,9 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
   - type: VegaContainer
     title: Global HRA Portal Usage
-    tooltip: This graph shows web requests since June 2023 to various HRA resources from countries around the world.
+    tooltip: This graph shows where web requests originate from, for requests made between June 2023 and June 2024. Hover over a country to see the number of requests.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
   - type: VegaContainer
     title: Top-10 Users of HRA Products
-    tooltip: This graph shows web requests since June 2023 from the top 10 website referrers.
+    tooltip: This graph shows the top ten websites that have referred traffic to HRA products since June 2023.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/top-referrers.vl.json
