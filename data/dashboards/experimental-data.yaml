@@ -1,12 +1,7 @@
 type: Dashboard
 title: Experimental Data
 description: >-
-  The HRA is constructed from experimental data and links back to the original sources. 
-  High-quality datasets are used to compute HRA Cell Type Populations (HRApop) for anatomical structures. 
-  Shown are basic statistics for the datasets that make up HRApop: bar graphs that detail how many datasets have been mapped
-  to the HRA by what methods, and a Sankey diagram with seven vertical bars showing from
-  left to right, for all datasets: source/portal, donor sex, donor age, donor race/ethnicity, donor BMI, organ, 
-  single-cell (sc) transcriptomics vs sc-proteomics, whether the dataset is RUI-registered into a HRA 3D Digital Object (organ), and whether it is part of the atlas.
+  The HRA is constructed from experimental data linked back to the original sources. High-quality datasets are used to compute HRA Cell Type Populations (HRApop) for anatomical structures. Shown are basic statistics for the datasets represented in HRApop: bar graphs that detail how many datasets have been mapped to the HRA by what methods, and a Sankey diagram with nine vertical bars showing from left to right, for all datasets: source/portal, donor sex, donor age, donor race/ethnicity, donor BMI, organ, whether the dataset has a single-cell (sc) transcriptomics cell type population summary or a sc-proteomics summary or no summary, whether the dataset is RUI-registered into a HRA 3D Digital Object (organ), and whether it is part of the atlas.
 link:
   type: Link
   url: https://doi.org/10.1101/2024.03.27.587041
@@ -15,7 +10,7 @@ items:
   - type: MetricsContainer
     items:
       - title: Data Provenance
-        tooltip: Statistics covering counts of datasets and related entities in HRApop.
+        tooltip: Statistics covering counts of datasets and related entities in HRApop v0.10.2 in April 2024.
         source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.10.2/reports/universe-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
@@ -53,12 +48,12 @@ items:
           - label: Commits
             count: 1140
   - type: VegaContainer
-    title: HRApop data mapped to the HRA
+    title: HRApop Data Mapped to the HRA
     tooltip: This graph shows datasets mapped to the HRA grouped by Portal, Organ, Sex, Age, or Ethnicity.
     aspectRatio: 3 / 1
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.vl.json
   - type: IFrameContainer
-    title: HRApop Cell Type Populations Properties
-    tooltip: This Sankey diagram breaks down HRApop datasets by metadata.
+    title: HRApop Dataset Provenance and Properties
+    tooltip: This Sankey diagram shows HRApop datasets by  source/portal, sex, age, race/ethnicity, BMI, organ, cell summary/modality, RUI-registration status, and whether it is part of the atlas.
     aspectRatio: 3 / 1
     iframeUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/sankey_atlas.html
