@@ -42,7 +42,7 @@ items:
             unit: MB
       
       - title: Ontologies Extended
-        tooltip: Statistics covering what terms were added to other biomedical ontologies during the course of HRA development.
+        tooltip: Statistics covering how many terms were added to other biomedical ontologies during the course of HRA development.
         items:
           - label: Terms added to Uberon
             count: 111
@@ -52,11 +52,11 @@ items:
             count: 461
   - type: VegaContainer
     title: HRA Growth Per Release
-    tooltip: This graph shows the number of digital objects by type that were added over time.
+    tooltip: This graph shows growth over time using various measures.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.vl.json
   - type: VegaContainer
     title: Digital Objects Per Organ
-    tooltip: This graph shows the number of digital objects by tope for each supported organ.
+    tooltip: This graph shows the number of digital objects by type for each supported organ, sorted alphabetically.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
   - type: ImageContainer
     title: HRA v2.1 has 65 organs with 1,289 AS modeled in 3D. Left female kidney has 31 AS.
