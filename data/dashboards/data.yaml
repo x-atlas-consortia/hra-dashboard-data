@@ -59,8 +59,8 @@ items:
     tooltip: This graph shows the number of digital objects by type for each supported organ, sorted alphabetically.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
   - type: ImageContainer
-    title: HRA v2.1 has 65 organs with 1,289 AS modeled in 3D. Left female kidney has 31 AS.
-    tooltip: The image shows the female left kidney reference organ and 3d structures nested inside.
+    title: Exemplary Visualization of Anatomical Structures in the HRA v2.1
+    tooltip: This image shows the female left kidney reference organ and six major 3D structures nested inside (from left to right): Hilum of kidney, renal papilla, renal pyramid, renal column, outer cortex of kidney, and kidney capsule.
     aspectRatio: 3 / 1,
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/as-in-3d.png
     source: https://docs.google.com/presentation/d/1NhNw2k5pIxRDdcN39Kir6-g6VYh-jjV2KHn_A4-Izgg/edit#slide=id.g2ae959ca31e_0_300
