@@ -16,11 +16,11 @@ items:
         tooltip: Statistics covering data usage from HRA resources up to June 15, 2024.
         items:
           - label: HRA papers
-            count: 1057
-            source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
+            count: 1011
+            source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=1817931250#gid=1817931250&range=E8
           - label: HRA paper citations
-            count: 59527
-            source: Kiki / HRAlit v0.5
+            count: 29756
+            source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
             count: 5015
             source: src/usage/sop-downloads.js
