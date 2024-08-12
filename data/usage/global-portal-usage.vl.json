@@ -70,7 +70,8 @@
         "color": {
           "field": "requests",
           "type": "quantitative",
-          "scale": { "type": "log" }
+          "scale": { "type": "log" },
+          "title": "Requests"
         },
         "tooltip": [
           { "field": "country", "type": "nominal" },
