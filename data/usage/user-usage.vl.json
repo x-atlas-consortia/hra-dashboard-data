@@ -60,7 +60,8 @@
       "field": "user",
       "type": "nominal",
       "legend": {
-        "title": "User"
+        "title": "User",
+        "symbolStrokeWidth": 10
       }
     }
   }
