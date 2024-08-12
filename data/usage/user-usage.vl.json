@@ -54,7 +54,10 @@
       "field": "rolling_requests",
       "type": "quantitative",
       "scale": { "type": "log" },
-      "title": "Requests"
+      "title": "Requests",
+      "axis": {
+        "labelAngle": -45
+      }
     },
     "color": {
       "field": "user",
