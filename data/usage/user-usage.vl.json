@@ -48,7 +48,10 @@
     "x": {
       "field": "date",
       "type": "temporal",
-      "title": "Date"
+      "title": "Date",
+      "axis": {
+        "labelAngle": -45
+      }
     },
     "y": {
       "field": "rolling_requests",
