@@ -34,11 +34,11 @@ items:
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes
-            count: 7244052
+            count: 9518620
           - label: Edges
-            count: 82502838
+            count: 153072921
           - label: Size
-            count: 60240
+            count: 112445
             unit: MB
       
       - title: Ontologies Extended
