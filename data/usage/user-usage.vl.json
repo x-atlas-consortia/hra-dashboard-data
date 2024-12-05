@@ -6,7 +6,9 @@
   },
   "width": "container",
   "height": "container",
-  "padding": { "right": 20 },
+  "padding": {
+    "right": 20
+  },
   "config": {
     "font": "Metropolis",
     "axis": {
@@ -30,7 +32,10 @@
       "labelFontWeight": 500
     }
   },
-  "mark": { "type": "line", "tooltip": true },
+  "mark": {
+    "type": "line",
+    "tooltip": true
+  },
   "transform": [
     {
       "window": [
@@ -40,8 +45,25 @@
           "as": "rolling_requests"
         }
       ],
-      "groupby": ["user"],
-      "frame": [-7, 7]
+      "groupby": [
+        "user"
+      ],
+      "frame": [
+        -7,
+        7
+      ]
+    }
+  ],
+  "params": [
+    {
+      "name": "user-selection",
+      "select": {
+        "type": "point",
+        "fields": [
+          "user"
+        ]
+      },
+      "bind": "legend"
     }
   ],
   "encoding": {
@@ -57,7 +79,9 @@
     "y": {
       "field": "rolling_requests",
       "type": "quantitative",
-      "scale": { "type": "log" },
+      "scale": {
+        "type": "log"
+      },
       "title": "Requests",
       "axis": {
         "labelAngle": -45,
@@ -71,6 +95,13 @@
         "title": "User",
         "symbolStrokeWidth": 10
       }
+    },
+    "opacity": {
+      "condition": {
+        "param": "user-selection",
+        "value": 1
+      },
+      "value": 0.2
     }
   }
 }

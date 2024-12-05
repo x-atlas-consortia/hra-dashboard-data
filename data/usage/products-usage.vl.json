@@ -44,6 +44,18 @@
       "frame": [-7, 7]
     }
   ],
+  "params": [
+    {
+      "name": "user-selection",
+      "select": {
+        "type": "point",
+        "fields": [
+          "site"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
   "encoding": {
     "x": {
       "field": "date",
@@ -71,6 +83,13 @@
         "title": "User",
         "symbolStrokeWidth": 10
       }
+    },
+    "opacity": {
+      "condition": {
+        "param": "user-selection",
+        "value": 1
+      },
+      "value": 0.2
     }
   }
 }
