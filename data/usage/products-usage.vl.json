@@ -50,7 +50,8 @@
       "type": "temporal",
       "title": "Date",
       "axis": {
-        "labelAngle": -45
+        "labelAngle": -45,
+        "labelOverlap": false
       }
     },
     "y": {
@@ -59,7 +60,8 @@
       "scale": { "type": "log" },
       "title": "Requests",
       "axis": {
-        "labelAngle": -45
+        "labelAngle": -45,
+        "labelOverlap": false
       }
     },
     "color": {
