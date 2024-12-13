@@ -24,30 +24,30 @@ items:
           - label: FTU Illustrations
             count: 22
           - label: 3D Organ Models
-            count: 65
+            count: 75
           - label: Blood Vessel Segments
             count: 1
           - label: SOPs
-            count: 20
+            count: 28
       - title: Size of the HRA Knowledge Graph
         tooltip: High-level statistics for the HRA Knowledge Graph. 
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes
-            count: 9518620
+            count: 10064033
           - label: Edges
-            count: 153072921
+            count: 171250177
           - label: Size
-            count: 112445
+            count: 125838
             unit: MB
       
       - title: Ontologies Extended
         tooltip: Statistics covering how many terms were added to other biomedical ontologies during the course of HRA development.
         items:
           - label: Terms added to Uberon
-            count: 111
+            count: 126
           - label: Terms added to CL
-            count: 117
+            count: 141
           - label: Terms added to PCL
             count: 461
   - type: VegaContainer

@@ -22,7 +22,7 @@ items:
             count: 29756
             source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 5015
+            count: 5856
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 266
@@ -32,9 +32,9 @@ items:
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 758732
+            count: 776524
           - label: HRA Portal requests
-            count: 1487525
+            count: 1569658
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to June 15, 2024.
         items:
@@ -42,7 +42,7 @@ items:
             count: 11531
             source: email
           - label: BioPortal requests
-            count: 1605
+            count: 1872
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1

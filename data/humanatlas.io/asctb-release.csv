@@ -1,14 +1,13 @@
 Organ,csv,table_version,AS,CT,B_Total,BG,BP,BM,BF,BL,ASWithNoLink,CTWithNoLink,BWithNoLink,ASWithNoCT,CTWithNoB,AS_AS,AS_CT,CT_BM,url
-allen brain,https://cdn.humanatlas.io/digital-objects/asct-b/allen-brain/v1.6/assets/asct-b-allen-brain.csv,v1.6,194,623,773,773,0,0,0,0,18,1,133,175,40,194,2463,1664,https://purl.humanatlas.io/asct-b/allen-brain/v1.6
-anatomical systems,https://cdn.humanatlas.io/digital-objects/asct-b/anatomical-systems/v1.0/assets/asct-b-vh-anatomical-systems.csv,v1.0,86,2,1,1,0,0,0,0,0,0,0,44,2,89,0,0,https://purl.humanatlas.io/asct-b/anatomical-systems/v1.0
+allen brain,https://cdn.humanatlas.io/digital-objects/asct-b/allen-brain/v1.7/assets/asct-b-allen-brain.csv,v1.7,194,624,773,773,0,0,0,0,18,0,133,175,41,194,2467,1664,https://purl.humanatlas.io/asct-b/allen-brain/v1.7
+anatomical systems,https://cdn.humanatlas.io/digital-objects/asct-b/anatomical-systems/v1.1/assets/asct-b-vh-anatomical-systems.csv,v1.1,108,2,1,1,0,0,0,0,0,0,0,62,2,106,0,0,https://purl.humanatlas.io/asct-b/anatomical-systems/v1.1
 blood pelvis,https://cdn.humanatlas.io/digital-objects/asct-b/blood-pelvis/v1.4/assets/asct-b-vh-blood-pelvis.csv,v1.4,6,31,140,106,34,0,0,0,0,0,0,5,8,3,29,304,https://purl.humanatlas.io/asct-b/blood-pelvis/v1.4
-blood vasculature,https://cdn.humanatlas.io/digital-objects/asct-b/blood-vasculature/v1.6/assets/asct-b-vh-blood-vasculature.csv,v1.6,1059,12,11,11,0,0,0,0,224,0,0,4,8,1082,3673,11,https://purl.humanatlas.io/asct-b/blood-vasculature/v1.6
+blood vasculature,https://cdn.humanatlas.io/digital-objects/asct-b/blood-vasculature/v1.7/assets/asct-b-vh-blood-vasculature.csv,v1.7,1061,12,11,11,0,0,0,0,210,0,0,4,8,1082,3677,11,https://purl.humanatlas.io/asct-b/blood-vasculature/v1.7
 bone marrow,https://cdn.humanatlas.io/digital-objects/asct-b/bone-marrow/v1.5/assets/asct-b-vh-bone-marrow.csv,v1.5,5,49,231,179,52,0,0,0,0,0,0,4,7,1,47,558,https://purl.humanatlas.io/asct-b/bone-marrow/v1.5
-bonemarrow pelvis,https://cdn.humanatlas.io/digital-objects/asct-b/bonemarrow-pelvis/v1.3/assets/asct-b-vh-bonemarrow-pelvis.csv,v1.3,6,49,231,179,52,0,0,0,0,4,1,5,7,3,47,558,https://purl.humanatlas.io/asct-b/bonemarrow-pelvis/v1.3
-eye,https://cdn.humanatlas.io/digital-objects/asct-b/eye/v1.3/assets/asct-b-vh-eye.csv,v1.3,45,57,152,59,78,2,5,8,3,8,37,15,14,42,171,169,https://purl.humanatlas.io/asct-b/eye/v1.3
-fallopian tube,https://cdn.humanatlas.io/digital-objects/asct-b/fallopian-tube/v1.3/assets/asct-b-fallopian-tube.csv,v1.3,78,21,27,14,13,0,0,0,63,1,0,48,4,78,216,27,https://purl.humanatlas.io/asct-b/fallopian-tube/v1.3
-heart,https://cdn.humanatlas.io/digital-objects/asct-b/heart/v1.4/assets/asct-b-vh-heart.csv,v1.4,56,30,46,46,0,0,0,0,1,0,1,4,8,66,313,77,https://purl.humanatlas.io/asct-b/heart/v1.4
-kidney,https://cdn.humanatlas.io/digital-objects/asct-b/kidney/v1.5/assets/asct-b-vh-kidney.csv,v1.5,67,72,187,186,1,0,0,0,2,3,0,6,4,76,260,330,https://purl.humanatlas.io/asct-b/kidney/v1.5
+eye,https://cdn.humanatlas.io/digital-objects/asct-b/eye/v1.4/assets/asct-b-vh-eye.csv,v1.4,47,36,154,59,76,6,5,8,2,1,21,15,9,44,112,167,https://purl.humanatlas.io/asct-b/eye/v1.4
+fallopian tube,https://cdn.humanatlas.io/digital-objects/asct-b/fallopian-tube/v1.4/assets/asct-b-fallopian-tube.csv,v1.4,78,21,27,14,13,0,0,0,63,1,0,48,4,78,216,27,https://purl.humanatlas.io/asct-b/fallopian-tube/v1.4
+heart,https://cdn.humanatlas.io/digital-objects/asct-b/heart/v1.5/assets/asct-b-vh-heart.csv,v1.5,53,30,46,46,0,0,0,0,0,0,1,4,8,64,307,77,https://purl.humanatlas.io/asct-b/heart/v1.5
+kidney,https://cdn.humanatlas.io/digital-objects/asct-b/kidney/v1.6/assets/asct-b-vh-kidney.csv,v1.6,67,72,187,186,1,0,0,0,2,3,0,6,4,76,260,330,https://purl.humanatlas.io/asct-b/kidney/v1.6
 knee,https://cdn.humanatlas.io/digital-objects/asct-b/knee/v1.3/assets/asct-b-vh-knee.csv,v1.3,12,13,29,29,0,0,0,0,0,9,0,6,3,9,66,30,https://purl.humanatlas.io/asct-b/knee/v1.3
 large intestine,https://cdn.humanatlas.io/digital-objects/asct-b/large-intestine/v1.3/assets/asct-b-vh-large-intestine.csv,v1.3,58,60,93,91,2,0,0,0,0,3,8,4,2,159,864,188,https://purl.humanatlas.io/asct-b/large-intestine/v1.3
 liver,https://cdn.humanatlas.io/digital-objects/asct-b/liver/v1.3/assets/asct-b-vh-liver.csv,v1.3,21,32,70,27,43,0,0,0,1,2,1,5,4,17,98,99,https://purl.humanatlas.io/asct-b/liver/v1.3
@@ -24,11 +23,11 @@ peripheral nervous system,https://cdn.humanatlas.io/digital-objects/asct-b/perip
 placenta,https://cdn.humanatlas.io/digital-objects/asct-b/placenta/v1.2/assets/asct-b-vh-placenta.csv,v1.2,38,25,45,45,0,0,0,0,4,0,0,4,2,52,213,76,https://purl.humanatlas.io/asct-b/placenta/v1.2
 prostate,https://cdn.humanatlas.io/digital-objects/asct-b/prostate/v1.1/assets/asct-b-vh-prostate.csv,v1.1,17,22,40,40,0,0,0,0,0,2,0,4,6,14,56,48,https://purl.humanatlas.io/asct-b/prostate/v1.1
 skeleton,https://cdn.humanatlas.io/digital-objects/asct-b/skeleton/v1.2/assets/asct-b-vh-skeleton.csv,v1.2,1076,3,1,1,0,0,0,0,390,0,0,4,3,1072,1072,0,https://purl.humanatlas.io/asct-b/skeleton/v1.2
-skin,https://cdn.humanatlas.io/digital-objects/asct-b/skin/v1.3/assets/asct-b-vh-skin.csv,v1.3,19,37,69,1,68,0,0,0,0,0,0,4,2,17,104,96,https://purl.humanatlas.io/asct-b/skin/v1.3
+skin,https://cdn.humanatlas.io/digital-objects/asct-b/skin/v1.4/assets/asct-b-vh-skin.csv,v1.4,32,39,69,1,68,0,0,0,1,0,0,15,4,31,111,96,https://purl.humanatlas.io/asct-b/skin/v1.4
 small intestine,https://cdn.humanatlas.io/digital-objects/asct-b/small-intestine/v1.1/assets/asct-b-vh-small-intestine.csv,v1.1,47,37,85,44,41,0,0,0,15,10,82,19,4,67,329,109,https://purl.humanatlas.io/asct-b/small-intestine/v1.1
-spinal cord,https://cdn.humanatlas.io/digital-objects/asct-b/spinal-cord/v1.0/assets/asct-b-vh-spinal-cord.csv,v1.0,90,10,68,68,0,0,0,0,0,0,0,82,2,101,44,67,https://purl.humanatlas.io/asct-b/spinal-cord/v1.0
-spleen,https://cdn.humanatlas.io/digital-objects/asct-b/spleen/v1.3/assets/asct-b-vh-spleen.csv,v1.3,40,63,155,73,82,0,0,0,12,15,3,4,2,48,364,352,https://purl.humanatlas.io/asct-b/spleen/v1.3
-thymus,https://cdn.humanatlas.io/digital-objects/asct-b/thymus/v1.4/assets/asct-b-vh-thymus.csv,v1.4,22,52,366,311,55,0,0,0,0,0,0,5,2,30,243,576,https://purl.humanatlas.io/asct-b/thymus/v1.4
+spinal cord,https://cdn.humanatlas.io/digital-objects/asct-b/spinal-cord/v1.1/assets/asct-b-vh-spinal-cord.csv,v1.1,90,10,68,68,0,0,0,0,0,0,0,82,2,101,44,67,https://purl.humanatlas.io/asct-b/spinal-cord/v1.1
+spleen,https://cdn.humanatlas.io/digital-objects/asct-b/spleen/v1.4/assets/asct-b-vh-spleen.csv,v1.4,42,65,154,73,81,0,0,0,14,13,2,4,5,49,421,351,https://purl.humanatlas.io/asct-b/spleen/v1.4
+thymus,https://cdn.humanatlas.io/digital-objects/asct-b/thymus/v1.5/assets/asct-b-vh-thymus.csv,v1.5,22,52,366,311,55,0,0,0,0,0,0,5,2,30,243,576,https://purl.humanatlas.io/asct-b/thymus/v1.5
 trachea,https://cdn.humanatlas.io/digital-objects/asct-b/trachea/v1.0/assets/asct-b-vh-trachea.csv,v1.0,24,19,81,68,13,0,0,0,0,0,0,6,2,20,50,161,https://purl.humanatlas.io/asct-b/trachea/v1.0
 ureter,https://cdn.humanatlas.io/digital-objects/asct-b/ureter/v1.0/assets/ASCT-B_VH_Ureter.csv,v1.0,13,16,31,31,0,0,0,0,1,11,0,7,5,9,42,33,https://purl.humanatlas.io/asct-b/ureter/v1.0
 urinary bladder,https://cdn.humanatlas.io/digital-objects/asct-b/urinary-bladder/v1.0/assets/ASCT-B_VH_Urinary_Bladder.csv,v1.0,20,17,31,31,0,0,0,0,0,11,0,11,6,16,57,33,https://purl.humanatlas.io/asct-b/urinary-bladder/v1.0

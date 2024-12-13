@@ -56,7 +56,7 @@ WHERE {
     [] a ccf:MultiplexedAntibodyBasedImagingExperiment ;
       ccf:sample_organ [ rdfs:label ?organ ] ;
       ccf:tissue_preservation ?tissuePreservationMethod ;
-      ccf:method ?imagingMethod ;
+      ccf:study_method ?imagingMethod ;
     .
   }
 

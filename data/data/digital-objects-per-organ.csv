@@ -8,7 +8,6 @@ blood vasculature,3D Reference Organ,2
 body proper,3D Reference Organ,2
 bone marrow,ASCT+B Table,1
 bone marrow,CTAnn Crosswalks,3
-bonemarrow pelvis,ASCT+B Table,1
 brain,ASCT+B Table,1
 brain,3D Reference Organ,2
 eye,ASCT+B Table,1
@@ -20,7 +19,7 @@ fallopian tube,3D Reference Organ,2
 heart,ASCT+B Table,1
 heart,CTAnn Crosswalks,3
 heart,3D Reference Organ,2
-brain,CTAnn Crosswalks,1
+hippocampal gyrus (formation),CTAnn Crosswalks,1
 kidney,ASCT+B Table,1
 kidney,CTAnn Crosswalks,2
 kidney,2D FTU Illustration,8
@@ -87,6 +86,7 @@ spleen,CTAnn Crosswalks,2
 spleen,2D FTU Illustration,2
 spleen,3D Reference Organ,2
 spleen,OMAP,1
+sternum,3D Reference Organ,1
 thymus,ASCT+B Table,1
 thymus,CTAnn Crosswalks,2
 thymus,2D FTU Illustration,2

@@ -2,7 +2,8 @@ group,date,count,order
 tissue providers,2020-02-10,1,1
 tissue providers,2020-02-12,1,1
 tissue providers,2020-05-18,1,1
-tissue providers,2021-03-16,1,1
+tissue providers,2021-02-10,1,1
+tissue providers,2021-03-16,2,1
 tissue providers,2021-09-10,1,1
 tissue providers,2021-09-17,1,1
 tissue providers,2021-09-23,1,1
@@ -10,6 +11,7 @@ tissue providers,2021-09-24,1,1
 tissue providers,2021-10-19,1,1
 tissue providers,2021-11-16,2,1
 tissue providers,2022-06-08,1,1
+tissue providers,2022-08-18,1,1
 tissue providers,2022-08-29,1,1
 tissue providers,2023-01-23,1,1
 tissue providers,2023-02-20,1,1
@@ -20,10 +22,16 @@ tissue providers,2023-06-27,1,1
 tissue providers,2023-07-28,1,1
 tissue providers,2023-08-04,2,1
 tissue providers,2023-08-08,1,1
-tissue providers,2023-08-24,1,1
+tissue providers,2023-08-24,2,1
 tissue providers,2023-09-11,1,1
 tissue providers,2023-09-22,1,1
-tissue providers,2024-03-11,1,1
+tissue providers,2024-01-16,1,1
+tissue providers,2024-03-11,2,1
+tissue providers,2024-03-14,1,1
+tissue providers,2024-03-22,1,1
+tissue providers,2024-05-07,1,1
+tissue providers,2024-06-11,1,1
+tissue providers,2024-07-22,1,1
 experts,2019-04-24,1,2
 experts,2019-07-30,1,2
 experts,2020-01-01,2,2
@@ -31,8 +39,8 @@ experts,2021-03-12,32,2
 experts,2021-05-06,16,2
 experts,2021-07-28,1,2
 experts,2021-12-01,48,2
-experts,2021-12-15,1,2
-experts,2022-05-06,24,2
+experts,2021-12-15,2,2
+experts,2022-05-06,23,2
 experts,2022-12-15,9,2
 experts,2023-06-15,21,2
 experts,2023-08-18,1,2
@@ -40,6 +48,8 @@ experts,2023-12-01,6,2
 experts,2023-12-05,1,2
 experts,2023-12-15,8,2
 experts,2024-06-15,16,2
+experts,2024-08-07,1,2
+experts,2024-11-23,1,2
 publications,2019-01-01,211480,3
 publications,2020-01-01,228935,3
 publications,2021-01-01,242865,3
@@ -52,6 +62,7 @@ organs,2022-12-15,2,4
 organs,2023-06-15,11,4
 organs,2023-12-15,0,4
 organs,2024-06-15,1,4
+organs,2024-12-15,6,4
 anatomical structures,2021-03-12,1357,5
 anatomical structures,2021-12-01,1154,5
 anatomical structures,2022-05-06,107,5
@@ -59,13 +70,15 @@ anatomical structures,2022-12-15,78,5
 anatomical structures,2023-06-15,1573,5
 anatomical structures,2023-12-15,226,5
 anatomical structures,2024-06-15,164,5
+anatomical structures,2024-12-15,35,5
 cell types,2021-03-12,511,6
 cell types,2021-12-01,215,6
 cell types,2022-05-06,9,6
 cell types,2022-12-15,-33,6
 cell types,2023-06-15,510,6
-cell types,2023-12-15,-19,6
+cell types,2023-12-15,-23,6
 cell types,2024-06-15,118,6
+cell types,2024-12-15,-19,6
 biomarkers,2021-03-12,1255,7
 biomarkers,2021-12-01,254,7
 biomarkers,2022-05-06,13,7
@@ -73,17 +86,20 @@ biomarkers,2022-12-15,-93,7
 biomarkers,2023-06-15,566,7
 biomarkers,2023-12-15,15,7
 biomarkers,2024-06-15,14,7
+biomarkers,2024-12-15,-6,7
 OMAPs,2021-12-01,1,8
 OMAPs,2022-05-06,6,8
 OMAPs,2022-12-15,0,8
 OMAPs,2023-06-15,6,8
 OMAPs,2023-12-15,0,8
 OMAPs,2024-06-15,8,8
+OMAPs,2024-12-15,0,8
 2D FTU illustrations,2022-05-06,8,9
 2D FTU illustrations,2022-12-15,11,9
 2D FTU illustrations,2023-06-15,2,9
 2D FTU illustrations,2023-12-15,1,9
 2D FTU illustrations,2024-06-15,0,9
+2D FTU illustrations,2024-12-15,0,9
 SOPs,2022-02-02,1,10
 SOPs,2022-06-09,3,10
 SOPs,2022-06-23,1,10
@@ -94,6 +110,7 @@ SOPs,2022-12-09,1,10
 SOPs,2023-01-27,1,10
 SOPs,2023-05-05,1,10
 SOPs,2023-10-18,1,10
-SOPs,2023-12-11,2,10
+SOPs,2023-12-11,1,10
 SOPs,2023-12-13,1,10
 SOPs,2024-06-12,6,10
+SOPs,2024-12-10,5,10

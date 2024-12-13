@@ -27,8 +27,8 @@ items:
             count: 66803
           - label: Experimental data authors
             count: 347
-          - label: Humans on Earth on June 12th, 2024
-            count:  8115367038
+          - label: Humans on Earth on December 13th, 2024
+            count:  8193742632
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
     title: Population Comparison
