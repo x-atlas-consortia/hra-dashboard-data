@@ -35,10 +35,10 @@ items:
             count: 12373917
             source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/high-level-stats.csv
           - label: Size
-            count: 6.69
+            count: 7.37
             unit: TB
             source: du -s -BM hra-workflows-runner/raw-data/{0.11.1,data-repo,models,tmp} hra-pop/raw-data/v0.11.1
-            sourceMBs: 480 + 1749184 + 27518 + 4887790 + 29318
+            sourceMBs: 480 + 1972487 + 27518 + 5337250 + 32908
       - title: GitHub
         tooltip: Statistics about HRApop GitHub repositories.
         items:
