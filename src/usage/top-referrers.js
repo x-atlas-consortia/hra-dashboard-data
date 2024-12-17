@@ -25,6 +25,7 @@ const SKIP = new Set([
 
 const requestsByHost = {};
 for (let { host, requests } of referrers.data) {
+  host = host ? host + '' : host;
   if (host && !SKIP.has(host) && !host.endsWith('humanatlas.io') && !host.includes('hubmap-ccf-ui.netlify.app') && !host.includes('hra-ui.netlify.app')) {
     host = RENAMES[host] ?? host;
     requestsByHost[host] = (requestsByHost[host] ?? 0) + requests;

@@ -21,6 +21,7 @@ const USERS = {
 
 const userRequests = {};
 for (let { host, date, requests } of referrers.data.filter((s) => !!s.host)) {
+  host = host ? host + '' : host;
   const user = Object.entries(USERS).find(([url, _username]) => host.includes(url))?.[1];
   if (user) {
     userRequests[user] ??= {}
