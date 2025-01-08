@@ -32,9 +32,9 @@ items:
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 780964
+            count: 805424
           - label: HRA Portal requests
-            count: 1615368
+            count: 1690735
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to June 15, 2024.
         items:
@@ -42,13 +42,16 @@ items:
             count: 11531
             source: email
           - label: BioPortal requests
-            count: 1872
+            count: 1901
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
           - label: NIH3D requests
-            count: 3065
-            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/nih3d-downloads.HRA_1.csv
+            count: 10046
+            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv
+          - label: BioArt Requests
+            count: 567
+            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
   - type: VegaContainer
     title: Digital Object Usage
     tooltip: This graph shows HRA digital object requests from various websites since June 2023.
