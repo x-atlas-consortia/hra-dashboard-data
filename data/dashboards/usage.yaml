@@ -13,7 +13,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to June 15, 2024.
+        tooltip: Statistics covering data usage from HRA resources up to January 8, 2025.
         items:
           - label: HRA papers
             count: 1011
@@ -28,7 +28,7 @@ items:
             count: 266
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 15, 2024.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to January 8, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
@@ -36,7 +36,7 @@ items:
           - label: HRA Portal requests
             count: 1690735
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to June 15, 2024.
+        tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
         items:
           - label: EBI OLS requests
             count: 11531
@@ -49,7 +49,7 @@ items:
           - label: NIH3D requests
             count: 10046
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv
-          - label: BioArt Requests
+          - label: BioArt requests
             count: 567
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
   - type: VegaContainer
