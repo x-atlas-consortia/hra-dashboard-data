@@ -7,21 +7,21 @@ description: >-
 items:
   - title: Data
     route: data
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/data.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/data.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/data.yaml
   - title: Usage
     route: usage
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/usage.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/usage.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/usage.yaml
   - title: Publications
     route: publications
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/publications.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/publications.yaml
   - title: Experimental Data
     route: experimental-data
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/experimental-data.yaml
   - title: Diversity & Inclusion
     route: diversity-and-inclusion
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.svg
+    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
