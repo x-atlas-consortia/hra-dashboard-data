@@ -18,7 +18,7 @@ items:
         tooltip: High-level statistics about the number of digital objects in the HRA.
         items:
           - label: ASCT+B Tables
-            count: 36
+            count: 33
           - label: OMAP Tables
             count: 23
           - label: FTU Illustrations
