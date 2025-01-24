@@ -49,7 +49,7 @@ items:
           - label: Terms added to CL
             count: 150
           - label: Terms added to PCL
-            count: 461
+            count: 468
   - type: VegaContainer
     title: HRA Growth Per Release
     tooltip: This graph shows growth over time using various measures.
