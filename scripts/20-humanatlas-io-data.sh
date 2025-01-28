@@ -14,3 +14,4 @@ csvjson -I data/humanatlas.io/ftu-illustrations.csv | yq -y "$(cat queries/sparq
 ./src/cli/sparql-select.sh $ENDPOINT queries/sparql/humanatlas.io/as-per-organ.rq > data/humanatlas.io/as-per-organ.csv
 ./src/cli/sparql-select.sh $ENDPOINT queries/sparql/humanatlas.io/asctb-release.rq > data/humanatlas.io/asctb-release.csv
 ./src/cli/sparql-select.sh $ENDPOINT queries/sparql/humanatlas.io/omaps-release.rq > data/humanatlas.io/omaps-release.csv
+./src/cli/sparql-select.sh $ENDPOINT queries/sparql/humanatlas.io/ftu-cell-counts.rq > data/humanatlas.io/ftu-cell-counts.csv

@@ -1,0 +1,143 @@
+organ,ftu_label,ftu_iri,ftu_part_label,ftu_part_iri,ftu_part_type,ftu_part_count
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney collecting duct alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030015,CT,4
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney collecting duct beta-intercalated cell,http://purl.obolibrary.org/obo/CL_4030005,CT,2
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney cortex collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000714,CT,9
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,5
+kidney,descending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001289,kidney loop of Henle thin descending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001111,CT,3
+kidney,descending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001289,vasa recta descending limb cell,http://purl.obolibrary.org/obo/CL_1001285,CT,3
+kidney,inner medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004205,kidney inner medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000718,CT,14
+kidney,inner medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004205,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,5
+kidney,loop of Henle ascending limb thin segment,http://purl.obolibrary.org/obo/UBERON_0004193,kidney loop of Henle thin ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001107,CT,3
+kidney,loop of Henle ascending limb thin segment,http://purl.obolibrary.org/obo/UBERON_0004193,vasa recta ascending limb cell,http://purl.obolibrary.org/obo/CL_1001131,CT,5
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,AS,1
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,descending thin limb,http://purl.obolibrary.org/obo/UBERON_0005096,AS,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,distal convoluted tubule,http://purl.obolibrary.org/obo/UBERON_0001292,AS,1
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,epithelial cell of proximal tubule segment 1,http://purl.obolibrary.org/obo/CL_4030009,CT,16
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney connecting tubule epithelial cell,http://purl.obolibrary.org/obo/CL_1000768,CT,16
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney cortex collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000714,CT,15
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney distal convoluted tubule epithelial cell,http://purl.obolibrary.org/obo/CL_1000849,CT,15
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney inner medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000718,CT,14
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney loop of Henle thick ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001106,CT,11
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney loop of Henle thin ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001107,CT,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney loop of Henle thin descending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001111,CT,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,kidney outer medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000716,CT,15
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,loop of Henle ascending limb thin segment,http://purl.obolibrary.org/obo/UBERON_0004193,AS,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,CT,9
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,proximal convoluted tubule segment 1,http://purl.obolibrary.org/obo/UBERON_0004196,AS,1
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,proximal convoluted tubule segment 2,http://purl.obolibrary.org/obo/UBERON_0004197,AS,1
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,proximal straight tubule,http://purl.obolibrary.org/obo/UBERON_0001290,AS,1
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,renal connecting tubule,http://purl.obolibrary.org/obo/UBERON_0005097,AS,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,AS,2
+kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,thick ascending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001291,AS,2
+kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,kidney outer medulla collecting duct intercalated cell,http://purl.obolibrary.org/obo/CL_1000717,CT,5
+kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,kidney outer medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000716,CT,10
+kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,5
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,epithelial cell of proximal tubule,http://purl.obolibrary.org/obo/CL_0002306,CT,16
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001005,CT,20
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular mesangial cell,http://purl.obolibrary.org/obo/CL_1000742,CT,32
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney afferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001096,CT,38
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney efferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001099,CT,56
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,CT,14
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,parietal epithelial cell,http://purl.obolibrary.org/obo/CL_1000452,CT,24
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,podocyte,http://purl.obolibrary.org/obo/CL_0000653,CT,54
+large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,CT,5
+large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,CT,136
+large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,intestinal crypt stem cell of large intestine,http://purl.obolibrary.org/obo/CL_0009016,CT,5
+large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,large intestine crypt goblet cell,http://purl.obolibrary.org/obo/CL_1000321,CT,53
+large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,neuroendocrine cell,http://purl.obolibrary.org/obo/CL_0000165,CT,5
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,blood vessel smooth muscle cell,http://purl.obolibrary.org/obo/CL_0019018,CT,8
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,Kupffer cell,http://purl.obolibrary.org/obo/CL_0000091,CT,4
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,columnar/cuboidal epithelial cell,http://purl.obolibrary.org/obo/CL_0000075,CT,9
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,CT,4
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,endothelial cell of hepatic sinusoid,http://purl.obolibrary.org/obo/CL_1000398,CT,13
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,hepatic oval stem cell,http://purl.obolibrary.org/obo/CL_0002196,CT,18
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,hepatic portal fibroblast,http://purl.obolibrary.org/obo/CL_0009100,CT,4
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,hepatic stellate cell,http://purl.obolibrary.org/obo/CL_0000632,CT,4
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,CT,68
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,stratified cuboidal epithelial cell,http://purl.obolibrary.org/obo/CL_0000241,CT,7
+liver,liver lobule,http://purl.obolibrary.org/obo/UBERON_0004647,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,CT,13
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,alveolar capillary type 1 endothelial cell,http://purl.obolibrary.org/obo/CL_4028002,CT,27
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,alveolar type 1 fibroblast cell,http://purl.obolibrary.org/obo/CL_4028004,CT,7
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,CT,2
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,CT,14
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,CT,6
+lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,secondary crest myofibroblast,http://purl.obolibrary.org/obo/CL_4033016,CT,9
+pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,epithelial cell of exocrine pancreas,http://purl.obolibrary.org/obo/CL_1001433,CT,25
+pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,AS,1
+pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,AS,1
+pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,pancreatic centro-acinar cell,http://purl.obolibrary.org/obo/CL_0002080,CT,2
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,CT,7
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,macrophage,http://purl.obolibrary.org/obo/CL_0000235,CT,1
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,CT,65
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,pancreatic D cell,http://purl.obolibrary.org/obo/CL_0000173,CT,19
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,CT,11
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,pericyte,http://purl.obolibrary.org/obo/CL_0000669,CT,1
+pancreas,islet of Langerhans,http://purl.obolibrary.org/obo/UBERON_0000006,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,CT,116
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,CT,1
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,epithelial cell of exocrine pancreas,http://purl.obolibrary.org/obo/CL_1001433,CT,14
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,AS,1
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,CT,9
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,pancreatic centro-acinar cell,http://purl.obolibrary.org/obo/CL_0002080,CT,2
+pancreas,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,pancreatic goblet cell,http://purl.obolibrary.org/obo/CL_1000322,CT,1
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,CT,174
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,fibroblast of connective tissue of prostate,http://purl.obolibrary.org/obo/CL_1000299,CT,20
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,fibroblast of subepithelial connective tissue of prostatic gland,http://purl.obolibrary.org/obo/CL_1000301,CT,101
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,CT,120
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,pericyte,http://purl.obolibrary.org/obo/CL_0000669,CT,3
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,prostate gland microvascular endothelial cell,http://purl.obolibrary.org/obo/CL_2000059,CT,1
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,smooth muscle cell of prostate,http://purl.obolibrary.org/obo/CL_1000487,CT,76
+prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,CT,4
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,CT,2
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,basal cell of epidermis,http://purl.obolibrary.org/obo/CL_0002187,CT,35
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,epidermal Langerhans cell,http://purl.obolibrary.org/obo/CL_0002457,CT,3
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,melanocyte of skin,http://purl.obolibrary.org/obo/CL_1000458,CT,4
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,prickle cell,http://purl.obolibrary.org/obo/CL_0000649,CT,104
+skin of body,papillary layer of dermis,http://purl.obolibrary.org/obo/UBERON_0001992,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,CT,7
+skin of body,papillary layer of dermis,http://purl.obolibrary.org/obo/UBERON_0001992,skin fibroblast,http://purl.obolibrary.org/obo/CL_0002620,CT,39
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,B cell,http://purl.obolibrary.org/obo/CL_0000236,CT,160
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,CT,12
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,duodenal goblet cell,http://purl.obolibrary.org/obo/CL_1000324,CT,16
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,endocrine cell,http://purl.obolibrary.org/obo/CL_0000163,CT,2
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,CT,305
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,eosinophil,http://purl.obolibrary.org/obo/CL_0000771,CT,4
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,CT,18
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,CT,26
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,macrophage,http://purl.obolibrary.org/obo/CL_0000235,CT,3
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,mast cell,http://purl.obolibrary.org/obo/CL_0000097,CT,3
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,CT,79
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,CT,4
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,CT,4
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,CT,9
+small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,tuft cell of small intestine,http://purl.obolibrary.org/obo/CL_0009080,CT,18
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,"CD14-positive, CD16-low monocyte",http://purl.obolibrary.org/obo/CL_0001055,CT,3
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,"dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,CT,8
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,CT,7
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,CT,9
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,CT,3
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,plasmablast,http://purl.obolibrary.org/obo/CL_0000980,CT,3
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,splenic marginal zone macrophage,http://purl.obolibrary.org/obo/CL_0000872,CT,2
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,splenic red pulp macrophage,http://purl.obolibrary.org/obo/CL_0000874,CT,12
+spleen,red pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001250,splenic tingible body macrophage,http://purl.obolibrary.org/obo/CL_0000877,CT,6
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,"CD14-positive, CD16-low monocyte",http://purl.obolibrary.org/obo/CL_0001055,CT,2
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,CT,7
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,CT,3
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,plasmablast,http://purl.obolibrary.org/obo/CL_0000980,CT,3
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,reticular cell of splenic cord,http://purl.obolibrary.org/obo/CL_1000489,CT,7
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,CT,11
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,splenic endothelial cell,http://purl.obolibrary.org/obo/CL_2000053,CT,21
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,splenic white pulp macrophage,http://purl.obolibrary.org/obo/CL_0000876,CT,19
+spleen,white pulp of spleen,http://purl.obolibrary.org/obo/UBERON_0001959,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,CT,6
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,Hassall's corpuscle,http://purl.obolibrary.org/obo/UBERON_0003987,AS,1
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,T cell,http://purl.obolibrary.org/obo/CL_0000084,CT,29
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,beige adipocyte,http://purl.obolibrary.org/obo/CL_0001070,CT,2
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,blood vessel endothelial cell,http://purl.obolibrary.org/obo/CL_0000071,CT,13
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,corticomedullary thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0009070,CT,45
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,"double-positive, alpha-beta thymocyte",http://purl.obolibrary.org/obo/CL_0000809,CT,170
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,leukocyte,http://purl.obolibrary.org/obo/CL_0000738,CT,10
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,medullary thymic epithelial cell type 1,http://purl.obolibrary.org/obo/CL_0009071,CT,16
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,CT,8
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,subcapsular thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0009077,CT,11
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,thymic cortical macrophage,http://purl.obolibrary.org/obo/CL_0000883,CT,4
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,thymic medullary macrophage,http://purl.obolibrary.org/obo/CL_0000882,CT,4
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,thymic plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000942,CT,5
+thymus,thymus lobule,http://purl.obolibrary.org/obo/UBERON_0002125,thymus subcapsular epithelium,http://purl.obolibrary.org/obo/UBERON_0006936,AS,92
