@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/data/ontology-terms-added.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "padding": { "right": 35, "left": 5 },
+  "config": {
+    "font": "Metropolis",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 500,
+      "labelFontWeight": 500,
+      "titleLineHeight": 21,
+      "labelLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titlePadding": 20
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
+    }
+  },
+  "mark": { "type": "line", "point": false, "tooltip": true, "strokeWidth": 4 },
+  "transform": [
+    {
+      "window": [{ "op": "sum", "field": "count", "as": "cumulative_count" }],
+      "frame": [null, 0],
+      "groupby": ["group"],
+      "sort": [{ "field": "date" }]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "yearmonth",
+      "field": "date",
+      "title": "Date",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "cumulative_count",
+      "type": "quantitative",
+      "title": "Cumulative Count",
+      "scale": { "type": "log" },
+      "axis": {
+        "labelAngle": -45,
+        "labelOverlap": false
+      }
+    },
+    "color": {
+      "field": "ontology",
+      "type": "nominal",
+      "title": "Measure",
+      "legend": {
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
+      }
+    }
+  }
+}
