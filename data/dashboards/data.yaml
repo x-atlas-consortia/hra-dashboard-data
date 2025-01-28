@@ -58,6 +58,10 @@ items:
     title: Digital Objects Per Organ
     tooltip: This graph shows the number of digital objects by type for each supported organ, sorted alphabetically.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/digital-objects-per-organ.vl.json
+  - type: VegaContainer
+    title: Ontologies Extended Over Time
+    tooltip: This graph shows how many terms were added to other biomedical ontologies during the course of HRA development.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/ontology-terms-added.vl.json
   - type: ImageContainer
     title: Exemplary Visualization of Anatomical Structures in the HRA v2.1
     tooltip: "This image shows the female left kidney reference organ and six major 3D structures nested inside (from left to right): Hilum of kidney, renal papilla, renal pyramid, renal column, outer cortex of kidney, and kidney capsule."
