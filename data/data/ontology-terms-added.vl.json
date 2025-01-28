@@ -34,8 +34,18 @@
     {
       "window": [{ "op": "sum", "field": "count", "as": "cumulative_count" }],
       "frame": [null, 0],
-      "groupby": ["group"],
+      "groupby": ["ontology"],
       "sort": [{ "field": "date" }]
+    }
+  ],
+  "params": [
+    {
+      "name": "user-selection",
+      "select": {
+        "type": "point",
+        "fields": ["ontology"]
+      },
+      "bind": "legend"
     }
   ],
   "encoding": {
@@ -50,8 +60,8 @@
     "y": {
       "field": "cumulative_count",
       "type": "quantitative",
-      "title": "Cumulative Count",
-      "scale": { "type": "log" },
+      "title": "Terms Added (cumulative)",
+      "scale": { "type": "linear" },
       "axis": {
         "labelAngle": -45,
         "labelOverlap": false
@@ -60,10 +70,17 @@
     "color": {
       "field": "ontology",
       "type": "nominal",
-      "title": "Measure",
+      "title": "Ontology",
       "legend": {
         "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
       }
+    },
+    "opacity": {
+      "condition": {
+        "param": "user-selection",
+        "value": 1
+      },
+      "value": 0.2
     }
   }
 }
