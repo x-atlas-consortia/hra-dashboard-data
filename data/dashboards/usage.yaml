@@ -28,13 +28,13 @@ items:
             count: 266
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to January 8, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to February 19, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 805424
+            count: 871287
           - label: HRA Portal requests
-            count: 1690735
+            count: 1850571
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
         items:
