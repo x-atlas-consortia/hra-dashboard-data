@@ -42,7 +42,7 @@ items:
             count: 11531
             source: email
           - label: BioPortal requests
-            count: 1901
+            count: 1915
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
