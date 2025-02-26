@@ -54,6 +54,6 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-mapped-to-hra.vl.json
   - type: IFrameContainer
     title: HRApop Dataset Provenance and Properties
-    tooltip: This Sankey diagram shows HRApop datasets by  source/portal, sex, age, race/ethnicity, BMI, organ, cell summary/modality, RUI-registration status, and whether it is part of the atlas.
+    tooltip: This Sankey diagram shows HRApop datasets by source/portal, sex, age, race/ethnicity, BMI, organ, cell summary/modality, RUI-registration status (true for all), and whether it is part of the atlas (true for all).
     aspectRatio: 3 / 2
-    iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey_universe_plotly.html
+    iframeUrl: https://cns-iu.github.io/hra-cell-type-populations-supporting-information/sankey_atlas_plotly.html
