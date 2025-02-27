@@ -24,6 +24,8 @@ WITH {
   ?portal ?organ ?sex ?age ?race # group .. ?as as stretch goal
   FROM HRApopFull:
   FROM HRA:
+  FROM NAMED HRApop:
+  FROM NAMED HRApopTestData:
   WHERE {
     VALUES (?organLabel ?organ ?side) {
       ("blood" "blood" "")
@@ -182,7 +184,11 @@ WHERE {
       }
       UNION
       {
-        FILTER(?in_atlas)
+        FILTER(EXISTS {
+          GRAPH HRApop: {
+            ?dataset ccf:has_cell_summary [];
+          }
+        })
         BIND("Atlas" as ?measure)
       }
       UNION

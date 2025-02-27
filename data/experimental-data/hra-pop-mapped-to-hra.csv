@@ -1,154 +1,76 @@
 measure,group,group_value,count
-Atlas,Age,0.1,10
-Atlas,Age,0.3,4
-Atlas,Age,0.52,2
-Atlas,Age,1,38
-Atlas,Age,1.27,4
-Atlas,Age,1.45,2
-Atlas,Age,1.6,10
-Atlas,Age,1.8,4
-Atlas,Age,10,18
-Atlas,Age,11,6
-Atlas,Age,13.1,4
-Atlas,Age,14,4
-Atlas,Age,14.98,4
-Atlas,Age,16,8
-Atlas,Age,17,5
-Atlas,Age,18,38
-Atlas,Age,19,13
-Atlas,Age,2,4
-Atlas,Age,2.33,4
-Atlas,Age,20,33
-Atlas,Age,21,11
-Atlas,Age,22,3
-Atlas,Age,23,3
-Atlas,Age,23.8,20
-Atlas,Age,23.83,2
-Atlas,Age,24,180
-Atlas,Age,25,62
-Atlas,Age,28,63
-Atlas,Age,29,17
+Atlas,Age,1,1
+Atlas,Age,10,4
+Atlas,Age,14,2
+Atlas,Age,17,1
+Atlas,Age,18,8
+Atlas,Age,19,1
+Atlas,Age,20,4
+Atlas,Age,21,3
+Atlas,Age,22,1
+Atlas,Age,23,1
+Atlas,Age,24,35
+Atlas,Age,25,9
+Atlas,Age,28,3
+Atlas,Age,29,5
 Atlas,Age,3,3
-Atlas,Age,3.5,4
-Atlas,Age,3.79,2
-Atlas,Age,3.98,4
-Atlas,Age,30,68
-Atlas,Age,31,13
-Atlas,Age,32,12
+Atlas,Age,30,13
+Atlas,Age,31,1
 Atlas,Age,33,1
-Atlas,Age,34,1
-Atlas,Age,36,7
-Atlas,Age,37,175
-Atlas,Age,38,120
-Atlas,Age,39,9
-Atlas,Age,4.45,2
-Atlas,Age,40,15
-Atlas,Age,41,8
-Atlas,Age,42,6
-Atlas,Age,43,205
-Atlas,Age,44,17
-Atlas,Age,45,38
-Atlas,Age,46,4
-Atlas,Age,47,4
-Atlas,Age,48,6
-Atlas,Age,49,53
-Atlas,Age,5,2
-Atlas,Age,5.9,4
-Atlas,Age,50,39
-Atlas,Age,51,35
-Atlas,Age,52,4
-Atlas,Age,53,8
-Atlas,Age,54,150
-Atlas,Age,55,148
-Atlas,Age,56,28
-Atlas,Age,57,101
-Atlas,Age,58,12
-Atlas,Age,59,28
-Atlas,Age,60,44
-Atlas,Age,61,7
-Atlas,Age,61.8,4
-Atlas,Age,62,219
+Atlas,Age,37,71
+Atlas,Age,38,17
+Atlas,Age,40,8
+Atlas,Age,41,2
+Atlas,Age,42,1
+Atlas,Age,43,6
+Atlas,Age,45,18
+Atlas,Age,5,1
+Atlas,Age,50,23
+Atlas,Age,51,2
+Atlas,Age,53,2
+Atlas,Age,54,29
+Atlas,Age,55,40
+Atlas,Age,56,2
+Atlas,Age,57,17
+Atlas,Age,59,4
+Atlas,Age,60,15
+Atlas,Age,61,2
+Atlas,Age,62,2
 Atlas,Age,63,4
-Atlas,Age,64,36
-Atlas,Age,65,41
-Atlas,Age,66,94
-Atlas,Age,67,208
-Atlas,Age,68,14
-Atlas,Age,69,59
-Atlas,Age,70,20
-Atlas,Age,71,2
-Atlas,Age,72,62
-Atlas,Age,73,10
-Atlas,Age,75,17
-Atlas,Age,76,27
-Atlas,Age,77,27
-Atlas,Age,78,154
-Atlas,Age,8.66,4
-Atlas,Age,80,2
-Atlas,Age,81,1
-Atlas,Age,86,1
-Atlas,Age,90,2
-Atlas,Age,Unknown,5044
-Atlas,Ethnicity,African,23
-Atlas,Ethnicity,African American,74
-Atlas,Ethnicity,African American or Afro-Caribbean,14
-Atlas,Ethnicity,American,1
-Atlas,Ethnicity,Asian,176
-Atlas,Ethnicity,Black or African American,418
-Atlas,Ethnicity,East Asian,1
-Atlas,Ethnicity,European,2122
-Atlas,Ethnicity,Greater Middle Eastern  (Middle Eastern or North African or Persian),2
-Atlas,Ethnicity,Han Chinese,58
-Atlas,Ethnicity,Hispanic or Latin American,80
-Atlas,Ethnicity,Japanese,148
-Atlas,Ethnicity,Korean,165
-Atlas,Ethnicity,Multiple races,2
-Atlas,Ethnicity,Oceanian,3
-Atlas,Ethnicity,Singaporean Chinese,75
-Atlas,Ethnicity,Singaporean Indian,59
-Atlas,Ethnicity,Singaporean Malay,52
-Atlas,Ethnicity,South Asian,3
-Atlas,Ethnicity,Unknown,2314
-Atlas,Ethnicity,White,2225
-Atlas,Organ,blood,2583
-Atlas,Organ,blood vasculature,24
-Atlas,Organ,bone marrow,184
-Atlas,Organ,brain,33
-Atlas,Organ,eye,204
-Atlas,Organ,heart,776
-Atlas,Organ,kidney,1237
-Atlas,Organ,large intestine,526
-Atlas,Organ,liver,152
-Atlas,Organ,lung,1116
-Atlas,Organ,lymph node,26
-Atlas,Organ,male reproductive system,21
-Atlas,Organ,mammary gland,4
-Atlas,Organ,pancreas,14
-Atlas,Organ,prostate gland,38
-Atlas,Organ,skin,82
-Atlas,Organ,small intestine,641
-Atlas,Organ,spleen,140
-Atlas,Organ,thymus,93
-Atlas,Organ,trachea,29
-Atlas,Organ,ureter,33
-Atlas,Organ,urinary bladder,28
-Atlas,Organ,uterus,48
-Atlas,Portal,Allen Institute for Brain Science,10
-Atlas,Portal,CxG,4919
-Atlas,Portal,GTEx,41
-Atlas,Portal,GUDMAP,12
-Atlas,Portal,HCA,135
-Atlas,Portal,HRA,1
-Atlas,Portal,HTAN,5
-Atlas,Portal,HuBMAP,1960
-Atlas,Portal,KPMP,49
+Atlas,Age,64,2
+Atlas,Age,65,20
+Atlas,Age,66,32
+Atlas,Age,67,75
+Atlas,Age,69,32
+Atlas,Age,70,6
+Atlas,Age,75,1
+Atlas,Age,76,10
+Atlas,Age,78,23
+Atlas,Age,Unknown,45
+Atlas,Ethnicity,Black or African American,90
+Atlas,Ethnicity,Unknown,162
+Atlas,Ethnicity,White,356
+Atlas,Organ,heart,109
+Atlas,Organ,kidney,237
+Atlas,Organ,large intestine,94
+Atlas,Organ,liver,2
+Atlas,Organ,lung,54
+Atlas,Organ,male reproductive system,4
+Atlas,Organ,mammary gland,3
+Atlas,Organ,prostate gland,4
+Atlas,Organ,skin,4
+Atlas,Organ,small intestine,71
+Atlas,Organ,spleen,16
+Atlas,Organ,ureter,13
+Atlas,Organ,urinary bladder,14
+Atlas,Portal,GTEx,15
+Atlas,Portal,HCA,82
+Atlas,Portal,HuBMAP,467
+Atlas,Portal,KPMP,27
 Atlas,Portal,NHLBI/LungMap,9
-Atlas,Portal,SPARC,25
-Atlas,Portal,SenNet,785
-Atlas,Portal,UEdinburgh,64
-Atlas,Sex,female,3339
-Atlas,Sex,male,4449
-Atlas,Sex,unknown,227
+Atlas,Portal,SenNet,8
+Atlas,Sex,female,196
+Atlas,Sex,male,412
 CTann via proteomics,Age,1,1
 CTann via proteomics,Age,10,2
 CTann via proteomics,Age,20,2
