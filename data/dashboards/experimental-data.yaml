@@ -10,29 +10,33 @@ items:
   - type: MetricsContainer
     items:
       - title: Data Provenance
-        tooltip: Statistics covering counts of datasets and related entities in HRApop v0.11.1 in April 2024.
+        tooltip: Statistics covering counts of datasets and related entities in HRApop v0.11.1 in January 2025.
         source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
-            count: 2826
+            count: 2828
           - label: SenNet datasets
-            count: 1025
+            count: 1142
           - label: Tissue donors
-            count: 6454
+            count: 6468
           - label: Organs
             count: 15
           - label: Anatomical structures
             count: 59
-          - label: Cells
-            count: 75662398
+          - label: Cells (transcriptomics)
+            count: 33996049
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/universe-sc-transcriptomics-cell-counts.csv#L2
+          - label: Cells (proteomics)
+            count: 17547511
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/universe-sc-proteomics-cell-counts.csv
       - title: Size of HRApop v0.11.1
         tooltip: High-level statistics for HRApop v0.11.1.
         items:
           - label: Nodes
-            count: 2398723
+            count: 2401507
             source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/high-level-stats.csv
           - label: Edges
-            count: 12373917
+            count: 12391248
             source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/universe-ad-hoc/high-level-stats.csv
           - label: Size
             count: 7.37
