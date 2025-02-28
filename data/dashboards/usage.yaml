@@ -47,8 +47,8 @@ items:
           # - label: Ontobee Requests
           #   count: -1
           - label: NIH3D requests
-            count: 10046
-            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv
+            count: 12924
+            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv - sum of viewCount
           - label: BioArt requests
             count: 567
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
