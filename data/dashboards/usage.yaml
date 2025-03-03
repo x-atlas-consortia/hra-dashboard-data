@@ -22,7 +22,7 @@ items:
             count: 29756
             source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 5856
+            count: 7011
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 266
