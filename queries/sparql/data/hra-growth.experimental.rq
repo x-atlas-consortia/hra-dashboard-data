@@ -15,28 +15,28 @@ SELECT ?group ?group_value ?date ?count ?order
 WHERE {
 
   # tissue providers
-  {
-    SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (1 as ?order)
-    WHERE {
-      ?donor a ccf:Donor ;
-          ccf:tissue_provider_name ?tissue_provider .
+  # {
+  #   SELECT DISTINCT ("tissue providers" as ?group) (?tissue_provider as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (1 as ?order)
+  #   WHERE {
+  #     ?donor a ccf:Donor ;
+  #         ccf:tissue_provider_name ?tissue_provider .
 
-      ?block a ccf:Sample ;
-        ccf:comes_from ?donor ;
-        ccf:has_registration_location ?rui_location .
+  #     ?block a ccf:Sample ;
+  #       ccf:comes_from ?donor ;
+  #       ccf:has_registration_location ?rui_location .
 
-      ?rui_location a ccf:SpatialEntity ;
-        dcterms:created ?creation_date .
+  #     ?rui_location a ccf:SpatialEntity ;
+  #       dcterms:created ?creation_date .
 
-      BIND(STRDT(
-        IF(CONTAINS(?creation_date, '/'),
-          CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
-          STR(?creation_date)
-        ), xsd:date) as ?date)
-    }
-    GROUP BY ?tissue_provider
-  }
-  UNION
+  #     BIND(STRDT(
+  #       IF(CONTAINS(?creation_date, '/'),
+  #         CONCAT(SUBSTR(?creation_date, 6, 4), '-0', REPLACE(SUBSTR(?creation_date, 1, 4), '/', '-')),
+  #         STR(?creation_date)
+  #       ), xsd:date) as ?date)
+  #   }
+  #   GROUP BY ?tissue_provider
+  # }
+  # UNION
   # experts
   {
     SELECT DISTINCT ("experts" as ?group) (?orcid as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (2 as ?order)

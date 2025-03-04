@@ -1,0 +1,47 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX HRAv20: <https://purl.humanatlas.io/collection/hra/v2.0>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+
+
+SELECT DISTINCT ?organ ?ontology_id ?type # ?name ?purl
+FROM HRAv20:
+FROM <https://lod.humanatlas.io>
+WHERE {
+  hint:Query hint:analytic "true" .
+  HRA: prov:hadMember ?purl .
+
+  ?purl a dcat:Dataset ;
+    schema:name ?name ;
+    schema:additionalType ?type ;
+    schema:version ?table_version ;
+  .
+  FILTER(?type IN ('asct-b', 'ref-organ') && !CONTAINS(?name, '-crosswalk') && !CONTAINS(?name, 'united-'))
+  BIND(REPLACE(REPLACE(REPLACE(?name, '-', ' '), ' female', ''), ' male', '') as ?organ)
+
+  # 3D Reference Organs
+  {
+    ?ref_organ a ccf:SpatialEntity ;
+      ccf:has_reference_organ ?ref_organ ;
+      ccf:representation_of ?term .
+  }
+  UNION
+  # ASCT+B tables
+  {
+    [] a ccf:AnatomicalStructureRecord ;
+      ccf:order_number 1 ;
+      ccf:source_concept ?term .
+  }
+
+  BIND(REPLACE(REPLACE(STR(?term), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?ontology_id)
+}
+ORDER BY ?organ ?ontology_id

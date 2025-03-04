@@ -86,6 +86,6 @@ function parseSOPs() {
   return accumulate('SOPs', 10, entries);
 }
 
-const results = [...parseExperimental(), ...parseHraLit(), ...parseAtlas(), ...parseSOPs()];
+const results = [...parseExperimental(), /*...parseHraLit(),*/ ...parseAtlas(), ...parseSOPs()];
 const csvString = Papa.unparse(results, { header: true });
 writeFileSync(OUTPUT, csvString);

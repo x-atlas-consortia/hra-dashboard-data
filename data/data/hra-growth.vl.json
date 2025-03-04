@@ -38,6 +38,18 @@
       "sort": [{ "field": "date" }]
     }
   ],
+  "params": [
+    {
+      "name": "user-selection",
+      "select": {
+        "type": "point",
+        "fields": [
+          "site"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
   "encoding": {
     "x": {
       "timeUnit": "yearmonth",
@@ -64,6 +76,13 @@
       "legend": {
         "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
       }
+    },
+    "opacity": {
+      "condition": {
+        "param": "user-selection",
+        "value": 1
+      },
+      "value": 0.2
     }
   }
 }
