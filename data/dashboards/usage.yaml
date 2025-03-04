@@ -28,7 +28,7 @@ items:
             count: 310
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
           - label: Hours spent reviewing materials, taking self-tests and engaging in a community of practice
-            count: 5652 
+            count: 5652
             source: Andi
       - title: HRA Requests
         tooltip: Number of web requests for HRA-API and the HRA Portal up to February 19, 2025.
