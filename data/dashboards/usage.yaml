@@ -4,7 +4,7 @@ title: Usage
 description: >-
   HRA data is accessed via the HRA Portal, other data portals, the
   HRA KG, and APIs. Key counts plus visualizations of data usage
-  over time, geospatial space, and by source are shown.
+  over time, geospatial space, and for top-10 users are shown.
 link: 
   type: Link
   url: https://doi.org/10.1101/2024.03.27.587041
@@ -15,18 +15,21 @@ items:
       - title: HRA Resources
         tooltip: Statistics covering data usage from HRA resources up to January 8, 2025.
         items:
-          - label: HRA papers
-            count: 1011
-            source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=1817931250#gid=1817931250&range=E8
-          - label: HRA paper citations
-            count: 29756
-            source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
+          # - label: HRA papers
+          #   count: 1011
+          #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=1817931250#gid=1817931250&range=E8
+          # - label: HRA paper citations
+          #   count: 29756
+          #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
             count: 7011
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
-            count: 266
+            count: 310
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
+          - lable: Hours spent reviewing materials, taking self-tests and engaging in a community of practice
+            count: 5,652 
+            source: Andi
       - title: HRA Requests
         tooltip: Number of web requests for HRA-API and the HRA Portal up to February 19, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
@@ -35,21 +38,23 @@ items:
             count: 871287
           - label: HRA Portal requests
             count: 1850571
+          - label: HRA KG requests
+            count: 1500872
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
         items:
           - label: EBI OLS requests
             count: 11531
             source: email
-          - label: BioPortal requests
+          - label: NCBO BioPortal requests
             count: 1915
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
-          - label: NIH3D requests
+          - label: NIH3D requests for 3D DOs
             count: 12924
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv - sum of viewCount
-          - label: BioArt requests
+          - label: BioArt requests for 2D DOs
             count: 567
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
   - type: VegaContainer
@@ -58,7 +63,7 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
   - type: VegaContainer
     title: HRA Products Usage
-    tooltip: This graph shows web requests to various HRA resources over time.
+    tooltip: This graph shows web requests to various HRA resources over time. CDN = Content Deliver Network; KG = Knowledge Graph; API = Application Programming Interface.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
   - type: VegaContainer
     title: Global HRA Portal Usage
