@@ -27,7 +27,7 @@ items:
           - label: VHMOOC students
             count: 310
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
-          - lable: Hours spent reviewing materials, taking self-tests and engaging in a community of practice
+          - label: Hours spent reviewing materials, taking self-tests and engaging in a community of practice
             count: 5652 
             source: Andi
       - title: HRA Requests
