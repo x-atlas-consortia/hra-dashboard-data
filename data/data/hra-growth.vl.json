@@ -44,7 +44,7 @@
       "select": {
         "type": "point",
         "fields": [
-          "site"
+          "group"
         ]
       },
       "bind": "legend"
