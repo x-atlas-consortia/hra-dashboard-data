@@ -1,7 +1,7 @@
 type: Dashboard
 title: Publications
 description: >-
-  Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Statistics and visualizations about the size, coverage, and composition of the HRA Literature KG (HRAlit) are featured here.
+  Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Statistics and visualizations about the size, coverage, and composition of the HRA Literature (HRAlit) dataset are featured here.
 link: 
   type: Link
   url: https://doi.org/10.1038/s41597-024-03416-8
