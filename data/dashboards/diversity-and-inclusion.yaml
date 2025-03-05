@@ -1,7 +1,7 @@
 type: Dashboard
 title: Diversity and Inclusion
 description: >-
-  The Human Reference Atlas aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of HRAlit paper authors overlaid on a world map. The ethnicity and sex of HRAlit and HRApop authors is predicted using code detailed in <https://doi.org/10.1038/s41597-024-03416-8>.
+  The Human Reference Atlas aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of HRAlit paper authors overlaid on a world map. The ethnicity and sex of HRAlit and HRApop authors is predicted using code detailed in <a href="https://doi.org/10.1038/s41597-024-03416-8"></a>.
 link:
   type: Link
   url: https://doi.org/10.1038/s41597-024-03416-8
