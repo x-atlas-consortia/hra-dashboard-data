@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/experimental-data/hra-pop-atlas-mapped-to-hra.csv"
+  },
+  "width": 1296,
+  "height": 488,
+  "padding": { "right": 30 },
+  "config": {
+    "font": "Metropolis",
+
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 500,
+      "labelFontWeight": 500,
+      "titleLineHeight": 21,
+      "labelLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titlePadding": 40
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
+  "params": [
+    {
+      "name": "group_by",
+      "value": "Organ",
+      "select": { "type": "point", "fields": ["group"] },
+      "bind": {
+        "input": "select",
+        "options": ["Portal", "Organ", "Sex", "Age", "Ethnicity"],
+        "name": "By "
+      }
+    }
+  ],
+  "mark": { "type": "bar", "tooltip": true },
+  "transform": [
+    {
+      "filter": { "param": "group_by" }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "aggregate": "sum",
+      "field": "count",
+      "title": "Datasets",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "measure",
+      "title": "HRA Mapping",
+      "sort": "-y",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "color": {
+      "field": "group_value",
+      "title": "Legend",
+      "legend": {
+        "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
+      }
+    }
+  }
+}

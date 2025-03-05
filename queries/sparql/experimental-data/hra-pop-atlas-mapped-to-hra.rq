@@ -1,0 +1,250 @@
+#+ summary: Visualization data for HRApop data mapped to the HRA
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?measure ?group ?group_value (COUNT(DISTINCT ?dataset) as ?count)
+
+WITH {
+  SELECT ?dataset
+  ?in_universe ?in_atlas ?has_extraction_site ?has_transcriptomics ?has_proteomics # measure
+  ?portal ?organ ?sex ?age ?race # group .. ?as as stretch goal
+  # FROM HRApopFull:
+  FROM HRA:
+  FROM NAMED HRApop:
+  # FROM NAMED HRApopTestData:
+  WHERE {
+    VALUES (?organLabel ?organ ?side) {
+      ("blood" "blood" "")
+      ("blood vasculature" "blood vasculature" "")
+      ("bone marrow" "bone marrow" "")
+      ("brain" "brain" "")
+      ("eye" "eye" "")
+      ("heart" "heart" "")
+      ("kidney" "kidney" "")
+      ("large intestine" "large intestine" "")
+      ("left kidney" "kidney" "left")
+      ("left ureter" "ureter" "left")
+      ("liver" "liver" "")
+      ("lung" "lung" "")
+      ("lymph node" "lymph node" "")
+      ("male reproductive system" "male reproductive system" "")
+      ("mammary gland" "mammary gland" "")
+      ("mesenteric lymph node" "lymph node" "")
+      ("pancreas" "pancreas" "")
+      ("prostate gland" "prostate gland" "")
+      ("respiratory system" "lung" "")
+      ("right kidney" "kidney" "right")
+      ("right mammary gland" "mammary gland" "right")
+      ("skin of body" "skin" "")
+      ("skin" "skin" "")
+      ("small intestine" "small intestine" "")
+      ("spleen" "spleen" "")
+      ("thymus" "thymus" "")
+      ("trachea" "trachea" "")
+      ("urinary bladder" "urinary bladder" "")
+      ("uterus" "uterus" "")
+    }
+    [] ccf:generates_dataset ?dataset .
+
+    OPTIONAL {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      ?donor ccf:consortium_name ?portal ;
+        ccf:sex ?donorSex .
+    }
+
+    {
+      SELECT ?dataset ?rui_location ?ruiOrganIri ?ruiOrganLabel ?ruiOrganSex ?ruiOrganSide
+      WHERE {
+        {
+          ?sample ccf:comes_from ?donor .
+          ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        ?placement a ccf:SpatialPlacement ;
+          ccf:placement_for ?rui_location ;
+          ccf:placement_relative_to ?ref_organ .
+
+        ?ref_organ ccf:representation_of ?refOrganIri .
+        ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+
+        ?refOrganIri ccf:ccf_pref_label ?ruiOrganLabel .
+        ?ref_organ ccf:organ_owner_sex ?ruiOrganSex .
+        OPTIONAL {
+          ?ref_organ ccf:organ_side ?ruiOrganSide .
+        }
+      }
+    }
+    UNION
+    {
+      ?dataset ccf:organ_id ?_reportedOrganIri .
+      BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+      OPTIONAL {
+        ?reportedOrganIri rdfs:label ?reportedOrganLabel .
+      }
+      OPTIONAL {
+        ?donor ccf:sex ?reportedSex .
+      }
+    }
+
+    OPTIONAL { ?donor ccf:age ?donor_age . }
+    OPTIONAL { ?donor ccf:race ?donor_race . }
+
+    OPTIONAL {
+      SELECT ?cellSummarySex ?dataset ?modality
+      WHERE {
+        {
+          SELECT ?cellSummarySex ?dataset ?modality ?tool
+          WHERE {
+            {
+              GRAPH HRApop: {
+                ?dataset ccf:has_cell_summary [
+                  ccf:sex ?cellSummarySex ;
+                  ccf:modality ?modality ;
+                  ccf:cell_annotation_method ?tool ;
+                ];
+              }
+            }
+            # UNION
+            # {
+            #   GRAPH HRApopTestData: {
+            #     ?dataset ccf:has_cell_summary [
+            #       ccf:sex ?cellSummarySex ;
+            #       ccf:modality ?modality ;
+            #       ccf:cell_annotation_method ?tool ;
+            #     ];
+            #   }
+            # }
+          }
+          GROUP BY ?cellSummarySex ?dataset ?modality ?tool
+        }
+      }
+      GROUP BY ?cellSummarySex ?dataset ?modality
+    }
+
+    BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
+      IF(BOUND(?reportedOrganIri), ?reportedOrganIri, "N/A")) as ?organ_id)
+
+    BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
+      IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
+
+    BIND (LCASE(COALESCE(?donorSex, ?ruiOrganSex, ?reportedSex, ?cellSummarySex, 'Unknown')) as ?sex)
+    BIND(BOUND(?modality) && ?modality = 'sc_transcriptomics' as ?has_transcriptomics)
+    BIND(BOUND(?modality) && ?modality = 'sc_proteomics' as ?has_proteomics)
+    BIND(true as ?in_universe)
+    BIND (EXISTS {
+      GRAPH HRApop: {
+        ?dataset ccf:has_cell_summary [];
+      }
+    } as ?in_atlas)
+    BIND (BOUND(?rui_location) as ?has_extraction_site)
+
+    BIND(IF(BOUND(?donor_age), ?donor_age, 'Unknown') as ?age)
+    BIND(IF(BOUND(?donor_race), ?donor_race, 'Unknown') as ?race)
+  }
+
+
+} AS %datasets
+
+WHERE {
+  {
+    SELECT ?dataset ?measure
+    WHERE {
+      INCLUDE %datasets
+
+      # {
+      #   FILTER(?in_universe)
+      #   BIND("UNIVERSE" as ?measure)
+      # }
+      # UNION
+      {
+        FILTER(EXISTS {
+          GRAPH HRApop: {
+            ?dataset ccf:has_cell_summary [];
+          }
+        })
+        BIND("ATLAS" as ?measure)
+      }
+      UNION
+      {
+        FILTER(?has_extraction_site)
+        BIND("RUI registered" as ?measure)
+      }
+      UNION
+      {
+        FILTER(?has_transcriptomics)
+        BIND("CTann via transcriptomics" as ?measure)
+      }
+      UNION
+      {
+        FILTER(?has_proteomics)
+        BIND("CTann via proteomics" as ?measure)
+      }
+    }  
+  }
+
+  {
+    {
+      SELECT ?dataset ("Portal" as ?group) (STR(?portal) as ?group_value)
+      WHERE {
+        INCLUDE %datasets
+      }
+    }
+    UNION
+    {
+      SELECT ?dataset ("Organ" as ?group) (STR(?organ) as ?group_value)
+      WHERE {
+        INCLUDE %datasets
+      }
+    }
+    UNION
+    {
+      SELECT ?dataset ("Sex" as ?group) (STR(?sex) as ?group_value)
+      WHERE {
+        INCLUDE %datasets
+      }
+    }
+    UNION
+    {
+      SELECT ?dataset ("Age" as ?group) (STR(?age) as ?group_value)
+      WHERE {
+        INCLUDE %datasets
+      }
+    }
+    UNION
+    {
+      SELECT ?dataset ("Ethnicity" as ?group) (REPLACE(STR(?race), 'unknown', 'Unknown') as ?group_value)
+      WHERE {
+        INCLUDE %datasets
+      }
+    }
+  }
+}
+GROUP BY ?measure ?group ?group_value
+ORDER BY ?measure ?group ?group_value
