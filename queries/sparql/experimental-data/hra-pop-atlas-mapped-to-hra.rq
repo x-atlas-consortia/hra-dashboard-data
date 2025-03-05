@@ -101,7 +101,7 @@ WITH {
         }
       }
     }
-    UNION
+    #UNION
     {
       ?dataset ccf:organ_id ?_reportedOrganIri .
       BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
@@ -163,7 +163,7 @@ WITH {
         ?dataset ccf:has_cell_summary [];
       }
     } as ?in_atlas)
-    BIND (BOUND(?rui_location) as ?has_extraction_site)
+    BIND (IF(BOUND(?rui_location), true, false) as ?has_extraction_site)
 
     BIND(IF(BOUND(?donor_age), ?donor_age, 'Unknown') as ?age)
     BIND(IF(BOUND(?donor_race), ?donor_race, 'Unknown') as ?race)
