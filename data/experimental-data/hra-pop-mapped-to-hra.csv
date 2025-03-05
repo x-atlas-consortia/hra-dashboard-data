@@ -1,76 +1,76 @@
 measure,group,group_value,count
-Atlas,Age,1,1
-Atlas,Age,10,4
-Atlas,Age,14,2
-Atlas,Age,17,1
-Atlas,Age,18,8
-Atlas,Age,19,1
-Atlas,Age,20,4
-Atlas,Age,21,3
-Atlas,Age,22,1
-Atlas,Age,23,1
-Atlas,Age,24,35
-Atlas,Age,25,9
-Atlas,Age,28,3
-Atlas,Age,29,5
-Atlas,Age,3,3
-Atlas,Age,30,13
-Atlas,Age,31,1
-Atlas,Age,33,1
-Atlas,Age,37,71
-Atlas,Age,38,17
-Atlas,Age,40,8
-Atlas,Age,41,2
-Atlas,Age,42,1
-Atlas,Age,43,6
-Atlas,Age,45,18
-Atlas,Age,5,1
-Atlas,Age,50,23
-Atlas,Age,51,2
-Atlas,Age,53,2
-Atlas,Age,54,29
-Atlas,Age,55,40
-Atlas,Age,56,2
-Atlas,Age,57,17
-Atlas,Age,59,4
-Atlas,Age,60,15
-Atlas,Age,61,2
-Atlas,Age,62,2
-Atlas,Age,63,4
-Atlas,Age,64,2
-Atlas,Age,65,20
-Atlas,Age,66,32
-Atlas,Age,67,75
-Atlas,Age,69,32
-Atlas,Age,70,6
-Atlas,Age,75,1
-Atlas,Age,76,10
-Atlas,Age,78,23
-Atlas,Age,Unknown,45
-Atlas,Ethnicity,Black or African American,90
-Atlas,Ethnicity,Unknown,162
-Atlas,Ethnicity,White,356
-Atlas,Organ,heart,109
-Atlas,Organ,kidney,237
-Atlas,Organ,large intestine,94
-Atlas,Organ,liver,2
-Atlas,Organ,lung,54
-Atlas,Organ,male reproductive system,4
-Atlas,Organ,mammary gland,3
-Atlas,Organ,prostate gland,4
-Atlas,Organ,skin,4
-Atlas,Organ,small intestine,71
-Atlas,Organ,spleen,16
-Atlas,Organ,ureter,13
-Atlas,Organ,urinary bladder,14
-Atlas,Portal,GTEx,15
-Atlas,Portal,HCA,82
-Atlas,Portal,HuBMAP,467
-Atlas,Portal,KPMP,27
-Atlas,Portal,NHLBI/LungMap,9
-Atlas,Portal,SenNet,8
-Atlas,Sex,female,196
-Atlas,Sex,male,412
+ATLAS,Age,1,1
+ATLAS,Age,10,4
+ATLAS,Age,14,2
+ATLAS,Age,17,1
+ATLAS,Age,18,8
+ATLAS,Age,19,1
+ATLAS,Age,20,4
+ATLAS,Age,21,3
+ATLAS,Age,22,1
+ATLAS,Age,23,1
+ATLAS,Age,24,35
+ATLAS,Age,25,9
+ATLAS,Age,28,3
+ATLAS,Age,29,5
+ATLAS,Age,3,3
+ATLAS,Age,30,13
+ATLAS,Age,31,1
+ATLAS,Age,33,1
+ATLAS,Age,37,71
+ATLAS,Age,38,17
+ATLAS,Age,40,8
+ATLAS,Age,41,2
+ATLAS,Age,42,1
+ATLAS,Age,43,6
+ATLAS,Age,45,18
+ATLAS,Age,5,1
+ATLAS,Age,50,23
+ATLAS,Age,51,2
+ATLAS,Age,53,2
+ATLAS,Age,54,29
+ATLAS,Age,55,40
+ATLAS,Age,56,2
+ATLAS,Age,57,17
+ATLAS,Age,59,4
+ATLAS,Age,60,15
+ATLAS,Age,61,2
+ATLAS,Age,62,2
+ATLAS,Age,63,4
+ATLAS,Age,64,2
+ATLAS,Age,65,20
+ATLAS,Age,66,32
+ATLAS,Age,67,75
+ATLAS,Age,69,32
+ATLAS,Age,70,6
+ATLAS,Age,75,1
+ATLAS,Age,76,10
+ATLAS,Age,78,23
+ATLAS,Age,Unknown,45
+ATLAS,Ethnicity,Black or African American,90
+ATLAS,Ethnicity,Unknown,162
+ATLAS,Ethnicity,White,356
+ATLAS,Organ,heart,109
+ATLAS,Organ,kidney,237
+ATLAS,Organ,large intestine,94
+ATLAS,Organ,liver,2
+ATLAS,Organ,lung,54
+ATLAS,Organ,male reproductive system,4
+ATLAS,Organ,mammary gland,3
+ATLAS,Organ,prostate gland,4
+ATLAS,Organ,skin,4
+ATLAS,Organ,small intestine,71
+ATLAS,Organ,spleen,16
+ATLAS,Organ,ureter,13
+ATLAS,Organ,urinary bladder,14
+ATLAS,Portal,GTEx,15
+ATLAS,Portal,HCA,82
+ATLAS,Portal,HuBMAP,467
+ATLAS,Portal,KPMP,27
+ATLAS,Portal,NHLBI/LungMap,9
+ATLAS,Portal,SenNet,8
+ATLAS,Sex,female,196
+ATLAS,Sex,male,412
 CTann via proteomics,Age,1,1
 CTann via proteomics,Age,10,2
 CTann via proteomics,Age,20,2
@@ -195,274 +195,274 @@ CTann via transcriptomics,Portal,SenNet,13
 CTann via transcriptomics,Sex,female,2540
 CTann via transcriptomics,Sex,male,2681
 CTann via transcriptomics,Sex,unknown,225
-HRA via RUI,Age,0.1,10
-HRA via RUI,Age,0.3,4
-HRA via RUI,Age,0.52,2
-HRA via RUI,Age,1,38
-HRA via RUI,Age,1.27,4
-HRA via RUI,Age,1.45,2
-HRA via RUI,Age,1.6,10
-HRA via RUI,Age,1.8,4
-HRA via RUI,Age,10,18
-HRA via RUI,Age,11,6
-HRA via RUI,Age,13.1,4
-HRA via RUI,Age,14,2
-HRA via RUI,Age,14.98,4
-HRA via RUI,Age,16,8
-HRA via RUI,Age,17,5
-HRA via RUI,Age,18,38
-HRA via RUI,Age,19,4
-HRA via RUI,Age,2,4
-HRA via RUI,Age,2.33,4
-HRA via RUI,Age,20,33
-HRA via RUI,Age,21,9
-HRA via RUI,Age,22,3
-HRA via RUI,Age,23,3
-HRA via RUI,Age,23.8,20
-HRA via RUI,Age,23.83,2
-HRA via RUI,Age,24,176
-HRA via RUI,Age,25,61
-HRA via RUI,Age,28,63
-HRA via RUI,Age,29,16
-HRA via RUI,Age,3.5,4
-HRA via RUI,Age,3.79,2
-HRA via RUI,Age,3.98,4
-HRA via RUI,Age,30,53
-HRA via RUI,Age,31,12
-HRA via RUI,Age,32,12
-HRA via RUI,Age,34,1
-HRA via RUI,Age,36,7
-HRA via RUI,Age,37,141
-HRA via RUI,Age,38,120
-HRA via RUI,Age,39,9
-HRA via RUI,Age,4.45,2
-HRA via RUI,Age,40,11
-HRA via RUI,Age,41,8
-HRA via RUI,Age,42,5
-HRA via RUI,Age,43,203
-HRA via RUI,Age,44,15
-HRA via RUI,Age,45,28
-HRA via RUI,Age,46,4
-HRA via RUI,Age,47,4
-HRA via RUI,Age,48,6
-HRA via RUI,Age,49,53
-HRA via RUI,Age,5,2
-HRA via RUI,Age,5.9,4
-HRA via RUI,Age,50,32
-HRA via RUI,Age,51,35
-HRA via RUI,Age,52,4
-HRA via RUI,Age,53,8
-HRA via RUI,Age,54,146
-HRA via RUI,Age,55,146
-HRA via RUI,Age,56,26
-HRA via RUI,Age,57,91
-HRA via RUI,Age,58,12
-HRA via RUI,Age,59,25
-HRA via RUI,Age,60,40
-HRA via RUI,Age,61,7
-HRA via RUI,Age,61.8,4
-HRA via RUI,Age,62,219
-HRA via RUI,Age,64,36
-HRA via RUI,Age,65,37
-HRA via RUI,Age,66,94
-HRA via RUI,Age,67,206
-HRA via RUI,Age,68,14
-HRA via RUI,Age,69,55
-HRA via RUI,Age,70,16
-HRA via RUI,Age,71,2
-HRA via RUI,Age,72,62
-HRA via RUI,Age,73,10
-HRA via RUI,Age,75,17
-HRA via RUI,Age,76,23
-HRA via RUI,Age,77,27
-HRA via RUI,Age,78,154
-HRA via RUI,Age,8.66,4
-HRA via RUI,Age,80,2
-HRA via RUI,Age,81,1
-HRA via RUI,Age,86,1
-HRA via RUI,Age,90,2
-HRA via RUI,Age,Unknown,116
-HRA via RUI,Ethnicity,Black or African American,382
-HRA via RUI,Ethnicity,Multiple races,2
-HRA via RUI,Ethnicity,Unknown,409
-HRA via RUI,Ethnicity,White,2148
-HRA via RUI,Organ,blood vasculature,2
-HRA via RUI,Organ,brain,33
-HRA via RUI,Organ,heart,441
-HRA via RUI,Organ,kidney,842
-HRA via RUI,Organ,large intestine,380
-HRA via RUI,Organ,liver,76
-HRA via RUI,Organ,lung,481
-HRA via RUI,Organ,lymph node,7
-HRA via RUI,Organ,male reproductive system,21
-HRA via RUI,Organ,prostate gland,4
-HRA via RUI,Organ,skin,16
-HRA via RUI,Organ,small intestine,457
-HRA via RUI,Organ,spleen,90
-HRA via RUI,Organ,thymus,46
-HRA via RUI,Organ,ureter,33
-HRA via RUI,Organ,urinary bladder,28
-HRA via RUI,Organ,uterus,1
-HRA via RUI,Portal,Allen Institute for Brain Science,10
-HRA via RUI,Portal,GTEx,35
-HRA via RUI,Portal,GUDMAP,12
-HRA via RUI,Portal,HCA,108
-HRA via RUI,Portal,HRA,1
-HRA via RUI,Portal,HTAN,5
-HRA via RUI,Portal,HuBMAP,1852
-HRA via RUI,Portal,KPMP,49
-HRA via RUI,Portal,SPARC,25
-HRA via RUI,Portal,SenNet,780
-HRA via RUI,Portal,UEdinburgh,64
-HRA via RUI,Sex,female,901
-HRA via RUI,Sex,male,2040
-Universe,Age,0.1,10
-Universe,Age,0.3,4
-Universe,Age,0.52,2
-Universe,Age,1,38
-Universe,Age,1.27,4
-Universe,Age,1.45,2
-Universe,Age,1.6,10
-Universe,Age,1.8,4
-Universe,Age,10,18
-Universe,Age,11,6
-Universe,Age,13.1,4
-Universe,Age,14,4
-Universe,Age,14.98,4
-Universe,Age,16,8
-Universe,Age,17,5
-Universe,Age,18,38
-Universe,Age,19,13
-Universe,Age,2,4
-Universe,Age,2.33,4
-Universe,Age,20,33
-Universe,Age,21,11
-Universe,Age,22,3
-Universe,Age,23,3
-Universe,Age,23.8,20
-Universe,Age,23.83,2
-Universe,Age,24,180
-Universe,Age,25,62
-Universe,Age,28,63
-Universe,Age,29,17
-Universe,Age,3,3
-Universe,Age,3.5,4
-Universe,Age,3.79,2
-Universe,Age,3.98,4
-Universe,Age,30,68
-Universe,Age,31,13
-Universe,Age,32,12
-Universe,Age,33,1
-Universe,Age,34,1
-Universe,Age,36,7
-Universe,Age,37,175
-Universe,Age,38,120
-Universe,Age,39,9
-Universe,Age,4.45,2
-Universe,Age,40,15
-Universe,Age,41,8
-Universe,Age,42,6
-Universe,Age,43,205
-Universe,Age,44,17
-Universe,Age,45,38
-Universe,Age,46,4
-Universe,Age,47,4
-Universe,Age,48,6
-Universe,Age,49,53
-Universe,Age,5,2
-Universe,Age,5.9,4
-Universe,Age,50,39
-Universe,Age,51,35
-Universe,Age,52,4
-Universe,Age,53,8
-Universe,Age,54,150
-Universe,Age,55,148
-Universe,Age,56,28
-Universe,Age,57,101
-Universe,Age,58,12
-Universe,Age,59,28
-Universe,Age,60,44
-Universe,Age,61,7
-Universe,Age,61.8,4
-Universe,Age,62,219
-Universe,Age,63,4
-Universe,Age,64,36
-Universe,Age,65,41
-Universe,Age,66,94
-Universe,Age,67,208
-Universe,Age,68,14
-Universe,Age,69,59
-Universe,Age,70,20
-Universe,Age,71,2
-Universe,Age,72,62
-Universe,Age,73,10
-Universe,Age,75,17
-Universe,Age,76,27
-Universe,Age,77,27
-Universe,Age,78,154
-Universe,Age,8.66,4
-Universe,Age,80,2
-Universe,Age,81,1
-Universe,Age,86,1
-Universe,Age,90,2
-Universe,Age,Unknown,5044
-Universe,Ethnicity,African,23
-Universe,Ethnicity,African American,74
-Universe,Ethnicity,African American or Afro-Caribbean,14
-Universe,Ethnicity,American,1
-Universe,Ethnicity,Asian,176
-Universe,Ethnicity,Black or African American,418
-Universe,Ethnicity,East Asian,1
-Universe,Ethnicity,European,2122
-Universe,Ethnicity,Greater Middle Eastern  (Middle Eastern or North African or Persian),2
-Universe,Ethnicity,Han Chinese,58
-Universe,Ethnicity,Hispanic or Latin American,80
-Universe,Ethnicity,Japanese,148
-Universe,Ethnicity,Korean,165
-Universe,Ethnicity,Multiple races,2
-Universe,Ethnicity,Oceanian,3
-Universe,Ethnicity,Singaporean Chinese,75
-Universe,Ethnicity,Singaporean Indian,59
-Universe,Ethnicity,Singaporean Malay,52
-Universe,Ethnicity,South Asian,3
-Universe,Ethnicity,Unknown,2314
-Universe,Ethnicity,White,2225
-Universe,Organ,blood,2583
-Universe,Organ,blood vasculature,24
-Universe,Organ,bone marrow,184
-Universe,Organ,brain,33
-Universe,Organ,eye,204
-Universe,Organ,heart,776
-Universe,Organ,kidney,1237
-Universe,Organ,large intestine,526
-Universe,Organ,liver,152
-Universe,Organ,lung,1116
-Universe,Organ,lymph node,26
-Universe,Organ,male reproductive system,21
-Universe,Organ,mammary gland,4
-Universe,Organ,pancreas,14
-Universe,Organ,prostate gland,38
-Universe,Organ,skin,82
-Universe,Organ,small intestine,641
-Universe,Organ,spleen,140
-Universe,Organ,thymus,93
-Universe,Organ,trachea,29
-Universe,Organ,ureter,33
-Universe,Organ,urinary bladder,28
-Universe,Organ,uterus,48
-Universe,Portal,Allen Institute for Brain Science,10
-Universe,Portal,CxG,4919
-Universe,Portal,GTEx,41
-Universe,Portal,GUDMAP,12
-Universe,Portal,HCA,135
-Universe,Portal,HRA,1
-Universe,Portal,HTAN,5
-Universe,Portal,HuBMAP,1960
-Universe,Portal,KPMP,49
-Universe,Portal,NHLBI/LungMap,9
-Universe,Portal,SPARC,25
-Universe,Portal,SenNet,785
-Universe,Portal,UEdinburgh,64
-Universe,Sex,female,3339
-Universe,Sex,male,4449
-Universe,Sex,unknown,227
+RUI registered,Age,0.1,10
+RUI registered,Age,0.3,4
+RUI registered,Age,0.52,2
+RUI registered,Age,1,38
+RUI registered,Age,1.27,4
+RUI registered,Age,1.45,2
+RUI registered,Age,1.6,10
+RUI registered,Age,1.8,4
+RUI registered,Age,10,18
+RUI registered,Age,11,6
+RUI registered,Age,13.1,4
+RUI registered,Age,14,2
+RUI registered,Age,14.98,4
+RUI registered,Age,16,8
+RUI registered,Age,17,5
+RUI registered,Age,18,38
+RUI registered,Age,19,4
+RUI registered,Age,2,4
+RUI registered,Age,2.33,4
+RUI registered,Age,20,33
+RUI registered,Age,21,9
+RUI registered,Age,22,3
+RUI registered,Age,23,3
+RUI registered,Age,23.8,20
+RUI registered,Age,23.83,2
+RUI registered,Age,24,176
+RUI registered,Age,25,61
+RUI registered,Age,28,63
+RUI registered,Age,29,16
+RUI registered,Age,3.5,4
+RUI registered,Age,3.79,2
+RUI registered,Age,3.98,4
+RUI registered,Age,30,53
+RUI registered,Age,31,12
+RUI registered,Age,32,12
+RUI registered,Age,34,1
+RUI registered,Age,36,7
+RUI registered,Age,37,141
+RUI registered,Age,38,120
+RUI registered,Age,39,9
+RUI registered,Age,4.45,2
+RUI registered,Age,40,11
+RUI registered,Age,41,8
+RUI registered,Age,42,5
+RUI registered,Age,43,203
+RUI registered,Age,44,15
+RUI registered,Age,45,28
+RUI registered,Age,46,4
+RUI registered,Age,47,4
+RUI registered,Age,48,6
+RUI registered,Age,49,53
+RUI registered,Age,5,2
+RUI registered,Age,5.9,4
+RUI registered,Age,50,32
+RUI registered,Age,51,35
+RUI registered,Age,52,4
+RUI registered,Age,53,8
+RUI registered,Age,54,146
+RUI registered,Age,55,146
+RUI registered,Age,56,26
+RUI registered,Age,57,91
+RUI registered,Age,58,12
+RUI registered,Age,59,25
+RUI registered,Age,60,40
+RUI registered,Age,61,7
+RUI registered,Age,61.8,4
+RUI registered,Age,62,219
+RUI registered,Age,64,36
+RUI registered,Age,65,37
+RUI registered,Age,66,94
+RUI registered,Age,67,206
+RUI registered,Age,68,14
+RUI registered,Age,69,55
+RUI registered,Age,70,16
+RUI registered,Age,71,2
+RUI registered,Age,72,62
+RUI registered,Age,73,10
+RUI registered,Age,75,17
+RUI registered,Age,76,23
+RUI registered,Age,77,27
+RUI registered,Age,78,154
+RUI registered,Age,8.66,4
+RUI registered,Age,80,2
+RUI registered,Age,81,1
+RUI registered,Age,86,1
+RUI registered,Age,90,2
+RUI registered,Age,Unknown,116
+RUI registered,Ethnicity,Black or African American,382
+RUI registered,Ethnicity,Multiple races,2
+RUI registered,Ethnicity,Unknown,409
+RUI registered,Ethnicity,White,2148
+RUI registered,Organ,blood vasculature,2
+RUI registered,Organ,brain,33
+RUI registered,Organ,heart,441
+RUI registered,Organ,kidney,842
+RUI registered,Organ,large intestine,380
+RUI registered,Organ,liver,76
+RUI registered,Organ,lung,481
+RUI registered,Organ,lymph node,7
+RUI registered,Organ,male reproductive system,21
+RUI registered,Organ,prostate gland,4
+RUI registered,Organ,skin,16
+RUI registered,Organ,small intestine,457
+RUI registered,Organ,spleen,90
+RUI registered,Organ,thymus,46
+RUI registered,Organ,ureter,33
+RUI registered,Organ,urinary bladder,28
+RUI registered,Organ,uterus,1
+RUI registered,Portal,Allen Institute for Brain Science,10
+RUI registered,Portal,GTEx,35
+RUI registered,Portal,GUDMAP,12
+RUI registered,Portal,HCA,108
+RUI registered,Portal,HRA,1
+RUI registered,Portal,HTAN,5
+RUI registered,Portal,HuBMAP,1852
+RUI registered,Portal,KPMP,49
+RUI registered,Portal,SPARC,25
+RUI registered,Portal,SenNet,780
+RUI registered,Portal,UEdinburgh,64
+RUI registered,Sex,female,901
+RUI registered,Sex,male,2040
+UNIVERSE,Age,0.1,10
+UNIVERSE,Age,0.3,4
+UNIVERSE,Age,0.52,2
+UNIVERSE,Age,1,38
+UNIVERSE,Age,1.27,4
+UNIVERSE,Age,1.45,2
+UNIVERSE,Age,1.6,10
+UNIVERSE,Age,1.8,4
+UNIVERSE,Age,10,18
+UNIVERSE,Age,11,6
+UNIVERSE,Age,13.1,4
+UNIVERSE,Age,14,4
+UNIVERSE,Age,14.98,4
+UNIVERSE,Age,16,8
+UNIVERSE,Age,17,5
+UNIVERSE,Age,18,38
+UNIVERSE,Age,19,13
+UNIVERSE,Age,2,4
+UNIVERSE,Age,2.33,4
+UNIVERSE,Age,20,33
+UNIVERSE,Age,21,11
+UNIVERSE,Age,22,3
+UNIVERSE,Age,23,3
+UNIVERSE,Age,23.8,20
+UNIVERSE,Age,23.83,2
+UNIVERSE,Age,24,180
+UNIVERSE,Age,25,62
+UNIVERSE,Age,28,63
+UNIVERSE,Age,29,17
+UNIVERSE,Age,3,3
+UNIVERSE,Age,3.5,4
+UNIVERSE,Age,3.79,2
+UNIVERSE,Age,3.98,4
+UNIVERSE,Age,30,68
+UNIVERSE,Age,31,13
+UNIVERSE,Age,32,12
+UNIVERSE,Age,33,1
+UNIVERSE,Age,34,1
+UNIVERSE,Age,36,7
+UNIVERSE,Age,37,175
+UNIVERSE,Age,38,120
+UNIVERSE,Age,39,9
+UNIVERSE,Age,4.45,2
+UNIVERSE,Age,40,15
+UNIVERSE,Age,41,8
+UNIVERSE,Age,42,6
+UNIVERSE,Age,43,205
+UNIVERSE,Age,44,17
+UNIVERSE,Age,45,38
+UNIVERSE,Age,46,4
+UNIVERSE,Age,47,4
+UNIVERSE,Age,48,6
+UNIVERSE,Age,49,53
+UNIVERSE,Age,5,2
+UNIVERSE,Age,5.9,4
+UNIVERSE,Age,50,39
+UNIVERSE,Age,51,35
+UNIVERSE,Age,52,4
+UNIVERSE,Age,53,8
+UNIVERSE,Age,54,150
+UNIVERSE,Age,55,148
+UNIVERSE,Age,56,28
+UNIVERSE,Age,57,101
+UNIVERSE,Age,58,12
+UNIVERSE,Age,59,28
+UNIVERSE,Age,60,44
+UNIVERSE,Age,61,7
+UNIVERSE,Age,61.8,4
+UNIVERSE,Age,62,219
+UNIVERSE,Age,63,4
+UNIVERSE,Age,64,36
+UNIVERSE,Age,65,41
+UNIVERSE,Age,66,94
+UNIVERSE,Age,67,208
+UNIVERSE,Age,68,14
+UNIVERSE,Age,69,59
+UNIVERSE,Age,70,20
+UNIVERSE,Age,71,2
+UNIVERSE,Age,72,62
+UNIVERSE,Age,73,10
+UNIVERSE,Age,75,17
+UNIVERSE,Age,76,27
+UNIVERSE,Age,77,27
+UNIVERSE,Age,78,154
+UNIVERSE,Age,8.66,4
+UNIVERSE,Age,80,2
+UNIVERSE,Age,81,1
+UNIVERSE,Age,86,1
+UNIVERSE,Age,90,2
+UNIVERSE,Age,Unknown,5044
+UNIVERSE,Ethnicity,African,23
+UNIVERSE,Ethnicity,African American,74
+UNIVERSE,Ethnicity,African American or Afro-Caribbean,14
+UNIVERSE,Ethnicity,American,1
+UNIVERSE,Ethnicity,Asian,176
+UNIVERSE,Ethnicity,Black or African American,418
+UNIVERSE,Ethnicity,East Asian,1
+UNIVERSE,Ethnicity,European,2122
+UNIVERSE,Ethnicity,Greater Middle Eastern  (Middle Eastern or North African or Persian),2
+UNIVERSE,Ethnicity,Han Chinese,58
+UNIVERSE,Ethnicity,Hispanic or Latin American,80
+UNIVERSE,Ethnicity,Japanese,148
+UNIVERSE,Ethnicity,Korean,165
+UNIVERSE,Ethnicity,Multiple races,2
+UNIVERSE,Ethnicity,Oceanian,3
+UNIVERSE,Ethnicity,Singaporean Chinese,75
+UNIVERSE,Ethnicity,Singaporean Indian,59
+UNIVERSE,Ethnicity,Singaporean Malay,52
+UNIVERSE,Ethnicity,South Asian,3
+UNIVERSE,Ethnicity,Unknown,2314
+UNIVERSE,Ethnicity,White,2225
+UNIVERSE,Organ,blood,2583
+UNIVERSE,Organ,blood vasculature,24
+UNIVERSE,Organ,bone marrow,184
+UNIVERSE,Organ,brain,33
+UNIVERSE,Organ,eye,204
+UNIVERSE,Organ,heart,776
+UNIVERSE,Organ,kidney,1237
+UNIVERSE,Organ,large intestine,526
+UNIVERSE,Organ,liver,152
+UNIVERSE,Organ,lung,1116
+UNIVERSE,Organ,lymph node,26
+UNIVERSE,Organ,male reproductive system,21
+UNIVERSE,Organ,mammary gland,4
+UNIVERSE,Organ,pancreas,14
+UNIVERSE,Organ,prostate gland,38
+UNIVERSE,Organ,skin,82
+UNIVERSE,Organ,small intestine,641
+UNIVERSE,Organ,spleen,140
+UNIVERSE,Organ,thymus,93
+UNIVERSE,Organ,trachea,29
+UNIVERSE,Organ,ureter,33
+UNIVERSE,Organ,urinary bladder,28
+UNIVERSE,Organ,uterus,48
+UNIVERSE,Portal,Allen Institute for Brain Science,10
+UNIVERSE,Portal,CxG,4919
+UNIVERSE,Portal,GTEx,41
+UNIVERSE,Portal,GUDMAP,12
+UNIVERSE,Portal,HCA,135
+UNIVERSE,Portal,HRA,1
+UNIVERSE,Portal,HTAN,5
+UNIVERSE,Portal,HuBMAP,1960
+UNIVERSE,Portal,KPMP,49
+UNIVERSE,Portal,NHLBI/LungMap,9
+UNIVERSE,Portal,SPARC,25
+UNIVERSE,Portal,SenNet,785
+UNIVERSE,Portal,UEdinburgh,64
+UNIVERSE,Sex,female,3339
+UNIVERSE,Sex,male,4449
+UNIVERSE,Sex,unknown,227

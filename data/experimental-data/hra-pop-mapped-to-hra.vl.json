@@ -43,7 +43,7 @@
       "bind": {
         "input": "select",
         "options": ["Portal", "Organ", "Sex", "Age", "Ethnicity"],
-        "name": "Group By"
+        "name": "By "
       }
     }
   ],
@@ -71,7 +71,7 @@
     },
     "color": {
       "field": "group_value",
-      "title": "Grouped Value",
+      "title": "Legend",
       "legend": {
         "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
       }

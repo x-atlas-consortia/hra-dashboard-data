@@ -180,7 +180,7 @@ WHERE {
 
       {
         FILTER(?in_universe)
-        BIND("Universe" as ?measure)
+        BIND("UNIVERSE" as ?measure)
       }
       UNION
       {
@@ -189,12 +189,12 @@ WHERE {
             ?dataset ccf:has_cell_summary [];
           }
         })
-        BIND("Atlas" as ?measure)
+        BIND("ATLAS" as ?measure)
       }
       UNION
       {
         FILTER(?has_extraction_site)
-        BIND("HRA via RUI" as ?measure)
+        BIND("RUI registered" as ?measure)
       }
       UNION
       {
