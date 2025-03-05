@@ -1,48 +1,48 @@
 type: Dashboard
 title: Diversity and Inclusion
 description: >-
-  The HRA effort aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of HRAlit paper authors overlaid on a world map.
-link: 
+  The Human Reference Atlas aims to be inclusive and representative of human diversity. Counts and visualizations show the diversity of HRA tissue donors, authors, reviewers, and users using population pyramids, bar graphs, and a choropleth map showing the number of HRAlit paper authors overlaid on a world map. The ethnicity and sex of HRAlit and HRApop authors is predicted using code detailed in <https://doi.org/10.1038/s41597-024-03416-8>.
+link:
   type: Link
   url: https://doi.org/10.1038/s41597-024-03416-8
   label: Read Paper
 items:
   - type: MetricsContainer
     items:
-      - title: HRA Working Group
-        tooltip: Statistics covering authors, experts, and reviewers in the HRA Working Group.
+      - title: HRA Experts
+        tooltip: Statistics covering experts on HRA WG mailing list as well as authors and reviewers of hra digital objects.
         items:
           # - label: registered experts
           #   count: -1
-          - label: Experts on mailing list
+          - label: HRA Working Group experts
             count: 336
           - label: Digital object authors
             count: 101
           - label: Digital object reviewers
             count: 99
-      - title: Authors
-        tooltip: Statistics covering HRA authors and publication authors.
+      - title: Authors vs. World Population
+        tooltip: Statistics covering HRAlit authors, experimental data authors, and world population.
         items:
-          - label: Publication authors
+          - label: HRAlit Publication authors
             count: 66803
-          - label: Experimental data authors
+          - label: HRApop Experimental data authors
             count: 347
-          - label: Humans on Earth on December 13th, 2024
-            count:  8193742632
+          - label: Humans on Earth on March 5th, 2025
+            count: 8209493211
             source: https://www.worldometers.info/world-population/
   - type: ImageContainer
     title: Population Comparison
-    tooltip: These graphs show a breakdown of HRA survey participants, donors, and world population by biological age and HRA experts and authors by career age for both sexes.
+    tooltip: These graphs show a breakdown of HRA survey participants, donors, and world population by biological age and HRA experts and HRAlit authors by career age for both sexes.
     aspectRatio: 3 / 1
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/population-pyramids.png
-  - type: GridContainer
-    columns: 2
-    items:
-      - type: ImageContainer
-        title: Experts Around the Globe
-        tooltip: This graph shows the number of authors in HRA relevant publications (HRAlit) by country overlaid on a world map.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/experts-world-map.png
-      - type: ImageContainer
-        title: Ethnic Diversity Breakdown
-        tooltip: This graph shows ethnic background breakdown by expert group.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/ethnic-composition.png
+  # - type: GridContainer
+  #   columns: 2
+  #   items:
+  #     - type: ImageContainer
+  #       title: HRAlit Authors Around the Globe
+  #       tooltip: This graph shows the number of authors in HRA relevant publications (HRAlit) by country overlaid on a world map.
+  #       imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/experts-world-map.png
+  #     - type: ImageContainer
+  #       title: Ethnic Diversity Breakdown
+  #       tooltip: This graph shows ethnic background breakdown by expert group.
+  #       imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/diversity-and-inclusion/ethnic-composition.png
