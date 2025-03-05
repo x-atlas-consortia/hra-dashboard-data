@@ -19,11 +19,12 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT ?measure ?group ?group_value (COUNT(DISTINCT ?dataset) as ?count)
 
 WITH {
-  SELECT ?dataset
+  SELECT DISTINCT ?dataset
   ?in_universe ?in_atlas ?has_extraction_site ?has_transcriptomics ?has_proteomics # measure
   ?portal ?organ ?sex ?age ?race # group .. ?as as stretch goal
   # FROM HRApopFull:
   FROM HRA:
+  FROM HRApop:
   FROM NAMED HRApop:
   # FROM NAMED HRApopTestData:
   WHERE {
@@ -74,7 +75,7 @@ WITH {
     }
 
     {
-      SELECT ?dataset ?rui_location ?ruiOrganIri ?ruiOrganLabel ?ruiOrganSex ?ruiOrganSide
+      SELECT DISTINCT ?dataset ?rui_location ?ruiOrganIri ?ruiOrganLabel ?ruiOrganSex ?ruiOrganSide
       WHERE {
         {
           ?sample ccf:comes_from ?donor .
@@ -101,7 +102,7 @@ WITH {
         }
       }
     }
-    #UNION
+    UNION
     {
       ?dataset ccf:organ_id ?_reportedOrganIri .
       BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
@@ -167,6 +168,8 @@ WITH {
 
     BIND(IF(BOUND(?donor_age), ?donor_age, 'Unknown') as ?age)
     BIND(IF(BOUND(?donor_race), ?donor_race, 'Unknown') as ?race)
+
+    FILTER(?in_atlas && BOUND(?rui_location) && BOUND(?modality))
   }
 
 
