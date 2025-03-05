@@ -65,6 +65,7 @@
     "y": {
       "field": "measure",
       "title": "HRA Mapping",
+      "sort": "-y",
       "axis": {
         "labelAngle": -45
       }
