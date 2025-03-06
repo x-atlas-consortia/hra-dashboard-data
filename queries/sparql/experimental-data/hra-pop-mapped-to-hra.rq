@@ -98,12 +98,13 @@ WHERE {
   {
     SELECT ?dataset ("Organ" as ?group) (STR(?organ) as ?group_value)
     WHERE {
-      ?dataset ccf:organ_id ?_reportedOrganIri .
-      BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+      [] ccf:generates_dataset ?dataset .
       OPTIONAL {
+        ?dataset ccf:organ_id ?_reportedOrganIri .
+        BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
         ?reportedOrganIri rdfs:label ?reportedOrganLabel .
       }
-      BIND(COALESCE(?reportedOrganLabel, ?reportedOrganIri) as ?organ)
+      BIND(COALESCE(?reportedOrganLabel, ?reportedOrganIri, "Unknown") as ?organ)
     }
   }
   UNION

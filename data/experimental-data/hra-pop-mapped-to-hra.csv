@@ -53,6 +53,7 @@ ATLAS,Age,Unknown,45
 ATLAS,Ethnicity,Black or African American,91
 ATLAS,Ethnicity,Unknown,163
 ATLAS,Ethnicity,White,365
+ATLAS,Organ,Unknown,107
 ATLAS,Organ,heart,109
 ATLAS,Organ,kidney,237
 ATLAS,Organ,large intestine,39
@@ -95,6 +96,7 @@ CTann via proteomics,Age,78,8
 CTann via proteomics,Ethnicity,Black or African American,18
 CTann via proteomics,Ethnicity,Unknown,28
 CTann via proteomics,Ethnicity,White,61
+CTann via proteomics,Organ,Unknown,107
 CTann via proteomics,Portal,HuBMAP,107
 CTann via proteomics,Sex,Female,23
 CTann via proteomics,Sex,Male,84
@@ -302,8 +304,8 @@ RUI registered,Ethnicity,Multiple races,2
 RUI registered,Ethnicity,Other Race,4
 RUI registered,Ethnicity,Unknown,653
 RUI registered,Ethnicity,White,3091
+RUI registered,Organ,Unknown,3904
 RUI registered,Organ,heart,109
-RUI registered,Organ,http://purl.obolibrary.org/obo/UBERON_24977,11
 RUI registered,Organ,kidney,237
 RUI registered,Organ,large intestine,39
 RUI registered,Organ,liver,2
@@ -456,6 +458,7 @@ UNIVERSE,Ethnicity,South Asian,12
 UNIVERSE,Ethnicity,Unknown,3767
 UNIVERSE,Ethnicity,White,3187
 UNIVERSE,Ethnicity,na,59
+UNIVERSE,Organ,Unknown,6159
 UNIVERSE,Organ,adipose tissue,7
 UNIVERSE,Organ,blood,2583
 UNIVERSE,Organ,blood vasculature,22
@@ -463,9 +466,6 @@ UNIVERSE,Organ,bone marrow,184
 UNIVERSE,Organ,eye,204
 UNIVERSE,Organ,heart,412
 UNIVERSE,Organ,hippocampal formation,4
-UNIVERSE,Organ,http://purl.obolibrary.org/obo/UBERON_0002469,3
-UNIVERSE,Organ,http://purl.obolibrary.org/obo/UBERON_0004648,3
-UNIVERSE,Organ,http://purl.obolibrary.org/obo/UBERON_24977,11
 UNIVERSE,Organ,islet of Langerhans,39
 UNIVERSE,Organ,kidney,597
 UNIVERSE,Organ,large intestine,179
