@@ -1,215 +1,241 @@
 measure,group,group_value,count
 ATLAS,Age,1,1
 ATLAS,Age,10,4
+ATLAS,Age,14,2
 ATLAS,Age,17,1
 ATLAS,Age,18,8
 ATLAS,Age,19,1
 ATLAS,Age,20,4
-ATLAS,Age,21,1
+ATLAS,Age,21,4
 ATLAS,Age,22,1
 ATLAS,Age,23,1
-ATLAS,Age,24,31
-ATLAS,Age,25,8
+ATLAS,Age,24,37
+ATLAS,Age,25,9
 ATLAS,Age,28,3
-ATLAS,Age,29,4
+ATLAS,Age,29,5
+ATLAS,Age,3,3
 ATLAS,Age,30,13
-ATLAS,Age,37,37
-ATLAS,Age,38,17
-ATLAS,Age,40,4
-ATLAS,Age,41,2
+ATLAS,Age,31,1
+ATLAS,Age,33,2
+ATLAS,Age,37,71
+ATLAS,Age,38,18
+ATLAS,Age,40,8
+ATLAS,Age,41,3
 ATLAS,Age,42,1
-ATLAS,Age,43,4
-ATLAS,Age,45,8
+ATLAS,Age,43,6
+ATLAS,Age,45,18
+ATLAS,Age,48,1
 ATLAS,Age,5,1
-ATLAS,Age,50,16
+ATLAS,Age,50,23
 ATLAS,Age,51,2
-ATLAS,Age,53,2
-ATLAS,Age,54,27
-ATLAS,Age,55,38
+ATLAS,Age,52,1
+ATLAS,Age,53,3
+ATLAS,Age,54,29
+ATLAS,Age,55,40
 ATLAS,Age,56,2
-ATLAS,Age,57,7
-ATLAS,Age,59,1
-ATLAS,Age,60,11
+ATLAS,Age,57,17
+ATLAS,Age,59,4
+ATLAS,Age,60,15
 ATLAS,Age,61,2
 ATLAS,Age,62,2
+ATLAS,Age,63,4
 ATLAS,Age,64,2
-ATLAS,Age,65,16
+ATLAS,Age,65,20
 ATLAS,Age,66,32
-ATLAS,Age,67,73
-ATLAS,Age,69,28
-ATLAS,Age,70,2
+ATLAS,Age,67,75
+ATLAS,Age,69,33
+ATLAS,Age,70,6
+ATLAS,Age,72,1
 ATLAS,Age,75,1
-ATLAS,Age,76,6
+ATLAS,Age,76,10
 ATLAS,Age,78,23
-ATLAS,Age,Unknown,36
-ATLAS,Ethnicity,Black or African American,54
-ATLAS,Ethnicity,Unknown,120
-ATLAS,Ethnicity,White,310
-ATLAS,Organ,heart,77
-ATLAS,Organ,kidney,189
-ATLAS,Organ,large intestine,88
+ATLAS,Age,Unknown,45
+ATLAS,Ethnicity,Black or African American,91
+ATLAS,Ethnicity,Unknown,163
+ATLAS,Ethnicity,White,365
+ATLAS,Organ,heart,109
+ATLAS,Organ,kidney,237
+ATLAS,Organ,large intestine,39
 ATLAS,Organ,liver,2
-ATLAS,Organ,lung,8
-ATLAS,Organ,male reproductive system,4
-ATLAS,Organ,skin,4
-ATLAS,Organ,small intestine,71
-ATLAS,Organ,spleen,14
-ATLAS,Organ,ureter,13
+ATLAS,Organ,lung,52
+ATLAS,Organ,mammary gland,3
+ATLAS,Organ,prostate gland,4
+ATLAS,Organ,skin of body,2
+ATLAS,Organ,small intestine,39
+ATLAS,Organ,spleen,11
 ATLAS,Organ,urinary bladder,14
-ATLAS,Portal,GTEx,9
-ATLAS,Portal,HCA,55
-ATLAS,Portal,HuBMAP,385
+ATLAS,Portal,GTEx,15
+ATLAS,Portal,HCA,82
+ATLAS,Portal,HuBMAP,478
 ATLAS,Portal,KPMP,27
+ATLAS,Portal,NHLBI/LungMap,9
 ATLAS,Portal,SenNet,8
-ATLAS,Sex,female,121
-ATLAS,Sex,male,363
+ATLAS,Sex,Female,203
+ATLAS,Sex,Male,416
 CTann via proteomics,Age,1,1
 CTann via proteomics,Age,10,2
 CTann via proteomics,Age,20,2
-CTann via proteomics,Age,21,1
+CTann via proteomics,Age,21,2
 CTann via proteomics,Age,23,1
-CTann via proteomics,Age,24,14
+CTann via proteomics,Age,24,16
 CTann via proteomics,Age,30,8
+CTann via proteomics,Age,33,1
 CTann via proteomics,Age,37,16
-CTann via proteomics,Age,38,8
+CTann via proteomics,Age,38,9
+CTann via proteomics,Age,41,1
+CTann via proteomics,Age,48,1
+CTann via proteomics,Age,52,1
+CTann via proteomics,Age,53,1
 CTann via proteomics,Age,54,8
 CTann via proteomics,Age,57,1
 CTann via proteomics,Age,60,1
-CTann via proteomics,Age,69,25
+CTann via proteomics,Age,69,26
+CTann via proteomics,Age,72,1
 CTann via proteomics,Age,78,8
-CTann via proteomics,Ethnicity,Black or African American,17
-CTann via proteomics,Ethnicity,Unknown,27
-CTann via proteomics,Ethnicity,White,52
-CTann via proteomics,Organ,large intestine,55
-CTann via proteomics,Organ,lung,2
-CTann via proteomics,Organ,skin,2
-CTann via proteomics,Organ,small intestine,32
-CTann via proteomics,Organ,spleen,5
-CTann via proteomics,Portal,HuBMAP,96
-CTann via proteomics,Sex,female,16
-CTann via proteomics,Sex,male,80
+CTann via proteomics,Ethnicity,Black or African American,18
+CTann via proteomics,Ethnicity,Unknown,28
+CTann via proteomics,Ethnicity,White,61
+CTann via proteomics,Portal,HuBMAP,107
+CTann via proteomics,Sex,Female,23
+CTann via proteomics,Sex,Male,84
 CTann via transcriptomics,Age,10,2
+CTann via transcriptomics,Age,14,2
 CTann via transcriptomics,Age,17,1
 CTann via transcriptomics,Age,18,8
 CTann via transcriptomics,Age,19,1
 CTann via transcriptomics,Age,20,2
+CTann via transcriptomics,Age,21,2
 CTann via transcriptomics,Age,22,1
-CTann via transcriptomics,Age,24,17
-CTann via transcriptomics,Age,25,8
+CTann via transcriptomics,Age,24,21
+CTann via transcriptomics,Age,25,9
 CTann via transcriptomics,Age,28,3
-CTann via transcriptomics,Age,29,4
+CTann via transcriptomics,Age,29,5
+CTann via transcriptomics,Age,3,3
 CTann via transcriptomics,Age,30,5
-CTann via transcriptomics,Age,37,21
+CTann via transcriptomics,Age,31,1
+CTann via transcriptomics,Age,33,1
+CTann via transcriptomics,Age,37,55
 CTann via transcriptomics,Age,38,9
-CTann via transcriptomics,Age,40,4
+CTann via transcriptomics,Age,40,8
 CTann via transcriptomics,Age,41,2
 CTann via transcriptomics,Age,42,1
-CTann via transcriptomics,Age,43,4
-CTann via transcriptomics,Age,45,8
+CTann via transcriptomics,Age,43,6
+CTann via transcriptomics,Age,45,18
 CTann via transcriptomics,Age,5,1
-CTann via transcriptomics,Age,50,16
+CTann via transcriptomics,Age,50,23
 CTann via transcriptomics,Age,51,2
 CTann via transcriptomics,Age,53,2
-CTann via transcriptomics,Age,54,19
-CTann via transcriptomics,Age,55,38
+CTann via transcriptomics,Age,54,21
+CTann via transcriptomics,Age,55,40
 CTann via transcriptomics,Age,56,2
-CTann via transcriptomics,Age,57,6
-CTann via transcriptomics,Age,59,1
-CTann via transcriptomics,Age,60,10
+CTann via transcriptomics,Age,57,16
+CTann via transcriptomics,Age,59,4
+CTann via transcriptomics,Age,60,14
 CTann via transcriptomics,Age,61,2
 CTann via transcriptomics,Age,62,2
+CTann via transcriptomics,Age,63,4
 CTann via transcriptomics,Age,64,2
-CTann via transcriptomics,Age,65,16
+CTann via transcriptomics,Age,65,20
 CTann via transcriptomics,Age,66,32
-CTann via transcriptomics,Age,67,73
-CTann via transcriptomics,Age,69,3
-CTann via transcriptomics,Age,70,2
+CTann via transcriptomics,Age,67,75
+CTann via transcriptomics,Age,69,7
+CTann via transcriptomics,Age,70,6
 CTann via transcriptomics,Age,75,1
-CTann via transcriptomics,Age,76,6
+CTann via transcriptomics,Age,76,10
 CTann via transcriptomics,Age,78,15
-CTann via transcriptomics,Age,Unknown,36
-CTann via transcriptomics,Ethnicity,Black or African American,37
-CTann via transcriptomics,Ethnicity,Unknown,93
-CTann via transcriptomics,Ethnicity,White,258
-CTann via transcriptomics,Organ,heart,77
-CTann via transcriptomics,Organ,kidney,189
-CTann via transcriptomics,Organ,large intestine,33
+CTann via transcriptomics,Age,Unknown,45
+CTann via transcriptomics,Ethnicity,Black or African American,73
+CTann via transcriptomics,Ethnicity,Unknown,135
+CTann via transcriptomics,Ethnicity,White,304
+CTann via transcriptomics,Organ,heart,109
+CTann via transcriptomics,Organ,kidney,237
+CTann via transcriptomics,Organ,large intestine,39
 CTann via transcriptomics,Organ,liver,2
-CTann via transcriptomics,Organ,lung,6
-CTann via transcriptomics,Organ,male reproductive system,4
-CTann via transcriptomics,Organ,skin,2
+CTann via transcriptomics,Organ,lung,52
+CTann via transcriptomics,Organ,mammary gland,3
+CTann via transcriptomics,Organ,prostate gland,4
+CTann via transcriptomics,Organ,skin of body,2
 CTann via transcriptomics,Organ,small intestine,39
-CTann via transcriptomics,Organ,spleen,9
-CTann via transcriptomics,Organ,ureter,13
+CTann via transcriptomics,Organ,spleen,11
 CTann via transcriptomics,Organ,urinary bladder,14
-CTann via transcriptomics,Portal,GTEx,9
-CTann via transcriptomics,Portal,HCA,55
-CTann via transcriptomics,Portal,HuBMAP,289
+CTann via transcriptomics,Portal,GTEx,15
+CTann via transcriptomics,Portal,HCA,82
+CTann via transcriptomics,Portal,HuBMAP,371
 CTann via transcriptomics,Portal,KPMP,27
+CTann via transcriptomics,Portal,NHLBI/LungMap,9
 CTann via transcriptomics,Portal,SenNet,8
-CTann via transcriptomics,Sex,female,105
-CTann via transcriptomics,Sex,male,283
+CTann via transcriptomics,Sex,Female,180
+CTann via transcriptomics,Sex,Male,332
 RUI registered,Age,1,1
 RUI registered,Age,10,4
+RUI registered,Age,14,2
 RUI registered,Age,17,1
 RUI registered,Age,18,8
 RUI registered,Age,19,1
 RUI registered,Age,20,4
-RUI registered,Age,21,1
+RUI registered,Age,21,4
 RUI registered,Age,22,1
 RUI registered,Age,23,1
-RUI registered,Age,24,31
-RUI registered,Age,25,8
+RUI registered,Age,24,37
+RUI registered,Age,25,9
 RUI registered,Age,28,3
-RUI registered,Age,29,4
+RUI registered,Age,29,5
+RUI registered,Age,3,3
 RUI registered,Age,30,13
-RUI registered,Age,37,37
-RUI registered,Age,38,17
-RUI registered,Age,40,4
-RUI registered,Age,41,2
+RUI registered,Age,31,1
+RUI registered,Age,33,2
+RUI registered,Age,37,71
+RUI registered,Age,38,18
+RUI registered,Age,40,8
+RUI registered,Age,41,3
 RUI registered,Age,42,1
-RUI registered,Age,43,4
-RUI registered,Age,45,8
+RUI registered,Age,43,6
+RUI registered,Age,45,18
+RUI registered,Age,48,1
 RUI registered,Age,5,1
-RUI registered,Age,50,16
+RUI registered,Age,50,23
 RUI registered,Age,51,2
-RUI registered,Age,53,2
-RUI registered,Age,54,27
-RUI registered,Age,55,38
+RUI registered,Age,52,1
+RUI registered,Age,53,3
+RUI registered,Age,54,29
+RUI registered,Age,55,40
 RUI registered,Age,56,2
-RUI registered,Age,57,7
-RUI registered,Age,59,1
-RUI registered,Age,60,11
+RUI registered,Age,57,17
+RUI registered,Age,59,4
+RUI registered,Age,60,15
 RUI registered,Age,61,2
 RUI registered,Age,62,2
+RUI registered,Age,63,4
 RUI registered,Age,64,2
-RUI registered,Age,65,16
+RUI registered,Age,65,20
 RUI registered,Age,66,32
-RUI registered,Age,67,73
-RUI registered,Age,69,28
-RUI registered,Age,70,2
+RUI registered,Age,67,75
+RUI registered,Age,69,33
+RUI registered,Age,70,6
+RUI registered,Age,72,1
 RUI registered,Age,75,1
-RUI registered,Age,76,6
+RUI registered,Age,76,10
 RUI registered,Age,78,23
-RUI registered,Age,Unknown,36
-RUI registered,Ethnicity,Black or African American,54
-RUI registered,Ethnicity,Unknown,120
-RUI registered,Ethnicity,White,310
-RUI registered,Organ,heart,77
-RUI registered,Organ,kidney,189
-RUI registered,Organ,large intestine,88
+RUI registered,Age,Unknown,45
+RUI registered,Ethnicity,Black or African American,91
+RUI registered,Ethnicity,Unknown,163
+RUI registered,Ethnicity,White,365
+RUI registered,Organ,heart,109
+RUI registered,Organ,kidney,237
+RUI registered,Organ,large intestine,39
 RUI registered,Organ,liver,2
-RUI registered,Organ,lung,8
-RUI registered,Organ,male reproductive system,4
-RUI registered,Organ,skin,4
-RUI registered,Organ,small intestine,71
-RUI registered,Organ,spleen,14
-RUI registered,Organ,ureter,13
+RUI registered,Organ,lung,52
+RUI registered,Organ,mammary gland,3
+RUI registered,Organ,prostate gland,4
+RUI registered,Organ,skin of body,2
+RUI registered,Organ,small intestine,39
+RUI registered,Organ,spleen,11
 RUI registered,Organ,urinary bladder,14
-RUI registered,Portal,GTEx,9
-RUI registered,Portal,HCA,55
-RUI registered,Portal,HuBMAP,385
+RUI registered,Portal,GTEx,15
+RUI registered,Portal,HCA,82
+RUI registered,Portal,HuBMAP,478
 RUI registered,Portal,KPMP,27
+RUI registered,Portal,NHLBI/LungMap,9
 RUI registered,Portal,SenNet,8
-RUI registered,Sex,female,121
-RUI registered,Sex,male,363
+RUI registered,Sex,Female,203
+RUI registered,Sex,Male,416
