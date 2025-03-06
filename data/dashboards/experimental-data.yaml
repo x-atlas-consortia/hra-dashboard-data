@@ -16,7 +16,7 @@ items:
         source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v0.11.1/reports/atlas-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
-            count: 453
+            count: 478
           - label: SenNet datasets
             count: 8
           - label: Tissue donors
