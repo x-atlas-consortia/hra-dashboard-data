@@ -53,17 +53,16 @@ ATLAS,Age,Unknown,45
 ATLAS,Ethnicity,Black or African American,91
 ATLAS,Ethnicity,Unknown,163
 ATLAS,Ethnicity,White,365
-ATLAS,Organ,Unknown,107
 ATLAS,Organ,heart,109
 ATLAS,Organ,kidney,237
-ATLAS,Organ,large intestine,39
+ATLAS,Organ,large intestine,96
 ATLAS,Organ,liver,2
-ATLAS,Organ,lung,52
+ATLAS,Organ,lung,54
 ATLAS,Organ,mammary gland,3
 ATLAS,Organ,prostate gland,4
-ATLAS,Organ,skin of body,2
-ATLAS,Organ,small intestine,39
-ATLAS,Organ,spleen,11
+ATLAS,Organ,skin,12
+ATLAS,Organ,small intestine,71
+ATLAS,Organ,spleen,17
 ATLAS,Organ,urinary bladder,14
 ATLAS,Portal,GTEx,15
 ATLAS,Portal,HCA,82
@@ -96,7 +95,11 @@ CTann via proteomics,Age,78,8
 CTann via proteomics,Ethnicity,Black or African American,18
 CTann via proteomics,Ethnicity,Unknown,28
 CTann via proteomics,Ethnicity,White,61
-CTann via proteomics,Organ,Unknown,107
+CTann via proteomics,Organ,large intestine,57
+CTann via proteomics,Organ,lung,2
+CTann via proteomics,Organ,skin,10
+CTann via proteomics,Organ,small intestine,32
+CTann via proteomics,Organ,spleen,6
 CTann via proteomics,Portal,HuBMAP,107
 CTann via proteomics,Sex,Female,23
 CTann via proteomics,Sex,Male,84
@@ -176,20 +179,18 @@ CTann via transcriptomics,Organ,adipose tissue,7
 CTann via transcriptomics,Organ,blood,2581
 CTann via transcriptomics,Organ,blood vasculature,22
 CTann via transcriptomics,Organ,bone marrow,180
+CTann via transcriptomics,Organ,brain,89
 CTann via transcriptomics,Organ,eye,204
 CTann via transcriptomics,Organ,heart,404
-CTann via transcriptomics,Organ,hippocampal formation,4
-CTann via transcriptomics,Organ,islet of Langerhans,39
 CTann via transcriptomics,Organ,kidney,597
 CTann via transcriptomics,Organ,large intestine,179
 CTann via transcriptomics,Organ,liver,78
 CTann via transcriptomics,Organ,lung,641
+CTann via transcriptomics,Organ,lymph node,17
 CTann via transcriptomics,Organ,mammary gland,4
-CTann via transcriptomics,Organ,mesenteric lymph node,17
-CTann via transcriptomics,Organ,pancreas,14
-CTann via transcriptomics,Organ,primary motor cortex,85
+CTann via transcriptomics,Organ,pancreas,53
 CTann via transcriptomics,Organ,prostate gland,38
-CTann via transcriptomics,Organ,skin of body,68
+CTann via transcriptomics,Organ,skin,68
 CTann via transcriptomics,Organ,small intestine,223
 CTann via transcriptomics,Organ,spleen,59
 CTann via transcriptomics,Organ,thymus,47
@@ -304,19 +305,28 @@ RUI registered,Ethnicity,Multiple races,2
 RUI registered,Ethnicity,Other Race,4
 RUI registered,Ethnicity,Unknown,653
 RUI registered,Ethnicity,White,3091
-RUI registered,Organ,Unknown,3904
-RUI registered,Organ,heart,109
-RUI registered,Organ,kidney,237
-RUI registered,Organ,large intestine,39
-RUI registered,Organ,liver,2
-RUI registered,Organ,lung,52
-RUI registered,Organ,lymph node,2
+RUI registered,Organ,knee,24
+RUI registered,Organ,mammary gland,4
+RUI registered,Organ,blood vasculature,2
+RUI registered,Organ,brain,33
+RUI registered,Organ,fallopian tube,18
+RUI registered,Organ,heart,512
+RUI registered,Organ,kidney,1359
+RUI registered,Organ,large intestine,496
+RUI registered,Organ,liver,76
+RUI registered,Organ,lung,659
+RUI registered,Organ,lymph node,95
 RUI registered,Organ,mammary gland,3
-RUI registered,Organ,prostate gland,4
-RUI registered,Organ,skin of body,2
-RUI registered,Organ,small intestine,39
-RUI registered,Organ,spleen,11
-RUI registered,Organ,urinary bladder,14
+RUI registered,Organ,ovary,66
+RUI registered,Organ,pancreas,309
+RUI registered,Organ,prostate gland,21
+RUI registered,Organ,skin,37
+RUI registered,Organ,small intestine,457
+RUI registered,Organ,spleen,134
+RUI registered,Organ,thymus,60
+RUI registered,Organ,ureter,24
+RUI registered,Organ,urinary bladder,28
+RUI registered,Organ,uterus,1
 RUI registered,Portal,Allen Institute for Brain Science,10
 RUI registered,Portal,GTEx,65
 RUI registered,Portal,GUDMAP,12
@@ -458,38 +468,35 @@ UNIVERSE,Ethnicity,South Asian,12
 UNIVERSE,Ethnicity,Unknown,3767
 UNIVERSE,Ethnicity,White,3187
 UNIVERSE,Ethnicity,na,59
-UNIVERSE,Organ,Unknown,6159
+UNIVERSE,Organ,knee,24
+UNIVERSE,Organ,mammary gland,4
 UNIVERSE,Organ,adipose tissue,7
 UNIVERSE,Organ,blood,2583
-UNIVERSE,Organ,blood vasculature,22
+UNIVERSE,Organ,blood vasculature,24
 UNIVERSE,Organ,bone marrow,184
+UNIVERSE,Organ,brain,124
 UNIVERSE,Organ,eye,204
-UNIVERSE,Organ,heart,412
-UNIVERSE,Organ,hippocampal formation,4
-UNIVERSE,Organ,islet of Langerhans,39
-UNIVERSE,Organ,kidney,597
-UNIVERSE,Organ,large intestine,179
-UNIVERSE,Organ,left fallopian tube,7
-UNIVERSE,Organ,left ovary,28
-UNIVERSE,Organ,liver,78
-UNIVERSE,Organ,lung,641
-UNIVERSE,Organ,lymph node,2
+UNIVERSE,Organ,fallopian tube,32
+UNIVERSE,Organ,heart,815
+UNIVERSE,Organ,kidney,1719
+UNIVERSE,Organ,large intestine,636
+UNIVERSE,Organ,liver,152
+UNIVERSE,Organ,lung,1248
+UNIVERSE,Organ,lymph node,112
 UNIVERSE,Organ,mammary gland,4
-UNIVERSE,Organ,mesenteric lymph node,17
-UNIVERSE,Organ,pancreas,14
-UNIVERSE,Organ,primary motor cortex,87
-UNIVERSE,Organ,prostate gland,38
-UNIVERSE,Organ,right fallopian tube,7
-UNIVERSE,Organ,right ovary,8
+UNIVERSE,Organ,ovary,102
+UNIVERSE,Organ,pancreas,362
+UNIVERSE,Organ,prostate gland,55
 UNIVERSE,Organ,skeletal muscle tissue,3
-UNIVERSE,Organ,skin of body,68
-UNIVERSE,Organ,small intestine,223
-UNIVERSE,Organ,spleen,59
-UNIVERSE,Organ,thymus,47
+UNIVERSE,Organ,skin,103
+UNIVERSE,Organ,small intestine,641
+UNIVERSE,Organ,spleen,182
+UNIVERSE,Organ,thymus,107
 UNIVERSE,Organ,tongue,6
 UNIVERSE,Organ,trachea,29
-UNIVERSE,Organ,urinary bladder,14
-UNIVERSE,Organ,uterus,47
+UNIVERSE,Organ,ureter,24
+UNIVERSE,Organ,urinary bladder,28
+UNIVERSE,Organ,uterus,48
 UNIVERSE,Portal,Allen Institute for Brain Science,10
 UNIVERSE,Portal,CxG,7179
 UNIVERSE,Portal,GTEx,74

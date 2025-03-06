@@ -96,16 +96,43 @@ WHERE {
   }
   UNION
   {
-    SELECT ?dataset ("Organ" as ?group) (STR(?organ) as ?group_value)
+    SELECT ?dataset ("Organ" as ?group) (SAMPLE(?organ) as ?group_value)
     WHERE {
       [] ccf:generates_dataset ?dataset .
-      OPTIONAL {
+
+      {
+        {
+          ?sample ccf:comes_from ?donor .
+          ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        ?placement a ccf:SpatialPlacement ;
+          ccf:placement_for ?rui_location ;
+          ccf:placement_relative_to ?ref_organ .
+
+        ?ref_organ ccf:representation_of ?refOrganIri .
+        ?refOrganIri rdfs:label ?ruiOrganLabel .
+      }
+      UNION
+      {
         ?dataset ccf:organ_id ?_reportedOrganIri .
         BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
         ?reportedOrganIri rdfs:label ?reportedOrganLabel .
       }
-      BIND(COALESCE(?reportedOrganLabel, ?reportedOrganIri, "Unknown") as ?organ)
+      BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
+        LCASE(COALESCE(?reportedOrganLabel, ?ruiOrganLabel, "Unknown")), 'left ', ''), 'right ', ''), 'respiratory system', 'lung'), 
+        'male reproductive system', 'prostate gland'), 'set of lactiferous glands in breast', 'mammary gland'), 
+        'mesenteric lymph node', 'lymph node'), 'blood vasculature', 'vasculature'), 'hippocampal formation', 'brain'), 
+        'skin of body', 'skin'), 'islet of langerhans', 'pancreas'), 'primary motor cortex', 'brain'), 
+        'vasculature', 'blood vasculature') as ?organ)
     }
+    GROUP BY ?dataset
   }
   UNION
   {

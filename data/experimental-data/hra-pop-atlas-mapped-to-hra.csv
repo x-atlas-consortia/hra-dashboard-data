@@ -53,17 +53,16 @@ ATLAS,Age,Unknown,45
 ATLAS,Ethnicity,Black or African American,91
 ATLAS,Ethnicity,Unknown,163
 ATLAS,Ethnicity,White,365
-ATLAS,Organ,Unknown,107
 ATLAS,Organ,heart,109
 ATLAS,Organ,kidney,237
-ATLAS,Organ,large intestine,39
+ATLAS,Organ,large intestine,96
 ATLAS,Organ,liver,2
-ATLAS,Organ,lung,52
+ATLAS,Organ,lung,54
 ATLAS,Organ,mammary gland,3
 ATLAS,Organ,prostate gland,4
-ATLAS,Organ,skin of body,2
-ATLAS,Organ,small intestine,39
-ATLAS,Organ,spleen,11
+ATLAS,Organ,skin,12
+ATLAS,Organ,small intestine,71
+ATLAS,Organ,spleen,17
 ATLAS,Organ,urinary bladder,14
 ATLAS,Portal,GTEx,15
 ATLAS,Portal,HCA,82
@@ -96,7 +95,11 @@ CTann via proteomics,Age,78,8
 CTann via proteomics,Ethnicity,Black or African American,18
 CTann via proteomics,Ethnicity,Unknown,28
 CTann via proteomics,Ethnicity,White,61
-CTann via proteomics,Organ,Unknown,107
+CTann via proteomics,Organ,large intestine,57
+CTann via proteomics,Organ,lung,2
+CTann via proteomics,Organ,skin,10
+CTann via proteomics,Organ,small intestine,32
+CTann via proteomics,Organ,spleen,6
 CTann via proteomics,Portal,HuBMAP,107
 CTann via proteomics,Sex,Female,23
 CTann via proteomics,Sex,Male,84
@@ -156,7 +159,7 @@ CTann via transcriptomics,Organ,liver,2
 CTann via transcriptomics,Organ,lung,52
 CTann via transcriptomics,Organ,mammary gland,3
 CTann via transcriptomics,Organ,prostate gland,4
-CTann via transcriptomics,Organ,skin of body,2
+CTann via transcriptomics,Organ,skin,2
 CTann via transcriptomics,Organ,small intestine,39
 CTann via transcriptomics,Organ,spleen,11
 CTann via transcriptomics,Organ,urinary bladder,14
@@ -222,17 +225,16 @@ RUI registered,Age,Unknown,45
 RUI registered,Ethnicity,Black or African American,91
 RUI registered,Ethnicity,Unknown,163
 RUI registered,Ethnicity,White,365
-RUI registered,Organ,Unknown,107
 RUI registered,Organ,heart,109
 RUI registered,Organ,kidney,237
-RUI registered,Organ,large intestine,39
+RUI registered,Organ,large intestine,96
 RUI registered,Organ,liver,2
-RUI registered,Organ,lung,52
+RUI registered,Organ,lung,54
 RUI registered,Organ,mammary gland,3
 RUI registered,Organ,prostate gland,4
-RUI registered,Organ,skin of body,2
-RUI registered,Organ,small intestine,39
-RUI registered,Organ,spleen,11
+RUI registered,Organ,skin,12
+RUI registered,Organ,small intestine,71
+RUI registered,Organ,spleen,17
 RUI registered,Organ,urinary bladder,14
 RUI registered,Portal,GTEx,15
 RUI registered,Portal,HCA,82
