@@ -100,7 +100,7 @@ WHERE {
     WHERE {
       [] ccf:generates_dataset ?dataset .
 
-      {
+      OPTIONAL {
         {
           ?sample ccf:comes_from ?donor .
           ?sample ccf:has_registration_location ?rui_location .
@@ -119,18 +119,17 @@ WHERE {
         ?ref_organ ccf:representation_of ?refOrganIri .
         ?refOrganIri rdfs:label ?ruiOrganLabel .
       }
-      UNION
-      {
+      OPTIONAL {
         ?dataset ccf:organ_id ?_reportedOrganIri .
         BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
         ?reportedOrganIri rdfs:label ?reportedOrganLabel .
       }
-      BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
-        LCASE(COALESCE(?reportedOrganLabel, ?ruiOrganLabel, "Unknown")), 'left ', ''), 'right ', ''), 'respiratory system', 'lung'), 
+      BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(
+        LCASE(COALESCE(?reportedOrganLabel, ?ruiOrganLabel, 'Unknown')), 'left ', ''), 'right ', ''), 'respiratory system', 'lung'), 
         'male reproductive system', 'prostate gland'), 'set of lactiferous glands in breast', 'mammary gland'), 
         'mesenteric lymph node', 'lymph node'), 'blood vasculature', 'vasculature'), 'hippocampal formation', 'brain'), 
         'skin of body', 'skin'), 'islet of langerhans', 'pancreas'), 'primary motor cortex', 'brain'), 
-        'vasculature', 'blood vasculature') as ?organ)
+        'vasculature', 'blood vasculature'), 'unknown', 'N/A') as ?organ)
     }
     GROUP BY ?dataset
   }
