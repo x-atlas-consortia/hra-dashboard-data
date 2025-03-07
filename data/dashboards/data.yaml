@@ -64,8 +64,8 @@ items:
     tooltip: This graph shows how many terms were added to other biomedical ontologies during the course of HRA development.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/ontology-terms-added.vl.json
   - type: ImageContainer
-    title: Exemplary Visualization of Anatomical Structures in the HRA v2.1
-    tooltip: "This image shows six major 3D structures nested inside the female left kidney reference organ (from left to right): outer cortex of kidney, hilum of kidney, renal pyramids, renal column, renal papillae, and kidney capsule."
+    title: Exemplary Visualization of Anatomical Structures in the HRA v2.2
+    tooltip: "This image shows all seven major 3D structures nested inside the female heart reference organ (from left to right): left cardiac atrium, left ventricle, interventricular septum, right ventricle, right cardiac atrium, plus papillary muscle of left ventricle (consists of anterior papillary muscle of left ventricle, anterolateral head of lateral papillary muscle of left ventricle, septal papillary muscle of right ventricle, posterior papillary muscle of right ventricle, and posteromedial head of posterior papillary muscle of left ventricle) and valves (consists of aortic, mitral, pulmonary, and tricuspid valves)."
     aspectRatio: 3 / 1,
     imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/data/as-in-3d.png
     source: https://docs.google.com/presentation/d/1NhNw2k5pIxRDdcN39Kir6-g6VYh-jjV2KHn_A4-Izgg/edit#slide=id.g2ae959ca31e_0_300
