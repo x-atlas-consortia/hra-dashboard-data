@@ -2,9 +2,7 @@
 type: Dashboard
 title: Usage
 description: >-
-  HRA data is accessed via the HRA Portal, other data portals, the
-  HRA KG, and APIs. Key counts plus visualizations of data usage
-  over time, geospatial space, and for top-10 users are shown.
+  HRA data is accessed via the HRA Portal, other data portals, the HRA KG, and APIs. Standard Operating Procedures (SOPs) and the Visual Human Massively Online Course (VHMOOC) are free. Key counts plus visualizations of data and tool usage over time, portal usage over geospatial space, and the top-10 users are shown.
 link: 
   type: Link
   url: https://doi.org/10.1101/2024.03.27.587041
@@ -27,7 +25,7 @@ items:
           - label: VHMOOC students
             count: 310
             source: "Katy Borner (RE: # of VHMOOC students for HRA Dashboard)"
-          - label: Hours spent reviewing materials, taking self-tests and engaging in a community of practice
+          - label: Hours spent in VHMOOC
             count: 5652
             source: Andi
       - title: HRA Requests
