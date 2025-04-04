@@ -29,15 +29,15 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to March 26th, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to April 4, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 941272
+            count: 968260
           - label: HRA Portal requests
-            count: 2010200
+            count: 2041984
           - label: HRA KG requests
-            count: 1609177
+            count: 1660602
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
         items:
