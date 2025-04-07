@@ -57,7 +57,7 @@ items:
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
   - type: VegaContainer
     title: Digital Object Usage
-    tooltip: This graph shows HRA digital object requests from various websites since June 2023.
+    tooltip: This graph shows HRA digital object requests from various websites since June 2023, computed daily with a two week rolling average.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
   - type: VegaContainer
     title: HRA Products Usage
