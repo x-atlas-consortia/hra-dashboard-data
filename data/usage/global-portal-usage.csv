@@ -1,90 +1,90 @@
 country,countryId,requests
-United States,840,1226818
-Germany,276,108081
-Hong Kong,344,91139
-Gabon,266,62396
-Comoros,174,43600
-Senegal,686,43042
-France,250,38183
-Canada,124,38043
-Ecuador,218,32406
-Austria,040,30113
-Japan,392,29872
-Russia,643,28084
-Netherlands,528,25925
-India,356,20246
-El Salvador,222,19265
-Italy,380,15060
-Ireland,372,15022
-Kiribati,296,13774
-China,156,12421
-Seychelles,690,11917
-Finland,246,10975
-Brazil,076,9824
-Poland,616,9544
-Denmark,208,6125
-Taiwan,158,5753
-Turkey,792,5700
-Mexico,484,5004
-Vietnam,704,3964
-Luxembourg,442,3582
-Iran,364,3572
-Thailand,764,3482
-Belgium,056,3394
-Israel,376,3265
-Malaysia,458,3256
-Pakistan,586,3035
-Indonesia,360,2966
-Argentina,032,2880
-Chile,152,2610
-New Zealand,554,2591
-Portugal,620,2456
-Egypt,818,2335
-Norway,578,2333
-Romania,642,2333
-Colombia,170,2134
-Hungary,348,1956
-Czechia,203,1820
-United Arab Emirates,784,1709
-Philippines,608,1616
-Madagascar,450,1554
-Bangladesh,050,1484
-Greece,300,1329
-Zambia,894,1316
-Ukraine,804,1234
+United States,840,1265255
+Germany,276,113035
+Hong Kong,344,91591
+Gabon,266,63908
+Comoros,174,49139
+Senegal,686,43973
+Canada,124,38999
+France,250,38944
+Ecuador,218,35750
+Austria,040,30797
+Japan,392,30394
+Russia,643,29347
+Netherlands,528,26256
+India,356,20553
+El Salvador,222,19464
+Ireland,372,15369
+Italy,380,15239
+Kiribati,296,14617
+China,156,12939
+Seychelles,690,12097
+Finland,246,11087
+Brazil,076,10015
+Poland,616,9567
+Denmark,208,6413
+Taiwan,158,5822
+Turkey,792,5775
+Mexico,484,5201
+Malaysia,458,4632
+Vietnam,704,3982
+Thailand,764,3631
+Luxembourg,442,3606
+Iran,364,3575
+Belgium,056,3546
+Israel,376,3420
+Pakistan,586,3038
+Argentina,032,3026
+Indonesia,360,2988
+Chile,152,2734
+New Zealand,554,2712
+Portugal,620,2523
+Romania,642,2400
+Egypt,818,2391
+Norway,578,2335
+Colombia,170,2267
+Hungary,348,2100
+Czechia,203,1829
+United Arab Emirates,784,1792
+Madagascar,450,1764
+Philippines,608,1620
+Bangladesh,050,1491
+Zambia,894,1435
+Greece,300,1330
+Ukraine,804,1259
 Saudi Arabia,682,1058
-Puerto Rico,630,954
-Bermuda,060,922
-Peru,604,814
-Algeria,012,793
-Croatia,191,764
+Puerto Rico,630,975
+Bermuda,060,936
+Peru,604,854
+Algeria,012,799
+Croatia,191,771
+Lesotho,426,710
 Belize,084,708
-Lesotho,426,708
-Tonga,776,653
-Slovakia,703,533
-Cyprus,196,479
-Bahrain,048,421
-Cambodia,116,416
-Kazakhstan,398,391
-Estonia,233,372
+Tonga,776,676
+Slovakia,703,572
+Bahrain,048,503
+Cyprus,196,480
+Saint Kitts and Nevis,659,456
+Cambodia,116,420
+Kazakhstan,398,393
+Estonia,233,373
+Qatar,634,371
+Iraq,368,367
 Georgia,268,360
-Iraq,368,355
-Kenya,404,339
-Uzbekistan,860,324
-Qatar,634,322
-Venezuela,862,314
-Saint Kitts and Nevis,659,288
-Federated States of Micronesia,583,259
+Kenya,404,340
+Uzbekistan,860,325
+Venezuela,862,315
+Niger,562,274
+Federated States of Micronesia,583,263
+Paraguay,600,241
 Ethiopia,231,241
-Paraguay,600,240
 North Macedonia,807,237
-Niger,562,237
 Armenia,051,232
 Guatemala,320,229
 Slovenia,705,221
 Albania,008,207
 Nepal,524,206
-Belarus,112,199
+Belarus,112,200
 Mauritania,478,187
 Jordan,400,183
 Morocco,504,180
@@ -107,16 +107,16 @@ Jamaica,388,118
 Kuwait,414,110
 Montenegro,499,109
 Latvia,428,105
-Moldova,498,95
+Moldova,498,105
 Grenada,308,82
 Reunion,638,78
-Burundi,108,75
+Burundi,108,78
 Lebanon,422,73
 Svalbard,744,68
 Rwanda,646,58
 Switzerland,756,58
 Afghanistan,004,56
-Myanmar (Burma),104,55
+Myanmar (Burma),104,56
 Andorra,020,54
 Republic of Kosovo,,51
 Isle of Man,833,50
@@ -135,23 +135,24 @@ Zimbabwe,716,20
 Malawi,454,18
 Chad,148,14
 The Bahamas,044,14
-Costa Rica,188,13
+Costa Rica,188,14
 Cuba,192,11
-Palau,585,10
 Namibia,516,10
-The Gambia,270,8
+Palau,585,10
 Liberia,430,8
+The Gambia,270,8
 Botswana,072,5
-Laos,418,5
 Cape Verde,132,5
-Syria,760,4
-Djibouti,262,4
+Laos,418,5
 Czech Republic,,4
+Djibouti,262,4
+Syria,760,4
 Martinique,474,3
+Bulgaria,100,2
 Kyrgyzstan,417,2
 British Virgin Islands,092,2
-Mongolia,496,1
 Tajikistan,762,1
-Mali,466,1
-South Sudan,728,1
 Benin,204,1
+Mali,466,1
+Mongolia,496,1
+South Sudan,728,1

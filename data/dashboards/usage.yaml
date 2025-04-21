@@ -33,11 +33,11 @@ items:
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 968260
+            count: 1002027
           - label: HRA Portal requests
-            count: 2041984
+            count: 2108950
           - label: HRA KG requests
-            count: 1660602
+            count: 1752313
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
         items:
