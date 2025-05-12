@@ -23,7 +23,8 @@ WHERE {
     HRA: prov:hadMember ?graphAndVersion .
   }
   GRAPH <https://lod.humanatlas.io> {
-    ?graphAndVersion a dcat:Dataset ;
+    ?lodPurl a dcat:Dataset ;
+      rdfs:seeAlso ?graphAndVersion ;
       schema:name ?name ;
       schema:additionalType ?type ;
       schema:version ?table_version ;
@@ -35,7 +36,7 @@ WHERE {
     BIND(CONCAT('OMAP-', STRBEFORE(?name, '-')) as ?omapId)
     BIND(xsd:integer(STRBEFORE(?name, '-')) as ?omapOrder)
 
-    ?graphAndVersion prov:wasDerivedFrom [
+    ?lodPurl prov:wasDerivedFrom [
       dcat:distribution [
         dcat:downloadURL ?csv ;
         dcat:mediaType ?mediaType ;
@@ -43,7 +44,7 @@ WHERE {
     ] .
     FILTER(?mediaType = 'text/csv')
 
-    ?graphAndVersion prov:wasDerivedFrom [
+    ?lodPurl prov:wasDerivedFrom [
       dcat:distribution [
         dcat:downloadURL ?xlsx ;
         dcat:mediaType ?xlsxMediaType ;

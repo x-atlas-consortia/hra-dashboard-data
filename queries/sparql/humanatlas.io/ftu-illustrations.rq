@@ -14,9 +14,10 @@ SELECT DISTINCT ?version (?organ as ?nameOrgan) ?image (CONCAT(?organ, ' icon') 
 FROM <https://lod.humanatlas.io>
 WHERE {
   {
-    ?purl a dcat:Dataset ;
+    [] a dcat:Dataset ;
         schema:name ?doName ;
         schema:additionalType ?type ;
+        rdfs:seeAlso ?purl ;
         prov:wasDerivedFrom [
           schema:dateCreated ?creation_date ;
           dcterms:title ?title ;
@@ -29,39 +30,42 @@ WHERE {
   }
 
   {
-    ?purl a dcat:Dataset ;
-        prov:wasDerivedFrom [
-          dcat:distribution [
-            dcat:downloadURL ?svgDownload ;
-            dcat:mediaType ?svgMediaType ;
-          ] ;
-        ] .
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      prov:wasDerivedFrom [
+        dcat:distribution [
+          dcat:downloadURL ?svgDownload ;
+          dcat:mediaType ?svgMediaType ;
+        ] ;
+      ] .
 
     BIND(?svgDownload as ?svg)
     FILTER(?svgMediaType = 'image/svg+xml')
   }
 
   OPTIONAL {
-    ?purl a dcat:Dataset ;
-        prov:wasDerivedFrom [
-          dcat:distribution [
-            dcat:downloadURL ?aiDownload ;
-            dcat:mediaType ?aiMediaType ;
-          ] ;
-        ] .
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      prov:wasDerivedFrom [
+        dcat:distribution [
+          dcat:downloadURL ?aiDownload ;
+          dcat:mediaType ?aiMediaType ;
+        ] ;
+      ] .
 
     BIND(?aiDownload as ?ai)
     FILTER(?aiMediaType = 'application/postscript')
   }
 
   {
-    ?purl a dcat:Dataset ;
-        prov:wasDerivedFrom [
-          dcat:distribution [
-            dcat:downloadURL ?pngDownload ;
-            dcat:mediaType ?pngMediaType ;
-          ] ;
-        ] .
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      prov:wasDerivedFrom [
+        dcat:distribution [
+          dcat:downloadURL ?pngDownload ;
+          dcat:mediaType ?pngMediaType ;
+        ] ;
+      ] .
 
     BIND(REPLACE(STR(?pngDownload), '.svg', '.png') as ?png)
     FILTER(?pngMediaType = 'image/svg+xml')
@@ -71,7 +75,8 @@ WHERE {
   {
     SELECT ?release ?version ?purl
     WHERE {
-      ?release a dcat:Dataset ;
+      [] a dcat:Dataset ;
+        rdfs:seeAlso ?release ;
         schema:name ?releaseName ;
         schema:additionalType ?releaseType ;
         schema:version ?versionStr ;

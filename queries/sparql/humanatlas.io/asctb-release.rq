@@ -12,6 +12,7 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
 
 SELECT ?Organ ?csv ?table_version
+  (COALESCE(?AS3D, 0) as ?AS3D)
   (COALESCE(?AS, 0) as ?AS)
   (COALESCE(?CT, 0) as ?CT)
   (COALESCE(?B_Total, 0) as ?B_Total)
@@ -36,16 +37,9 @@ WITH {
     GRAPH ?purl {
       ?graph a owl:Ontology .
       FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
-
-      ?term rdfs:subClassOf [
-          owl:onProperty has_characterizing_biomarker_set: ;
-          owl:someValuesFrom [ owl:intersectionOf ?bn3 ]] .
-      ?bn3 (rdf:rest)*/rdf:first [
-        owl:onProperty ccf:has_marker_component ;
-        owl:someValuesFrom ?biomarker
-      ] .
-
-      hint:Group hint:optimizer "Runtime".
+      [] rdf:type ccf:CellMarkerDescriptor ;
+                ccf:primary_cell_type ?term ;
+                ccf:biomarker ?biomarker .
     }
     hint:Query hint:analytic "true" .
   }
@@ -58,23 +52,41 @@ WHERE {
     HRA: prov:hadMember ?graphAndVersion .
   }
   GRAPH <https://lod.humanatlas.io> {
-    ?graphAndVersion a dcat:Dataset ;
+    [] a dcat:Dataset ;
       schema:name ?name ;
       schema:additionalType ?type ;
       schema:version ?table_version ;
+      rdfs:seeAlso ?graphAndVersion ;
+      prov:wasDerivedFrom ?rawData ;
     .
     FILTER(?type = 'asct-b' && !CONTAINS(?name, '-crosswalk'))
     BIND(IRI(CONCAT('https://purl.humanatlas.io/asct-b/', ?name)) as ?purl)
-    BIND(IRI(CONCAT(STR(?graphAndVersion), '#raw-data')) as ?rawData)
     BIND(REPLACE(?name, '-', ' ') as ?Organ)
 
-    ?graphAndVersion prov:wasDerivedFrom [
-      dcat:distribution [
-        dcat:downloadURL ?csv ;
-        dcat:mediaType ?mediaType ;
-      ]
-    ] .
+    ?rawData dcat:distribution [
+      dcat:downloadURL ?csv ;
+      dcat:mediaType ?mediaType ;
+    ]  .
     FILTER(?mediaType = 'text/csv')
+  }
+
+  OPTIONAL {
+    SELECT ?purl (COUNT(DISTINCT(?term)) as ?AS3D)
+    WHERE {
+      GRAPH ?purl {
+        ?graph a owl:Ontology .
+        FILTER(STRSTARTS(STR(?graph), 'https://purl.humanatlas.io/asct-b/'))
+
+        ?term ccf:ccf_asctb_type ?asctb_type .
+        FILTER(?asctb_type = 'AS')
+        FILTER(EXISTS {
+          GRAPH HRA: {
+            ?refOrgan a ccf:SpatialEntity ; ccf:representation_of ?term .
+          }
+        })
+      }
+    }
+    GROUP BY ?purl
   }
 
   OPTIONAL {

@@ -15,13 +15,14 @@ SELECT DISTINCT ?version (?organ as ?nameOrgan) ?image (CONCAT(?organ, ' icon') 
 FROM <https://lod.humanatlas.io>
 WHERE {
   {
-    ?purl a dcat:Dataset ;
-        schema:name ?doName ;
-        schema:additionalType ?type ;
-        prov:wasDerivedFrom [
-          schema:dateCreated ?creation_date ;
-          dcterms:title ?title ;
-        ] .
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      schema:name ?doName ;
+      schema:additionalType ?type ;
+      prov:wasDerivedFrom [
+        schema:dateCreated ?creation_date ;
+        dcterms:title ?title ;
+      ] .
 
     # BIND(STRAFTER(STRBEFORE(REPLACE(REPLACE(STR(?title), "Functional Tissue Unit \\(FTU\\) ", ""), " FTU", ""), " for "), "2D ") as ?name)
     # BIND(STRAFTER(STR(?title), " for ") as ?organ)
@@ -36,13 +37,14 @@ WHERE {
   }
 
   {
-    ?purl a dcat:Dataset ;
-        prov:wasDerivedFrom [
-          dcat:distribution [
-            dcat:downloadURL ?glbDownload ;
-            dcat:mediaType ?glbMediaType ;
-          ] ;
-        ] .
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      prov:wasDerivedFrom [
+        dcat:distribution [
+          dcat:downloadURL ?glbDownload ;
+          dcat:mediaType ?glbMediaType ;
+        ] ;
+      ] .
 
     BIND(?glbDownload as ?threeDimImage)
     FILTER(?glbMediaType = 'model/gltf-binary')
@@ -51,7 +53,8 @@ WHERE {
   {
     SELECT ?release ?version ?purl
     WHERE {
-      ?release a dcat:Dataset ;
+      [] a dcat:Dataset ;
+        rdfs:seeAlso ?release ;
         schema:name ?releaseName ;
         schema:additionalType ?releaseType ;
         schema:version ?versionStr ;

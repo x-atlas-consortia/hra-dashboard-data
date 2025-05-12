@@ -42,8 +42,9 @@ WHERE {
     SELECT DISTINCT ("experts" as ?group) (?orcid as ?group_value) (xsd:date(MIN(?date)) as ?date) (1 as ?count) (2 as ?order)
     WHERE {
       GRAPH <https://lod.humanatlas.io> {
-        ?purl a dcat:Dataset ;
-              prov:wasDerivedFrom ?rawData .
+        [] a dcat:Dataset ;
+          rdfs:seeAlso ?purl ;
+          prov:wasDerivedFrom ?rawData .
         ?rawData schema:dateCreated ?creation_date .
         { ?rawData ccf:project_lead ?orcid . }
         UNION

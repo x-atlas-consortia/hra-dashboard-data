@@ -14,13 +14,14 @@ PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015
 
 
 SELECT DISTINCT ?organ ?ontology_id ?type # ?name ?purl
-FROM HRAv20:
+FROM HRA:
 FROM <https://lod.humanatlas.io>
 WHERE {
   hint:Query hint:analytic "true" .
   HRA: prov:hadMember ?purl .
 
-  ?purl a dcat:Dataset ;
+  [] a dcat:Dataset ;
+    rdfs:seeAlso ?purl ;
     schema:name ?name ;
     schema:additionalType ?type ;
     schema:version ?table_version ;

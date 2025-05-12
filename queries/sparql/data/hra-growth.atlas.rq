@@ -13,9 +13,10 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT DISTINCT ?group ?date ?count ?order
 WHERE {
   GRAPH <https://lod.humanatlas.io> {
-    ?purl a dcat:Dataset ;
+    [] a dcat:Dataset ;
           schema:name ?name ;
           schema:additionalType ?type ;
+          rdfs:seeAlso ?purl ;
           prov:wasDerivedFrom [
             schema:dateCreated ?creation_date ;
           ] .
