@@ -31,10 +31,10 @@ WHERE {
   # 2D FTU
   {
     ?digitalObject a ccf:FtuIllustration ;
-    ccf:ccf_located_in ?organId .
-    BIND(IRI(REPLACE(?organId, 'UBERON:', STR(UBERON:))) as ?organIri)
-    ?organIri ccf:ccf_pref_label ?organLabel .
+      ccf:ccf_located_in ?organIri .
+    ?organIri rdfs:label ?organLabel .
     BIND("2D FTU Illustration" as ?type)
+    FILTER(STRSTARTS(STR(?digitalObject), 'https://purl.humanatlas.io/2d-ftu'))
   }
   UNION
   # 3D Reference Organs
@@ -42,7 +42,7 @@ WHERE {
     ?digitalObject a ccf:SpatialEntity ;
       ccf:has_reference_organ ?digitalObject ;
       ccf:representation_of ?organIri .
-    ?organIri ccf:ccf_pref_label ?organLabel .
+    ?organIri rdfs:label ?organLabel .
     BIND("3D Reference Organ" as ?type)
   }
   UNION
@@ -51,13 +51,14 @@ WHERE {
     ?digitalObject a ccf:MultiplexedAntibodyBasedImagingExperiment ;
       ccf:sample_organ ?organIri .
 
-    ?organIri ccf:ccf_pref_label ?organLabel .
+    ?organIri rdfs:label ?organLabel .
     BIND("OMAP" as ?type)
   }
   UNION
   # ASCT+B Tables
   {
-    HRA: prov:hadMember ?digitalObject .
+    [] a owl:Ontology ;
+      prov:hadMember ?digitalObject .
     BIND(REPLACE(REPLACE(REPLACE(REPLACE(STRBEFORE(
       REPLACE(STR(?digitalObject), 'https://purl.humanatlas.io/asct-b/', ''), '/'), '-', ' '),
       'allen ', ''), ' full term', ''),

@@ -1,6 +1,6 @@
 organ,ftu_label,ftu_iri,ftu_part_label,ftu_part_iri,ftu_part_type,ftu_part_count
-kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney collecting duct alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030015,CT,4
-kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney collecting duct beta-intercalated cell,http://purl.obolibrary.org/obo/CL_4030005,CT,2
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney connecting tubule alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030020,CT,4
+kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney connecting tubule beta-intercalated cell,http://purl.obolibrary.org/obo/CL_4030021,CT,2
 kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,kidney cortex collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000714,CT,9
 kidney,cortical collecting duct,http://purl.obolibrary.org/obo/UBERON_0004203,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,5
 kidney,descending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001289,kidney loop of Henle thin descending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001111,CT,3
@@ -32,14 +32,16 @@ kidney,nephron,http://purl.obolibrary.org/obo/UBERON_0001285,thick ascending lim
 kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,kidney outer medulla collecting duct intercalated cell,http://purl.obolibrary.org/obo/CL_1000717,CT,5
 kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,kidney outer medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000716,CT,10
 kidney,outer medullary collecting duct,http://purl.obolibrary.org/obo/UBERON_0004204,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,5
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,epithelial cell of proximal tubule,http://purl.obolibrary.org/obo/CL_0002306,CT,16
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001005,CT,20
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular mesangial cell,http://purl.obolibrary.org/obo/CL_1000742,CT,32
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney afferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001096,CT,38
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney efferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001099,CT,56
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,CT,14
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,parietal epithelial cell,http://purl.obolibrary.org/obo/CL_1000452,CT,24
-kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,podocyte,http://purl.obolibrary.org/obo/CL_0000653,CT,54
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,epithelial cell of proximal tubule,http://purl.obolibrary.org/obo/CL_0002306,CT,8
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001005,CT,10
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,glomerular mesangial cell,http://purl.obolibrary.org/obo/CL_1000742,CT,16
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney afferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001096,CT,19
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,kidney efferent arteriole endothelial cell,http://purl.obolibrary.org/obo/CL_1001099,CT,28
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,CT,7
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,parietal epithelial cell,http://purl.obolibrary.org/obo/CL_1000452,CT,12
+kidney,renal corpuscle,http://purl.obolibrary.org/obo/UBERON_0001229,podocyte,http://purl.obolibrary.org/obo/CL_0000653,CT,27
+kidney,thick ascending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001291,kidney loop of Henle thick ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001106,CT,9
+kidney,thick ascending limb of loop of Henle,http://purl.obolibrary.org/obo/UBERON_0001291,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,CT,1
 large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,CT,5
 large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,CT,136
 large intestine,crypt of Lieberkuhn of large intestine,http://purl.obolibrary.org/obo/UBERON_0001984,intestinal crypt stem cell of large intestine,http://purl.obolibrary.org/obo/CL_0009016,CT,5
@@ -62,6 +64,36 @@ lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,lung pericyt
 lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,CT,14
 lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,CT,6
 lung,alveolus of lung,http://purl.obolibrary.org/obo/UBERON_0002299,secondary crest myofibroblast,http://purl.obolibrary.org/obo/CL_4033016,CT,9
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,IgA plasma cell,http://purl.obolibrary.org/obo/CL_0000987,CT,13
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,CT,1
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,CT,1
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,CT,3
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,helper T cell,http://purl.obolibrary.org/obo/CL_0000912,CT,4
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,intercalated cell of salivary gland,http://purl.obolibrary.org/obo/CL_4052048,CT,59
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,macrophage,http://purl.obolibrary.org/obo/CL_0000235,CT,1
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,mast cell,http://purl.obolibrary.org/obo/CL_0000097,CT,1
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,pericyte,http://purl.obolibrary.org/obo/CL_0000669,CT,3
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,CT,1
+mouth,parotid gland,http://purl.obolibrary.org/obo/UBERON_0001831,striated cell of salivary gland,http://purl.obolibrary.org/obo/CL_4052049,CT,27
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,IgA plasma cell,http://purl.obolibrary.org/obo/CL_0000987,CT,13
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,CT,1
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,CT,3
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,helper T cell,http://purl.obolibrary.org/obo/CL_0000912,CT,4
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,intercalated cell of salivary gland,http://purl.obolibrary.org/obo/CL_4052048,CT,102
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,macrophage,http://purl.obolibrary.org/obo/CL_0000235,CT,1
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,mast cell,http://purl.obolibrary.org/obo/CL_0000097,CT,1
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,pericyte,http://purl.obolibrary.org/obo/CL_0000669,CT,3
+mouth,sublingual gland,http://purl.obolibrary.org/obo/UBERON_0001832,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,CT,1
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,IgA plasma cell,http://purl.obolibrary.org/obo/CL_0000987,CT,13
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,CT,1
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,CT,3
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,helper T cell,http://purl.obolibrary.org/obo/CL_0000912,CT,4
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,intercalated cell of salivary gland,http://purl.obolibrary.org/obo/CL_4052048,CT,59
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,macrophage,http://purl.obolibrary.org/obo/CL_0000235,CT,1
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,mast cell,http://purl.obolibrary.org/obo/CL_0000097,CT,1
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,pericyte,http://purl.obolibrary.org/obo/CL_0000669,CT,3
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,CT,1
+mouth,submandibular gland,http://purl.obolibrary.org/obo/UBERON_0001736,striated cell of salivary gland,http://purl.obolibrary.org/obo/CL_4052049,CT,27
 pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,epithelial cell of exocrine pancreas,http://purl.obolibrary.org/obo/CL_1001433,CT,25
 pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,AS,1
 pancreas,intercalated duct of pancreas,http://purl.obolibrary.org/obo/UBERON_0014726,pancreatic acinus,http://purl.obolibrary.org/obo/UBERON_0001263,AS,1
@@ -88,10 +120,21 @@ prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0
 prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,smooth muscle cell of prostate,http://purl.obolibrary.org/obo/CL_1000487,CT,76
 prostate gland,prostate glandular acinus,http://purl.obolibrary.org/obo/UBERON_0004179,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,CT,4
 skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,CT,2
-skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,basal cell of epidermis,http://purl.obolibrary.org/obo/CL_0002187,CT,35
+skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,basal cell,http://purl.obolibrary.org/obo/CL_0000646,CT,35
 skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,epidermal Langerhans cell,http://purl.obolibrary.org/obo/CL_0002457,CT,3
 skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,melanocyte of skin,http://purl.obolibrary.org/obo/CL_1000458,CT,4
 skin of body,epidermal ridge of digit,http://purl.obolibrary.org/obo/UBERON_0013487,prickle cell,http://purl.obolibrary.org/obo/CL_0000649,CT,104
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,arrector muscle of hair,http://purl.obolibrary.org/obo/UBERON_0002033,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,cortex of hair,http://purl.obolibrary.org/obo/UBERON_0002077,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,cuticle of hair,http://purl.obolibrary.org/obo/UBERON_0002076,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,hair follicle melanocyte,http://purl.obolibrary.org/obo/CL_0002483,CT,14
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,hair germinal matrix cell,http://purl.obolibrary.org/obo/CL_0002562,CT,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,hair inner root sheath,http://purl.obolibrary.org/obo/UBERON_0005941,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,hair medulla,http://purl.obolibrary.org/obo/UBERON_0005184,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,hair outer root sheath,http://purl.obolibrary.org/obo/UBERON_0005942,AS,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,keratinocyte stem cell,http://purl.obolibrary.org/obo/CL_0002337,CT,48
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,myoepithelial cell of sweat gland,http://purl.obolibrary.org/obo/CL_1000417,CT,1
+skin of body,hair follicle,http://purl.obolibrary.org/obo/UBERON_0002073,sebocyte,http://purl.obolibrary.org/obo/CL_0000317,CT,1
 skin of body,papillary layer of dermis,http://purl.obolibrary.org/obo/UBERON_0001992,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,CT,7
 skin of body,papillary layer of dermis,http://purl.obolibrary.org/obo/UBERON_0001992,skin fibroblast,http://purl.obolibrary.org/obo/CL_0002620,CT,39
 small intestine,intestinal villus,http://purl.obolibrary.org/obo/UBERON_0001213,B cell,http://purl.obolibrary.org/obo/CL_0000236,CT,160

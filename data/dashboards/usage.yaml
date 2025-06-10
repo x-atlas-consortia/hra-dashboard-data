@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 7011
+            count: 7880
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,23 +29,23 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to April 4, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 10, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 1002027
+            count: 1126931
           - label: HRA Portal requests
-            count: 2108950
+            count: 2263771
           - label: HRA KG requests
-            count: 1752313
+            count: 1993252
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to January 8, 2025.
+        tooltip: Number of web requests to HRA data via external data providers up to June 10, 2025.
         items:
           - label: EBI OLS requests
-            count: 11531
-            source: email
+            count: 24912
+            source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 2290 + 11091'
           - label: NCBO BioPortal requests
-            count: 1996
+            count: 2025
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
@@ -65,7 +65,7 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
   - type: VegaContainer
     title: Global HRA Portal Usage
-    tooltip: This graph shows where web requests originate from, for requests made between June 2023 and June 2024. Hover over a country to see the number of requests.
+    tooltip: This graph shows where web requests originate from, for requests made since June 2023. Hover over a country to see the number of requests.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/global-portal-usage.vl.json
   - type: VegaContainer
     title: Top-10 Users of HRA Products

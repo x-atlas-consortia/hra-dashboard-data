@@ -11,27 +11,19 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 
 SELECT ?organ ?ftu_label ?ftu_iri ?ftu_part_label ?ftu_part_iri ?ftu_part_type (COUNT(DISTINCT ?ftu_part) as ?ftu_part_count)
+# SELECT *
 FROM HRA:
 WHERE {
-  ?ftu_illustration a ccf:FtuIllustration ;
-      a ?ftu_iri ;
-      ccf:ccf_located_in ?organ_id ;
-    ccf:illustration_node ?ftu_part ;
-    ccf:image_file [
-      ccf:file_format ?format ;
-      ccf:file_url ?image_url
-    ] .
-  
-  ?ftu_part a ?ftu_part_iri .
+  [] a ccf:FtuIllustration ;
+      ccf:ccf_located_in ?organ_iri ;
+      ccf:representation_of ?ftu_iri ;
+      ccf:illustration_node ?ftu_part ;
+  .
+  ?ftu_part a ccf:FtuIllustrationNode ;
+    ccf:representation_of ?ftu_part_iri ;
+  .
 
-  BIND(IRI(REPLACE(?organ_id, 'UBERON:', STR(UBERON:))) as ?organ_iri)
-  BIND(IRI(REPLACE(STR(?ftu_illustration), "#primary", "")) as ?ftu_digital_object)
-  
-  FILTER(STRSTARTS(STR(?ftu_iri), STR(obo:)))
-  FILTER(STRSTARTS(STR(?ftu_part_iri), STR(obo:)))
-  
   BIND(IF(STRSTARTS(STR(?ftu_part_iri), STR(UBERON:)), 'AS', 'CT') as ?ftu_part_type)
-  
   ?organ_iri rdfs:label ?organ .
   ?ftu_iri rdfs:label ?ftu_label .
   ?ftu_part_iri rdfs:label ?ftu_part_label .
