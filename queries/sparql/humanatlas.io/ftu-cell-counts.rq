@@ -10,8 +10,9 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 
-SELECT ?organ ?ftu_label ?ftu_iri ?ftu_part_label ?ftu_part_iri ?ftu_part_type (COUNT(DISTINCT ?ftu_part) as ?ftu_part_count)
-# SELECT *
+SELECT ?organ ?ftu_label ?ftu_id ?ftu_part_label ?ftu_part_id
+  (IF(?ftu_part_type = 'AS', COUNT(DISTINCT ?ftu_part), 0) as ?as_count)
+  (IF(?ftu_part_type = 'CT', COUNT(DISTINCT ?ftu_part), 0) as ?ct_count)
 FROM HRA:
 WHERE {
   [] a ccf:FtuIllustration ;
@@ -27,6 +28,9 @@ WHERE {
   ?organ_iri rdfs:label ?organ .
   ?ftu_iri rdfs:label ?ftu_label .
   ?ftu_part_iri rdfs:label ?ftu_part_label .
+
+  BIND(REPLACE(STR(?ftu_iri), STR(UBERON:), "UBERON:") as ?ftu_id)
+  BIND(REPLACE(REPLACE(STR(?ftu_part_iri), STR(obo:), ""), "_", ":") as ?ftu_part_id)
 }
-GROUP BY ?organ ?ftu_label ?ftu_iri ?ftu_part_label ?ftu_part_iri ?ftu_part_type
+GROUP BY ?organ ?ftu_label ?ftu_id ?ftu_part_label ?ftu_part_id ?ftu_part_type
 ORDER BY ?organ ?ftu_label ?ftu_part_label
