@@ -2,18 +2,28 @@ group_by(.version) | sort_by(first.version) | reverse |
   map({
     version:first.version,
     organData: group_by(.nameOrgan) | sort_by(first.nameOrgan) | map({
-      name: first.nameOrgan,
-      image: first.image,
-      alt: first.imageAlt,
-      tissueData: map({
-        name: .name,
+      label: first.nameOrgan,
+      icon: first.image,
+      cards: map({
+        label: .name,
         alt: .alt,
-        image: .png,
-        expandedImage: .svg,
-        url: .url,
-        svg: .svg,
-        ai: .ai,
-        png: .png
+        fileUrl: .png,
+        fullscreenUrl: .svg,
+        sourceDataUrl: .url,
+        files: [
+          {
+            label: "Adobe Illustrator",
+            url: .ai
+          },
+          {
+            label: "PNG",
+            url: .png
+          },
+          {
+            label: "SVG",
+            url: .svg
+          }
+        ]
       }) | del(..|nulls) | sort_by(.name)
     })
   })

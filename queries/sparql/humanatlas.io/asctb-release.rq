@@ -30,6 +30,7 @@ SELECT ?Organ ?csv ?table_version
   (COALESCE(?AS_CT, 0) as ?AS_CT)
   (COALESCE(?CT_BM, 0) as ?CT_BM)
   (?graphAndVersion as ?url)
+  ("CSV" as ?csvLabel)
 
 WITH {
   SELECT DISTINCT ?purl ?term ?biomarker

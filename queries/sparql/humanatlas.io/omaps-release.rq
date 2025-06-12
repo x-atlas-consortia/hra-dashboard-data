@@ -16,6 +16,8 @@ SELECT ?omapId (?graphAndVersion as ?url)
   ?organ ?tissuePreservationMethod ?imagingMethod
   ?csv ?xlsx ('TODO: Ellen fills in' as ?representativeDataset)
   ?as ?ct ?bp
+  ('CSV' as ?csvLabel)
+  ('Link' as ?rpLabel)
 WHERE {
   hint:Query hint:analytic "true" .
 

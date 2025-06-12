@@ -1,17 +1,20 @@
 organ,type,count
+adipose tissue,CTAnn Crosswalks,3
 anatomical systems,ASCT+B Table,1
 blood,CTAnn Crosswalks,3
 blood pelvis,ASCT+B Table,1
 blood vasculature,ASCT+B Table,1
 blood vasculature,CTAnn Crosswalks,1
 blood vasculature,3D Reference Organ,2
+body proper,CTAnn Crosswalks,1
 body proper,3D Reference Organ,2
 bone marrow,ASCT+B Table,1
 bone marrow,CTAnn Crosswalks,3
+bony pelvis,3D Reference Organ,2
 brain,ASCT+B Table,1
 brain,3D Reference Organ,2
 eye,ASCT+B Table,1
-eye,CTAnn Crosswalks,1
+eye,CTAnn Crosswalks,3
 eye,3D Reference Organ,4
 eye,OMAP,1
 fallopian tube,ASCT+B Table,1
@@ -19,18 +22,22 @@ fallopian tube,3D Reference Organ,2
 heart,ASCT+B Table,1
 heart,CTAnn Crosswalks,3
 heart,3D Reference Organ,2
+heart,OMAP,1
 hippocampal gyrus (formation),CTAnn Crosswalks,1
+intestine,OMAP,2
+islet of langerhans,CTAnn Crosswalks,3
 kidney,ASCT+B Table,1
-kidney,CTAnn Crosswalks,2
+kidney,CTAnn Crosswalks,3
 kidney,2D FTU Illustration,8
 kidney,3D Reference Organ,4
-kidney,OMAP,4
+kidney,OMAP,6
 knee,ASCT+B Table,1
 knee,3D Reference Organ,4
 large intestine,ASCT+B Table,1
-large intestine,CTAnn Crosswalks,1
+large intestine,CTAnn Crosswalks,3
 large intestine,2D FTU Illustration,1
 large intestine,3D Reference Organ,2
+larynx,3D Reference Organ,2
 liver,ASCT+B Table,1
 liver,CTAnn Crosswalks,3
 liver,2D FTU Illustration,1
@@ -40,68 +47,78 @@ lung,ASCT+B Table,1
 lung,CTAnn Crosswalks,4
 lung,2D FTU Illustration,2
 lung,3D Reference Organ,2
-lung,OMAP,2
+lung,OMAP,3
 lymph node,ASCT+B Table,1
-lymph node,CTAnn Crosswalks,3
+lymph node,CTAnn Crosswalks,5
 lymph node,3D Reference Organ,2
-lymph node,OMAP,2
+lymph node,OMAP,1
 lymph vasculature,ASCT+B Table,1
 main bronchus,ASCT+B Table,1
-main bronchus,3D Reference Organ,4
+main bronchus,3D Reference Organ,2
 mammary gland,CTAnn Crosswalks,1
+manubrium,3D Reference Organ,1
+mouth,ASCT+B Table,1
+mouth,2D FTU Illustration,3
+mouth,3D Reference Organ,2
+mouth mucosa,OMAP,1
 muscular system,ASCT+B Table,1
 ovary,ASCT+B Table,1
 ovary,3D Reference Organ,2
 palatine tonsil,ASCT+B Table,1
 palatine tonsil,CTAnn Crosswalks,1
+palatine tonsil,3D Reference Organ,4
 palatine tonsil,OMAP,3
 pancreas,ASCT+B Table,1
 pancreas,CTAnn Crosswalks,3
 pancreas,2D FTU Illustration,3
 pancreas,3D Reference Organ,2
-pancreas,OMAP,2
-pelvis,3D Reference Organ,2
+pancreas,OMAP,3
 peripheral nervous system,ASCT+B Table,1
 placenta,ASCT+B Table,1
 placenta,3D Reference Organ,1
 placenta,OMAP,1
+primary motor cortex,CTAnn Crosswalks,3
 prostate gland,ASCT+B Table,1
-prostate gland,CTAnn Crosswalks,2
+prostate gland,CTAnn Crosswalks,4
 prostate gland,2D FTU Illustration,1
 prostate gland,3D Reference Organ,1
+renal pelvis,3D Reference Organ,4
+saliva-secreting gland,OMAP,1
+set of lactiferous glands in breast,3D Reference Organ,2
 skeleton,ASCT+B Table,1
 skin,ASCT+B Table,1
-skin,CTAnn Crosswalks,4
-skin,2D FTU Illustration,4
-skin,3D Reference Organ,4
+skin,CTAnn Crosswalks,6
+skin,2D FTU Illustration,3
+skin,3D Reference Organ,2
 skin,OMAP,2
 small intestine,ASCT+B Table,1
-small intestine,CTAnn Crosswalks,1
-small intestine,2D FTU Illustration,2
-small intestine,3D Reference Organ,4
+small intestine,CTAnn Crosswalks,3
+small intestine,2D FTU Illustration,1
+small intestine,3D Reference Organ,2
 spinal cord,ASCT+B Table,1
 spinal cord,3D Reference Organ,2
 spleen,ASCT+B Table,1
-spleen,CTAnn Crosswalks,2
+spleen,CTAnn Crosswalks,3
 spleen,2D FTU Illustration,2
 spleen,3D Reference Organ,2
 spleen,OMAP,1
 sternum,3D Reference Organ,1
 thymus,ASCT+B Table,1
-thymus,CTAnn Crosswalks,2
-thymus,2D FTU Illustration,2
-thymus,3D Reference Organ,4
-thymus,OMAP,2
+thymus,CTAnn Crosswalks,6
+thymus,2D FTU Illustration,1
+thymus,3D Reference Organ,2
+thymus,OMAP,1
+tongue,CTAnn Crosswalks,3
 trachea,ASCT+B Table,1
 trachea,CTAnn Crosswalks,1
 trachea,3D Reference Organ,2
 ureter,ASCT+B Table,1
 ureter,3D Reference Organ,4
 urinary bladder,ASCT+B Table,1
-urinary bladder,CTAnn Crosswalks,1
+urinary bladder,CTAnn Crosswalks,3
 urinary bladder,3D Reference Organ,2
 uterus,ASCT+B Table,1
 uterus,CTAnn Crosswalks,1
-uterus,3D Reference Organ,2
+uterus,3D Reference Organ,1
 vascular system,CTAnn Crosswalks,1
-vascular system,3D Reference Organ,2
+vermiform appendix,OMAP,1

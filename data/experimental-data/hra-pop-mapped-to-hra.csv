@@ -1,79 +1,77 @@
 measure,group,group_value,count
-ATLAS,Age,1,1
-ATLAS,Age,10,4
-ATLAS,Age,14,2
-ATLAS,Age,17,1
 ATLAS,Age,18,8
 ATLAS,Age,19,1
 ATLAS,Age,20,4
-ATLAS,Age,21,4
+ATLAS,Age,21,7
 ATLAS,Age,22,1
 ATLAS,Age,23,1
 ATLAS,Age,24,37
 ATLAS,Age,25,9
 ATLAS,Age,28,3
 ATLAS,Age,29,5
-ATLAS,Age,3,3
 ATLAS,Age,30,13
-ATLAS,Age,31,1
-ATLAS,Age,33,2
-ATLAS,Age,37,71
-ATLAS,Age,38,18
+ATLAS,Age,31,3
+ATLAS,Age,33,5
+ATLAS,Age,36,9
+ATLAS,Age,37,76
+ATLAS,Age,38,19
+ATLAS,Age,39,1
 ATLAS,Age,40,8
 ATLAS,Age,41,3
 ATLAS,Age,42,1
-ATLAS,Age,43,6
-ATLAS,Age,45,18
+ATLAS,Age,43,7
+ATLAS,Age,45,19
 ATLAS,Age,48,1
-ATLAS,Age,5,1
-ATLAS,Age,50,23
+ATLAS,Age,49,1
+ATLAS,Age,50,24
 ATLAS,Age,51,2
 ATLAS,Age,52,1
 ATLAS,Age,53,3
 ATLAS,Age,54,29
 ATLAS,Age,55,40
-ATLAS,Age,56,2
+ATLAS,Age,56,19
 ATLAS,Age,57,17
-ATLAS,Age,59,4
-ATLAS,Age,60,15
-ATLAS,Age,61,2
+ATLAS,Age,59,10
+ATLAS,Age,60,21
+ATLAS,Age,61,10
 ATLAS,Age,62,2
 ATLAS,Age,63,4
 ATLAS,Age,64,2
 ATLAS,Age,65,20
 ATLAS,Age,66,32
-ATLAS,Age,67,75
-ATLAS,Age,69,33
+ATLAS,Age,67,76
+ATLAS,Age,69,34
 ATLAS,Age,70,6
 ATLAS,Age,72,1
-ATLAS,Age,75,1
+ATLAS,Age,73,9
+ATLAS,Age,75,3
 ATLAS,Age,76,10
-ATLAS,Age,78,23
-ATLAS,Age,Unknown,45
-ATLAS,Ethnicity,Black or African American,91
-ATLAS,Ethnicity,Unknown,163
-ATLAS,Ethnicity,White,365
-ATLAS,Organ,heart,109
-ATLAS,Organ,kidney,237
-ATLAS,Organ,large intestine,96
+ATLAS,Age,77,2
+ATLAS,Age,78,25
+ATLAS,Age,81,1
+ATLAS,Age,90,2
+ATLAS,Ethnicity,Black or African American,108
+ATLAS,Ethnicity,Unknown,154
+ATLAS,Ethnicity,White,385
+ATLAS,Organ,heart,108
+ATLAS,Organ,kidney,209
+ATLAS,Organ,large intestine,104
 ATLAS,Organ,liver,2
-ATLAS,Organ,lung,54
-ATLAS,Organ,mammary gland,3
-ATLAS,Organ,prostate gland,4
-ATLAS,Organ,skin,12
-ATLAS,Organ,small intestine,71
-ATLAS,Organ,spleen,17
-ATLAS,Organ,urinary bladder,14
-ATLAS,Portal,GTEx,15
-ATLAS,Portal,HCA,82
-ATLAS,Portal,HuBMAP,478
-ATLAS,Portal,KPMP,27
-ATLAS,Portal,NHLBI/LungMap,9
-ATLAS,Portal,SenNet,8
-ATLAS,Sex,Female,203
-ATLAS,Sex,Male,416
-CTann via proteomics,Age,1,1
-CTann via proteomics,Age,10,2
+ATLAS,Organ,lung,90
+ATLAS,Organ,mammary gland,2
+ATLAS,Organ,pancreas,2
+ATLAS,Organ,prostate gland,2
+ATLAS,Organ,skin,15
+ATLAS,Organ,small intestine,78
+ATLAS,Organ,spleen,19
+ATLAS,Organ,thymus,4
+ATLAS,Organ,urinary bladder,12
+ATLAS,Portal,HCA,121
+ATLAS,Portal,HuBMAP,469
+ATLAS,Portal,NHLBI/LungMap,3
+ATLAS,Portal,SenNet,54
+ATLAS,Sex,Female,216
+ATLAS,Sex,Male,431
 CTann via proteomics,Age,20,2
 CTann via proteomics,Age,21,2
 CTann via proteomics,Age,23,1
@@ -93,132 +91,137 @@ CTann via proteomics,Age,69,26
 CTann via proteomics,Age,72,1
 CTann via proteomics,Age,78,8
 CTann via proteomics,Ethnicity,Black or African American,18
-CTann via proteomics,Ethnicity,Unknown,28
-CTann via proteomics,Ethnicity,White,61
+CTann via proteomics,Ethnicity,Unknown,27
+CTann via proteomics,Ethnicity,White,59
 CTann via proteomics,Organ,large intestine,57
-CTann via proteomics,Organ,lung,2
+CTann via proteomics,Organ,lung,1
 CTann via proteomics,Organ,skin,10
 CTann via proteomics,Organ,small intestine,32
-CTann via proteomics,Organ,spleen,6
-CTann via proteomics,Portal,HuBMAP,107
-CTann via proteomics,Sex,Female,23
-CTann via proteomics,Sex,Male,84
-CTann via transcriptomics,Age,10,2
-CTann via transcriptomics,Age,14,2
-CTann via transcriptomics,Age,17,1
+CTann via proteomics,Organ,spleen,4
+CTann via proteomics,Portal,HuBMAP,104
+CTann via proteomics,Sex,Female,22
+CTann via proteomics,Sex,Male,82
 CTann via transcriptomics,Age,18,8
 CTann via transcriptomics,Age,19,10
 CTann via transcriptomics,Age,20,2
-CTann via transcriptomics,Age,21,2
+CTann via transcriptomics,Age,21,5
 CTann via transcriptomics,Age,22,1
 CTann via transcriptomics,Age,24,21
 CTann via transcriptomics,Age,25,9
 CTann via transcriptomics,Age,28,3
 CTann via transcriptomics,Age,29,5
-CTann via transcriptomics,Age,3,3
 CTann via transcriptomics,Age,30,20
-CTann via transcriptomics,Age,31,1
-CTann via transcriptomics,Age,33,1
-CTann via transcriptomics,Age,37,55
-CTann via transcriptomics,Age,38,9
-CTann via transcriptomics,Age,39,1
+CTann via transcriptomics,Age,31,3
+CTann via transcriptomics,Age,33,4
+CTann via transcriptomics,Age,36,9
+CTann via transcriptomics,Age,37,60
+CTann via transcriptomics,Age,38,10
+CTann via transcriptomics,Age,39,2
 CTann via transcriptomics,Age,40,8
 CTann via transcriptomics,Age,41,2
 CTann via transcriptomics,Age,42,3
-CTann via transcriptomics,Age,43,6
+CTann via transcriptomics,Age,43,7
 CTann via transcriptomics,Age,44,2
-CTann via transcriptomics,Age,45,18
+CTann via transcriptomics,Age,45,19
 CTann via transcriptomics,Age,48,2
-CTann via transcriptomics,Age,5,1
-CTann via transcriptomics,Age,50,23
+CTann via transcriptomics,Age,49,1
+CTann via transcriptomics,Age,50,24
 CTann via transcriptomics,Age,51,2
 CTann via transcriptomics,Age,53,2
 CTann via transcriptomics,Age,54,23
 CTann via transcriptomics,Age,55,40
-CTann via transcriptomics,Age,56,2
+CTann via transcriptomics,Age,56,19
 CTann via transcriptomics,Age,57,16
-CTann via transcriptomics,Age,59,4
-CTann via transcriptomics,Age,60,14
-CTann via transcriptomics,Age,61,2
+CTann via transcriptomics,Age,59,10
+CTann via transcriptomics,Age,60,20
+CTann via transcriptomics,Age,61,10
 CTann via transcriptomics,Age,62,2
 CTann via transcriptomics,Age,63,4
 CTann via transcriptomics,Age,64,2
 CTann via transcriptomics,Age,65,20
 CTann via transcriptomics,Age,66,32
-CTann via transcriptomics,Age,67,75
-CTann via transcriptomics,Age,69,7
+CTann via transcriptomics,Age,67,76
+CTann via transcriptomics,Age,69,8
 CTann via transcriptomics,Age,70,6
-CTann via transcriptomics,Age,75,1
+CTann via transcriptomics,Age,73,9
+CTann via transcriptomics,Age,75,3
 CTann via transcriptomics,Age,76,10
-CTann via transcriptomics,Age,78,15
-CTann via transcriptomics,Age,Unknown,5087
-CTann via transcriptomics,Ethnicity,African,23
-CTann via transcriptomics,Ethnicity,African American,76
+CTann via transcriptomics,Age,77,2
+CTann via transcriptomics,Age,78,17
+CTann via transcriptomics,Age,81,1
+CTann via transcriptomics,Age,90,2
+CTann via transcriptomics,Age,Unknown,6362
+CTann via transcriptomics,Ethnicity,African,25
+CTann via transcriptomics,Ethnicity,African American,161
 CTann via transcriptomics,Ethnicity,African American or Afro-Caribbean,16
 CTann via transcriptomics,Ethnicity,American,1
-CTann via transcriptomics,Ethnicity,Asian,177
-CTann via transcriptomics,Ethnicity,Black or African American,73
+CTann via transcriptomics,Ethnicity,Asian,215
+CTann via transcriptomics,Ethnicity,Black or African American,90
 CTann via transcriptomics,Ethnicity,British,15
-CTann via transcriptomics,Ethnicity,East Asian,1
-CTann via transcriptomics,Ethnicity,European,2157
+CTann via transcriptomics,Ethnicity,East Asian,2
+CTann via transcriptomics,Ethnicity,European,2600
 CTann via transcriptomics,Ethnicity,European American,38
 CTann via transcriptomics,Ethnicity,Greater Middle Eastern  (Middle Eastern or North African or Persian),2
 CTann via transcriptomics,Ethnicity,Han Chinese,51
-CTann via transcriptomics,Ethnicity,Hispanic or Latin American,83
+CTann via transcriptomics,Ethnicity,Hispanic or Latin American,164
+CTann via transcriptomics,Ethnicity,Indian,36
 CTann via transcriptomics,Ethnicity,Japanese,148
 CTann via transcriptomics,Ethnicity,Korean,165
 CTann via transcriptomics,Ethnicity,Oceanian,3
-CTann via transcriptomics,Ethnicity,Singaporean Chinese,75
-CTann via transcriptomics,Ethnicity,Singaporean Indian,59
-CTann via transcriptomics,Ethnicity,Singaporean Malay,52
-CTann via transcriptomics,Ethnicity,South Asian,3
-CTann via transcriptomics,Ethnicity,Unknown,2016
-CTann via transcriptomics,Ethnicity,White,337
+CTann via transcriptomics,Ethnicity,Singaporean Chinese,85
+CTann via transcriptomics,Ethnicity,Singaporean Indian,70
+CTann via transcriptomics,Ethnicity,Singaporean Malay,61
+CTann via transcriptomics,Ethnicity,South Asian,10
+CTann via transcriptomics,Ethnicity,Thai,59
+CTann via transcriptomics,Ethnicity,Unknown,2546
+CTann via transcriptomics,Ethnicity,White,359
 CTann via transcriptomics,Ethnicity,na,16
-CTann via transcriptomics,Organ,adipose tissue,7
-CTann via transcriptomics,Organ,blood,2581
-CTann via transcriptomics,Organ,blood vasculature,22
-CTann via transcriptomics,Organ,bone marrow,180
-CTann via transcriptomics,Organ,brain,89
-CTann via transcriptomics,Organ,eye,204
-CTann via transcriptomics,Organ,heart,404
-CTann via transcriptomics,Organ,kidney,597
-CTann via transcriptomics,Organ,large intestine,179
-CTann via transcriptomics,Organ,liver,78
-CTann via transcriptomics,Organ,lung,641
-CTann via transcriptomics,Organ,lymph node,17
-CTann via transcriptomics,Organ,mammary gland,4
-CTann via transcriptomics,Organ,pancreas,53
-CTann via transcriptomics,Organ,prostate gland,38
+CTann via transcriptomics,Organ,adipose tissue,11
+CTann via transcriptomics,Organ,blood,2793
+CTann via transcriptomics,Organ,blood vasculature,26
+CTann via transcriptomics,Organ,bone marrow,183
+CTann via transcriptomics,Organ,brain,195
+CTann via transcriptomics,Organ,eye,515
+CTann via transcriptomics,Organ,heart,579
+CTann via transcriptomics,Organ,kidney,649
+CTann via transcriptomics,Organ,large intestine,268
+CTann via transcriptomics,Organ,liver,80
+CTann via transcriptomics,Organ,lung,792
+CTann via transcriptomics,Organ,lymph node,35
+CTann via transcriptomics,Organ,mammary gland,2
+CTann via transcriptomics,Organ,pancreas,101
+CTann via transcriptomics,Organ,prostate gland,35
 CTann via transcriptomics,Organ,skin,68
-CTann via transcriptomics,Organ,small intestine,223
-CTann via transcriptomics,Organ,spleen,59
-CTann via transcriptomics,Organ,thymus,47
-CTann via transcriptomics,Organ,tongue,6
-CTann via transcriptomics,Organ,trachea,29
-CTann via transcriptomics,Organ,urinary bladder,14
-CTann via transcriptomics,Organ,uterus,47
-CTann via transcriptomics,Portal,CxG,5042
-CTann via transcriptomics,Portal,GTEx,15
-CTann via transcriptomics,Portal,HCA,82
-CTann via transcriptomics,Portal,HuBMAP,395
-CTann via transcriptomics,Portal,KPMP,27
-CTann via transcriptomics,Portal,NHLBI/LungMap,9
-CTann via transcriptomics,Portal,SenNet,17
-CTann via transcriptomics,Sex,Female,2600
-CTann via transcriptomics,Sex,Male,2752
-CTann via transcriptomics,Sex,Unknown,235
-RUI registered,Age,0.1,10
-RUI registered,Age,0.3,4
+CTann via transcriptomics,Organ,small intestine,330
+CTann via transcriptomics,Organ,spleen,81
+CTann via transcriptomics,Organ,thymus,91
+CTann via transcriptomics,Organ,tongue,9
+CTann via transcriptomics,Organ,trachea,33
+CTann via transcriptomics,Organ,urinary bladder,13
+CTann via transcriptomics,Organ,uterus,49
+CTann via transcriptomics,Portal,CxG,6362
+CTann via transcriptomics,Portal,HCA,121
+CTann via transcriptomics,Portal,HuBMAP,389
+CTann via transcriptomics,Portal,NHLBI/LungMap,3
+CTann via transcriptomics,Portal,SenNet,63
+CTann via transcriptomics,Sex,Female,3098
+CTann via transcriptomics,Sex,Male,3466
+CTann via transcriptomics,Sex,Unknown,374
+RUI registered,Age,0,17
+RUI registered,Age,0.03,4
+RUI registered,Age,0.05,4
+RUI registered,Age,0.1,6
+RUI registered,Age,0.15,4
 RUI registered,Age,0.52,2
-RUI registered,Age,1,51
+RUI registered,Age,1,57
 RUI registered,Age,1.27,4
-RUI registered,Age,1.45,2
-RUI registered,Age,1.6,10
+RUI registered,Age,1.45,3
+RUI registered,Age,1.6,7
+RUI registered,Age,1.62,7
 RUI registered,Age,1.8,4
 RUI registered,Age,10,27
 RUI registered,Age,11,6
-RUI registered,Age,13.1,4
+RUI registered,Age,13.05,4
 RUI registered,Age,14,26
 RUI registered,Age,14.98,4
 RUI registered,Age,16,8
@@ -228,131 +231,153 @@ RUI registered,Age,19,4
 RUI registered,Age,2,4
 RUI registered,Age,2.33,4
 RUI registered,Age,20,41
-RUI registered,Age,21,60
-RUI registered,Age,22,23
-RUI registered,Age,23,23
-RUI registered,Age,23.8,20
+RUI registered,Age,21,74
+RUI registered,Age,22,29
+RUI registered,Age,23,33
+RUI registered,Age,23.8,97
 RUI registered,Age,23.83,2
-RUI registered,Age,24,215
-RUI registered,Age,25,64
+RUI registered,Age,24,244
+RUI registered,Age,25,440
+RUI registered,Age,26,2
 RUI registered,Age,27,4
-RUI registered,Age,28,83
-RUI registered,Age,29,19
+RUI registered,Age,28,91
+RUI registered,Age,29,95
 RUI registered,Age,3,3
 RUI registered,Age,3.5,4
 RUI registered,Age,3.79,2
 RUI registered,Age,3.98,4
-RUI registered,Age,30,57
-RUI registered,Age,31,39
-RUI registered,Age,32,43
-RUI registered,Age,33,3
-RUI registered,Age,34,5
-RUI registered,Age,35,20
-RUI registered,Age,36,7
-RUI registered,Age,37,306
-RUI registered,Age,38,124
-RUI registered,Age,39,29
+RUI registered,Age,30,150
+RUI registered,Age,31,77
+RUI registered,Age,32,80
+RUI registered,Age,33,51
+RUI registered,Age,34,60
+RUI registered,Age,35,54
+RUI registered,Age,36,38
+RUI registered,Age,37,359
+RUI registered,Age,38,137
+RUI registered,Age,39,35
 RUI registered,Age,4.45,2
-RUI registered,Age,40,39
+RUI registered,Age,40,57
 RUI registered,Age,41,10
-RUI registered,Age,42,9
-RUI registered,Age,43,232
-RUI registered,Age,44,62
-RUI registered,Age,45,72
-RUI registered,Age,46,15
-RUI registered,Age,47,26
-RUI registered,Age,48,29
-RUI registered,Age,49,79
+RUI registered,Age,42,10
+RUI registered,Age,43,250
+RUI registered,Age,44,100
+RUI registered,Age,45,119
+RUI registered,Age,46,19
+RUI registered,Age,47,30
+RUI registered,Age,48,33
+RUI registered,Age,49,122
 RUI registered,Age,5,2
-RUI registered,Age,5.9,4
-RUI registered,Age,50,46
-RUI registered,Age,51,35
-RUI registered,Age,52,7
-RUI registered,Age,53,21
-RUI registered,Age,54,178
-RUI registered,Age,55,182
-RUI registered,Age,56,97
-RUI registered,Age,57,150
-RUI registered,Age,58,89
-RUI registered,Age,59,32
-RUI registered,Age,60,48
-RUI registered,Age,61,23
+RUI registered,Age,5.92,4
+RUI registered,Age,50,49
+RUI registered,Age,51,39
+RUI registered,Age,52,8
+RUI registered,Age,53,34
+RUI registered,Age,54,190
+RUI registered,Age,55,193
+RUI registered,Age,56,140
+RUI registered,Age,56.8,62
+RUI registered,Age,57,159
+RUI registered,Age,58,97
+RUI registered,Age,59,292
+RUI registered,Age,60,59
+RUI registered,Age,61,39
 RUI registered,Age,61.8,4
-RUI registered,Age,62,246
-RUI registered,Age,63,8
-RUI registered,Age,64,56
-RUI registered,Age,65,65
-RUI registered,Age,66,116
-RUI registered,Age,67,286
+RUI registered,Age,62,254
+RUI registered,Age,63,9
+RUI registered,Age,64,61
+RUI registered,Age,65,70
+RUI registered,Age,66,136
+RUI registered,Age,67,288
 RUI registered,Age,68,14
-RUI registered,Age,69,87
-RUI registered,Age,70,24
-RUI registered,Age,71,24
-RUI registered,Age,72,64
-RUI registered,Age,73,22
-RUI registered,Age,75,17
-RUI registered,Age,76,67
-RUI registered,Age,77,27
-RUI registered,Age,78,154
+RUI registered,Age,69,91
+RUI registered,Age,70,28
+RUI registered,Age,71,27
+RUI registered,Age,72,69
+RUI registered,Age,73,40
+RUI registered,Age,74,1
+RUI registered,Age,75,28
+RUI registered,Age,76,72
+RUI registered,Age,77,41
+RUI registered,Age,78,164
+RUI registered,Age,79,3
 RUI registered,Age,8.66,4
-RUI registered,Age,80,2
-RUI registered,Age,81,1
-RUI registered,Age,86,1
-RUI registered,Age,90,2
-RUI registered,Age,Unknown,167
-RUI registered,Ethnicity,Black or African American,668
+RUI registered,Age,8.99,2
+RUI registered,Age,80,5
+RUI registered,Age,81,4
+RUI registered,Age,82,2
+RUI registered,Age,83,5
+RUI registered,Age,84,1
+RUI registered,Age,86,3
+RUI registered,Age,87,2
+RUI registered,Age,90,8
+RUI registered,Age,91,3
+RUI registered,Age,92,4
+RUI registered,Age,Unknown,268
+RUI registered,Ethnicity,Asian,41
+RUI registered,Ethnicity,Black or African American,760
 RUI registered,Ethnicity,Multiple races,2
-RUI registered,Ethnicity,Other Race,4
-RUI registered,Ethnicity,Unknown,653
-RUI registered,Ethnicity,White,3091
+RUI registered,Ethnicity,Other Race,270
+RUI registered,Ethnicity,Unknown,1010
+RUI registered,Ethnicity,White,4256
+RUI registered,Organ,N/A,5
 RUI registered,Organ,knee,24
 RUI registered,Organ,mammary gland,4
 RUI registered,Organ,blood vasculature,2
-RUI registered,Organ,brain,33
+RUI registered,Organ,brain,41
+RUI registered,Organ,eye,43
 RUI registered,Organ,fallopian tube,18
-RUI registered,Organ,heart,512
-RUI registered,Organ,kidney,1359
-RUI registered,Organ,large intestine,496
+RUI registered,Organ,heart,538
+RUI registered,Organ,kidney,1640
+RUI registered,Organ,large intestine,514
 RUI registered,Organ,liver,76
-RUI registered,Organ,lung,659
-RUI registered,Organ,lymph node,95
-RUI registered,Organ,mammary gland,3
-RUI registered,Organ,ovary,66
-RUI registered,Organ,pancreas,309
-RUI registered,Organ,prostate gland,21
-RUI registered,Organ,skin,37
-RUI registered,Organ,small intestine,457
-RUI registered,Organ,spleen,134
-RUI registered,Organ,thymus,60
+RUI registered,Organ,lung,1586
+RUI registered,Organ,lymph node,101
+RUI registered,Organ,mammary gland,5
+RUI registered,Organ,ovary,72
+RUI registered,Organ,pancreas,376
+RUI registered,Organ,placenta,422
+RUI registered,Organ,prostate gland,24
+RUI registered,Organ,skin,52
+RUI registered,Organ,small intestine,533
+RUI registered,Organ,spleen,140
+RUI registered,Organ,thymus,64
 RUI registered,Organ,ureter,24
-RUI registered,Organ,urinary bladder,28
+RUI registered,Organ,urinary bladder,34
 RUI registered,Organ,uterus,1
+RUI registered,Portal,<Consortium Name>,18
 RUI registered,Portal,Allen Institute for Brain Science,10
 RUI registered,Portal,GTEx,65
 RUI registered,Portal,GUDMAP,12
-RUI registered,Portal,HCA,147
+RUI registered,Portal,HCA,203
 RUI registered,Portal,"HIRN, ESPACE",1
 RUI registered,Portal,HRA,1
 RUI registered,Portal,HTAN,5
-RUI registered,Portal,HuBMAP,2862
-RUI registered,Portal,KPMP,52
+RUI registered,Portal,HuBMAP,4219
+RUI registered,Portal,KPMP,172
 RUI registered,Portal,NHLBI/LungMap,10
 RUI registered,Portal,SPARC,50
-RUI registered,Portal,SenNet,1139
+RUI registered,Portal,SenNet,1406
 RUI registered,Portal,UEdinburgh,64
-RUI registered,Sex,Female,1715
-RUI registered,Sex,Male,2703
-UNIVERSE,Age,0.1,10
-UNIVERSE,Age,0.3,4
+RUI registered,Portal,UIowa,43
+RUI registered,Portal,University of California San Francisco,60
+RUI registered,Sex,Female,2638
+RUI registered,Sex,Male,3701
+UNIVERSE,Age,0,17
+UNIVERSE,Age,0.03,4
+UNIVERSE,Age,0.05,4
+UNIVERSE,Age,0.1,6
+UNIVERSE,Age,0.15,4
 UNIVERSE,Age,0.52,2
-UNIVERSE,Age,1,51
+UNIVERSE,Age,1,57
 UNIVERSE,Age,1.27,4
-UNIVERSE,Age,1.45,2
-UNIVERSE,Age,1.6,10
+UNIVERSE,Age,1.45,3
+UNIVERSE,Age,1.6,7
+UNIVERSE,Age,1.62,7
 UNIVERSE,Age,1.8,4
 UNIVERSE,Age,10,27
 UNIVERSE,Age,11,6
-UNIVERSE,Age,13.1,4
+UNIVERSE,Age,13.05,4
 UNIVERSE,Age,14,26
 UNIVERSE,Age,14.98,4
 UNIVERSE,Age,16,8
@@ -362,158 +387,178 @@ UNIVERSE,Age,19,43
 UNIVERSE,Age,2,4
 UNIVERSE,Age,2.33,4
 UNIVERSE,Age,20,41
-UNIVERSE,Age,21,60
-UNIVERSE,Age,22,23
-UNIVERSE,Age,23,23
-UNIVERSE,Age,23.8,25
+UNIVERSE,Age,21,74
+UNIVERSE,Age,22,29
+UNIVERSE,Age,23,33
+UNIVERSE,Age,23.8,101
 UNIVERSE,Age,23.83,2
-UNIVERSE,Age,24,215
-UNIVERSE,Age,25,74
+UNIVERSE,Age,24,244
+UNIVERSE,Age,25,445
+UNIVERSE,Age,26,2
 UNIVERSE,Age,27,4
-UNIVERSE,Age,28,83
-UNIVERSE,Age,29,19
+UNIVERSE,Age,28,91
+UNIVERSE,Age,29,95
 UNIVERSE,Age,3,3
 UNIVERSE,Age,3.5,4
 UNIVERSE,Age,3.79,2
 UNIVERSE,Age,3.98,4
-UNIVERSE,Age,30,93
-UNIVERSE,Age,31,39
-UNIVERSE,Age,32,43
-UNIVERSE,Age,33,8
-UNIVERSE,Age,34,5
-UNIVERSE,Age,35,20
-UNIVERSE,Age,36,7
-UNIVERSE,Age,37,306
-UNIVERSE,Age,38,124
-UNIVERSE,Age,39,30
+UNIVERSE,Age,30,186
+UNIVERSE,Age,31,77
+UNIVERSE,Age,32,80
+UNIVERSE,Age,33,55
+UNIVERSE,Age,34,60
+UNIVERSE,Age,35,54
+UNIVERSE,Age,36,38
+UNIVERSE,Age,37,359
+UNIVERSE,Age,38,137
+UNIVERSE,Age,39,36
 UNIVERSE,Age,4.45,2
-UNIVERSE,Age,40,39
+UNIVERSE,Age,40,57
 UNIVERSE,Age,41,10
-UNIVERSE,Age,42,11
-UNIVERSE,Age,43,232
-UNIVERSE,Age,44,64
-UNIVERSE,Age,45,72
-UNIVERSE,Age,46,15
-UNIVERSE,Age,47,26
-UNIVERSE,Age,48,31
-UNIVERSE,Age,49,79
+UNIVERSE,Age,42,12
+UNIVERSE,Age,43,250
+UNIVERSE,Age,44,102
+UNIVERSE,Age,45,119
+UNIVERSE,Age,46,19
+UNIVERSE,Age,47,30
+UNIVERSE,Age,48,35
+UNIVERSE,Age,49,124
 UNIVERSE,Age,5,2
-UNIVERSE,Age,5.9,4
-UNIVERSE,Age,50,46
-UNIVERSE,Age,51,35
-UNIVERSE,Age,52,7
-UNIVERSE,Age,53,23
-UNIVERSE,Age,54,180
-UNIVERSE,Age,55,182
-UNIVERSE,Age,56,97
-UNIVERSE,Age,57,150
-UNIVERSE,Age,58,89
-UNIVERSE,Age,59,32
-UNIVERSE,Age,60,48
-UNIVERSE,Age,61,23
+UNIVERSE,Age,5.92,4
+UNIVERSE,Age,50,49
+UNIVERSE,Age,51,39
+UNIVERSE,Age,52,8
+UNIVERSE,Age,53,36
+UNIVERSE,Age,54,192
+UNIVERSE,Age,55,193
+UNIVERSE,Age,56,140
+UNIVERSE,Age,56.8,66
+UNIVERSE,Age,57,159
+UNIVERSE,Age,58,97
+UNIVERSE,Age,59,292
+UNIVERSE,Age,60,59
+UNIVERSE,Age,61,43
 UNIVERSE,Age,61.8,4
-UNIVERSE,Age,62,246
-UNIVERSE,Age,63,8
-UNIVERSE,Age,64,56
-UNIVERSE,Age,65,65
-UNIVERSE,Age,66,116
-UNIVERSE,Age,67,286
+UNIVERSE,Age,62,254
+UNIVERSE,Age,63,9
+UNIVERSE,Age,64,61
+UNIVERSE,Age,65,70
+UNIVERSE,Age,66,136
+UNIVERSE,Age,67,288
 UNIVERSE,Age,68,14
-UNIVERSE,Age,69,87
-UNIVERSE,Age,70,24
-UNIVERSE,Age,71,24
-UNIVERSE,Age,72,64
-UNIVERSE,Age,73,22
-UNIVERSE,Age,75,17
-UNIVERSE,Age,76,67
-UNIVERSE,Age,77,27
-UNIVERSE,Age,78,154
+UNIVERSE,Age,69,91
+UNIVERSE,Age,70,28
+UNIVERSE,Age,71,27
+UNIVERSE,Age,72,69
+UNIVERSE,Age,73,40
+UNIVERSE,Age,74,1
+UNIVERSE,Age,75,28
+UNIVERSE,Age,76,72
+UNIVERSE,Age,77,41
+UNIVERSE,Age,78,164
+UNIVERSE,Age,79,3
 UNIVERSE,Age,8.66,4
-UNIVERSE,Age,80,2
-UNIVERSE,Age,81,1
-UNIVERSE,Age,86,1
-UNIVERSE,Age,90,2
-UNIVERSE,Age,Unknown,7460
-UNIVERSE,Ethnicity,African,45
-UNIVERSE,Ethnicity,African American,156
-UNIVERSE,Ethnicity,African American or Afro-Caribbean,30
-UNIVERSE,Ethnicity,American,4
-UNIVERSE,Ethnicity,Asian,200
+UNIVERSE,Age,8.99,2
+UNIVERSE,Age,80,5
+UNIVERSE,Age,81,4
+UNIVERSE,Age,82,2
+UNIVERSE,Age,83,5
+UNIVERSE,Age,84,1
+UNIVERSE,Age,86,3
+UNIVERSE,Age,87,2
+UNIVERSE,Age,90,8
+UNIVERSE,Age,91,3
+UNIVERSE,Age,92,4
+UNIVERSE,Age,Unknown,10113
+UNIVERSE,Ethnicity,African,54
+UNIVERSE,Ethnicity,African American,306
+UNIVERSE,Ethnicity,African American or Afro-Caribbean,32
+UNIVERSE,Ethnicity,American,5
+UNIVERSE,Ethnicity,Arab,5
+UNIVERSE,Ethnicity,Asian,325
 UNIVERSE,Ethnicity,Bangladeshi,1
-UNIVERSE,Ethnicity,Black or African American,673
-UNIVERSE,Ethnicity,British,68
+UNIVERSE,Ethnicity,Black or African American,764
+UNIVERSE,Ethnicity,British,70
 UNIVERSE,Ethnicity,Chinese,1
-UNIVERSE,Ethnicity,East Asian,4
-UNIVERSE,Ethnicity,European,2762
-UNIVERSE,Ethnicity,European American,101
+UNIVERSE,Ethnicity,East Asian,5
+UNIVERSE,Ethnicity,European,3791
+UNIVERSE,Ethnicity,European American,139
 UNIVERSE,Ethnicity,"European,Asian",1
 UNIVERSE,Ethnicity,Finnish,1
+UNIVERSE,Ethnicity,German,1
 UNIVERSE,Ethnicity,Greater Middle Eastern  (Middle Eastern or North African or Persian),3
 UNIVERSE,Ethnicity,Han Chinese,110
-UNIVERSE,Ethnicity,Hispanic or Latin American,114
+UNIVERSE,Ethnicity,Hispanic or Latin American,256
+UNIVERSE,Ethnicity,"Hispanic or Latin American,European American",3
+UNIVERSE,Ethnicity,Indian,37
 UNIVERSE,Ethnicity,Irish,1
-UNIVERSE,Ethnicity,Japanese,149
-UNIVERSE,Ethnicity,Jewish Israeli,2
+UNIVERSE,Ethnicity,Japanese,150
+UNIVERSE,Ethnicity,Jewish Israeli,10
 UNIVERSE,Ethnicity,Korean,165
 UNIVERSE,Ethnicity,Multiple races,2
-UNIVERSE,Ethnicity,Native American,2
+UNIVERSE,Ethnicity,Native American,3
 UNIVERSE,Ethnicity,"Native American,Hispanic or Latin American",2
 UNIVERSE,Ethnicity,Oceanian,3
-UNIVERSE,Ethnicity,Other Race,4
+UNIVERSE,Ethnicity,Other Race,275
 UNIVERSE,Ethnicity,Pacific Islander,2
-UNIVERSE,Ethnicity,Singaporean Chinese,75
-UNIVERSE,Ethnicity,Singaporean Indian,59
-UNIVERSE,Ethnicity,Singaporean Malay,52
-UNIVERSE,Ethnicity,South Asian,12
-UNIVERSE,Ethnicity,Unknown,3767
-UNIVERSE,Ethnicity,White,3187
+UNIVERSE,Ethnicity,Singaporean Chinese,85
+UNIVERSE,Ethnicity,Singaporean Indian,70
+UNIVERSE,Ethnicity,Singaporean Malay,61
+UNIVERSE,Ethnicity,South Asian,25
+UNIVERSE,Ethnicity,Thai,59
+UNIVERSE,Ethnicity,Unknown,5057
+UNIVERSE,Ethnicity,White,4354
 UNIVERSE,Ethnicity,na,59
-UNIVERSE,Organ,N/A,2255
+UNIVERSE,Organ,N/A,3487
 UNIVERSE,Organ,knee,24
 UNIVERSE,Organ,mammary gland,4
-UNIVERSE,Organ,adipose tissue,7
-UNIVERSE,Organ,blood,2583
-UNIVERSE,Organ,blood vasculature,24
-UNIVERSE,Organ,bone marrow,184
-UNIVERSE,Organ,brain,124
-UNIVERSE,Organ,eye,204
+UNIVERSE,Organ,adipose tissue,11
+UNIVERSE,Organ,blood,2795
+UNIVERSE,Organ,blood vasculature,28
+UNIVERSE,Organ,bone marrow,187
+UNIVERSE,Organ,brain,239
+UNIVERSE,Organ,eye,560
 UNIVERSE,Organ,fallopian tube,32
-UNIVERSE,Organ,heart,815
-UNIVERSE,Organ,kidney,1719
-UNIVERSE,Organ,large intestine,636
-UNIVERSE,Organ,liver,152
-UNIVERSE,Organ,lung,1248
-UNIVERSE,Organ,lymph node,112
-UNIVERSE,Organ,mammary gland,4
-UNIVERSE,Organ,ovary,102
-UNIVERSE,Organ,pancreas,362
-UNIVERSE,Organ,prostate gland,55
+UNIVERSE,Organ,heart,1017
+UNIVERSE,Organ,kidney,2081
+UNIVERSE,Organ,large intestine,735
+UNIVERSE,Organ,liver,154
+UNIVERSE,Organ,lung,2289
+UNIVERSE,Organ,lymph node,136
+UNIVERSE,Organ,mammary gland,5
+UNIVERSE,Organ,ovary,112
+UNIVERSE,Organ,pancreas,475
+UNIVERSE,Organ,placenta,422
+UNIVERSE,Organ,prostate gland,57
 UNIVERSE,Organ,skeletal muscle tissue,3
-UNIVERSE,Organ,skin,103
-UNIVERSE,Organ,small intestine,641
-UNIVERSE,Organ,spleen,182
-UNIVERSE,Organ,thymus,107
-UNIVERSE,Organ,tongue,6
-UNIVERSE,Organ,trachea,29
+UNIVERSE,Organ,skin,115
+UNIVERSE,Organ,small intestine,817
+UNIVERSE,Organ,spleen,206
+UNIVERSE,Organ,thymus,151
+UNIVERSE,Organ,tongue,9
+UNIVERSE,Organ,trachea,33
 UNIVERSE,Organ,ureter,24
-UNIVERSE,Organ,urinary bladder,28
-UNIVERSE,Organ,uterus,48
+UNIVERSE,Organ,urinary bladder,35
+UNIVERSE,Organ,uterus,50
+UNIVERSE,Portal,<Consortium Name>,18
 UNIVERSE,Portal,Allen Institute for Brain Science,10
-UNIVERSE,Portal,CxG,7179
+UNIVERSE,Portal,CxG,9744
 UNIVERSE,Portal,GTEx,74
 UNIVERSE,Portal,GUDMAP,12
-UNIVERSE,Portal,HCA,229
+UNIVERSE,Portal,HCA,285
 UNIVERSE,Portal,"HIRN, ESPACE",1
 UNIVERSE,Portal,HRA,1
 UNIVERSE,Portal,HTAN,5
-UNIVERSE,Portal,HuBMAP,2972
-UNIVERSE,Portal,KPMP,52
+UNIVERSE,Portal,HuBMAP,4315
+UNIVERSE,Portal,KPMP,172
 UNIVERSE,Portal,LungMap,9
 UNIVERSE,Portal,NHLBI/LungMap,10
 UNIVERSE,Portal,SEA-AD,1
 UNIVERSE,Portal,SPARC,50
-UNIVERSE,Portal,SenNet,1148
+UNIVERSE,Portal,SenNet,1419
 UNIVERSE,Portal,UEdinburgh,64
-UNIVERSE,Sex,Female,5341
-UNIVERSE,Sex,Male,6055
-UNIVERSE,Sex,Unknown,421
+UNIVERSE,Portal,UIowa,43
+UNIVERSE,Portal,University of California San Francisco,60
+UNIVERSE,Sex,Female,7234
+UNIVERSE,Sex,Male,8332
+UNIVERSE,Sex,Unknown,727

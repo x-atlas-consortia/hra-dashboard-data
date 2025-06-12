@@ -2,14 +2,14 @@ group_by(.version) | sort_by(first.version) | reverse |
   map({
     version:first.version,
     organData: group_by(.nameOrgan) | sort_by(first.alt) | map({
-      name: first.nameOrgan,
-      image: first.image,
-      alt: first.imageAlt,
-      tissueData: map({
-        name: .name,
-        url: .url,
+      label: first.nameOrgan,
+      icon: first.image,
+      cards: map({
+        label: .name,
         alt: .alt,
-        threeDimImage: .threeDimImage
+        fileUrl: .threeDimImage,
+        sourceDataUrl: .url,
+        files: []
       })
     })
   })

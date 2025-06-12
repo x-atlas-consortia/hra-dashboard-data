@@ -10,31 +10,27 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 
-SELECT ?organ ?ftu_label ?ftu_iri ?ftu_part_label ?ftu_part_iri ?ftu_part_type (COUNT(DISTINCT ?ftu_part) as ?ftu_part_count)
+SELECT ?organ ?ftu_label ?ftu_id ?ftu_part_label ?ftu_part_id
+  (IF(?ftu_part_type = 'AS', COUNT(DISTINCT ?ftu_part), 0) as ?as_count)
+  (IF(?ftu_part_type = 'CT', COUNT(DISTINCT ?ftu_part), 0) as ?ct_count)
 FROM HRA:
 WHERE {
-  ?ftu_illustration a ccf:FtuIllustration ;
-      a ?ftu_iri ;
-      ccf:ccf_located_in ?organ_id ;
-    ccf:illustration_node ?ftu_part ;
-    ccf:image_file [
-      ccf:file_format ?format ;
-      ccf:file_url ?image_url
-    ] .
-  
-  ?ftu_part a ?ftu_part_iri .
+  [] a ccf:FtuIllustration ;
+      ccf:ccf_located_in ?organ_iri ;
+      ccf:representation_of ?ftu_iri ;
+      ccf:illustration_node ?ftu_part ;
+  .
+  ?ftu_part a ccf:FtuIllustrationNode ;
+    ccf:representation_of ?ftu_part_iri ;
+  .
 
-  BIND(IRI(REPLACE(?organ_id, 'UBERON:', STR(UBERON:))) as ?organ_iri)
-  BIND(IRI(REPLACE(STR(?ftu_illustration), "#primary", "")) as ?ftu_digital_object)
-  
-  FILTER(STRSTARTS(STR(?ftu_iri), STR(obo:)))
-  FILTER(STRSTARTS(STR(?ftu_part_iri), STR(obo:)))
-  
   BIND(IF(STRSTARTS(STR(?ftu_part_iri), STR(UBERON:)), 'AS', 'CT') as ?ftu_part_type)
-  
   ?organ_iri rdfs:label ?organ .
   ?ftu_iri rdfs:label ?ftu_label .
   ?ftu_part_iri rdfs:label ?ftu_part_label .
+
+  BIND(REPLACE(STR(?ftu_iri), STR(UBERON:), "UBERON:") as ?ftu_id)
+  BIND(REPLACE(REPLACE(STR(?ftu_part_iri), STR(obo:), ""), "_", ":") as ?ftu_part_id)
 }
-GROUP BY ?organ ?ftu_label ?ftu_iri ?ftu_part_label ?ftu_part_iri ?ftu_part_type
+GROUP BY ?organ ?ftu_label ?ftu_id ?ftu_part_label ?ftu_part_id ?ftu_part_type
 ORDER BY ?organ ?ftu_label ?ftu_part_label

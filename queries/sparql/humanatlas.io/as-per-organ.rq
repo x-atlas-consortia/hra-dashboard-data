@@ -22,7 +22,7 @@ WHERE {
   
   ?organIri ccf:ccf_pref_label ?organ_label .
 
-  BIND(LCASE(?organ_label) as ?organ)
+  BIND(REPLACE(LCASE(?organ_label), "skin of body", "skin") as ?organ)
   BIND(REPLACE(REPLACE(STR(?organIri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?uberon_id)
 }
 GROUP BY ?refOrgan ?organ ?sex
