@@ -50,7 +50,7 @@ items:
           # - label: Ontobee Requests
           #   count: -1
           - label: NIH3D requests for 3D DOs
-            count: 15297
+            count: 19170
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv - sum of viewCount
           - label: BioArt requests for 2D DOs
             count: 4631
