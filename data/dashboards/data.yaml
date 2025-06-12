@@ -37,11 +37,11 @@ items:
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes
-            count: 11526429
+            count: 11526535
           - label: Edges
-            count: 195028451
+            count: 194688694
           - label: Size
-            count: 167657
+            count: 167362
             unit: MB
       - title: Ontologies Extended
         tooltip: Statistics covering how many terms were added to other biomedical ontologies during the course of HRA development.

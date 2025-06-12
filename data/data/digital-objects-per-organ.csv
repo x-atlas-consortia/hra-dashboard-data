@@ -22,6 +22,7 @@ fallopian tube,3D Reference Organ,2
 heart,ASCT+B Table,1
 heart,CTAnn Crosswalks,3
 heart,3D Reference Organ,2
+heart,OMAP,1
 hippocampal gyrus (formation),CTAnn Crosswalks,1
 intestine,OMAP,2
 islet of langerhans,CTAnn Crosswalks,3
@@ -50,7 +51,7 @@ lung,OMAP,3
 lymph node,ASCT+B Table,1
 lymph node,CTAnn Crosswalks,5
 lymph node,3D Reference Organ,2
-lymph node,OMAP,2
+lymph node,OMAP,1
 lymph vasculature,ASCT+B Table,1
 main bronchus,ASCT+B Table,1
 main bronchus,3D Reference Organ,2
