@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 7880
+            count: 7932
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,17 +29,17 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 10, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 13, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 1126931
+            count: 1133547
           - label: HRA Portal requests
-            count: 2263771
+            count: 2280938
           - label: HRA KG requests
-            count: 1993252
+            count: 2012638
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to June 10, 2025.
+        tooltip: Number of web requests to HRA data via external data providers up to June 13, 2025.
         items:
           - label: EBI OLS requests
             count: 24912

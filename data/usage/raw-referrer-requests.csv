@@ -735,14 +735,18 @@ date,host,requests
 2025-06-07,,4233
 2025-06-08,,4533
 2025-06-09,,4750
-2025-06-10,,14127
-,,2404711
+2025-06-10,,20000
+2025-06-11,,11284
+2025-06-12,,6024
+2025-06-13,,2189
+,,2905173
 2024-10-30,10.1.7.110,7
 2024-10-31,10.1.7.110,1
 2025-01-30,10.1.7.110,3
 2025-05-20,10.4.55.124,2
 2025-05-15,104.17.173.130,1
 2025-06-05,107.23.60.247,2
+2025-06-12,107.23.60.247,2
 2024-01-27,108.156.201.127,1
 2024-01-28,108.156.201.127,1
 2024-02-04,108.156.201.127,2
@@ -880,6 +884,8 @@ date,host,requests
 2025-05-30,111.33.37.166,1
 2025-03-31,113.108.23.163,1
 2025-05-07,114.43.154.68,1
+2025-06-10,119.220.49.227,1
+2025-06-12,12062025083318426672.notebooks.polly.elucidata.io,1
 2025-03-31,122.188.185.253,1
 2025-06-10,123.249.13.215,1
 2025-02-02,125.157.39.128,1
@@ -1043,6 +1049,9 @@ date,host,requests
 2025-06-02,127.0.0.1,1
 2025-06-03,127.0.0.1,3
 2025-06-09,127.0.0.1,9
+2025-06-10,127.0.0.1,29
+2025-06-11,127.0.0.1,92
+2025-06-12,127.0.0.1,2
 2025-05-22,13.216.151.23,2
 2024-12-06,13.226.210.115,1
 2024-12-06,13.226.210.77,1
@@ -1414,6 +1423,8 @@ date,host,requests
 2025-05-27,202.120.64.38,1
 2025-06-05,202.120.64.38,13
 2025-06-10,202.120.64.38,3
+2025-06-11,202.120.64.38,8
+2025-06-13,202.120.64.38,4
 2024-12-19,202.120.64.51,11
 2024-12-20,202.120.64.51,18
 2024-12-21,202.120.64.51,2
@@ -1661,6 +1672,7 @@ date,host,requests
 2025-05-23,3d.nih.gov,2
 2025-05-25,3d.nih.gov,2
 2025-05-26,3d.nih.gov,2
+2025-06-11,3d.nih.gov,4
 2025-05-14,3dprint.nih.gov,1
 2025-05-15,3dprint.nih.gov,1
 2025-05-17,3dprint.nih.gov,1
@@ -1672,8 +1684,11 @@ date,host,requests
 2025-06-06,3dprint.nih.gov,1
 2025-06-07,3dprint.nih.gov,1
 2025-06-09,3dprint.nih.gov,1
+2025-06-11,3dprint.nih.gov,1
+2025-06-12,3dprint.nih.gov,1
 2024-12-31,3dviewer.net,1
 2025-01-12,42.101.6.183,1
+2025-06-10,47.101.236.202,1
 2025-05-28,47.238.158.99,1
 2025-05-29,47.238.158.99,1
 2025-05-30,47.238.158.99,3
@@ -1683,6 +1698,9 @@ date,host,requests
 2025-06-06,47.238.158.99,2
 2025-06-07,47.238.158.99,1
 2025-06-08,47.238.158.99,1
+2025-06-11,47.238.158.99,7
+2025-06-12,47.238.158.99,2
+2025-06-13,47.238.158.99,1
 2025-02-20,52.4.103.36,6
 2024-03-02,54.163.58.150,1
 2024-03-11,54.163.58.150,1
@@ -2711,6 +2729,14 @@ date,host,requests
 2025-06-06,684063cad501050ba56bb606--hra-ui.netlify.app,33
 2025-06-04,684068cfe4082c1797d34681--hra-ui.netlify.app,2
 2025-06-04,68408519815f3a085887e2e0--hra-ui.netlify.app,1
+2025-06-10,68489809019ffb4e8ecbcefa--hra-ui.netlify.app,9
+2025-06-11,6848c2898ed353883ef02106--hra-ui.netlify.app,20
+2025-06-11,68498d5a738a9f684203fe20--hra-ui.netlify.app,25
+2025-06-11,6849cb8c9ea7257a9b386ebc--hra-ui.netlify.app,10
+2025-06-11,6849dd85f9a5c3cc18463380--hra-ui.netlify.app,14
+2025-06-11,6849df899ea725ad84386d63--hra-ui.netlify.app,4
+2025-06-12,684aea40b827228f99df18ae--hra-ui.netlify.app,2
+2025-06-12,684b41ff3972681630554b7e--hra-ui.netlify.app,5
 2024-01-29,74.114.196.26,1
 2025-02-24,865764-265539044775302.preview.editmysite.com,1
 2025-02-02,94.70.48.90,1
@@ -2760,6 +2786,7 @@ date,host,requests
 2025-05-28,aguea.com,2
 2025-06-03,aguea.com,2
 2025-06-05,aguea.com,2
+2025-06-11,aguea.com,2
 2024-01-15,aireacondicionadoalicante.top,1
 2025-01-22,ajp.amjpathol.org,1
 2025-02-14,ajp.amjpathol.org,1
@@ -2774,6 +2801,9 @@ date,host,requests
 2025-06-02,alleninstitute.atlassian.net,1
 2025-06-03,alleninstitute.atlassian.net,1
 2025-06-06,alleninstitute.atlassian.net,1
+2025-06-10,alleninstitute.atlassian.net,1
+2025-06-11,alleninstitute.atlassian.net,1
+2025-06-12,alleninstitute.atlassian.net,1
 2025-01-15,ammar257ammar.github.io,1
 2024-06-30,andreas-bueckle.com,4
 2024-08-20,andreas-bueckle.com,1
@@ -3414,12 +3444,16 @@ date,host,requests
 2025-06-07,apps.humanatlas.io,723
 2025-06-08,apps.humanatlas.io,780
 2025-06-09,apps.humanatlas.io,2988
-2025-06-10,apps.humanatlas.io,565
+2025-06-10,apps.humanatlas.io,4003
+2025-06-11,apps.humanatlas.io,5316
+2025-06-12,apps.humanatlas.io,6580
+2025-06-13,apps.humanatlas.io,1009
 2024-07-02,attachments.office.net,1
 2025-02-13,audilab.bme.mcgill.ca,1
 2025-04-16,audilab.bme.mcgill.ca,1
 2025-04-22,audilab.bme.mcgill.ca,1
 2025-05-08,audilab.bme.mcgill.ca,4
+2025-06-11,audilab.bme.mcgill.ca,1
 2023-07-20,author1.prod.thermofisher.com,1
 2023-08-09,author1.prod.thermofisher.com,4
 2024-03-23,authoring.us-il101.gateway.prod.island.powerapps.com,2
@@ -3433,6 +3467,9 @@ date,host,requests
 2025-06-06,avivator.gehlenborglab.org,423
 2025-06-08,avivator.gehlenborglab.org,416
 2025-06-09,avivator.gehlenborglab.org,10
+2025-06-10,avivator.gehlenborglab.org,368
+2025-06-11,avivator.gehlenborglab.org,446
+2025-06-12,avivator.gehlenborglab.org,129
 2023-11-17,avr.dev.hubmapconsortium.org,4
 2023-11-29,avr.dev.hubmapconsortium.org,4
 2024-05-16,avr.dev.hubmapconsortium.org,4
@@ -3440,6 +3477,8 @@ date,host,requests
 2024-06-12,avr.dev.hubmapconsortium.org,1
 2024-08-21,avr.dev.hubmapconsortium.org,2
 2025-04-23,avr.dev.hubmapconsortium.org,1
+2025-06-10,avr.dev.hubmapconsortium.org,8
+2025-06-11,avr.dev.hubmapconsortium.org,4
 2023-12-01,avr.hubmapconsortium.org,21
 2023-12-04,avr.hubmapconsortium.org,15
 2023-12-05,avr.hubmapconsortium.org,4
@@ -3507,6 +3546,8 @@ date,host,requests
 2025-05-30,avr.hubmapconsortium.org,2
 2025-06-02,avr.hubmapconsortium.org,2
 2025-06-04,avr.hubmapconsortium.org,3
+2025-06-11,avr.hubmapconsortium.org,2
+2025-06-12,avr.hubmapconsortium.org,7
 2023-09-13,away.vk.com,1
 2023-09-19,away.vk.com,3
 2024-06-03,away.vk.com,1
@@ -3825,6 +3866,7 @@ date,host,requests
 2025-05-28,bing.com,4
 2025-05-30,bing.com,1
 2025-06-01,bing.com,3
+2025-06-13,bing.com,8
 2024-10-15,bioportal.bioontology.org,3
 2024-10-24,bioportal.bioontology.org,2
 2024-11-26,bioportal.bioontology.org,2
@@ -4403,6 +4445,8 @@ date,host,requests
 2025-06-05,ccf-ontology.hubmapconsortium.org,1
 2025-06-07,ccf-ontology.hubmapconsortium.org,1
 2025-06-10,ccf-ontology.hubmapconsortium.org,1
+2025-06-12,ccf-ontology.hubmapconsortium.org,5
+2025-06-13,ccf-ontology.hubmapconsortium.org,2
 2023-06-07,cdn-humanatlas-io.s3-website.us-east-2.amazonaws.com,1
 2023-06-11,cdn-humanatlas-io.s3-website.us-east-2.amazonaws.com,1
 2024-01-11,cdn-humanatlas-io.s3-website.us-east-2.amazonaws.com,11
@@ -5039,7 +5083,10 @@ date,host,requests
 2025-06-07,cdn.humanatlas.io,132
 2025-06-08,cdn.humanatlas.io,157
 2025-06-09,cdn.humanatlas.io,530
-2025-06-10,cdn.humanatlas.io,138
+2025-06-10,cdn.humanatlas.io,963
+2025-06-11,cdn.humanatlas.io,904
+2025-06-12,cdn.humanatlas.io,1057
+2025-06-13,cdn.humanatlas.io,63
 2024-09-06,cdpn.io,95
 2024-12-11,cdpn.io,1
 2025-03-08,cdpn.io,1
@@ -5160,6 +5207,9 @@ date,host,requests
 2025-06-07,chatgpt.com,2
 2025-06-08,chatgpt.com,1
 2025-06-09,chatgpt.com,4
+2025-06-10,chatgpt.com,1
+2025-06-12,chatgpt.com,7
+2025-06-13,chatgpt.com,3
 2024-12-15,chirof.com,33
 2023-08-29,ciemerweb.com,1
 2023-06-09,cifar.ca,1
@@ -5567,6 +5617,9 @@ date,host,requests
 2025-06-07,cns-iu.github.io,164
 2025-06-08,cns-iu.github.io,5
 2025-06-09,cns-iu.github.io,85
+2025-06-10,cns-iu.github.io,73
+2025-06-11,cns-iu.github.io,206
+2025-06-12,cns-iu.github.io,102
 2023-08-15,cns.iu.edu,1
 2023-11-11,cns.iu.edu,1
 2023-11-28,cns.iu.edu,1
@@ -5648,6 +5701,7 @@ date,host,requests
 2025-05-12,cns.iu.edu,1
 2025-05-31,cns.iu.edu,1
 2025-06-06,cns.iu.edu,1
+2025-06-11,cns.iu.edu,1
 2025-01-12,co0o2fymocp-496ff2e9c6d22116-0-colab.googleusercontent.com,3
 2024-09-06,codepen.io,5
 2024-09-09,codepen.io,7
@@ -5878,6 +5932,7 @@ date,host,requests
 2025-06-03,com-dom-neph-sarder.sites.medinfo.ufl.edu,1
 2025-06-06,com-dom-neph-sarder.sites.medinfo.ufl.edu,1
 2025-06-09,com-dom-neph-sarder.sites.medinfo.ufl.edu,1
+2025-06-12,com-dom-neph-sarder.sites.medinfo.ufl.edu,1
 2023-06-12,com.google.android.gm,1
 2023-07-18,com.google.android.gm,1
 2023-08-24,com.google.android.gm,1
@@ -5916,6 +5971,7 @@ date,host,requests
 2025-06-02,com.google.android.googlequicksearchbox,1
 2025-06-06,com.google.android.googlequicksearchbox,1
 2025-06-09,com.google.android.googlequicksearchbox,1
+2025-06-10,com.google.android.googlequicksearchbox,1
 2023-07-27,com.linkedin.android,1
 2023-07-29,com.linkedin.android,1
 2024-02-29,com.linkedin.android,1
@@ -5957,6 +6013,7 @@ date,host,requests
 2025-04-11,com.slack,3
 2025-05-14,com.slack,1
 2025-05-27,com.slack,2
+2025-06-12,com.slack,4
 2024-12-14,com.twitter.android,2
 2024-08-28,comercialelangel.com.gt,1
 2024-05-30,commons.datacite.org,1
@@ -5975,6 +6032,7 @@ date,host,requests
 2023-09-30,contentcuration.marketinghits.com,1
 2024-02-12,contentcuration.marketinghits.com,1
 2024-02-24,contentcuration.marketinghits.com,1
+2025-06-12,copilot.microsoft.com,1
 2024-01-08,cotctech.com,1
 2025-06-08,countrydesignstyle.com,5
 2025-05-15,cpanel.mhpvm.org.mx,1
@@ -6005,6 +6063,7 @@ date,host,requests
 2025-05-29,d1997x6ampzi13.cloudfront.net,1
 2025-05-31,d1997x6ampzi13.cloudfront.net,1
 2025-06-09,d1997x6ampzi13.cloudfront.net,1
+2025-06-11,d1997x6ampzi13.cloudfront.net,1
 2023-06-05,d1yhavmlxru8up.cloudfront.net,4
 2023-06-06,d1yhavmlxru8up.cloudfront.net,2
 2024-06-13,d1yhavmlxru8up.cloudfront.net,20
@@ -6048,6 +6107,7 @@ date,host,requests
 2024-12-19,d2rjzhfhs79cna.cloudfront.net,1
 2025-02-25,d2rjzhfhs79cna.cloudfront.net,1
 2025-03-17,d2rjzhfhs79cna.cloudfront.net,2
+2025-06-12,d2rjzhfhs79cna.cloudfront.net,4
 2023-06-05,d2xbz98xx8fqq7.cloudfront.net,228
 2023-06-06,d2xbz98xx8fqq7.cloudfront.net,264
 2024-04-07,d2xbz98xx8fqq7.cloudfront.net,4
@@ -6085,6 +6145,9 @@ date,host,requests
 2025-05-23,d3e2xu2ool3eaa.cloudfront.net,1
 2025-06-02,d3e2xu2ool3eaa.cloudfront.net,1
 2025-06-09,d3e2xu2ool3eaa.cloudfront.net,2
+2025-06-11,d3e2xu2ool3eaa.cloudfront.net,33
+2025-06-12,d3e2xu2ool3eaa.cloudfront.net,3
+2025-06-13,d3e2xu2ool3eaa.cloudfront.net,1
 2023-09-19,daily-news.co,1
 2025-05-30,dailynews.push4site.com,1
 2025-04-11,data.cfde.cloud,1
@@ -6290,6 +6353,8 @@ date,host,requests
 2025-06-03,data.dev.sennetconsortium.org,11
 2025-06-06,data.dev.sennetconsortium.org,6
 2025-06-09,data.dev.sennetconsortium.org,41
+2025-06-11,data.dev.sennetconsortium.org,2
+2025-06-12,data.dev.sennetconsortium.org,2
 2024-01-05,data.mendeley.com,2
 2024-01-23,data.mendeley.com,3
 2024-05-28,data.mendeley.com,1
@@ -6723,7 +6788,10 @@ date,host,requests
 2025-06-07,data.sennetconsortium.org,11
 2025-06-08,data.sennetconsortium.org,100
 2025-06-09,data.sennetconsortium.org,58
-2025-06-10,data.sennetconsortium.org,92
+2025-06-10,data.sennetconsortium.org,136
+2025-06-11,data.sennetconsortium.org,59
+2025-06-12,data.sennetconsortium.org,209
+2025-06-13,data.sennetconsortium.org,52
 2024-11-06,dataplan.top,4
 2024-11-07,dataplan.top,130
 2024-11-08,dataplan.top,207
@@ -6787,6 +6855,7 @@ date,host,requests
 2025-05-20,datasetsearch.research.google.com,2
 2025-05-22,datasetsearch.research.google.com,2
 2025-05-28,datasetsearch.research.google.com,2
+2025-06-11,datasetsearch.research.google.com,2
 2024-09-26,ddyjpgkeqz.us-east-2.awsapprunner.com,1
 2025-01-16,ddyjpgkeqz.us-east-2.awsapprunner.com,2
 2025-04-25,deminis.nl,1
@@ -6893,6 +6962,8 @@ date,host,requests
 2025-06-05,docs.google.com,1
 2025-06-09,docs.google.com,2
 2025-06-10,docs.google.com,1
+2025-06-11,docs.google.com,6
+2025-06-12,docs.google.com,1
 2024-06-13,docs.hubmapconsortium.org,1
 2024-06-18,docs.hubmapconsortium.org,1
 2024-06-19,docs.hubmapconsortium.org,2
@@ -6935,10 +7006,14 @@ date,host,requests
 2025-05-28,docs.hubmapconsortium.org,1
 2025-06-07,docs.hubmapconsortium.org,2
 2025-06-09,docs.hubmapconsortium.org,2
+2025-06-11,docs.hubmapconsortium.org,3
+2025-06-12,docs.hubmapconsortium.org,1
 2025-05-23,docs.humanatlas.io,1
 2025-05-29,docs.humanatlas.io,1
 2025-06-03,docs.humanatlas.io,1
 2025-06-09,docs.humanatlas.io,2
+2025-06-12,docs.humanatlas.io,19
+2025-06-13,docs.humanatlas.io,2
 2025-05-27,docs.sennetconsortium.org,2
 2025-06-05,docs.sennetconsortium.org,2
 2024-06-30,doi.datacite.org,2
@@ -7068,6 +7143,7 @@ date,host,requests
 2025-05-08,en.m.wikipedia.org,1
 2025-05-10,en.m.wikipedia.org,1
 2025-06-01,en.m.wikipedia.org,1
+2025-06-10,en.m.wikipedia.org,1
 2023-12-25,en.wikipedia.org,2
 2024-09-06,en.wikipedia.org,1
 2024-09-08,en.wikipedia.org,1
@@ -7662,7 +7738,10 @@ date,host,requests
 2025-06-07,entity.api.hubmapconsortium.org,1398
 2025-06-08,entity.api.hubmapconsortium.org,1398
 2025-06-09,entity.api.hubmapconsortium.org,1396
-2025-06-10,entity.api.hubmapconsortium.org,804
+2025-06-10,entity.api.hubmapconsortium.org,1394
+2025-06-11,entity.api.hubmapconsortium.org,1396
+2025-06-12,entity.api.hubmapconsortium.org,1202
+2025-06-13,entity.api.hubmapconsortium.org,698
 2024-04-08,escholarship.org,1
 2024-08-05,eturkey.net,1
 2025-06-10,euc-onenote.officeapps.live.com,1
@@ -7705,6 +7784,8 @@ date,host,requests
 2025-06-03,fusion.hubmapconsortium.org,22
 2025-06-05,fusion.hubmapconsortium.org,24
 2025-06-09,fusion.hubmapconsortium.org,22
+2025-06-11,fusion.hubmapconsortium.org,10
+2025-06-12,fusion.hubmapconsortium.org,10
 2023-08-10,gateway.zscalertwo.net,1
 2024-11-27,gauri2029.github.io,6
 2024-11-28,gauri2029.github.io,5
@@ -7718,6 +7799,7 @@ date,host,requests
 2025-01-07,gemini.google.com,2
 2025-02-18,gemini.google.com,1
 2025-03-22,gemini.google.com,1
+2025-06-11,gemini.google.com,2
 2024-11-07,genestack-odm.velocity.ag,59
 2025-01-13,georgiaweatherschool.com,1
 2024-05-17,ger.animalia-life.club,1
@@ -8130,7 +8212,10 @@ date,host,requests
 2025-06-07,github.com,2
 2025-06-08,github.com,1
 2025-06-09,github.com,4
-2025-06-10,github.com,2
+2025-06-10,github.com,12
+2025-06-11,github.com,8
+2025-06-12,github.com,2
+2025-06-13,github.com,1
 2025-06-02,githubissues.com,1
 2025-06-09,githubissues.com,1
 2024-09-06,glint.edcast.com,1
@@ -8238,7 +8323,10 @@ date,host,requests
 2025-06-07,google.com,3
 2025-06-08,google.com,38
 2025-06-09,google.com,8
-2025-06-10,google.com,3
+2025-06-10,google.com,7
+2025-06-11,google.com,4
+2025-06-12,google.com,4
+2025-06-13,google.com,4
 2024-07-28,gpolivegroup.com,1
 2024-02-27,grlc.io,1
 2024-03-05,grlc.io,1
@@ -8917,7 +9005,10 @@ date,host,requests
 2025-06-07,gtexportal.org,306
 2025-06-08,gtexportal.org,801
 2025-06-09,gtexportal.org,1159
-2025-06-10,gtexportal.org,629
+2025-06-10,gtexportal.org,1056
+2025-06-11,gtexportal.org,1295
+2025-06-12,gtexportal.org,1443
+2025-06-13,gtexportal.org,754
 2023-12-20,halmeniemi.info,1
 2023-08-24,healthdid.net,1
 2023-10-28,healthdid.net,1
@@ -9116,6 +9207,7 @@ date,host,requests
 2025-05-29,hms-dbmi.atlassian.net,1
 2025-06-02,hms-dbmi.atlassian.net,1
 2025-06-05,hms-dbmi.atlassian.net,1
+2025-06-12,hms-dbmi.atlassian.net,1
 2025-03-31,hnhuanglong.com,1
 2023-11-25,house-experts.co.uk,2
 2024-01-12,house-experts.co.uk,1
@@ -9390,6 +9482,7 @@ date,host,requests
 2025-05-25,hubmap-ccf-ui.netlify.app,5
 2025-05-29,hubmap-ccf-ui.netlify.app,5
 2025-06-03,hubmap-ccf-ui.netlify.app,5
+2025-06-11,hubmap-ccf-ui.netlify.app,5
 2023-06-05,hubmapconsortium.github.io,8
 2023-06-06,hubmapconsortium.github.io,3
 2023-06-07,hubmapconsortium.github.io,13
@@ -10120,7 +10213,10 @@ date,host,requests
 2025-06-07,hubmapconsortium.github.io,48
 2025-06-08,hubmapconsortium.github.io,27
 2025-06-09,hubmapconsortium.github.io,61
-2025-06-10,hubmapconsortium.github.io,27
+2025-06-10,hubmapconsortium.github.io,170
+2025-06-11,hubmapconsortium.github.io,391
+2025-06-12,hubmapconsortium.github.io,42
+2025-06-13,hubmapconsortium.github.io,6
 2023-07-13,hubmapconsortium.org,1
 2023-07-14,hubmapconsortium.org,2
 2023-07-18,hubmapconsortium.org,1
@@ -10646,7 +10742,10 @@ date,host,requests
 2025-06-07,hubmapconsortium.org,3
 2025-06-08,hubmapconsortium.org,4
 2025-06-09,hubmapconsortium.org,5
-2025-06-10,hubmapconsortium.org,4
+2025-06-10,hubmapconsortium.org,9
+2025-06-11,hubmapconsortium.org,9
+2025-06-12,hubmapconsortium.org,7
+2025-06-13,hubmapconsortium.org,5
 2024-12-13,hubs.ly,2
 2024-12-14,hubs.ly,1
 2024-11-25,hugeamp.org,1
@@ -11406,7 +11505,10 @@ date,host,requests
 2025-06-07,humanatlas.io,1336
 2025-06-08,humanatlas.io,805
 2025-06-09,humanatlas.io,2047
-2025-06-10,humanatlas.io,1158
+2025-06-10,humanatlas.io,3313
+2025-06-11,humanatlas.io,3476
+2025-06-12,humanatlas.io,6450
+2025-06-13,humanatlas.io,1391
 2023-07-31,humanatlas.io.,11
 2023-08-02,humanatlas.io.,20
 2023-06-13,hypestat.com,3
@@ -11476,6 +11578,8 @@ date,host,requests
 2025-06-04,imi.fudan.edu.cn,5
 2025-06-05,imi.fudan.edu.cn,4
 2025-06-06,imi.fudan.edu.cn,5
+2025-06-11,imi.fudan.edu.cn,5
+2025-06-12,imi.fudan.edu.cn,3
 2024-06-26,in.search.yahoo.com,1
 2025-01-02,in.search.yahoo.com,1
 2024-06-11,info.cfde.cloud,1
@@ -11699,6 +11803,10 @@ date,host,requests
 2025-06-05,ingest.dev.hubmapconsortium.org,18
 2025-06-06,ingest.dev.hubmapconsortium.org,19
 2025-06-09,ingest.dev.hubmapconsortium.org,12
+2025-06-10,ingest.dev.hubmapconsortium.org,8
+2025-06-11,ingest.dev.hubmapconsortium.org,44
+2025-06-12,ingest.dev.hubmapconsortium.org,6
+2025-06-13,ingest.dev.hubmapconsortium.org,2
 2023-06-29,ingest.hubmapconsortium.org,2
 2023-08-03,ingest.hubmapconsortium.org,1
 2023-08-07,ingest.hubmapconsortium.org,4
@@ -12016,7 +12124,10 @@ date,host,requests
 2025-06-07,ingest.hubmapconsortium.org,4
 2025-06-08,ingest.hubmapconsortium.org,12
 2025-06-09,ingest.hubmapconsortium.org,22
-2025-06-10,ingest.hubmapconsortium.org,11
+2025-06-10,ingest.hubmapconsortium.org,150
+2025-06-11,ingest.hubmapconsortium.org,107
+2025-06-12,ingest.hubmapconsortium.org,143
+2025-06-13,ingest.hubmapconsortium.org,4
 2024-12-01,ingest.hubmapconsortium.org.,4
 2023-06-14,ingest.test.hubmapconsortium.org,2
 2023-08-09,ingest.test.hubmapconsortium.org,3
@@ -12155,7 +12266,8 @@ date,host,requests
 2025-06-03,ingest.test.hubmapconsortium.org,1
 2025-06-05,ingest.test.hubmapconsortium.org,17
 2025-06-06,ingest.test.hubmapconsortium.org,6
-2025-06-10,ingest.test.hubmapconsortium.org,12
+2025-06-10,ingest.test.hubmapconsortium.org,16
+2025-06-11,ingest.test.hubmapconsortium.org,14
 2025-01-22,integraltx.atlassian.net,1
 2024-11-20,integration.ffpreview.com,2
 2024-11-21,integration.ffpreview.com,5
@@ -12267,6 +12379,8 @@ date,host,requests
 2025-06-05,link.springer.com,4
 2025-06-06,link.springer.com,2
 2025-06-09,link.springer.com,3
+2025-06-11,link.springer.com,3
+2025-06-12,link.springer.com,1
 2024-12-11,lm.facebook.com,1
 2024-12-13,lm.facebook.com,1
 2023-09-17,lnkd.in,1
@@ -12798,7 +12912,10 @@ date,host,requests
 2025-06-07,localhost,6
 2025-06-08,localhost,14
 2025-06-09,localhost,235
-2025-06-10,localhost,1
+2025-06-10,localhost,819
+2025-06-11,localhost,592
+2025-06-12,localhost,798
+2025-06-13,localhost,36
 2023-06-06,lod.humanatlas.io,12
 2023-06-07,lod.humanatlas.io,3
 2023-06-08,lod.humanatlas.io,3
@@ -13440,7 +13557,10 @@ date,host,requests
 2025-06-07,lod.humanatlas.io,204
 2025-06-08,lod.humanatlas.io,293
 2025-06-09,lod.humanatlas.io,334
-2025-06-10,lod.humanatlas.io,213
+2025-06-10,lod.humanatlas.io,540
+2025-06-11,lod.humanatlas.io,486
+2025-06-12,lod.humanatlas.io,438
+2025-06-13,lod.humanatlas.io,428
 2025-03-11,login.microsoftonline.com,2
 2025-03-12,login.microsoftonline.com,1
 2024-05-19,loginvast.com,4
@@ -13577,7 +13697,9 @@ date,host,requests
 2025-06-07,m.baidu.com,8
 2025-06-08,m.baidu.com,4
 2025-06-09,m.baidu.com,1
-2025-06-10,m.baidu.com,1
+2025-06-10,m.baidu.com,2
+2025-06-12,m.baidu.com,8
+2025-06-13,m.baidu.com,1
 2024-10-22,m.facebook.com,1
 2024-12-11,m.facebook.com,1
 2024-12-13,m.facebook.com,1
@@ -13591,6 +13713,7 @@ date,host,requests
 2024-12-15,m.youtube.com,2
 2024-12-26,m.youtube.com,2
 2025-05-07,m.youtube.com,1
+2025-06-10,maikluuba.ch,1
 2023-07-20,mail.google.com,1
 2023-07-24,mail.google.com,1
 2023-08-27,mail.google.com,1
@@ -13733,6 +13856,7 @@ date,host,requests
 2024-11-15,netscisociety.net,1
 2024-12-09,netscisociety.net,1
 2025-05-29,news.iu.edu,1
+2025-06-11,news.iu.edu,1
 2023-06-09,news.luddy.indiana.edu,1
 2023-07-04,news.luddy.indiana.edu,1
 2023-07-06,news.luddy.indiana.edu,1
@@ -13849,6 +13973,8 @@ date,host,requests
 2025-06-06,painelali2.inovareinteligenciaartificial.com,2
 2025-06-07,painelali2.inovareinteligenciaartificial.com,1
 2025-06-09,painelali2.inovareinteligenciaartificial.com,1
+2025-06-10,painelali2.inovareinteligenciaartificial.com,1
+2025-06-11,painelali2.inovareinteligenciaartificial.com,1
 2025-02-06,paper.dropbox.com,2
 2025-04-03,pdenp.slashpet.com,1
 2024-03-03,pdf.sciencedirectassets.com,1
@@ -13909,6 +14035,9 @@ date,host,requests
 2025-06-08,pmc.ncbi.nlm.nih.gov,9
 2025-06-09,pmc.ncbi.nlm.nih.gov,2
 2025-06-10,pmc.ncbi.nlm.nih.gov,1
+2025-06-11,pmc.ncbi.nlm.nih.gov,8
+2025-06-12,pmc.ncbi.nlm.nih.gov,6
+2025-06-13,pmc.ncbi.nlm.nih.gov,4
 2025-04-01,ponyclubdoporto.com,1
 2023-06-08,portal-prod.stage.hubmapconsortium.org,3
 2023-06-13,portal-prod.stage.hubmapconsortium.org,2
@@ -13991,6 +14120,7 @@ date,host,requests
 2025-04-28,portal-prod.test.hubmapconsortium.org,11
 2025-05-29,portal-prod.test.hubmapconsortium.org,35
 2025-06-06,portal-prod.test.hubmapconsortium.org,13
+2025-06-11,portal-prod.test.hubmapconsortium.org,27
 2023-06-14,portal.dev.hubmapconsortium.org,1
 2023-08-03,portal.dev.hubmapconsortium.org,4
 2023-11-13,portal.dev.hubmapconsortium.org,21
@@ -14754,7 +14884,10 @@ date,host,requests
 2025-06-07,portal.hubmapconsortium.org,206
 2025-06-08,portal.hubmapconsortium.org,30
 2025-06-09,portal.hubmapconsortium.org,397
-2025-06-10,portal.hubmapconsortium.org,175
+2025-06-10,portal.hubmapconsortium.org,268
+2025-06-11,portal.hubmapconsortium.org,303
+2025-06-12,portal.hubmapconsortium.org,225
+2025-06-13,portal.hubmapconsortium.org,120
 2023-09-12,portal.stage.hubmapconsortium.org,2
 2024-07-10,portal.stage.hubmapconsortium.org,23
 2023-08-03,portal.test.hubmapconsortium.org,1
@@ -15408,7 +15541,10 @@ date,host,requests
 2025-06-07,purl.humanatlas.io,8
 2025-06-08,purl.humanatlas.io,65
 2025-06-09,purl.humanatlas.io,5
-2025-06-10,purl.humanatlas.io,7
+2025-06-10,purl.humanatlas.io,9
+2025-06-11,purl.humanatlas.io,8
+2025-06-12,purl.humanatlas.io,6
+2025-06-13,purl.humanatlas.io,3
 2023-06-16,purl.org,1
 2023-07-03,purl.org,1
 2023-07-05,purl.org,1
@@ -15499,6 +15635,7 @@ date,host,requests
 2025-02-19,sandbox.babylonjs.com,1
 2025-03-06,sandbox.babylonjs.com,2
 2025-06-03,sandbox.babylonjs.com,1
+2025-06-10,sandbox.babylonjs.com,4
 2025-01-24,sandbox.fiosgenomics.com,1
 2025-01-28,sandbox.fiosgenomics.com,1
 2023-06-13,sandboxasml.edcast.com,1
@@ -16016,7 +16153,10 @@ date,host,requests
 2025-06-06,sennetconsortium.org,1
 2025-06-08,sennetconsortium.org,1
 2025-06-09,sennetconsortium.org,1
-2025-06-10,sennetconsortium.org,1
+2025-06-10,sennetconsortium.org,2
+2025-06-11,sennetconsortium.org,3
+2025-06-12,sennetconsortium.org,1
+2025-06-13,sennetconsortium.org,1
 2025-01-12,shop.grandgrand.shop,1
 2025-06-06,sib-swiss.github.io,11
 2023-11-13,simplesite.com,1
@@ -16293,6 +16433,8 @@ date,host,requests
 2025-06-03,statics.teams.cdn.office.net,1
 2025-06-04,statics.teams.cdn.office.net,1
 2025-06-06,statics.teams.cdn.office.net,3
+2025-06-10,statics.teams.cdn.office.net,1
+2025-06-12,statics.teams.cdn.office.net,1
 2025-03-24,strong-truffle-66229a.netlify.app,6
 2025-04-02,strong-truffle-66229a.netlify.app,1
 2025-04-17,strong-truffle-66229a.netlify.app,5
@@ -16530,6 +16672,7 @@ date,host,requests
 2025-05-16,t.co,2
 2025-05-30,t.co,1
 2025-06-04,t.co,1
+2025-06-11,t.co,1
 2023-07-19,t.e2ma.net,3
 2023-07-24,t.e2ma.net,1
 2023-07-25,t.e2ma.net,1
@@ -16550,6 +16693,7 @@ date,host,requests
 2024-04-22,terminology.nfdi4chem.de,1
 2024-11-07,test-nginx-dot-broad-gtex-test.ue.r.appspot.com,1
 2025-03-11,test-nginx-dot-broad-gtex-test.ue.r.appspot.com,1
+2025-06-12,test-nginx-dot-broad-gtex-test.ue.r.appspot.com,4
 2024-12-18,test-nginx.broad-gtex-test.ue.r.appspot.com,3
 2024-12-27,test-nginx.broad-gtex-test.ue.r.appspot.com,1
 2023-07-04,test-www.nature.com,1
@@ -16646,6 +16790,7 @@ date,host,requests
 2025-06-02,test.gtexportal.org,1
 2025-06-05,test.gtexportal.org,4
 2025-06-07,test.gtexportal.org,3
+2025-06-12,test.gtexportal.org,1
 2025-02-26,thebestsapco.co.uk,1
 2025-02-28,thebestsapco.co.uk,1
 2023-09-12,tiger-gym.com,1
@@ -16711,6 +16856,8 @@ date,host,requests
 2024-12-16,urldefense.proofpoint.com,1
 2025-02-27,usc-excel.officeapps.live.com,2
 2025-06-09,usc-onenote.officeapps.live.com,1
+2025-06-11,usc-onenote.officeapps.live.com,1
+2025-06-12,usc-onenote.officeapps.live.com,1
 2025-04-17,usc-powerpoint.officeapps.live.com,1
 2025-04-21,usc-powerpoint.officeapps.live.com,1
 2023-12-07,usc-word-edit.officeapps.live.com,1
@@ -16796,6 +16943,8 @@ date,host,requests
 2025-01-12,void-star.net,1
 2025-06-03,vpe.qchjs.com,1
 2023-11-13,vscode.dev,1
+2025-06-11,vscode.dev,1
+2025-06-12,vscode.dev,7
 2023-08-27,wcc.on24.com,1
 2024-12-12,web.skype.com,1
 2024-12-15,web.skype.com,1
@@ -16817,6 +16966,7 @@ date,host,requests
 2025-03-13,websearch.rakuten.co.jp,1
 2025-04-06,websearch.rakuten.co.jp,1
 2025-05-26,websearch.rakuten.co.jp,1
+2025-06-11,websearch.rakuten.co.jp,1
 2024-03-02,weixin110.qq.com,1
 2025-05-03,workation.trip8.jp,1
 2024-08-19,workbench-czi-cpw.mvm.ed.ac.uk,2
@@ -16876,6 +17026,7 @@ date,host,requests
 2025-01-30,workona.com,1
 2025-01-31,workona.com,1
 2025-06-03,workona.com,1
+2025-06-11,workona.com,1
 2025-05-14,workspaces-pt.dev.hubmapconsortium.org,27
 2025-05-20,workspaces-pt.dev.hubmapconsortium.org,33
 2025-05-12,workspaces-pt.hubmapconsortium.org,31
@@ -17190,6 +17341,8 @@ date,host,requests
 2025-06-03,www.bing.com,2
 2025-06-06,www.bing.com,1
 2025-06-07,www.bing.com,1
+2025-06-10,www.bing.com,1
+2025-06-11,www.bing.com,1
 2024-12-19,www.bing.io,1
 2024-12-24,www.bing.io,2
 2025-02-05,www.bing.io,1
@@ -17912,7 +18065,10 @@ date,host,requests
 2025-06-07,www.ebi.ac.uk,61
 2025-06-08,www.ebi.ac.uk,64
 2025-06-09,www.ebi.ac.uk,72
-2025-06-10,www.ebi.ac.uk,59
+2025-06-10,www.ebi.ac.uk,103
+2025-06-11,www.ebi.ac.uk,110
+2025-06-12,www.ebi.ac.uk,105
+2025-06-13,www.ebi.ac.uk,73
 2024-05-17,www.ecosia.org,1
 2024-05-20,www.ecosia.org,2
 2024-05-30,www.ecosia.org,1
@@ -18056,6 +18212,7 @@ date,host,requests
 2025-05-26,www.findglocal.com,1
 2025-06-01,www.findglocal.com,1
 2025-06-06,www.findglocal.com,1
+2025-06-12,www.findglocal.com,1
 2023-06-08,www.frontiersin.org,2
 2023-07-07,www.frontiersin.org,2
 2023-08-04,www.frontiersin.org,1
@@ -18871,7 +19028,10 @@ date,host,requests
 2025-06-07,www.google.com,17
 2025-06-08,www.google.com,28
 2025-06-09,www.google.com,28
-2025-06-10,www.google.com,18
+2025-06-10,www.google.com,36
+2025-06-11,www.google.com,68
+2025-06-12,www.google.com,60
+2025-06-13,www.google.com,20
 2023-06-23,www.google.com.au,1
 2023-06-25,www.google.com.au,1
 2023-06-27,www.google.com.au,1
@@ -18997,6 +19157,7 @@ date,host,requests
 2025-05-30,www.google.com.hk,2
 2025-06-03,www.google.com.hk,1
 2025-06-04,www.google.com.hk,2
+2025-06-12,www.google.com.hk,4
 2024-06-21,www.google.com.mx,1
 2024-07-11,www.google.com.mx,1
 2024-07-22,www.google.com.pe,1
@@ -19715,7 +19876,10 @@ date,host,requests
 2025-06-07,www.gtexportal.org,697
 2025-06-08,www.gtexportal.org,4428
 2025-06-09,www.gtexportal.org,4353
-2025-06-10,www.gtexportal.org,1458
+2025-06-10,www.gtexportal.org,2482
+2025-06-11,www.gtexportal.org,2913
+2025-06-12,www.gtexportal.org,4698
+2025-06-13,www.gtexportal.org,2829
 2023-10-28,www.gumbo.com,3
 2023-10-15,www.harpro.net,1
 2025-01-20,www.headsketch.xyz,1
@@ -19723,6 +19887,7 @@ date,host,requests
 2025-01-28,www.headsketch.xyz,1
 2025-02-01,www.headsketch.xyz,1
 2024-04-02,www.heidischlehlein.com,1
+2025-06-11,www.hidivelab.org,1
 2024-09-07,www.hidracor.com.br,2
 2024-02-21,www.hiwpro.xyz,1
 2025-02-25,www.hongyuan-chem.cn,1
@@ -19738,7 +19903,9 @@ date,host,requests
 2025-06-06,www.humanatlas.asia,14
 2025-06-08,www.humanatlas.asia,5
 2025-06-09,www.humanatlas.asia,1
-2025-06-10,www.humanatlas.asia,4
+2025-06-10,www.humanatlas.asia,5
+2025-06-11,www.humanatlas.asia,5
+2025-06-12,www.humanatlas.asia,1
 2024-09-18,www.humanatlas.io,1
 2024-10-30,www.humanatlas.io,1
 2024-12-24,www.ibircom.com,2
@@ -20348,7 +20515,10 @@ date,host,requests
 2025-06-06,www.nature.com,2
 2025-06-08,www.nature.com,1
 2025-06-09,www.nature.com,1
-2025-06-10,www.nature.com,3
+2025-06-10,www.nature.com,4
+2025-06-11,www.nature.com,3
+2025-06-12,www.nature.com,2
+2025-06-13,www.nature.com,1
 2023-08-23,www.ncbi.nlm.nih.gov,1
 2023-09-22,www.ncbi.nlm.nih.gov,1
 2023-11-08,www.ncbi.nlm.nih.gov,1
@@ -20463,6 +20633,7 @@ date,host,requests
 2025-05-20,www.notion.so,1
 2025-05-23,www.notion.so,1
 2025-05-31,www.notion.so,1
+2025-06-10,www.notion.so,1
 2025-02-07,www.novalskincare.net,4
 2023-12-01,www.npmjs.com,1
 2025-02-27,www.npmjs.com,1
@@ -20518,6 +20689,7 @@ date,host,requests
 2025-04-30,www.perplexity.ai,2
 2025-06-02,www.perplexity.ai,3
 2025-06-08,www.perplexity.ai,1
+2025-06-10,www.perplexity.ai,1
 2024-11-16,www.psc.edu,1
 2024-11-17,www.psc.edu,1
 2024-11-18,www.psc.edu,3
@@ -20671,6 +20843,7 @@ date,host,requests
 2025-05-19,www.thermofisher.com,1
 2025-05-21,www.thermofisher.com,1
 2025-06-06,www.thermofisher.com,1
+2025-06-11,www.thermofisher.com,1
 2025-05-07,www.tinkercad.com,1
 2024-06-04,www.tommysautomotivecare.com,1
 2023-12-01,www.tublm.com,2
@@ -20680,6 +20853,7 @@ date,host,requests
 2025-06-07,www.universiteitleiden.nl,2
 2025-06-09,www.universiteitleiden.nl,2
 2025-06-10,www.universiteitleiden.nl,2
+2025-06-12,www.universiteitleiden.nl,2
 2024-07-16,www.vizbi.org,1
 2024-07-21,www.vizbi.org,1
 2024-04-25,www.w3schools.com,23
@@ -20994,6 +21168,7 @@ date,host,requests
 2025-05-19,yandex.ru,2
 2025-06-04,yandex.ru,1
 2025-06-07,yandex.ru,1
+2025-06-11,yandex.ru,1
 2025-05-12,yasgui.org,11
 2023-06-06,yasgui.triply.cc,1
 2023-06-08,yasgui.triply.cc,1
@@ -21314,6 +21489,8 @@ date,host,requests
 2025-05-25,yasgui.triply.cc,2
 2025-05-27,yasgui.triply.cc,1
 2025-05-30,yasgui.triply.cc,13
+2025-06-10,yasgui.triply.cc,4
+2025-06-12,yasgui.triply.cc,5
 2025-03-01,youtu.be,5
 2024-04-15,youtube.com,1
 2025-03-01,youtube.com,5
