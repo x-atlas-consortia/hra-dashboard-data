@@ -53,7 +53,7 @@ items:
             count: 19170
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv - sum of viewCount
           - label: BioArt requests for 2D DOs
-            count: 4631
+            count: 6569
             source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
   - type: VegaContainer
     title: Digital Object Usage
