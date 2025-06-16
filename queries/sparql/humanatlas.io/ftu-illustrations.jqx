@@ -10,6 +10,7 @@ group_by(.version) | sort_by(first.version) | reverse |
         fileUrl: .png,
         fullscreenUrl: .svg,
         sourceDataUrl: .url,
+        crosswalkUrl: .csv,
         files: [
           {
             label: "Adobe Illustrator",
