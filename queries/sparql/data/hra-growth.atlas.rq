@@ -7,12 +7,13 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX LOD: <https://lod.humanatlas.io>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-SELECT DISTINCT ?group ?date ?count ?order
+SELECT DISTINCT ?purl ?group ?date ?count ?order
 WHERE {
-  GRAPH <https://lod.humanatlas.io> {
+  GRAPH LOD: {
     [] a dcat:Dataset ;
           schema:name ?name ;
           schema:additionalType ?type ;
@@ -79,11 +80,13 @@ WHERE {
   UNION
   # OMAPs
   {
-    SELECT ?purl ("OMAPs" as ?group) (COUNT(DISTINCT(?memberString)) as ?count) (8 as ?order)
+    SELECT ?purl ("OMAPs" as ?group) (COUNT(DISTINCT(?member)) as ?count) (8 as ?order)
     WHERE {
-      GRAPH <https://lod.humanatlas.io> {
-        ?purl prov:hadMember ?memberString .
-        FILTER(CONTAINS(?memberString, '/omap/'))
+      GRAPH LOD: {
+        [] a dcat:Dataset ;
+          rdfs:seeAlso ?purl ;
+          prov:hadMember ?member .
+        FILTER(CONTAINS(STR(?member), '/omap/'))
       }
     }
     GROUP BY ?purl
@@ -91,11 +94,13 @@ WHERE {
   # 2D FTU illustrations
   UNION
   {
-    SELECT ?purl ("2D FTU illustrations" as ?group) (COUNT(DISTINCT(?memberString)) as ?count) (9 as ?order)
+    SELECT ?purl ("2D FTU illustrations" as ?group) (COUNT(DISTINCT(?member)) as ?count) (9 as ?order)
     WHERE {
-      GRAPH <https://lod.humanatlas.io> {
-        ?purl prov:hadMember ?memberString .
-        FILTER(CONTAINS(?memberString, '/2d-ftu/') && !CONTAINS(?memberString, 'crosswalk'))
+      GRAPH LOD: {
+        [] a dcat:Dataset ;
+          rdfs:seeAlso ?purl ;
+          prov:hadMember ?member .
+        FILTER(CONTAINS(STR(?member), '/2d-ftu/') && !CONTAINS(STR(?member), 'crosswalk'))
       }
     }
     GROUP BY ?purl
