@@ -10,7 +10,7 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 
-SELECT DISTINCT ?version (?organ as ?nameOrgan) ?image (CONCAT(?organ, ' icon') as ?imageAlt) ?name (?purl as ?url) ?alt ?threeDimImage
+SELECT DISTINCT ?version (?organ as ?nameOrgan) ?image (CONCAT(?organ, ' icon') as ?imageAlt) ?name (?purl as ?url) ?alt ?threeDimImage ?csv
 # SELECT DISTINCT (CONCAT('("', ?organ, '" "assets/images/', REPLACE(LCASE(?organ), ' ', '_'), '.svg")') as ?foo)
 FROM <https://lod.humanatlas.io>
 WHERE {
@@ -48,6 +48,20 @@ WHERE {
 
     BIND(?glbDownload as ?threeDimImage)
     FILTER(?glbMediaType = 'model/gltf-binary')
+  }
+
+  {
+    [] a dcat:Dataset ;
+      rdfs:seeAlso ?purl ;
+      prov:wasDerivedFrom [
+        dcat:distribution [
+          dcat:downloadURL ?csvDownload ;
+          dcat:mediaType ?csvMediaType ;
+        ] ;
+      ] .
+
+    BIND(?csvDownload as ?csv)
+    FILTER(?csvMediaType = 'text/csv')
   }
 
   {

@@ -9,6 +9,7 @@ group_by(.version) | sort_by(first.version) | reverse |
         alt: .alt,
         fileUrl: .threeDimImage,
         sourceDataUrl: .url,
+        crosswalkUrl: .csv,
         files: []
       })
     })
