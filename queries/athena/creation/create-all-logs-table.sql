@@ -12,7 +12,7 @@ SELECT
     year(date) AS year,
     month(date) AS month
 FROM (
-  SELECT *, 'www' as distribution, 'Portal' as "site" FROM "default"."humanatlas_io_logs"
+  SELECT *, 'www' as distribution, 'Portal' as "site" FROM "default"."humanatlas_io_logs" AND "cs_uri_stem" NOT IN ('/tr', '/tr-dev')
   UNION ALL
   SELECT *, 'docs' as distribution, 'Portal' as "site" FROM "default"."docs_humanatlas_io_logs"
   UNION ALL
@@ -32,6 +32,6 @@ FROM (
   UNION ALL
   SELECT *, 'purl' as distribution, 'KG' as "site" FROM "default"."purl_logs"
   UNION ALL
-  SELECT *, 'events' as distribution, 'Events' as "site" FROM "default"."cdn_logs" WHERE "cs_uri_stem" IN ('/tr', '/tr-dev')
+  SELECT *, 'events' as distribution, 'Events' as "site" FROM "default"."humanatlas_io_logs" WHERE "cs_uri_stem" IN ('/tr', '/tr-dev')
 )
 WHERE date <= CAST(current_date - interval '1' day AS date);
