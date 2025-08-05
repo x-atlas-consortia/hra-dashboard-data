@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import { athenaQuery } from '../utils/athena.js';
 
 const IN_SQL = process.argv[2];
-const OUTPUT = process.argv[3];
+const OUTPUT = process.argv.length === 4 ? process.argv[3] : '';
 
 const query = readFileSync(IN_SQL).toString();
 const results = [];
