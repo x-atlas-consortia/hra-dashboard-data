@@ -5,9 +5,9 @@ CREATE OR REPLACE SECRET secret (
     PROVIDER credential_chain
 );
 
+CREATE TABLE raw_logs AS
 SELECT *
-FROM read_parquet('s3://hra-cdn-logs/all_logs/**/*',
+FROM read_parquet('s3://hra-cdn-logs/raw_logs/**/*',
   hive_partitioning = true,
-  hive_types = {'site': VARCHAR, 'year': INT, 'month': INT }
-)
-WHERE site = 'Events' AND year = 2025 AND month = 8;
+  hive_types = {'DistributionId': VARCHAR, 'year': INT, 'month': INT, 'day': INT }
+);
