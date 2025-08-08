@@ -3,7 +3,7 @@ CREATE TABLE "default"."old_raw_logs" WITH (
 		external_location = 's3://hra-cdn-logs/old_raw_logs/',
 		write_compression = 'SNAPPY'
 	) AS
-SELECT
+SELECT DISTINCT
   CAST(to_iso8601("date") AS varchar) as "date",
   "time",
   "x_edge_location",
@@ -33,10 +33,14 @@ SELECT
   CAST("sc_range_end" AS varchar) AS "sc_range_end",
   CAST(CAST(to_unixtime(CAST(to_iso8601("date") || ' ' || "time" AS TIMESTAMP)) AS BIGINT) AS varchar) AS "timestamp",
   CAST(CAST(to_unixtime(CAST(to_iso8601("date") || ' ' || "time" AS TIMESTAMP)) * 1000 AS BIGINT) AS varchar) AS "timestamp_ms",
-  CAST('-' AS varchar) AS "c_country",
+  COALESCE("c1"."country", "c2"."country", '-') AS "c_country",
   "distribution",
   CAST(year(date) AS int) AS year,
   CAST(month(date) AS int) AS month,
   CAST(day(date) AS int) AS day
 FROM "default"."old_logs"
+LEFT OUTER JOIN "default"."ip_country_lookup" AS "c1" ON
+    ("c1"."country" != '-' AND "default"."old_logs"."c_ip" = "c1"."ip")
+LEFT OUTER JOIN "default"."ip_country_lookup" AS "c2" ON 
+    ("c2"."country" != '-' AND "default"."old_logs"."x_forwarded_for" = "c2"."ip")
 ORDER BY "timestamp";

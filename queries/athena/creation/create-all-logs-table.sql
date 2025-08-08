@@ -57,9 +57,9 @@ SELECT
   END AS varchar) AS "site",
   "year"
 FROM (
-  SELECT * FROM "default"."old_raw_logs"
+  SELECT * FROM "default"."old_raw_logs" -- WHERE CAST("date" as DATE) < date("2025-08-08")
   UNION ALL
-  SELECT * FROM "default"."raw_logs"
+  SELECT * FROM "default"."raw_logs" -- WHERE CAST("date" as DATE) >= date("2025-08-08")
 )
 -- WHERE date <= CAST(current_date - interval '1' day AS date);
 ORDER BY "timestamp_ms"
