@@ -1,9 +1,4 @@
-CREATE TABLE "default"."all_logs" WITH (
-		format = 'PARQUET',
-		external_location = 's3://hra-cdn-logs/all_logs/',
-		write_compression = 'SNAPPY',
-		partitioned_by = ARRAY['site', 'year']
-	) AS
+CREATE VIEW "default"."all_logs_view" AS
 SELECT
   CASE
     WHEN "c_ip" != '-' THEN to_base64url(substr(sha256(CAST(CONCAT("c_ip", "salt_string") AS varbinary)), 1, 16))
@@ -61,12 +56,6 @@ SELECT
     ELSE "distribution"
   END AS varchar) AS "site",
   "year"
-FROM (
-  SELECT * FROM "default"."old_raw_logs" -- WHERE CAST("date" as DATE) < date("2025-08-08")
-  UNION ALL
-  SELECT * FROM "default"."raw_logs" -- WHERE CAST("date" as DATE) >= date("2025-08-08")
-)
-CROSS JOIN
-  analytics_salt
--- WHERE date <= CAST(current_date - interval '1' day AS date);
+FROM "default"."raw_logs" -- WHERE CAST("date" as DATE) >= date("2025-08-08")
+CROSS JOIN analytics_salt
 ORDER BY "timestamp_ms"
