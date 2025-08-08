@@ -5,6 +5,11 @@ CREATE TABLE "default"."all_logs" WITH (
 		partitioned_by = ARRAY['site', 'year']
 	) AS
 SELECT
+  CASE
+    WHEN "c_ip" != '-' THEN to_base64(substr(sha256(CAST(CONCAT("c_ip", "salt_string") AS varbinary)), 1, 16))
+    WHEN "x_forwarded_for" != '-' THEN to_base64(substr(sha256(CAST(CONCAT("x_forwarded_for", "salt_string") AS varbinary)), 1, 16))
+    ELSE '-'
+  END AS anon_id,
   CAST("date" AS DATE) AS "date",
   "time",
   "x_edge_location",
@@ -61,5 +66,7 @@ FROM (
   UNION ALL
   SELECT * FROM "default"."raw_logs" -- WHERE CAST("date" as DATE) >= date("2025-08-08")
 )
+CROSS JOIN
+  analytics_salt
 -- WHERE date <= CAST(current_date - interval '1' day AS date);
 ORDER BY "timestamp_ms"

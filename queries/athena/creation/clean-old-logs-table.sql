@@ -34,6 +34,8 @@ SELECT DISTINCT
   CAST(CAST(to_unixtime(CAST(to_iso8601("date") || ' ' || "time" AS TIMESTAMP)) AS BIGINT) AS varchar) AS "timestamp",
   CAST(CAST(to_unixtime(CAST(to_iso8601("date") || ' ' || "time" AS TIMESTAMP)) * 1000 AS BIGINT) AS varchar) AS "timestamp_ms",
   COALESCE("c1"."country", "c2"."country", '-') AS "c_country",
+  "c_ip",
+  "x_forwarded_for",
   "distribution",
   CAST(year(date) AS int) AS year,
   CAST(month(date) AS int) AS month,

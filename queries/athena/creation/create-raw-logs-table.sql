@@ -28,7 +28,9 @@ CREATE EXTERNAL TABLE `default`.`raw_logs` (
   `sc_range_end` string,
   `timestamp` string,
   `timestamp_ms` string,
-  `c_country` string
+  `c_country` string,
+  `c_ip` string,
+  `x_forwarded_for` string
 )
 PARTITIONED BY(
 	distribution string,
