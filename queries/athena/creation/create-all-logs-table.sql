@@ -62,11 +62,11 @@ SELECT
   END AS varchar) AS "site",
   "year"
 FROM (
-  SELECT * FROM "default"."old_raw_logs" -- WHERE CAST("date" as DATE) < date("2025-08-08")
+  SELECT * FROM "default"."old_raw_logs" WHERE CAST("date" as DATE) < date('2025-08-10')
   UNION ALL
-  SELECT * FROM "default"."raw_logs" -- WHERE CAST("date" as DATE) >= date("2025-08-08")
+  SELECT * FROM "default"."raw_logs" WHERE CAST("date" as DATE) >= date('2025-08-10')
 )
 CROSS JOIN
   analytics_salt
--- WHERE date <= CAST(current_date - interval '1' day AS date);
-ORDER BY "timestamp_ms"
+WHERE CAST("date" as DATE) <= CAST(current_date - interval '1' day AS date)
+ORDER BY "timestamp_ms";
