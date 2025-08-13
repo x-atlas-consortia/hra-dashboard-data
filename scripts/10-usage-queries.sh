@@ -3,6 +3,7 @@ shopt -s extglob
 set -ev
 
 time src/usage/scripts/setup-athena-table.sh
+# node src/cli/athena-query.js queries/athena/creation/update-all-logs-table.sql
 
 node src/usage/global-portal-usage.js
 node src/cli/athena-query.js queries/athena/usage/raw-referrers.sql data/usage/raw-referrers.csv
