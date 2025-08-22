@@ -11,7 +11,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to Aug 4th, 2025.
+        tooltip: Statistics covering data usage from HRA resources up to Aug 22nd, 2025.
         items:
           # - label: HRA papers
           #   count: 1011
@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 8552
+            count: 8788
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,15 +29,15 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to Aug 12th, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to Aug 21st, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 1286606
+            count: 1328375
           - label: HRA Portal requests
-            count: 2561467
+            count: 2613649
           - label: HRA KG requests
-            count: 2634144
+            count: 2677818
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to June 13, 2025.
         items:
