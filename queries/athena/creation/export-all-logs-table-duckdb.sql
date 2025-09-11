@@ -13,3 +13,5 @@ FROM read_parquet('s3://hra-cdn-logs/all_logs/**/*',
 );
 
 COPY all_logs TO 'hra-logs.parquet' (FORMAT parquet, COMPRESSION zstd);
+
+COPY (SELECT * FROM all_logs ORDER BY "date" DESC) TO 'hra-logs.csv.gz'
