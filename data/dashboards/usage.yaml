@@ -45,7 +45,7 @@ items:
             count: 24912
             source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 2290 + 11091'
           - label: NCBO BioPortal requests
-            count: 2025
+            count: 27554
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
