@@ -35,7 +35,29 @@ SELECT
   CAST("timestamp" as BIGINT) AS "timestamp",
   CAST("timestamp_ms" as BIGINT) AS "timestamp_ms",
   "c_country",
-  split(cs_uri_query, '&') AS cs_uri_query_parts,
+  CASE
+    WHEN cs_uri_query = '-' THEN map()
+    ELSE coalesce(try(map(
+        transform(
+            split(cs_uri_query, '&'),
+            kv -> split(kv, '=')[1]
+        ),
+        transform(
+            split(cs_uri_query, '&'),
+            kv -> coalesce(try(url_decode(url_decode(split(kv, '=')[2]))), '')
+        )
+    )), map())
+  END AS query,
+  CASE
+    WHEN LOWER(cs_user_agent) LIKE '%gptbot%' THEN 'AI-Assistant / Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%openai%' THEN 'AI-Assistant / Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%anthropic%' THEN 'AI-Assistant / Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%claude%' THEN 'AI-Assistant / Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%crawler%' THEN 'Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%spider%' THEN 'Bot'
+    WHEN LOWER(cs_user_agent) LIKE '%bot%' THEN 'Bot'
+    ELSE 'Likely Human'
+  END AS traffic_type,
   COALESCE(url_extract_host("cs_Referer"), '') as "referrer",
   CAST(substr("x_edge_location", 1, 3) AS varchar) as "airport",
   "month",
