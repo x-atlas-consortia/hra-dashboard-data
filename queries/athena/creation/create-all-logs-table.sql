@@ -49,7 +49,7 @@ SELECT
         ),
         transform(
             split(cs_uri_query, '&'),
-            kv -> coalesce(try(split(kv, '=')[2]), '')
+            kv -> coalesce(try(url_decode(url_decode(split(kv, '=')[2]))), '')
         )
     )), map())
   END AS query,
