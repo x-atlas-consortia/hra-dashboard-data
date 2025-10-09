@@ -40,7 +40,19 @@ SELECT
   CAST("timestamp" as BIGINT) AS "timestamp",
   CAST("timestamp_ms" as BIGINT) AS "timestamp_ms",
   "c_country",
-  split(cs_uri_query, '&') AS cs_uri_query_parts,
+  CASE
+    WHEN cs_uri_query = '-' THEN map()
+    ELSE coalesce(try(map(
+        transform(
+            split(cs_uri_query, '&'),
+            kv -> split(kv, '=')[1]
+        ),
+        transform(
+            split(cs_uri_query, '&'),
+            kv -> coalesce(try(split(kv, '=')[2]), '')
+        )
+    )), map())
+  END AS query,
   COALESCE(url_extract_host("cs_Referer"), '') as "referrer",
   CAST(substr("x_edge_location", 1, 3) AS varchar) as "airport",
   "month",
