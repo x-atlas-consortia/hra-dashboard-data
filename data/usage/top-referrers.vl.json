@@ -30,7 +30,7 @@
     }
   },
   "encoding": {
-    "y": { "field": "host", "type": "nominal", "title": "Host" },
+    "y": { "field": "host", "type": "nominal", "title": "Host", "sort": "-x" },
     "x": {
       "field": "requests",
       "type": "quantitative",

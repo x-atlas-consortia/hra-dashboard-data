@@ -12,6 +12,7 @@ const RENAMES = {
   'portal-prod.stage.hubmapconsortium.org': 'portal.hubmapconsortium.org',
   'portal.dev.hubmapconsortium.org': 'portal.hubmapconsortium.org',
   'portal.test.hubmapconsortium.org': 'portal.hubmapconsortium.org',
+  'ingest.dev.hubmapconsortium.org': 'ingest.hubmapconsortium.org'
 };
 const SKIP = new Set([
   '127.0.0.1',
@@ -20,6 +21,7 @@ const SKIP = new Set([
   'ccf-ontology.hubmapconsortium.org',
   'hubmap-ccf-ui.netlify.app',
   'kparekh21.github.io', // hra-pop-validation
+  'cns-iu.github.io',
   'humanatlas-io.netlify.app',
 ]);
 
