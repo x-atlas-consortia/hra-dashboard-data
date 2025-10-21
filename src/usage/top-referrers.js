@@ -19,14 +19,14 @@ const SKIP = new Set([
   'hubmapconsortium.github.io',
   'ccf-ontology.hubmapconsortium.org',
   'hubmap-ccf-ui.netlify.app',
-  'd2xbz98xx8fqq7.cloudfront.net', // humanatlas.io
+  'kparekh21.github.io', // hra-pop-validation
   'humanatlas-io.netlify.app',
 ]);
 
 const requestsByHost = {};
 for (let { host, requests } of referrers.data) {
   host = host ? host + '' : host;
-  if (host && !SKIP.has(host) && !host.endsWith('humanatlas.io') && !host.includes('hubmap-ccf-ui.netlify.app') && !host.includes('hra-ui.netlify.app')) {
+  if (host && !SKIP.has(host) && !host.endsWith('humanatlas.io') && !host.endsWith('cloudfront.net') && !host.includes('hubmap-ccf-ui.netlify.app') && !host.includes('hra-ui.netlify.app')) {
     host = RENAMES[host] ?? host;
     requestsByHost[host] = (requestsByHost[host] ?? 0) + requests;
   }
