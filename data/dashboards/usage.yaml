@@ -61,7 +61,7 @@ items:
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/user-usage.vl.json
   - type: VegaContainer
     title: HRA Products Usage
-    tooltip: This graph shows web requests to various HRA resources over time, computed daily with a two week rolling average. CDN = Content Deliver Network; KG = Knowledge Graph; API = Application Programming Interface.
+    tooltip: This graph shows web requests to various HRA resources over time, computed daily with a two week rolling average. CDN = Content Delivery Network; KG = Knowledge Graph; API = Application Programming Interface.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/products-usage.vl.json
   - type: VegaContainer
     title: Global HRA Portal Usage
