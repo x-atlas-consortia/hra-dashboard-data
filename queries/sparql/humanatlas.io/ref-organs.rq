@@ -27,7 +27,7 @@ WHERE {
     # BIND(STRAFTER(STRBEFORE(REPLACE(REPLACE(STR(?title), "Functional Tissue Unit \\(FTU\\) ", ""), " FTU", ""), " for "), "2D ") as ?name)
     # BIND(STRAFTER(STR(?title), " for ") as ?organ)
 
-    BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(STR(?title), "3D Reference Organ for ", ""), "3D Reference organ for ", ""), "3D Reference Organ Set for ", ""), " Full Term,", ""), " \\(mammary gland\\)", ""), " left", ", Left"), " right", ", Right"), "United", "All Organs"), "Breast", "Mammary Gland") as ?fixed)
+    BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(STR(?title), "3D Reference Organ for ", ""), "3D Reference organ for ", ""), "3D Reference Organ Set for ", ""), "3D reference organ for ", ""), " Full Term,", ""), " \\(mammary gland\\)", ""), " left", ", Left"), " right", ", Right"), "United", "All Organs"), "Breast", "Mammary Gland") as ?fixed)
 
     BIND(STRBEFORE(?fixed, ",") as ?organ)
     BIND(REPLACE(REPLACE(STRAFTER(STR(?fixed), ", "), ", Left", ", L"), ", Right", ", R") as ?name)
@@ -83,6 +83,7 @@ WHERE {
 
   OPTIONAL {
     VALUES (?organ ?image) {
+      ("subcutaneous adipose tissue" "organ:adipose")
       ("Blood Vasculature" "organ:blood-vasculature")
       ("Brain" "organ:brain")
       ("Mammary Gland" "organ:mammary-gland")
@@ -92,6 +93,7 @@ WHERE {
       ("Kidney" "organ:kidneys")
       ("Knee" "organ:knee")
       ("Large Intestine" "organ:large-intestine")
+      ("intervertebral discs" "organ:intervertebral-discs")
       ("Intestine" "organ:large-intestine")
       ("Larynx" "organ:larynx")
       ("Liver" "organ:liver")
