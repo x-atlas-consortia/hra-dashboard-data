@@ -11,7 +11,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to Oct 26, 2025.
+        tooltip: Statistics covering data usage from HRA resources up to December 11, 2025.
         items:
           # - label: HRA papers
           #   count: 1011
@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 9333
+            count: 11554
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,15 +29,15 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to Oct 26, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to December 10, 2025.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 1535722
+            count: 1654739
           - label: HRA Portal requests
-            count: 2957070
+            count: 3200582
           - label: HRA KG requests
-            count: 3039826
+            count: 3283306
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to June 13, 2025.
         items:
@@ -45,7 +45,7 @@ items:
             count: 24912
             source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 2290 + 11091'
           - label: NCBO BioPortal requests
-            count: 27554
+            count: 29044
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1

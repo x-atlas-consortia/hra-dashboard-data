@@ -13,17 +13,20 @@ bone marrow,CTAnn Crosswalks,3
 bony pelvis,3D Reference Organ,2
 brain,ASCT+B Table,1
 brain,3D Reference Organ,2
+esophagus,OMAP,1
 eye,ASCT+B Table,1
 eye,CTAnn Crosswalks,3
 eye,3D Reference Organ,4
 eye,OMAP,1
 fallopian tube,ASCT+B Table,1
 fallopian tube,3D Reference Organ,2
+fallopian tube,OMAP,1
 heart,ASCT+B Table,1
 heart,CTAnn Crosswalks,3
 heart,3D Reference Organ,2
-heart,OMAP,1
+heart,OMAP,2
 hippocampal gyrus (formation),CTAnn Crosswalks,1
+intervertebral disk,3D Reference Organ,2
 intestine,OMAP,2
 islet of langerhans,CTAnn Crosswalks,3
 kidney,ASCT+B Table,1
@@ -42,7 +45,7 @@ liver,ASCT+B Table,1
 liver,CTAnn Crosswalks,3
 liver,2D FTU Illustration,1
 liver,3D Reference Organ,2
-liver,OMAP,1
+liver,OMAP,2
 lung,ASCT+B Table,1
 lung,CTAnn Crosswalks,4
 lung,2D FTU Illustration,2
@@ -51,7 +54,7 @@ lung,OMAP,3
 lymph node,ASCT+B Table,1
 lymph node,CTAnn Crosswalks,5
 lymph node,3D Reference Organ,2
-lymph node,OMAP,1
+lymph node,OMAP,2
 lymph vasculature,ASCT+B Table,1
 main bronchus,ASCT+B Table,1
 main bronchus,3D Reference Organ,2
@@ -64,6 +67,7 @@ mouth mucosa,OMAP,1
 muscular system,ASCT+B Table,1
 ovary,ASCT+B Table,1
 ovary,3D Reference Organ,2
+ovary,OMAP,1
 palatine tonsil,ASCT+B Table,1
 palatine tonsil,CTAnn Crosswalks,1
 palatine tonsil,3D Reference Organ,4
@@ -103,6 +107,7 @@ spleen,2D FTU Illustration,2
 spleen,3D Reference Organ,2
 spleen,OMAP,1
 sternum,3D Reference Organ,1
+subcutaneous abdominal adipose tissue,3D Reference Organ,2
 thymus,ASCT+B Table,1
 thymus,CTAnn Crosswalks,6
 thymus,2D FTU Illustration,1
@@ -120,5 +125,6 @@ urinary bladder,3D Reference Organ,2
 uterus,ASCT+B Table,1
 uterus,CTAnn Crosswalks,1
 uterus,3D Reference Organ,1
+uterus,OMAP,1
 vascular system,CTAnn Crosswalks,1
 vermiform appendix,OMAP,1

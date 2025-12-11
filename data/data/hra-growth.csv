@@ -7,7 +7,7 @@ experts,2021-05-06,16,2
 experts,2021-07-28,1,2
 experts,2021-12-01,48,2
 experts,2021-12-15,2,2
-experts,2022-05-06,23,2
+experts,2022-05-06,24,2
 experts,2022-12-15,9,2
 experts,2023-06-15,21,2
 experts,2023-08-18,1,2
@@ -16,7 +16,10 @@ experts,2023-12-05,1,2
 experts,2023-12-15,8,2
 experts,2024-06-15,16,2
 experts,2024-11-23,1,2
-experts,2025-06-15,11,2
+experts,2025-06-15,9,2
+experts,2025-08-11,2,2
+experts,2025-09-04,2,2
+experts,2025-12-15,15,2
 organs,2021-03-12,26,4
 organs,2021-12-01,22,4
 organs,2022-05-06,5,4
@@ -26,6 +29,7 @@ organs,2023-12-15,0,4
 organs,2024-06-15,1,4
 organs,2024-12-15,6,4
 organs,2025-06-15,2,4
+organs,2025-12-15,4,4
 anatomical structures,2021-03-12,1357,5
 anatomical structures,2021-12-01,1154,5
 anatomical structures,2022-05-06,107,5
@@ -35,6 +39,7 @@ anatomical structures,2023-12-15,226,5
 anatomical structures,2024-06-15,164,5
 anatomical structures,2024-12-15,35,5
 anatomical structures,2025-06-15,25,5
+anatomical structures,2025-12-15,91,5
 cell types,2021-03-12,511,6
 cell types,2021-12-01,215,6
 cell types,2022-05-06,9,6
@@ -44,6 +49,7 @@ cell types,2023-12-15,-23,6
 cell types,2024-06-15,118,6
 cell types,2024-12-15,-19,6
 cell types,2025-06-15,15,6
+cell types,2025-12-15,31,6
 biomarkers,2021-03-12,1255,7
 biomarkers,2021-12-01,254,7
 biomarkers,2022-05-06,13,7
@@ -53,6 +59,7 @@ biomarkers,2023-12-15,15,7
 biomarkers,2024-06-15,14,7
 biomarkers,2024-12-15,-6,7
 biomarkers,2025-06-15,0,7
+biomarkers,2025-12-15,52,7
 OMAPs,2021-12-01,1,8
 OMAPs,2022-05-06,6,8
 OMAPs,2022-12-15,0,8
@@ -61,6 +68,7 @@ OMAPs,2023-12-15,0,8
 OMAPs,2024-06-15,8,8
 OMAPs,2024-12-15,2,8
 OMAPs,2025-06-15,7,8
+OMAPs,2025-12-15,7,8
 2D FTU illustrations,2022-05-06,8,9
 2D FTU illustrations,2022-12-15,11,9
 2D FTU illustrations,2023-06-15,2,9
@@ -68,10 +76,11 @@ OMAPs,2025-06-15,7,8
 2D FTU illustrations,2024-06-15,0,9
 2D FTU illustrations,2024-12-15,0,9
 2D FTU illustrations,2025-06-15,4,9
+2D FTU illustrations,2025-12-15,0,9
 SOPs,2022-02-02,1,10
 SOPs,2022-06-09,2,10
 SOPs,2022-06-23,1,10
-SOPs,2022-11-30,3,10
+SOPs,2022-11-30,2,10
 SOPs,2022-12-01,2,10
 SOPs,2022-12-07,1,10
 SOPs,2022-12-09,1,10
@@ -84,3 +93,7 @@ SOPs,2024-06-12,6,10
 SOPs,2024-12-10,4,10
 SOPs,2025-01-16,1,10
 SOPs,2025-02-11,1,10
+SOPs,2025-07-16,1,10
+SOPs,2025-07-18,1,10
+SOPs,2025-11-20,1,10
+SOPs,2025-12-10,5,10

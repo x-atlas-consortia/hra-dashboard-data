@@ -15,22 +15,22 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: Digital Objects in HRA v2.3
+      - title: Digital Objects in HRA v2.4
         tooltip: High-level statistics about the number of digital objects in the HRA.
         items:
           - label: ASCT+B Tables
             count: 34
           - label: OMAP Tables
-            count: 30
+            count: 37
           - label: FTU Illustrations
             count: 26
           - label: 3D Anatomical Structure Models
-            count: 1356
+            count: 1469
             source: https://grlc.io/api-git/hubmapconsortium/ccf-grlc/subdir/hra/as-3d-cnt.csv
           - label: Blood Vessel Segment
             count: 1
           - label: SOPs
-            count: 28
+            count: 35
             source: https://cdn.humanatlas.io/hra-dashboard-data/data/hra-growth.sop.csv
       - title: Size of the HRA Knowledge Graph
         tooltip: High-level statistics for the HRA Knowledge Graph. 
@@ -47,9 +47,9 @@ items:
         tooltip: Statistics covering how many terms were added to other biomedical ontologies during the course of HRA development.
         items:
           - label: Terms added to Uberon
-            count: 155
+            count: 198
           - label: Terms added to CL
-            count: 162
+            count: 233
           - label: Terms added to PCL
             count: 468
   - type: VegaContainer
