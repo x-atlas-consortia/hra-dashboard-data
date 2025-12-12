@@ -39,9 +39,9 @@ items:
           - label: Nodes
             count: 11526535
           - label: Edges
-            count: 194688694
+            count: 189161716
           - label: Size
-            count: 167362
+            count: 140187
             unit: MB
       - title: Ontologies Extended
         tooltip: Statistics covering how many terms were added to other biomedical ontologies during the course of HRA development.
