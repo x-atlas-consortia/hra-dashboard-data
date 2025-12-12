@@ -39,11 +39,11 @@ items:
           - label: HRA KG requests
             count: 3283306
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to June 13, 2025.
+        tooltip: Number of web requests to HRA data via external data providers up to December 11, 2025.
         items:
           - label: EBI OLS requests
-            count: 24912
-            source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 2290 + 11091'
+            count: 39577
+            source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 17016 + 11030'
           - label: NCBO BioPortal requests
             count: 29044
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
