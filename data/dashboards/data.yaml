@@ -37,7 +37,7 @@ items:
         source: https://cdn.humanatlas.io/digital-objects/high-level-stats.csv
         items:
           - label: Nodes
-            count: 11526535
+            count: 1855335
           - label: Edges
             count: 189161716
           - label: Size
