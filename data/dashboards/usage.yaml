@@ -50,11 +50,11 @@ items:
           # - label: Ontobee Requests
           #   count: -1
           - label: NIH3D requests for 3D DOs
-            count: 19170
-            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/NIH3D-HRA_Entries.csv - sum of viewCount
+            count: 34704
+            source: email - sum of viewCounts
           - label: BioArt requests for 2D DOs
-            count: 8346
-            source: https://cdn.humanatlas.io/hra-dashboard-data/usage/BioArt-HRA_Entries.csv
+            count: 11053
+            source: email - sum of page views
   - type: VegaContainer
     title: Digital Object Usage
     tooltip: This graph shows HRA digital object requests from various websites since June 2023, computed daily with a two week rolling average.
