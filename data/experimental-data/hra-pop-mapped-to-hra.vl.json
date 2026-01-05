@@ -28,11 +28,6 @@
       "labelColor": "#4B4B5E",
       "titleFontWeight": 500,
       "labelFontWeight": 500
-    },
-    "range": {
-      "category": {
-        "scheme": "category10"
-      }
     }
   },
   "autosize": {
