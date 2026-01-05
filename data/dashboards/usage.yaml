@@ -11,7 +11,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to December 14, 2025.
+        tooltip: Statistics covering data usage from HRA resources up to January 4, 2026.
         items:
           # - label: HRA papers
           #   count: 1011
@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 11614
+            count: 12032
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,23 +29,23 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to December 10, 2025.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to January 4, 2026.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 1662031
+            count: 1693128
           - label: HRA Portal requests
-            count: 3220384
+            count: 3316899
           - label: HRA KG requests
-            count: 3306594
+            count: 3406082
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to December 11, 2025.
+        tooltip: Number of web requests to HRA data via external data providers up to January 4, 2026.
         items:
           - label: EBI OLS requests
             count: 39577
             source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 17016 + 11030 (June 1-Dec 11, 2025)'
           - label: NCBO BioPortal requests
-            count: 29044
+            count: 31815
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
