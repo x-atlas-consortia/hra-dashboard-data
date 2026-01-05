@@ -27,6 +27,11 @@
       "labelColor": "#4B4B5E",
       "titleFontWeight": 500,
       "labelFontWeight": 500
+    },
+    "range": {
+      "category": {
+        "scheme": "category10"
+      }
     }
   },
   "mark": { "type": "line", "point": false, "tooltip": true, "strokeWidth": 4 },
