@@ -22,7 +22,7 @@ items:
     route: experimental-data
     background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/experimental-data.png
     url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/experimental-data.yaml
-  - title: Diversity & Inclusion
-    route: diversity-and-inclusion
-    background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.png
-    url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
+  # - title: Diversity & Inclusion
+  #   route: diversity-and-inclusion
+  #   background: https://cdn.humanatlas.io/hra-dashboard-data/backgrounds/diversity-and-inclusion.png
+  #   url: https://cdn.humanatlas.io/hra-dashboard-data/dashboards/diversity-and-inclusion.yaml
