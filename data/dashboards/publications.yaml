@@ -9,7 +9,7 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: HRA Publications (HRAlit v0.7.1)
+      - title: HRA publications v0.7.1
         tooltip: Statistics covering papers, authors, datasets, and funders represented in HRAlit.
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
         items:
@@ -19,7 +19,7 @@ items:
             count: 8706593
           - label: Author institutions
             count: 8944691
-      - title: Size of HRAlit
+      - title: Size of HRAlit v0.7.1
         tooltip: High-level statistics for the HRAlit. 
         items:
           - label: Nodes
@@ -30,16 +30,16 @@ items:
             count: 5900
             unit: MB
   - type: VegaContainer
-    title: Publication by Year
+    title: Publications by year
     tooltip: This graph shows publication overlap by publication year, with years before 1950 grouped together.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-year.vl.json
   - type: VegaContainer
-    title: Global HRA-Related Publications
+    title: Global HRA-Related publications
     tooltip: This map shows publication counts by country for HRAlit.
     specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-country.vl.json
   - type: MetricsContainer
     items:
-      - title: HRA Publications (HRAlit v0.5)
+      - title: HRA publications v0.5.0
         tooltip: Statistics covering papers, authors, datasets, and funders represented in HRAlit.
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
         items:
@@ -55,16 +55,16 @@ items:
             count: 6427
           - label: Experimental datasets
             count: 1816
-      - title: Size of HRAlit
-        tooltip: High-level statistics for the HRAlit v0.5. 
+      - title: Size of HRAlit v0.5.0
+        tooltip: High-level statistics for the HRAlit v0.5.0. 
         items:
           - label: Nodes
             count: 8696762
-            source: Kiki / HRAlit v0.5
+            source: Kiki / HRAlit v0.5.0
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
           - label: Edges
             count: 13170651
-            source: Kiki / HRAlit v0.5
+            source: Kiki / HRAlit v0.5.0
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
             source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
           - label: Size
@@ -75,34 +75,34 @@ items:
     columns: 2
     items:
       - type: ImageContainer
-        title: HRAlit Papers Over Time
+        title: HRAlit papers over time
         tooltip: This graph shows the number of publications over time.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/papers-with-experimental-data.png
       - type: ImageContainer
-        title: Experts Over Time
+        title: Experts over time
         tooltip: This graph shows the number of authors by publication year.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/experts-over-time.png
       - type: ImageContainer
-        title: Co-Author Network
+        title: Co-author network
         tooltip: This graph shows a geospatial layout of the co-author network.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.png
       - type: ImageContainer
-        title: Authors and Papers by Organ
+        title: Authors and papers by organ
         tooltip: These graphs show how many papers and authors are focused on various organs.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.png
       - type: ImageContainer
-        title: Bimodal Organ-Funding Network
+        title: Bimodal organ-funding network
         tooltip: This graph shows a bimodal network of 33 organs and top 50 funding agencies most often listed.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.png
       - type: ImageContainer
-        title: Funded Papers from Top-5 Funders Over Time
+        title: Funded papers from top-5 funders over time
         tooltip: This graph shows the number of papers funded by top-5 funding agencies from 2018 to 2021.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.png
       - type: ImageContainer
-        title: Bimodal Organ-Author Network
+        title: Bimodal organ-author network
         tooltip: This graph shows a bimodal network between authors and organs.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.png
       - type: ImageContainer
-        title: Authors by Organ and Country
+        title: Authors by organ and country
         tooltip: This graph shows the number of authors per country per organ.
         imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.png
