@@ -9,7 +9,37 @@ link:
 items:
   - type: MetricsContainer
     items:
-      - title: HRA Publications
+      - title: HRA Publications (HRAlit v0.7.1)
+        tooltip: Statistics covering papers, authors, datasets, and funders represented in HRAlit.
+        source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
+        items:
+          - label: Papers
+            count: 8780250
+          - label: Authors
+            count: 8706593
+          - label: Author institutions
+            count: 8944691
+      - title: Size of HRAlit
+        tooltip: High-level statistics for the HRAlit. 
+        items:
+          - label: Nodes
+            count: 70921395
+          - label: Edges
+            count: 352767933
+          - label: Size
+            count: 5900
+            unit: MB
+  - type: VegaContainer
+    title: Publication by Year
+    tooltip: This graph shows publication overlap by publication year, with years before 1950 grouped together.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-year.vl.json
+  - type: VegaContainer
+    title: Global HRA-Related Publications
+    tooltip: This map shows publication counts by country for HRAlit.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-country.vl.json
+  - type: MetricsContainer
+    items:
+      - title: HRA Publications (HRAlit v0.5)
         tooltip: Statistics covering papers, authors, datasets, and funders represented in HRAlit.
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
         items:
