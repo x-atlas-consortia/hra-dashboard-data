@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Global publication counts by country for HRA v0.7.1.",
+  "width": "container",
+  "height": "container",
+  "padding": {
+    "right": 50
+  },
+  "config": {
+    "font": "Metropolis",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 500,
+      "labelFontWeight": 500,
+      "titleLineHeight": 21,
+      "labelLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E"
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
+    },
+    "range": {
+      "category": {
+        "scheme": "category10"
+      }
+    }
+  },
+  "layer": [
+    {
+      "name": "world-outlines",
+      "mark": {
+        "type": "geoshape",
+        "fill": "white",
+        "stroke": "#bebebe",
+        "strokeWidth": 0.85
+      },
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.id != 10"
+        }
+      ]
+    },
+    {
+      "name": "publications",
+      "mark": "geoshape",
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-country.csv"
+            },
+            "key": "countryId",
+            "fields": [
+              "publications",
+              "country",
+              "iso3"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "publications",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          },
+          "title": "Number of Publications"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "iso3",
+            "type": "nominal",
+            "title": "ISO3"
+          },
+          {
+            "field": "publications",
+            "type": "quantitative",
+            "title": "Number of Publications"
+          }
+        ]
+      }
+    }
+  ]
+}

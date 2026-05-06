@@ -1,7 +1,7 @@
 type: Dashboard
 title: Publications
 description: >-
-  Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Statistics and visualizations about the size, coverage, and composition of the HRA Literature (HRAlit) dataset are featured here.
+  Every month, more than 20,000 papers are published in PubMed. Many of these papers report data and results that can be used to construct and properly use the HRA. Statistics and visualizations about the size, coverage, and composition of the HRA Literature (HRAlit) dataset are featured here. There are 8,780,250 publications, 8,706,593 authors, 894,4691 affiliations, for a total of 70,921,395 nodes with 352,767,933 edges.
 link: 
   type: Link
   url: https://doi.org/10.1038/s41597-024-03416-8
@@ -14,65 +14,38 @@ items:
         source: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
         items:
           - label: Papers
-            count: 7103180
+            count: 8780250
           - label: Authors
-            count: 583117
+            count: 8706593
           - label: Author institutions
-            count: 26235
+            count: 8944691
           - label: Funded projects
-            count: 896680
+            count: 0
           - label: Funders
-            count: 6427
+            count: 0
           - label: Experimental datasets
-            count: 1816
+            count: 0
       - title: Size of HRAlit
         tooltip: High-level statistics for the HRAlit v0.5. 
         items:
           - label: Nodes
-            count: 8696762
+            count: 70921395
             source: Kiki / HRAlit v0.5
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/node-ct.csv
           - label: Edges
-            count: 13170651
+            count: 352767933
             source: Kiki / HRAlit v0.5
             source1: https://github.com/cns-iu/hra-literature/blob/main/data/db/row-ct.csv
             source2: https://github.com/cns-iu/hra-literature/blob/main/data/db/linkage-ct.csv
           - label: Size
-            count: 1166
+            count: 5900
             unit: MB
-            source: https://figshare.com/articles/dataset/Human_Reference_Atlas_Literature_HRAlit_Database/24580669
-  - type: GridContainer
-    columns: 2
-    items:
-      - type: ImageContainer
-        title: HRAlit Papers Over Time
-        tooltip: This graph shows the number of publications over time.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/papers-with-experimental-data.png
-      - type: ImageContainer
-        title: Experts Over Time
-        tooltip: This graph shows the number of authors by publication year.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/experts-over-time.png
-      - type: ImageContainer
-        title: Co-Author Network
-        tooltip: This graph shows a geospatial layout of the co-author network.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-3.png
-      - type: ImageContainer
-        title: Authors and Papers by Organ
-        tooltip: These graphs show how many papers and authors are focused on various organs.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-4.png
-      - type: ImageContainer
-        title: Bimodal Organ-Funding Network
-        tooltip: This graph shows a bimodal network of 33 organs and top 50 funding agencies most often listed.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-5.png
-      - type: ImageContainer
-        title: Funded Papers from Top-5 Funders Over Time
-        tooltip: This graph shows the number of papers funded by top-5 funding agencies from 2018 to 2021.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-6.png
-      - type: ImageContainer
-        title: Bimodal Organ-Author Network
-        tooltip: This graph shows a bimodal network between authors and organs.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-7.png
-      - type: ImageContainer
-        title: Authors by Organ and Country
-        tooltip: This graph shows the number of authors per country per organ.
-        imageUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/figure-8.png
+            source: https://zenodo.org/records/16619873
+  - type: VegaContainer
+    title: Publication by Year
+    tooltip: This graph shows publication overlap by publication year, with years before 1950 grouped together.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-year.vl.json
+  - type: VegaContainer
+    title: Global HRA-Related Publications
+    tooltip: This map shows publication counts by country for HRA v0.7.1.
+    specUrl: https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-country.vl.json

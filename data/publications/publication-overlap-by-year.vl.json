@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Publication overlap by publication year. Years before 1950 are grouped into <1950.",
+  "data": {
+    "url": "https://cdn.humanatlas.io/hra-dashboard-data/publications/publication-overlap-by-year.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "padding": {
+    "right": 20
+  },
+  "config": {
+    "font": "Metropolis",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": 500,
+      "labelFontWeight": 500,
+      "titleLineHeight": 21,
+      "labelLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titlePadding": 10
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleLineHeight": 21,
+      "titleColor": "#201E3D",
+      "labelColor": "#4B4B5E",
+      "titleFontWeight": 500,
+      "labelFontWeight": 500
+    },
+    "range": {
+      "category": {
+        "scheme": "category10"
+      }
+    }
+  },
+  "mark": {
+    "type": "line",
+    "tooltip": true,
+    "point": false
+  },
+  "params": [
+    {
+      "name": "series_selection",
+      "select": {
+        "type": "point",
+        "fields": [
+          "series"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": {
+        "field": "year_order",
+        "order": "ascending"
+      },
+      "title": "Publication Year",
+      "axis": {
+        "labelAngle": -45,
+        "labelOverlap": "greedy"
+      }
+    },
+    "y": {
+      "field": "publications",
+      "type": "quantitative",
+      "title": "Number of Publications"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "legend": {
+        "title": "HRAlit Papers Over Time",
+        "symbolStrokeWidth": 10
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "series_selection",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Publication Year"
+      },
+      {
+        "field": "series",
+        "type": "nominal",
+        "title": "Dataset overlap"
+      },
+      {
+        "field": "publications",
+        "type": "quantitative",
+        "title": "Publications",
+        "format": ","
+      }
+    ],
+    "order": {
+      "field": "year_order",
+      "type": "quantitative"
+    }
+  }
+}

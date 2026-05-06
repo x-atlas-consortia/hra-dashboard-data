@@ -1,0 +1,232 @@
+year,year_order,series,publications
+<1950,1949,Only in HRA v0.7.1,36085
+<1950,1949,Only in HRAlit v0.5.0,28462
+<1950,1949,In both datasets,25074
+1950,1950,Only in HRA v0.7.1,13932
+1950,1950,Only in HRAlit v0.5.0,1826
+1950,1950,In both datasets,10329
+1951,1951,Only in HRA v0.7.1,15524
+1951,1951,Only in HRAlit v0.5.0,3529
+1951,1951,In both datasets,10478
+1952,1952,Only in HRA v0.7.1,15183
+1952,1952,Only in HRAlit v0.5.0,4829
+1952,1952,In both datasets,10442
+1953,1953,Only in HRA v0.7.1,16776
+1953,1953,Only in HRAlit v0.5.0,4722
+1953,1953,In both datasets,11336
+1954,1954,Only in HRA v0.7.1,17157
+1954,1954,Only in HRAlit v0.5.0,4667
+1954,1954,In both datasets,11881
+1955,1955,Only in HRA v0.7.1,17705
+1955,1955,Only in HRAlit v0.5.0,4834
+1955,1955,In both datasets,12440
+1956,1956,Only in HRA v0.7.1,16342
+1956,1956,Only in HRAlit v0.5.0,4965
+1956,1956,In both datasets,11884
+1957,1957,Only in HRA v0.7.1,15770
+1957,1957,Only in HRAlit v0.5.0,5422
+1957,1957,In both datasets,12229
+1958,1958,Only in HRA v0.7.1,15906
+1958,1958,Only in HRAlit v0.5.0,5429
+1958,1958,In both datasets,11856
+1959,1959,Only in HRA v0.7.1,15793
+1959,1959,Only in HRAlit v0.5.0,5601
+1959,1959,In both datasets,12620
+1960,1960,Only in HRA v0.7.1,15338
+1960,1960,Only in HRAlit v0.5.0,5551
+1960,1960,In both datasets,12197
+1961,1961,Only in HRA v0.7.1,17158
+1961,1961,Only in HRAlit v0.5.0,6170
+1961,1961,In both datasets,13816
+1962,1962,Only in HRA v0.7.1,17290
+1962,1962,Only in HRAlit v0.5.0,7002
+1962,1962,In both datasets,14069
+1963,1963,Only in HRA v0.7.1,18605
+1963,1963,Only in HRAlit v0.5.0,10426
+1963,1963,In both datasets,17460
+1964,1964,Only in HRA v0.7.1,22046
+1964,1964,Only in HRAlit v0.5.0,13194
+1964,1964,In both datasets,23222
+1965,1965,Only in HRA v0.7.1,21151
+1965,1965,Only in HRAlit v0.5.0,13654
+1965,1965,In both datasets,19023
+1966,1966,Only in HRA v0.7.1,21464
+1966,1966,Only in HRAlit v0.5.0,14351
+1966,1966,In both datasets,19738
+1967,1967,Only in HRA v0.7.1,25229
+1967,1967,Only in HRAlit v0.5.0,15146
+1967,1967,In both datasets,24786
+1968,1968,Only in HRA v0.7.1,28114
+1968,1968,Only in HRAlit v0.5.0,16078
+1968,1968,In both datasets,30021
+1969,1969,Only in HRA v0.7.1,31498
+1969,1969,Only in HRAlit v0.5.0,16106
+1969,1969,In both datasets,34027
+1970,1970,Only in HRA v0.7.1,31138
+1970,1970,Only in HRAlit v0.5.0,16754
+1970,1970,In both datasets,34381
+1971,1971,Only in HRA v0.7.1,32625
+1971,1971,Only in HRAlit v0.5.0,17957
+1971,1971,In both datasets,37383
+1972,1972,Only in HRA v0.7.1,35409
+1972,1972,Only in HRAlit v0.5.0,17381
+1972,1972,In both datasets,40780
+1973,1973,Only in HRA v0.7.1,36177
+1973,1973,Only in HRAlit v0.5.0,17563
+1973,1973,In both datasets,42050
+1974,1974,Only in HRA v0.7.1,37991
+1974,1974,Only in HRAlit v0.5.0,17020
+1974,1974,In both datasets,44450
+1975,1975,Only in HRA v0.7.1,38620
+1975,1975,Only in HRAlit v0.5.0,18155
+1975,1975,In both datasets,42246
+1976,1976,Only in HRA v0.7.1,38544
+1976,1976,Only in HRAlit v0.5.0,19023
+1976,1976,In both datasets,38462
+1977,1977,Only in HRA v0.7.1,40142
+1977,1977,Only in HRAlit v0.5.0,20151
+1977,1977,In both datasets,38647
+1978,1978,Only in HRA v0.7.1,41712
+1978,1978,Only in HRAlit v0.5.0,20875
+1978,1978,In both datasets,39662
+1979,1979,Only in HRA v0.7.1,43505
+1979,1979,Only in HRAlit v0.5.0,21662
+1979,1979,In both datasets,42332
+1980,1980,Only in HRA v0.7.1,45083
+1980,1980,Only in HRAlit v0.5.0,21877
+1980,1980,In both datasets,42743
+1981,1981,Only in HRA v0.7.1,46013
+1981,1981,Only in HRAlit v0.5.0,22165
+1981,1981,In both datasets,43047
+1982,1982,Only in HRA v0.7.1,48392
+1982,1982,Only in HRAlit v0.5.0,23391
+1982,1982,In both datasets,45106
+1983,1983,Only in HRA v0.7.1,50478
+1983,1983,Only in HRAlit v0.5.0,25296
+1983,1983,In both datasets,46142
+1984,1984,Only in HRA v0.7.1,53023
+1984,1984,Only in HRAlit v0.5.0,25862
+1984,1984,In both datasets,49300
+1985,1985,Only in HRA v0.7.1,55526
+1985,1985,Only in HRAlit v0.5.0,26406
+1985,1985,In both datasets,50698
+1986,1986,Only in HRA v0.7.1,57317
+1986,1986,Only in HRAlit v0.5.0,27285
+1986,1986,In both datasets,50351
+1987,1987,Only in HRA v0.7.1,58745
+1987,1987,Only in HRAlit v0.5.0,29264
+1987,1987,In both datasets,49685
+1988,1988,Only in HRA v0.7.1,61653
+1988,1988,Only in HRAlit v0.5.0,29845
+1988,1988,In both datasets,50786
+1989,1989,Only in HRA v0.7.1,64449
+1989,1989,Only in HRAlit v0.5.0,32462
+1989,1989,In both datasets,52420
+1990,1990,Only in HRA v0.7.1,64676
+1990,1990,Only in HRAlit v0.5.0,33179
+1990,1990,In both datasets,54168
+1991,1991,Only in HRA v0.7.1,64875
+1991,1991,Only in HRAlit v0.5.0,32794
+1991,1991,In both datasets,53315
+1992,1992,Only in HRA v0.7.1,64671
+1992,1992,Only in HRAlit v0.5.0,34110
+1992,1992,In both datasets,52635
+1993,1993,Only in HRA v0.7.1,66091
+1993,1993,Only in HRAlit v0.5.0,34402
+1993,1993,In both datasets,53733
+1994,1994,Only in HRA v0.7.1,66492
+1994,1994,Only in HRAlit v0.5.0,35615
+1994,1994,In both datasets,55919
+1995,1995,Only in HRA v0.7.1,66837
+1995,1995,Only in HRAlit v0.5.0,36909
+1995,1995,In both datasets,57463
+1996,1996,Only in HRA v0.7.1,67325
+1996,1996,Only in HRAlit v0.5.0,38234
+1996,1996,In both datasets,57130
+1997,1997,Only in HRA v0.7.1,68710
+1997,1997,Only in HRAlit v0.5.0,39227
+1997,1997,In both datasets,57468
+1998,1998,Only in HRA v0.7.1,69658
+1998,1998,Only in HRAlit v0.5.0,40912
+1998,1998,In both datasets,58538
+1999,1999,Only in HRA v0.7.1,69984
+1999,1999,Only in HRAlit v0.5.0,41807
+1999,1999,In both datasets,57707
+2000,2000,Only in HRA v0.7.1,73465
+2000,2000,Only in HRAlit v0.5.0,44517
+2000,2000,In both datasets,60378
+2001,2001,Only in HRA v0.7.1,73357
+2001,2001,Only in HRAlit v0.5.0,45334
+2001,2001,In both datasets,59689
+2002,2002,Only in HRA v0.7.1,76965
+2002,2002,Only in HRAlit v0.5.0,48108
+2002,2002,In both datasets,59562
+2003,2003,Only in HRA v0.7.1,79699
+2003,2003,Only in HRAlit v0.5.0,52904
+2003,2003,In both datasets,61483
+2004,2004,Only in HRA v0.7.1,84291
+2004,2004,Only in HRAlit v0.5.0,56543
+2004,2004,In both datasets,62780
+2005,2005,Only in HRA v0.7.1,93239
+2005,2005,Only in HRAlit v0.5.0,61255
+2005,2005,In both datasets,63175
+2006,2006,Only in HRA v0.7.1,97557
+2006,2006,Only in HRAlit v0.5.0,67030
+2006,2006,In both datasets,62505
+2007,2007,Only in HRA v0.7.1,101031
+2007,2007,Only in HRAlit v0.5.0,71983
+2007,2007,In both datasets,61755
+2008,2008,Only in HRA v0.7.1,105765
+2008,2008,Only in HRAlit v0.5.0,77287
+2008,2008,In both datasets,62389
+2009,2009,Only in HRA v0.7.1,107826
+2009,2009,Only in HRAlit v0.5.0,81586
+2009,2009,In both datasets,63221
+2010,2010,Only in HRA v0.7.1,115515
+2010,2010,Only in HRAlit v0.5.0,87429
+2010,2010,In both datasets,64446
+2011,2011,Only in HRA v0.7.1,123887
+2011,2011,Only in HRAlit v0.5.0,94451
+2011,2011,In both datasets,64353
+2012,2012,Only in HRA v0.7.1,124742
+2012,2012,Only in HRAlit v0.5.0,104874
+2012,2012,In both datasets,67280
+2013,2013,Only in HRA v0.7.1,129974
+2013,2013,Only in HRAlit v0.5.0,110974
+2013,2013,In both datasets,70732
+2014,2014,Only in HRA v0.7.1,130279
+2014,2014,Only in HRAlit v0.5.0,116838
+2014,2014,In both datasets,71657
+2015,2015,Only in HRA v0.7.1,131410
+2015,2015,Only in HRAlit v0.5.0,121728
+2015,2015,In both datasets,72243
+2016,2016,Only in HRA v0.7.1,128039
+2016,2016,Only in HRAlit v0.5.0,122041
+2016,2016,In both datasets,70972
+2017,2017,Only in HRA v0.7.1,129519
+2017,2017,Only in HRAlit v0.5.0,123675
+2017,2017,In both datasets,71746
+2018,2018,Only in HRA v0.7.1,130674
+2018,2018,Only in HRAlit v0.5.0,128246
+2018,2018,In both datasets,74201
+2019,2019,Only in HRA v0.7.1,133745
+2019,2019,Only in HRAlit v0.5.0,135255
+2019,2019,In both datasets,76225
+2020,2020,Only in HRA v0.7.1,144958
+2020,2020,Only in HRAlit v0.5.0,149524
+2020,2020,In both datasets,79411
+2021,2021,Only in HRA v0.7.1,138569
+2021,2021,Only in HRAlit v0.5.0,163711
+2021,2021,In both datasets,79154
+2022,2022,Only in HRA v0.7.1,115675
+2022,2022,Only in HRAlit v0.5.0,165366
+2022,2022,In both datasets,69070
+2023,2023,Only in HRA v0.7.1,167204
+2023,2023,Only in HRAlit v0.5.0,40187
+2023,2023,In both datasets,12489
+2024,2024,Only in HRA v0.7.1,184470
+2024,2024,Only in HRAlit v0.5.0,0
+2024,2024,In both datasets,0
+2025,2025,Only in HRA v0.7.1,22961
+2025,2025,Only in HRAlit v0.5.0,0
+2025,2025,In both datasets,0
