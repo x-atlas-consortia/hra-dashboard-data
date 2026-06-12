@@ -7,12 +7,13 @@ blood vasculature,ASCT+B Table,1
 blood vasculature,CTAnn Crosswalks,1
 blood vasculature,3D Reference Organ,2
 body proper,CTAnn Crosswalks,1
-body proper,3D Reference Organ,2
 bone marrow,ASCT+B Table,1
 bone marrow,CTAnn Crosswalks,3
 bony pelvis,3D Reference Organ,2
 brain,ASCT+B Table,1
 brain,3D Reference Organ,2
+brain,OMAP,1
+epiploic appendage of transverse colon,3D Reference Organ,2
 esophagus,OMAP,1
 eye,ASCT+B Table,1
 eye,CTAnn Crosswalks,3
@@ -26,6 +27,7 @@ heart,CTAnn Crosswalks,3
 heart,3D Reference Organ,2
 heart,OMAP,2
 hippocampal gyrus (formation),CTAnn Crosswalks,1
+integumentary system layer,3D Reference Organ,2
 intervertebral disk,3D Reference Organ,2
 intestine,OMAP,2
 islet of langerhans,CTAnn Crosswalks,3
@@ -50,7 +52,7 @@ lung,ASCT+B Table,1
 lung,CTAnn Crosswalks,4
 lung,2D FTU Illustration,2
 lung,3D Reference Organ,2
-lung,OMAP,3
+lung,OMAP,4
 lymph node,ASCT+B Table,1
 lymph node,CTAnn Crosswalks,5
 lymph node,3D Reference Organ,2
@@ -65,6 +67,7 @@ mouth,2D FTU Illustration,3
 mouth,3D Reference Organ,2
 mouth mucosa,OMAP,1
 muscular system,ASCT+B Table,1
+omentum,3D Reference Organ,2
 ovary,ASCT+B Table,1
 ovary,3D Reference Organ,2
 ovary,OMAP,1
@@ -74,11 +77,12 @@ palatine tonsil,3D Reference Organ,4
 palatine tonsil,OMAP,3
 pancreas,ASCT+B Table,1
 pancreas,CTAnn Crosswalks,3
-pancreas,2D FTU Illustration,3
+pancreas,2D FTU Illustration,4
 pancreas,3D Reference Organ,2
 pancreas,OMAP,3
 peripheral nervous system,ASCT+B Table,1
 placenta,ASCT+B Table,1
+placenta,2D FTU Illustration,1
 placenta,3D Reference Organ,1
 placenta,OMAP,1
 primary motor cortex,CTAnn Crosswalks,3

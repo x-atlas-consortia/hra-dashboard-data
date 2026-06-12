@@ -1,139 +1,140 @@
 country,countryId,requests
-United States,840,2191691
-Hong Kong,344,242161
-China,156,238941
-Germany,276,196575
-France,250,179682
-Singapore,702,143509
-United Kingdom,826,117714
-Canada,124,83467
-Japan,392,70802
-Ireland,372,61495
-India,356,56495
-Netherlands,528,53005
-Ecuador,218,47528
-Russia,643,46394
-South Korea,410,37551
-Australia,036,36795
-Spain,724,31601
-Italy,380,27934
-Brazil,076,24602
-Sweden,752,24356
-Switzerland,756,22905
-Vietnam,704,22464
-Poland,616,21994
-Austria,040,19129
-Turkey,792,15912
-Finland,246,14903
-Indonesia,360,12232
-Taiwan,158,11051
-Mexico,484,10803
-Malaysia,458,9368
-Denmark,208,8977
-Belgium,056,8721
-Bulgaria,100,7994
-Thailand,764,7452
-Hungary,348,7325
-Pakistan,586,6995
-Portugal,620,6896
-New Zealand,554,6552
-Egypt,818,6531
-Israel,376,6079
-Argentina,032,5653
-Iran,364,5600
-Norway,578,5548
-Luxembourg,442,5254
-Chile,152,4985
-Philippines,608,4696
-Romania,642,4665
-Czechia,203,4451
-Ukraine,804,3874
-Colombia,170,3635
-Greece,300,3591
-Bangladesh,050,3377
-United Arab Emirates,784,3204
-Morocco,504,3098
-South Africa,710,2951
-Saudi Arabia,682,2636
-Algeria,012,2432
-Croatia,191,2286
+United States,840,2230026
+China,156,256253
+Hong Kong,344,243647
+Germany,276,199053
+France,250,196823
+Singapore,702,149054
+United Kingdom,826,119078
+Canada,124,85764
+Japan,392,72151
+Ireland,372,61981
+India,356,58340
+Netherlands,528,54565
+Ecuador,218,47610
+Russia,643,47085
+South Korea,410,38143
+Australia,036,37484
+Spain,724,32405
+Italy,380,28198
+Brazil,076,25851
+Sweden,752,24577
+Switzerland,756,23257
+Vietnam,704,23017
+Poland,616,22497
+Austria,040,19318
+Turkey,792,16229
+Finland,246,15068
+Indonesia,360,12903
+Taiwan,158,11365
+Mexico,484,11195
+Malaysia,458,9503
+Denmark,208,9043
+Belgium,056,8942
+Bulgaria,100,8072
+Thailand,764,7533
+Hungary,348,7386
+Portugal,620,7371
+Pakistan,586,7033
+New Zealand,554,6999
+Egypt,818,6629
+Israel,376,6153
+Argentina,032,5752
+Iran,364,5713
+Norway,578,5645
+Luxembourg,442,5275
+Chile,152,5026
+Romania,642,4834
+Philippines,608,4705
+Czechia,203,4514
+Ukraine,804,3907
+Colombia,170,3748
+Greece,300,3695
+Bangladesh,050,3497
+Morocco,504,3315
+United Arab Emirates,784,3241
+South Africa,710,3076
+Saudi Arabia,682,2647
+Algeria,012,2615
+Croatia,191,2312
 Serbia,688,1911
-Lithuania,440,1718
-Peru,604,1649
-Nigeria,566,1492
+Lithuania,440,1777
+Peru,604,1655
+Nigeria,566,1520
+Kazakhstan,398,1489
+Seychelles,690,1467
 Sri Lanka,144,1445
-Seychelles,690,1420
-Iraq,368,1416
-Kazakhstan,398,1307
-Puerto Rico,630,1305
-Cambodia,116,1179
-Tunisia,788,1150
-Kenya,404,1053
-Slovakia,703,994
-Georgia,268,915
-Armenia,051,912
-Nepal,524,901
+Iraq,368,1429
+Puerto Rico,630,1332
+Cambodia,116,1227
+Tunisia,788,1200
+Kenya,404,1160
+Slovakia,703,996
+Nepal,524,932
+Georgia,268,919
+Armenia,051,913
 Bosnia and Herzegovina,070,896
-Uzbekistan,860,816
-Venezuela,862,814
-Oman,512,746
+Uzbekistan,860,874
+Venezuela,862,825
+Oman,512,748
 Belize,084,694
-Azerbaijan,031,662
-Uruguay,858,653
-Bolivia,068,636
-Cyprus,196,633
-Jordan,400,629
-Slovenia,705,611
+Bolivia,068,694
+Ethiopia,231,686
+Azerbaijan,031,666
+Uruguay,858,656
+Cyprus,196,635
+Jordan,400,634
+Slovenia,705,616
 Madagascar,450,605
-Estonia,233,568
-Latvia,428,532
-Ethiopia,231,522
-Belarus,112,514
-Qatar,634,511
-Guatemala,320,502
-Jamaica,388,465
-Albania,008,455
-Uganda,800,399
-Costa Rica,188,373
+Estonia,233,569
+Latvia,428,559
+Guatemala,320,541
+Belarus,112,522
+Qatar,634,512
+Jamaica,388,468
+Uganda,800,461
+Albania,008,456
+Costa Rica,188,402
 North Macedonia,807,359
 Cameroon,120,344
 Libya,434,333
-Paraguay,600,322
-Lebanon,422,286
+Paraguay,600,323
+Lebanon,422,313
 Yemen,887,286
-Moldova,498,248
+Moldova,498,253
+Ghana,288,238
+Dominican Republic,214,237
 Syria,760,232
-Dominican Republic,214,231
 Tanzania,834,222
-Panama,591,219
+Panama,591,221
+Iceland,352,221
+Macau,446,219
 Mauritania,478,215
-Ghana,288,213
-Iceland,352,205
-Cote d'Ivoire,384,205
-Kuwait,414,205
-Mongolia,496,193
-Palestinian Territory,275,186
+Cote d'Ivoire,384,211
+Democratic Republic of the Congo,180,210
+Kuwait,414,206
+Mongolia,496,195
+Palestinian Territory,275,188
 Montenegro,499,186
-Democratic Republic of the Congo,180,184
-Grenada,308,183
-Malta,470,182
-Macau,446,180
+Grenada,308,184
+Malta,470,184
 Monaco,492,178
 Curaçao,531,177
 Sudan,729,175
-El Salvador,222,156
+Bahrain,048,172
+Botswana,072,158
+El Salvador,222,157
 Honduras,340,153
-Botswana,072,153
-Zambia,894,149
+Zambia,894,150
+Kyrgyzstan,417,122
 Trinidad and Tobago,780,117
-Bahrain,048,111
 Myanmar (Burma),104,110
-Kyrgyzstan,417,97
+Burkina Faso,854,94
 Brunei,096,83
+Bhutan,064,80
 Reunion,638,78
 Senegal,686,76
-Barbados,052,74
-Bhutan,064,74
+Barbados,052,75
 Nicaragua,558,72
 Cuba,192,70
 Liechtenstein,438,65
@@ -141,48 +142,50 @@ Republic of Kosovo,,62
 Rwanda,646,59
 Guinea-Bissau,624,56
 Afghanistan,004,56
-Burkina Faso,854,56
 Andorra,020,56
 Isle of Man,833,52
 Gabon,266,52
 Vanuatu,548,51
 Zimbabwe,716,50
 Papua New Guinea,598,50
-Guyana,328,48
+Guyana,328,49
 Angola,024,47
 Laos,418,46
 Suriname,740,42
 Timor-Leste,626,40
 French Guiana,254,40
 Maldives,462,40
-Mozambique,508,39
+Mozambique,508,40
+Mauritius,480,35
 Sierra Leone,694,34
-Mauritius,480,34
-Tajikistan,762,30
+Tajikistan,762,31
+Liberia,430,27
+The Gambia,270,25
 Jersey,832,23
 Malawi,454,18
-The Bahamas,044,16
+The Bahamas,044,17
 Eswatini,748,15
 Namibia,516,12
 Cape Verde,132,9
 Burundi,108,8
 Republic of the Congo,178,8
 Togo,768,7
-Fiji,242,5
-Djibouti,262,4
-Turks and Caicos Islands,796,4
+Fiji,242,6
 Czech Republic,,4
+Turks and Caicos Islands,796,4
+Djibouti,262,4
 Martinique,474,3
 British Virgin Islands,092,3
 Mali,466,2
 Turkmenistan,795,2
 Somalia,706,2
-Benin,204,1
-Palau,585,1
-Tonga,776,1
-South Sudan,728,1
 Sao Tome and Principe,678,1
+South Sudan,728,1
 Guernsey,831,1
-Sint Maarten,534,1
-Falkland Islands (Islas Malvinas),238,1
 Cayman Islands,136,1
+Dominica,212,1
+Sint Maarten,534,1
+Tonga,776,1
+Palau,585,1
+Falkland Islands (Islas Malvinas),238,1
+Benin,204,1

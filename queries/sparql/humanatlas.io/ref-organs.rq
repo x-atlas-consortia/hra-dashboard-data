@@ -83,6 +83,8 @@ WHERE {
 
   OPTIONAL {
     VALUES (?organ ?image) {
+      ("epiploic appendage of transverse colon" "organ:adipose")
+      ("omentum" "organ:adipose")
       ("subcutaneous adipose tissue" "organ:adipose")
       ("Blood Vasculature" "organ:blood-vasculature")
       ("Brain" "organ:brain")

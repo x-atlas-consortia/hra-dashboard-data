@@ -11,7 +11,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to May 26, 2026.
+        tooltip: Statistics covering data usage from HRA resources up to June 11, 2026.
         items:
           # - label: HRA papers
           #   count: 1011
@@ -20,7 +20,7 @@ items:
           #   count: 29756
           #   source: https://docs.google.com/spreadsheets/d/12bFvYEBP82Zg9xGpXawa8aJN_K10URIf_slt9-VMZPI/edit?gid=946248573#gid=946248573&range=C146
           - label: SOP downloads
-            count: 13852
+            count: 18134
             source: src/usage/sop-downloads.js
           - label: VHMOOC students
             count: 310
@@ -29,31 +29,31 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to May 26, 2026.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to June 11, 2026.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 2867161
+            count: 3033668
           - label: HRA Portal requests
-            count: 4261301
+            count: 4365348
           - label: HRA KG requests
-            count: 4287558
+            count: 4382804
       - title: Ontology Requests
-        tooltip: Number of web requests to HRA data via external data providers up to January 4, 2026.
+        tooltip: Number of web requests to HRA data via external data providers up to June 9, 2026.
         items:
           - label: EBI OLS requests
-            count: 39577
-            source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 17016 + 11030 (June 1-Dec 11, 2025)'
+            count: 57293
+            source: 'email (Re: "Updated # of web requests for HRA and CCF via OLS") .. 11531(original) + 17016 + 11030 (June 1-Dec 11, 2025) + 12824 + 4892 (Jan 1-June 9, 2026)'
           - label: NCBO BioPortal requests
-            count: 31815
+            count: 110448
             source: https://bioportal.bioontology.org/ontologies/CCF + HRA
           # - label: Ontobee Requests
           #   count: -1
           - label: NIH3D requests for 3D DOs
-            count: 49946
+            count: 54097
             source: email - sum of viewCounts
           - label: BioArt requests for 2D DOs
-            count: 11053
+            count: 16030
             source: email - sum of page views
   - type: VegaContainer
     title: Digital Object Usage
