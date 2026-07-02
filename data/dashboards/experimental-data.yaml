@@ -12,34 +12,34 @@ items:
   - type: MetricsContainer
     items:
       - title: HRApop ATLAS Data
-        tooltip: Statistics covering counts of datasets and related entities in HRApop v1.0 in June 2025.
-        source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/atlas-ad-hoc/data-provenance.csv
+        tooltip: Statistics covering counts of datasets and related entities in HRApop v1.1 in June 2026.
+        source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/atlas-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
-            count: 444
+            count: 473
           - label: SenNet datasets
-            count: 54
+            count: 128
           - label: Tissue donors
-            count: 124
+            count: 175
           - label: Organs
-            count: 17
+            count: 23
           - label: Anatomical structures
-            count: 72
+            count: 103
           - label: Cells (transcriptomics)
-            count: 10924774
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/atlas-ad-hoc/atlas-sc-transcriptomics-cell-counts.csv#L2
+            count: 11832850
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/atlas-ad-hoc/atlas-sc-transcriptomics-cell-counts.csv#L2
           - label: Cells (proteomics)
-            count: 16576863
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/atlas-ad-hoc/atlas-sc-proteomics-cell-counts.csv
-      - title: Size of HRApop v1.0 ATLAS
-        tooltip: High-level statistics for HRApop v1.0.
+            count: 43940792
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/atlas-ad-hoc/atlas-sc-proteomics-cell-counts.csv
+      - title: Size of HRApop v1.1 ATLAS
+        tooltip: High-level statistics for HRApop v1.1.
         items:
           - label: Nodes
-            count: 381365
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/atlas-ad-hoc/high-level-stats.csv
+            count: 751255
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/atlas-ad-hoc/high-level-stats.csv
           - label: Edges
-            count: 1977682
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/atlas-ad-hoc/high-level-stats.csv
+            count: 3874554
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/atlas-ad-hoc/high-level-stats.csv
       - title: GitHub
         tooltip: Statistics about HRApop GitHub repositories.
         items:
@@ -47,29 +47,29 @@ items:
             count: 4
             repos: hra-pop, hra-workflows-runner, hra-workflows, hra-cell-type-populations-supporting-information
           - label: Commits
-            count: 1679
+            count: 1937
   - type: MetricsContainer
     items:
       - title: HRApop UNIVERSE Data
-        tooltip: Statistics covering counts of datasets and related entities in HRApop v1.0 in June 2025.
-        source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/universe-ad-hoc/data-provenance.csv
+        tooltip: Statistics covering counts of datasets and related entities in HRApop v1.1 in June 2026.
+        source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/universe-ad-hoc/data-provenance.csv
         items:
           - label: HuBMAP datasets
-            count: 4171
+            count: 8976
           - label: SenNet datasets
-            count: 1413
+            count: 3018
           - label: Tissue donors
-            count: 8301
+            count: 32047
           - label: Organs
-            count: 17
+            count: 23
           - label: Anatomical structures
-            count: 72
+            count: 103
           - label: Cells (transcriptomics)
-            count: 40527530
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/universe-ad-hoc/universe-sc-transcriptomics-cell-counts.csv#L2
+            count: 139725345
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/universe-ad-hoc/universe-sc-transcriptomics-cell-counts.csv#L2
           - label: Cells (proteomics)
-            count: 16576863
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/universe-ad-hoc/universe-sc-proteomics-cell-counts.csv
+            count: 44966028
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/universe-ad-hoc/universe-sc-proteomics-cell-counts.csv
   - type: VegaContainer
     title: HRApop ATLAS Datasets
     tooltip: This graph shows datasets mapped to the HRA grouped by Portal, Organ, Sex, Age, or Ethnicity.
@@ -82,20 +82,20 @@ items:
     iframeUrl: https://cns-iu.github.io/hra-pop-sankey/sankey_atlas_plotly.html
   - type: MetricsContainer
     items:
-      - title: Size of HRApop v1.0 UNIVERSE
-        tooltip: High-level statistics for HRApop v1.0.
+      - title: Size of HRApop v1.1 UNIVERSE
+        tooltip: High-level statistics for HRApop v1.1.
         items:
           - label: Nodes
             count: 2897998
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/universe-ad-hoc/high-level-stats.csv
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/universe-ad-hoc/high-level-stats.csv
           - label: Edges
             count: 14951655
-            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.0/reports/universe-ad-hoc/high-level-stats.csv
+            source: https://github.com/x-atlas-consortia/hra-pop/blob/main/output-data/v1.1/reports/universe-ad-hoc/high-level-stats.csv
           - label: Size
-            count: 86.1
+            count: 34.4
             unit: TB
-            source: du -s -BM hra-workflows-runner/raw-data-main/{v1.0,data-repo,models,tmp} hra-pop/raw-data/v1.0
-            sourceMBs: (36393 + 77024162 + 27517 + 8943046 + 72894) / (1024 * 1024)
+            source: du -s -BM hra-workflows-runner/raw-data-v1.1/{v1.1,data-repo,models,tmp} hra-pop/raw-data/v1.1
+            sourceMBs: (158371 + 28093076 + 33116 + 7716015 + 60955) / (1024*1024)
   - type: VegaContainer
     title: HRApop UNIVERSE Datasets
     tooltip: This graph shows datasets mapped to the HRA grouped by Portal, Organ, Sex, Age, or Ethnicity.
