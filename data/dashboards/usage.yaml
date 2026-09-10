@@ -11,7 +11,7 @@ items:
   - type: MetricsContainer
     items:
       - title: HRA Resources
-        tooltip: Statistics covering data usage from HRA resources up to August 10, 2026.
+        tooltip: Statistics covering data usage from HRA resources up to September 9, 2026.
         items:
           # - label: HRA papers
           #   count: 1011
@@ -29,15 +29,15 @@ items:
             count: 5652
             source: Andi
       - title: HRA Requests
-        tooltip: Number of web requests for HRA-API and the HRA Portal up to August 10, 2026.
+        tooltip: Number of web requests for HRA-API and the HRA Portal up to September 9, 2026.
         sourceUrl: https://cdn.humanatlas.io/hra-dashboard-data/usage/total-requests.csv
         items:
           - label: HRA-API requests
-            count: 3407057
+            count: 3620337
           - label: HRA Portal requests
-            count: 4810717
+            count: 5135521
           - label: HRA KG requests
-            count: 4838402
+            count: 5093617
       - title: Ontology Requests
         tooltip: Number of web requests to HRA data via external data providers up to June 9, 2026.
         items:
