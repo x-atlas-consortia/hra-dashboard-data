@@ -43,6 +43,9 @@
   },
   "transform": [
     {
+      "filter": "datum.user !== 'GUDMAP'"
+    },
+    {
       "window": [
         {
           "field": "requests",
@@ -90,7 +93,14 @@
       "title": "Requests",
       "axis": {
         "labelAngle": -45,
-        "labelOverlap": false
+        "labelOverlap": false,
+        "format": "~s",
+        "values": [
+          10,
+          100,
+          1000,
+          10000
+        ]
       }
     },
     "color": {
