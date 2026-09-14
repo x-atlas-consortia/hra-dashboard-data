@@ -78,9 +78,9 @@
     "x": {
       "field": "date",
       "type": "temporal",
-      "title": "",
+      "title": "Date",
       "axis": {
-        "labelAngle": 0,
+        "labelAngle": -45,
         "labelOverlap": false
       }
     },
